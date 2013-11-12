@@ -1,0 +1,2 @@
+{"question": "When was the last time you took your medication?", "type": "medication"}
+{"question": "Have you taken your meds?", "type": "medication"}

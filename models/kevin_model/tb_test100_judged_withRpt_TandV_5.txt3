@@ -1,0 +1,1606 @@
+-1	|BT| (NN (R )(prep_like (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 66:1 105:1 150:1 161:1
+-1	|BT| (NN (R )(prep_like (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 63:1 66:1 105:1 150:1 161:1
+-1	|BT| (NN (R )(prep_like (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 63:1 66:1 105:1 150:1 161:1
+-1	|BT| (VB (nsubj (NN )(prep_like (NN (NE ))(conj_and (NN (NE )))))(dobj (NN (R )))) |ET| 36:1 103:1 150:1 193:1
+-1	|BT| (NN (R )(prep_like (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 66:1 105:1 150:1 161:1
+-1	|BT| (NN (R )(prep_like (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 63:1 66:1 105:1 150:1 161:1
+-1	|BT| (NN (R )(prep_like (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 66:1 105:1 150:1 161:1
+-1	|BT| (VB (nsubj (NN )(prep_like (NN (NE ))(conj_and (NN (NE )))))(R )) |ET| 38:1 107:1 150:1 192:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_in (NN (NE ))))) |ET| 30:1 54:1 73:1 105:1 195:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_in (NN (NE ))))) |ET| 30:1 54:1 73:1 105:1 189:1
+1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN (NE ))))) |ET| 15:1 39:1 87:1 107:1 189:1 190:1
+1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN (NE ))))) |ET| 15:1 39:1 87:1 107:1 189:1 190:1
+1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN (NE ))))) |ET| 15:1 39:1 87:1 107:1 189:1 190:1
+1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN (NE ))))) |ET| 15:1 39:1 87:1 107:1 189:1 190:1
+1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN (NE ))))) |ET| 15:1 39:1 87:1 107:1 189:1 190:1
+-1	|BT| (NN (NE )(appos (NN )(conj_and (amod (JJ (R )))(NN ))(prep_in (NN (NE ))))) |ET| 38:1 103:1 189:1
+1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN (NE ))))) |ET| 15:1 39:1 87:1 107:1 189:1 190:1
+-1	|BT| (NN (NE )(appos (NN )(conj_and (nn (NN (R )))(NN ))(prep_in (NN (NE ))))) |ET| 38:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_in (NN (NE ))))) |ET| 30:1 54:1 73:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_in (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_in (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN )(appos (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1 190:1
+-1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN )(appos (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1 190:1
+-1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN )(appos (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1 190:1
+-1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN )(appos (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1 190:1
+-1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN )(appos (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1 190:1
+-1	|BT| (NN (NE )(appos (NN )(conj_and (amod (JJ (R )))(NN ))(prep_in (NN )(appos (NN (NE )))))) |ET| 36:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(conj_and (NN (R )))(prep_in (NN )(appos (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1 190:1
+-1	|BT| (NN (NE )(appos (NN )(conj_and (nn (NN (R )))(NN ))(prep_in (NN )(appos (NN (NE )))))) |ET| 36:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_in (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 105:1 195:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_to (NN (NE )))))))(VB ))(nsubj (NN (R )))(ccomp (nsubj (amod (JJ (NE )))(NN ))(VB ))) |ET| 36:1 101:1 189:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_to (NN (NE )))))))(VB (R )))(ccomp (nsubj (amod (JJ (NE )))(NN ))(VB ))) |ET| 36:1 101:1 188:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_to (NN (NE )))))))(VB )(dobj (NN (R ))))(ccomp (nsubj (amod (JJ (NE )))(NN ))(VB ))) |ET| 35:1 101:1 189:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_to (NN (NE )))))))(VB ))(R )(ccomp (nsubj (amod (JJ (NE )))(NN ))(VB ))) |ET| 38:1 101:1 188:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(nsubj (NN (R )))(ccomp (nsubj (amod (JJ (NE )))(NN ))(VB ))) |ET| 36:1 101:1 189:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB (R )))(ccomp (nsubj (amod (JJ (NE )))(NN ))(VB ))) |ET| 36:1 101:1 188:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB )(dobj (NN (R ))))(ccomp (nsubj (amod (JJ (NE )))(NN ))(VB ))) |ET| 35:1 101:1 189:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(R )(ccomp (nsubj (amod (JJ (NE )))(NN ))(VB ))) |ET| 38:1 101:1 188:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(ccomp (VB )(dobj (NN )(prep_of (nn (NN (R )))(NN (NE )))))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB (R )))(ccomp (VB )(dobj (NN )(prep_of (NN (NE )))))) |ET| 36:1 101:1 188:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB )(dobj (NN (R ))))(ccomp (VB )(dobj (NN )(prep_of (NN (NE )))))) |ET| 35:1 101:1 189:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(ccomp (VB (R ))(dobj (NN )(prep_of (NN (NE )))))) |ET| 39:1 101:1 188:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(ccomp (VB )(dobj (NN (R ))(prep_of (NN (NE )))))) |ET| 30:1 54:1 101:1 141:1 189:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(R )(ccomp (VB )(dobj (NN )(prep_of (NN (NE )))))) |ET| 38:1 101:1 188:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(ccomp (VB (R ))(dobj (NN (R ))(prep_of (NN (NE )))))) |ET| 30:1 34:1 101:1 188:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(ccomp (nsubj (NN (R )))(VB )(dobj (NN )(prep_of (NN (NE )))))) |ET| 38:1 101:1 189:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(nsubj (NN (R )))(ccomp (VB )(dobj (NN )(prep_of (NN (NE )))))) |ET| 36:1 101:1 189:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(ccomp (VB )(dobj (NN )(prep_of (nn (NN (R )))(NN (NE )))))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(ccomp (VB )(dobj (NN (R ))(prep_of (NN (NE )))))) |ET| 30:1 34:1 101:1 189:1
+-1	|BT| (VB (nsubj (amod (JJ (NE )))(NN ))(dobj (NN )(prep_of (nn (NN (R )))(NN (NE ))))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (nsubj (amod (JJ (NE )))(NN ))(dobj (NN )(prep_of (nn (NN (R )))(NN (NE ))))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (nsubj (amod (JJ (NE )))(NN ))(R )(dobj (NN )(prep_of (NN (NE ))))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (amod (JJ (NE )))(NN ))(dobj (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 54:1 103:1 141:1 189:1
+-1	|BT| (VB (nsubj (amod (JJ (NE )))(NN ))(dobj (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 34:1 103:1 189:1
+-1	|BT| (VB (nsubj (amod (JJ (NE )))(NN (R )))(dobj (NN )(prep_of (NN (NE ))))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (nsubj (amod (JJ (NE )))(NN ))(R )(dobj (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 34:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubjpass (NN (R )))(VB )(prep_with (poss (NN (NE )))(NN )))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubjpass (NN (R )))(VB )(prep_with (poss (NN (NE )))(NN )))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubjpass (NN (R )))(VB )(prep_with (poss (NN (NE )))(NN )))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubjpass (amod (JJ (R )))(NN ))(VB )(prep_with (poss (NN (NE )))(NN )))) |ET| 36:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubjpass (nn (NN (R )))(NN ))(VB )(prep_with (poss (NN (NE )))(NN )))) |ET| 36:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB (R ))(prep_with (poss (NN (NE )))(NN )))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB )(prep_with (poss (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubjpass (amod (JJ (R )))(NN ))(VB )(prep_with (poss (NN (NE )))(NN )))) |ET| 36:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubjpass (NN (R )))(VB )(prep_with (poss (NN (NE )))(NN )))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN (R ))(prep_of (CD )(prep_of (poss (NN (NE )))(NN ))))(VB ))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN (R ))(prep_of (CD )(prep_of (poss (NN (NE )))(NN ))))(VB ))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (nsubj (NN )(prep_of (CD )(prep_of (poss (NN (NE )))(NN ))))(VB ))) |ET| 35:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (nsubj (NN (R ))(prep_of (CD )(prep_of (poss (NN (NE )))(NN ))))(VB ))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(dobj (NN )(prep_of (NN (NE ))))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (R )))(dobj (NN )(prep_of (NN (NE ))))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (dep (VB )(advcl (VB )(prep_from (poss (NN (NE )))(NN ))))(nsubj (NN (NE )))(R )) |ET| 30:1 104:1 192:1
+-1	|BT| (VB (dep (VB (R ))(advcl (VB (R ))(prep_from (poss (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 39:1 107:1 195:1
+-1	|BT| (VB (dep (VB (R ))(advcl (VB )(prep_from (poss (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 39:1 103:1 159:1
+-1	|BT| (VB (dep (VB )(advcl (VB )(prep_from (poss (NN (NE )))(NN (R )))))(nsubj (NN (NE )))) |ET| 36:1 80:1 105:1 122:1
+-1	|BT| (VB (dep (VB )(advcl (VB (R ))(prep_from (poss (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 38:1 80:1 107:1 110:1
+-1	|BT| (VB (dep (VB (R ))(advcl (VB )(prep_from (poss (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 39:1 103:1 159:1
+-1	|BT| (VB (dep (VB )(advcl (VB (R ))(prep_from (poss (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 38:1 107:1 159:1
+-1	|BT| (VB (dep (VB )(advcl (VB (R ))(prep_from (poss (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 38:1 107:1 159:1
+-1	|BT| (VB (dep (VB )(advcl (VB )(prep_from (poss (NN (NE )))(NN (R )))))(nsubj (NN (NE )))) |ET| 36:1 105:1 189:1
+-1	|BT| (VB (dep (VB )(advcl (VB )(prep_from (poss (NN (NE )))(NN (R )))))(nsubj (NN (NE )))) |ET| 36:1 105:1 189:1
+-1	|BT| (VB (dep (VB (R ))(advcl (VB (R ))(prep_from (poss (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 39:1 107:1 195:1
+-1	|BT| (VB (dep (VB )(advcl (VB (R ))(prep_from (poss (NN (NE )))(NN (R )))))(nsubj (NN (NE )))) |ET| 38:1 92:1 105:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (JJR )(xcomp (VB (R ))(dobj (NN (NE )))))) |ET| 30:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (JJR (R ))(xcomp (VB (R ))(dobj (NN (NE )))))) |ET| 30:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (JJR (R ))(xcomp (VB )(dobj (NN (NE )))))) |ET| 39:1 105:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (JJR )(xcomp (VB )(dobj (NN (NE )))))) |ET| 38:1 105:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (JJR (R ))(xcomp (VB )(dobj (NN (NE )))))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (aux (MD (R )))(JJR )(xcomp (VB )(dobj (NN (NE )))))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (JJR )(xcomp (VB )(dobj (NN (NE )))))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (prep_after (nn (NN (NE )))(NN ))(nsubj (NN )(ccomp (nsubj (nn (NN (NE )))(NN (R )))(VB )))) |ET| 30:1 101:1 193:1
+-1	|BT| (VB (prep_after (nn (NN (NE )))(NN ))(nsubj (NN (R ))(ccomp (nsubj (nn (NN (NE )))(NN ))(VB )))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (prep_after (nn (NN (NE )))(NN (R )))(nsubj (NN )(ccomp (nsubj (nn (NN (NE )))(NN ))(VB )))) |ET| 35:1 80:1 105:1 122:1
+-1	|BT| (VB (prep_after (nn (NN (NE )))(NN ))(nsubj (NN )(ccomp (nsubj (nn (NN (NE )))(NN ))(VB (R ))))) |ET| 39:1 104:1 192:1
+-1	|BT| (VB (prep_after (nn (NN (NE )))(NN ))(nsubj (NN (R ))(ccomp (nsubj (nn (NN (NE )))(NN (R )))(VB )))) |ET| 30:1 80:1 103:1 117:1
+-1	|BT| (VB (prep_after (nn (NN (NE )))(NN (R )))(nsubj (NN )(ccomp (nsubj (nn (NN (NE )))(NN ))(VB )))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (prep_after (nn (NN (NE )))(nn (NN (R )))(NN ))(nsubj (NN )(ccomp (nsubj (nn (NN (NE )))(NN ))(VB )))) |ET| 35:1 107:1 189:1
+-1	|BT| (VB (prep_after (nn (NN (NE )))(NN (R )))(nsubj (NN )(ccomp (nsubj (nn (NN (NE )))(NN ))(VB )))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (prep_after (nn (NN (NE )))(NN ))(R )(nsubj (NN )(ccomp (nsubj (nn (NN (NE )))(NN ))(VB )))) |ET| 36:1 107:1 188:1
+-1	|BT| (VB (prep_after (nn (NN (NE )))(NN ))(nsubj (NN )(ccomp (nsubj (nn (NN (NE )))(NN ))(VB )(dobj (NN (R )))))) |ET| 38:1 101:1 193:1
+-1	|BT| (VB (prep_after (nn (NN (NE )))(nn (NN (R )))(NN ))(nsubj (NN )(ccomp (nsubj (nn (NN (NE )))(NN ))(VB )))) |ET| 35:1 80:1 107:1 122:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (dep (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (dep (NN (NE )))(NN (R ))))) |ET| 30:1 107:1 182:1 193:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (dep (NN (NE )))(NN )))) |ET| 39:1 80:1 105:1 118:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (dep (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (dep (NN )(prep_of (NN (NE ))))(NN )))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (dep (NN )(prep_of (NN (NE ))))(NN )))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (ccomp (JJ )(conj_but (VB )(dobj (NN )(dep (VB )(prep_in (poss (NN (NE )))(NN (R )))))))(nsubj (NN (NE )))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (ccomp (JJ )(conj_but (VB )(dobj (NN )(dep (VB )(prep_in (poss (NN (NE )))(NN ))))))(R )(nsubj (NN (NE )))) |ET| 30:1 101:1 188:1
+-1	|BT| (NN (prep_in (NN (NE )))(conj_plus (amod (JJ (R )))(NN ))(conj_plus (NN (NE )))) |ET| 38:1 103:1 189:1
+-1	|BT| (NN (prep_in (NN (NE )))(conj_plus (NN (R )))(conj_plus (NN (NE )))) |ET| 11:1 15:1 39:1 107:1 189:1 190:1
+-1	|BT| (NN (prep_in (NN (NE )))(conj_plus (NN (R )))(conj_plus (NN (NE )))) |ET| 11:1 15:1 39:1 107:1 189:1 190:1
+-1	|BT| (NN (prep_in (NN (NE )))(partmod (VB (R )))(conj_plus (NN (NE )))) |ET| 11:1 39:1 107:1 188:1
+-1	|BT| (NN (prep_in (NN (NE )))(conj_plus (nn (NN (R )))(NN ))(conj_plus (NN (NE )))) |ET| 38:1 103:1 189:1
+-1	|BT| (NN (prep_in (NN (NE )))(conj_plus (NN (R )))(conj_plus (NN (NE )))) |ET| 11:1 15:1 39:1 107:1 189:1 190:1
+-1	|BT| (NN (prep_in (NN (NE )))(conj_plus (NN (R )))(conj_plus (NN (NE )))) |ET| 11:1 15:1 39:1 107:1 189:1 190:1
+-1	|BT| (NN (prep_in (NN (NE )))(partmod (VB (R )))(conj_plus (NN (NE )))) |ET| 11:1 39:1 107:1 188:1
+-1	|BT| (NN (prep_in (NN (NE )))(partmod (VB )(xcomp (VB (R ))))(conj_plus (NN (NE )))) |ET| 38:1 103:1 188:1
+-1	|BT| (NN (prep_in (NN (NE )))(partmod (VB (R )))(conj_plus (NN (NE )))) |ET| 11:1 39:1 107:1 188:1
+-1	|BT| (NN (prep_in (NN (NE )))(conj_plus (NN (R )))(conj_plus (NN (NE )))) |ET| 11:1 15:1 39:1 107:1 189:1 190:1
+-1	|BT| (NN (prep_in (NN (NE )))(conj_plus (NN (R )))(conj_plus (NN (NE )))) |ET| 11:1 15:1 39:1 107:1 189:1 190:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN (NE ))(appos (nn (NN (R )))(NN )))) |ET| 33:1 39:1 101:1 193:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN (NE ))(appos (nn (NN (R )))(NN )))) |ET| 33:1 39:1 101:1 193:1
+-1	|BT| (NN (conj_plus (NN (R ))(prep_in (NN (NE ))))(conj_plus (NN (NE )))) |ET| 39:1 47:1 63:1 66:1 79:1 105:1 161:1
+-1	|BT| (NN (conj_plus (NN (R ))(prep_in (NN (NE ))))(conj_plus (NN (NE )))) |ET| 39:1 45:1 66:1 79:1 105:1 161:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN (NE ))(appos (nn (NN (R )))(NN )))) |ET| 33:1 39:1 101:1 193:1
+-1	|BT| (NN (conj_plus (nn (NN (R )))(NN )(prep_in (NN (NE ))))(conj_plus (NN (NE )))) |ET| 38:1 107:1 161:1
+-1	|BT| (NN (conj_plus (amod (JJ (R )))(NN )(prep_in (NN (NE ))))(conj_plus (NN (NE )))) |ET| 38:1 107:1 161:1
+-1	|BT| (NN (conj_plus (NN (R ))(prep_in (NN (NE ))))(conj_plus (NN (NE )))) |ET| 39:1 45:1 66:1 79:1 105:1 161:1
+-1	|BT| (NN (conj_plus (NN (R ))(prep_in (NN (NE ))))(conj_plus (NN (NE )))) |ET| 39:1 45:1 66:1 79:1 105:1 161:1
+-1	|BT| (NN (conj_plus (NN (R ))(prep_in (NN (NE ))))(conj_plus (NN (NE )))) |ET| 39:1 47:1 63:1 66:1 79:1 105:1 161:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN (NE ))(appos (nn (NN (R )))(NN )))) |ET| 33:1 39:1 101:1 193:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN (NE ))(appos (nn (NN (R )))(NN )))) |ET| 33:1 39:1 101:1 193:1
+-1	|BT| (NN (conj_plus (NN (R ))(prep_in (NN (NE ))))(conj_plus (NN (NE )))) |ET| 39:1 47:1 63:1 66:1 79:1 105:1 161:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET| 38:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (NN )(rcmod (do )(dobj (NN (R )))(prep_as (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET| 38:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET| 38:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (NN )(rcmod (do )(dobj (NN (R )))(prep_as (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE ))))))) |ET| 39:1 104:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET| 38:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET| 38:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE ))))))) |ET| 39:1 104:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE ))))))) |ET| 39:1 104:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE ))))))) |ET| 39:1 104:1 189:1
+-1	|BT| (NN (conj_plus (NN (R ))(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN (NE )))) |ET| 39:1 66:1 79:1 81:1 107:1 161:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN (NE ))(appos (nn (NN (R )))(NN )))) |ET| 33:1 39:1 101:1 193:1
+-1	|BT| (NN (conj_plus (NN (R ))(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN (NE )))) |ET| 39:1 66:1 79:1 81:1 107:1 161:1
+-1	|BT| (NN (conj_plus (NN (R ))(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN (NE )))) |ET| 39:1 66:1 79:1 81:1 107:1 161:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN (NE ))(appos (nn (NN (R )))(NN )))) |ET| 33:1 39:1 101:1 193:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN (NE ))(appos (nn (NN (R )))(NN )))) |ET| 33:1 39:1 101:1 193:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN (NE ))(appos (nn (NN (R )))(NN )))) |ET| 33:1 39:1 101:1 193:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN (NE ))(appos (nn (NN (R )))(NN )))) |ET| 33:1 39:1 101:1 193:1
+-1	|BT| (NN (conj_plus (nn (NN (R )))(NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN (NE )))) |ET| 38:1 103:1 161:1
+-1	|BT| (NN (conj_plus (NN (R ))(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN (NE )))) |ET| 39:1 66:1 79:1 81:1 107:1 161:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET| 38:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (NN )(rcmod (do )(dobj (NN (R )))(prep_as (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET| 38:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET| 38:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (NN )(rcmod (do )(dobj (NN (R )))(prep_as (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET| 38:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET| 38:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(rcmod (do )(dobj (NN (R )))(prep_as (NN (NE )))))) |ET| 39:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(rcmod (do )(dobj (NN (R )))(prep_as (NN (NE )))))) |ET| 39:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(rcmod (do )(prep_as (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(rcmod (do )(prep_as (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(advmod (RB )(prep_to (poss (JJ (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R )))(advmod (RB )(prep_to (poss (JJ (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(advmod (RB )(prep_to (poss (JJ (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R )))(advmod (RB )(prep_to (poss (JJ (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(advmod (RB )(prep_to (poss (JJ (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_in (NN (R ))))(advmod (RB )(prep_to (poss (JJ (NE )))(NN )))) |ET| 35:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(aux (have (R )))(advmod (RB )(prep_to (poss (JJ (NE )))(NN )))) |ET| 36:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(advmod (RB )(prep_to (poss (JJ (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (advmod (RB )(prep_to (poss (JJ (NE )))(NN )))(conj_and (VB (R ))(xcomp (VB )(dobj (NN )(conj_and (nn (NN (NE )))(NN )))))) |ET| 36:1 104:1 188:1
+-1	|BT| (VB (advmod (RB )(prep_to (poss (JJ (NE )))(NN )))(conj_and (VB )(xcomp (VB (R ))(dobj (NN )(conj_and (nn (NN (NE )))(NN )))))) |ET| 38:1 101:1 188:1
+-1	|BT| (VB (advmod (RB )(prep_to (poss (JJ (NE )))(NN (R ))))(conj_and (VB )(xcomp (VB )(dobj (NN )(conj_and (nn (NN (NE )))(NN )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (advmod (RB )(prep_to (poss (JJ (NE )))(NN (R ))))(conj_and (VB )(xcomp (VB )(dobj (NN )(conj_and (nn (NN (NE )))(NN )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (advmod (RB )(prep_to (poss (JJ (NE )))(NN )))(conj_and (VB (R ))(xcomp (VB (R ))(dobj (NN )(conj_and (nn (NN (NE )))(NN )))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (advmod (RB )(prep_to (poss (JJ (NE )))(NN )))(conj_and (VB (R ))(xcomp (VB )(dobj (NN )(conj_and (nn (NN (NE )))(NN )))))) |ET| 36:1 104:1 188:1
+-1	|BT| (NN (poss (nn (NN (R )))(NN ))(NE )(conj_and (NN (NE )))) |ET| 38:1 107:1 150:1 161:1
+-1	|BT| (NN (NE )(conj_and (poss (NN (R )))(NN (NE )))) |ET| 30:1 80:1 105:1 119:1 150:1
+-1	|BT| (NN (NE )(conj_and (poss (NN (R )))(NN (NE )))) |ET| 30:1 107:1 150:1 163:1 189:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(ccomp (VB (R )))) |ET| 38:1 107:1 150:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(ccomp (VB (R )))) |ET| 38:1 107:1 150:1 192:1
+-1	|BT| (NN (NE )(conj_and (poss (nn (NN (R )))(NN ))(NN (NE )))) |ET| 39:1 103:1 150:1 189:1
+-1	|BT| (NN (NE )(conj_and (poss (NN (R )))(NN (NE )))) |ET| 30:1 80:1 105:1 119:1 150:1
+-1	|BT| (NN (NE )(conj_and (poss (NN (R )))(NN (NE )))) |ET| 30:1 105:1 150:1 189:1
+-1	|BT| (NN (NE )(conj_and (poss (NN (R )))(NN (NE )))) |ET| 30:1 107:1 150:1 163:1 189:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(R )) |ET| 39:1 105:1 150:1 166:1 195:1
+-1	|BT| (NN (poss (NN (R )))(NE )(conj_and (NN (NE )))) |ET| 39:1 66:1 105:1 150:1 161:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(R )) |ET| 39:1 105:1 150:1 166:1 195:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(R )) |ET| 39:1 105:1 150:1 166:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(ccomp (aux (have (R )))(VB ))) |ET| 36:1 103:1 150:1 192:1
+-1	|BT| (NN (NE )(conj_and (poss (NN (R )))(NN (NE )))) |ET| 30:1 105:1 150:1 189:1
+-1	|BT| (NN (poss (NN (R )))(NE )(conj_and (NN (NE )))) |ET| 39:1 66:1 105:1 150:1 161:1
+-1	|BT| (NN (NE )(conj_and (poss (nn (NN (R )))(NN ))(NN (NE )))) |ET| 39:1 80:1 103:1 122:1 150:1
+-1	|BT| (NN (NE )(conj_and (poss (NN (R )))(NN (NE )))) |ET| 30:1 105:1 150:1 189:1
+-1	|BT| (NN (NE )(conj_and (poss (NN (R )))(NN (NE )))) |ET| 30:1 80:1 107:1 122:1 150:1 163:1
+-1	|BT| (null) |ET| 10:1 188:1 200:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN (NE ))))) |ET| 22:1 30:1 54:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 107:1 149:1 188:1
+-1	|BT| (NN (nn (NN (NE )))(R )(prep_including (NN )(prep_at (NN (NE ))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 107:1 149:1 189:1
+-1	|BT| (null) |ET| 10:1 188:1 200:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 107:1 188:1
+-1	|BT| (NN (nn (NN (NE )))(R )(prep_including (NN )(prep_at (NN )(appos (NN (NE )))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 107:1 189:1
+-1	|BT| (null) |ET| 10:1 188:1 200:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 107:1 188:1
+-1	|BT| (NN (nn (NN (NE )))(R )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE )))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 107:1 189:1
+-1	|BT| (null) |ET| 10:1 188:1 200:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN )(appos (NN (NE ))))))) |ET| 38:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN )(appos (NN (NE ))))))) |ET| 38:1 107:1 188:1
+-1	|BT| (NN (nn (NN (NE )))(R )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE ))))))) |ET| 36:1 105:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN )(appos (NN (NE ))))))) |ET| 38:1 107:1 189:1
+-1	|BT| (null) |ET| 10:1 188:1 200:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 107:1 188:1
+-1	|BT| (NN (nn (NN (NE )))(R )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE )))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN )(appos (NN (NE ))))))) |ET| 38:1 107:1 188:1
+-1	|BT| (null) |ET| 10:1 188:1 200:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN )(appos (NN (NE ))))))) |ET| 38:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(R )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE ))))))) |ET| 36:1 105:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN (R ))(prep_at (NN )(conj_and (NN )(appos (NN (NE ))))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN (NE )))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 104:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN (NE )))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 103:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN (NE )))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 103:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN (NE )))))(aux (have (R )))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 36:1 104:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN (NE )))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN (NE )))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN (NE )))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 104:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(appos (NN (NE ))))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(appos (NN (NE ))))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 104:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(appos (NN (NE ))))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(appos (NN (NE ))))))(aux (have (R )))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 36:1 101:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(appos (NN (NE ))))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 104:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(appos (NN (NE ))))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(appos (NN (NE ))))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 104:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(aux (have (R )))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 36:1 101:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 104:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 101:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(aux (have (R )))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 36:1 101:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 101:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 104:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(aux (have (R )))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 36:1 101:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 104:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 101:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(aux (have (R )))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 36:1 101:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(R )(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 195:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(R )(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET| 38:1 101:1 188:1
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(agent (NN (R ))(prep_in (nn (NN (NE )))(NN )))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (NE )))(R )) |ET| 25:1 30:1 107:1 192:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (NE )))(R )) |ET| 25:1 30:1 107:1 192:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (NE )))(dobj (NN (R )))) |ET| 25:1 39:1 103:1 193:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (NE )))(iobj (NN (R )))) |ET| 25:1 39:1 103:1 195:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (NE )))(R )) |ET| 25:1 30:1 80:1 107:1 119:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (NE )))(iobj (amod (VB (R )))(NN ))) |ET| 25:1 38:1 104:1 192:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (NE )))(R )) |ET| 25:1 30:1 80:1 107:1 119:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (NE )))(iobj (NN (R )))) |ET| 25:1 39:1 103:1 193:1
+1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(iobj (amod (VB (R )))(NN ))(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 35:1 104:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(iobj (NN (R )))(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 35:1 103:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 36:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(nn (NN (R )))(NN ))(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 35:1 107:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(dobj (NN (R )))(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 35:1 103:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(partmod (VB (R ))(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 36:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(iobj (NN (R )))(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 35:1 103:1 195:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(partmod (VB )(ccomp (prep_to (NN (R )))(nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 38:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(iobj (amod (VB (R )))(NN ))(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 35:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R )))(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 35:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(iobj (NN (R )))(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 35:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB (R ))(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(iobj (NN (R )))(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 35:1 107:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(ccomp (prep_to (NN (R )))(nsubj (poss (NN (NE )))(NN ))(VB )))) |ET| 38:1 104:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN ))(dobj (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (R )))(dobj (NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 36:1 105:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN ))(dobj (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (R )))(dobj (NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 36:1 105:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN ))(R )(dobj (NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(partmod (VB (R ))(dobj (nn (NN (NE )))(NN ))))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(partmod (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(partmod (VB )(dobj (nn (NN (NE )))(amod (VB (R )))(NN ))))) |ET| 39:1 101:1 192:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(partmod (VB )(dobj (nn (NN (NE )))(NN (R )))))) |ET| 30:1 104:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(partmod (VB (R ))(dobj (nn (NN (NE )))(NN ))))) |ET| 39:1 80:1 103:1 169:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(partmod (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(prep_with (NN )(partmod (VB (R ))(agent (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 34:1 104:1 195:1
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(prep_with (NN )(partmod (VB )(agent (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 34:1 101:1 189:1
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(prep_with (NN )(partmod (VB )(agent (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 34:1 101:1 189:1
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(R )(prep_with (NN (R ))(partmod (VB )(agent (NN )(prep_of (NN (NE ))))))) |ET| 38:1 87:1 107:1 195:1
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(R )(prep_with (NN )(partmod (VB )(agent (NN )(prep_of (NN (NE ))))))) |ET| 36:1 87:1 107:1 189:1
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(R )(prep_with (NN )(partmod (VB )(agent (NN )(prep_of (NN (NE ))))))) |ET| 36:1 87:1 107:1 189:1
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(prep_with (NN )(partmod (VB )(agent (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 54:1 101:1 141:1 189:1
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(R )(prep_with (NN (R ))(partmod (VB )(agent (NN )(prep_of (NN (NE ))))))) |ET| 38:1 87:1 107:1 195:1
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(prep_with (NN )(partmod (VB )(agent (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 54:1 101:1 141:1 189:1
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(prep_with (NN )(partmod (VB (R ))(agent (NN )(prep_of (NN (NE ))))))) |ET| 39:1 104:1 188:1
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(prep_with (NN (R ))(partmod (VB )(agent (NN )(prep_of (NN (NE ))))))) |ET| 38:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN (NE ))(appos (nn (NN (R )))(NN ))))) |ET| 33:1 39:1 104:1 193:1
+-1	|BT| (NN (R )(prep_of (NN (NE ))(appos (NN )(prep_of (NN (NE )))))) |ET| 38:1 105:1 133:1 161:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN (NE ))(appos (nn (NN (R )))(NN ))))) |ET| 33:1 39:1 104:1 193:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN (NE ))(appos (nn (NN (R )))(NN ))))) |ET| 33:1 39:1 104:1 193:1
+-1	|BT| (NN (R )(prep_of (NN (NE ))(appos (NN )(prep_of (NN (NE )))))) |ET| 38:1 105:1 133:1 161:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 34:1 105:1 189:1
+-1	|BT| (VB (R )(agent (NN )(prep_of (NN (NE ))(appos (NN )(prep_of (NN (NE ))))))) |ET| 36:1 107:1 159:1
+-1	|BT| (NN (R )(prep_of (NN (NE ))(appos (NN )(prep_of (NN (NE )))))) |ET| 38:1 63:1 105:1 161:1 205:1
+-1	|BT| (NN (R )(prep_of (NN (NE ))(appos (NN )(prep_of (NN (NE )))))) |ET| 38:1 105:1 133:1 195:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 54:1 105:1 141:1 189:1
+-1	|BT| (NN (R )(prep_of (NN (NE ))(appos (NN )(prep_of (NN (NE )))))) |ET| 38:1 63:1 105:1 161:1 205:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN (NE ))(appos (nn (NN (R )))(NN ))))) |ET| 33:1 39:1 104:1 193:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN (NE ))(appos (nn (NN (R )))(NN ))))) |ET| 33:1 39:1 104:1 193:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN )(conj_and (NN (R ))))(NN )(prep_with (NN )(prep_in (NN (NE )))))) |ET| 36:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN )(conj_and (NN (R ))))(NN )(prep_with (NN )(prep_in (NN (NE )))))) |ET| 36:1 103:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN (NE )))))) |ET| 30:1 54:1 73:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (nn (NN )(conj_and (NN (R ))))(NN )(prep_with (NN )(prep_in (NN (NE )))))) |ET| 36:1 103:1 189:1
+1	|BT| (NN (NE )(appos (NN )(prep_with (NN (R ))(prep_in (NN (NE )))))) |ET| 30:1 87:1 107:1 189:1 197:1
+-1	|BT| (NN (NE )(appos (NN )(prep_with (NN (R ))(prep_in (NN (NE )))))) |ET| 30:1 54:1 73:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN (NE )))))) |ET| 30:1 54:1 73:1 105:1 195:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN (NE )))))) |ET| 30:1 105:1 195:1 197:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN (NE )))))) |ET| 30:1 54:1 73:1 105:1 195:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN (NE )))))) |ET| 30:1 105:1 195:1 197:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 36:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN )(conj_and (NN (R ))))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 35:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN )(conj_and (NN (R ))))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 35:1 103:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 11:1 39:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 36:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 36:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 36:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 36:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 38:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (nn (NN )(conj_and (NN (R ))))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 35:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_with (NN (R ))(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 11:1 39:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_with (NN (R ))(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 11:1 39:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 11:1 39:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 11:1 39:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 11:1 39:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 11:1 39:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 35:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN )(conj_and (NN (R ))))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 35:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN )(conj_and (NN (R ))))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 35:1 103:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 38:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 35:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 35:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 35:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 35:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 36:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 36:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (nn (NN )(conj_and (NN (R ))))(NN )(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 35:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_with (NN (R ))(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_with (NN (R ))(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 38:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 38:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 38:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (R ))(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 38:1 105:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET| 36:1 105:1 189:1
+-1	|BT| (VB (prep_through (NN )(prep_with (NN )(appos (NN (NE )))))(R )(dobj (NN )(prep_of (NN (NE ))))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (prep_through (NN )(prep_with (NN )(appos (NN (NE )))))(dobj (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 54:1 104:1 141:1 189:1
+-1	|BT| (VB (prep_through (NN )(prep_with (NN )(appos (NN (NE )))))(dobj (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 34:1 104:1 189:1
+-1	|BT| (VB (prep_through (NN )(prep_with (NN )(appos (NN (NE )))))(R )(dobj (NN )(prep_of (NN (NE ))))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (prep_through (NN )(prep_with (NN )(appos (NN (NE )))))(nsubj (NN (R )))(dobj (NN )(prep_of (NN (NE ))))) |ET| 38:1 104:1 189:1
+1	|BT| (NN (NE )(dep (poss (NN (NE )))(NN (R )))) |ET| 30:1 105:1 193:1
+1	|BT| (NN (NE )(dep (poss (NN (NE )))(NN (R )))) |ET| 30:1 105:1 193:1
+-1	|BT| (NN (NE )(dep (poss (NN (NE )))(nn (NN (R )))(NN ))) |ET| 39:1 107:1 193:1
+-1	|BT| (NN (NE )(dep (poss (NN (NE )))(nn (NN (R )))(NN ))) |ET| 39:1 107:1 193:1
+1	|BT| (NN (NE )(dep (poss (NN (NE )))(NN (R )))) |ET| 30:1 105:1 193:1
+1	|BT| (NN (NE )(dep (poss (NN (NE )))(NN (R )))) |ET| 30:1 105:1 193:1
+-1	|BT| (NN (NE )(dep (poss (NN (NE )))(nn (NN (R )))(NN ))) |ET| 39:1 107:1 193:1
+-1	|BT| (VB (R )(dobj (NN (NE )))(prep_in (NN (NE )))) |ET| 30:1 105:1 159:1
+-1	|BT| (VB (dobj (NN (NE )))(prep_in (NN (NE )))(prepc_after (VB (R )))) |ET| 39:1 107:1 192:1
+-1	|BT| (VB (dobj (NN (NE )))(prep_in (NN (NE )))(prepc_after (VB )(dobj (NN (R ))))) |ET| 38:1 103:1 193:1
+-1	|BT| (VB (dobj (NN (NE )))(prep_in (NN (NE )))(prepc_after (VB (R )))) |ET| 39:1 107:1 192:1
+-1	|BT| (VB (dobj (NN (NE )))(prep_in (NN (NE )))(prepc_after (VB )(dobj (NN (R ))))) |ET| 38:1 103:1 193:1
+-1	|BT| (VB (nsubj (NN (R )))(dobj (NN (NE )))(prep_in (NN (NE )))) |ET| 39:1 107:1 161:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(ccomp (JJ )(prepc_in (VB )(dobj (NN (R )))(prep_in (NN (NE )))))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(aux (have (R )))(ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(ccomp (JJ )(prepc_in (VB )(dobj (NN (R )))(prep_in (NN (NE )))))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(ccomp (JJ (R ))(prepc_in (VB )(prep_in (NN (NE )))))) |ET| 39:1 107:1 195:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (R )))(ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))) |ET| 36:1 105:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(ccomp (JJ )(prepc_in (VB (R ))(prep_in (NN (NE )))))) |ET| 30:1 54:1 73:1 104:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(ccomp (JJ (R ))(prepc_in (VB (R ))(prep_in (NN (NE )))))) |ET| 30:1 54:1 73:1 107:1 195:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(ccomp (JJ (R ))(prepc_in (VB )(prep_in (NN (NE )))))) |ET| 39:1 107:1 195:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(ccomp (JJ )(prepc_in (VB (R ))(prep_in (NN (NE )))))) |ET| 30:1 104:1 188:1 197:1
+-1	|BT| (VB (ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))(conj_but (nsubj (NN (R )))(VB )(prep_on (NN )(prep_such_as (NN )(prep_of (NN (NE ))))))) |ET| 36:1 101:1 189:1
+-1	|BT| (VB (ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))(conj_but (VB (R ))(prep_on (NN )(prep_such_as (NN )(prep_of (NN (NE ))))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))(conj_but (VB )(prep_on (NN )(prep_such_as (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 54:1 101:1 141:1 189:1
+-1	|BT| (VB (ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))(conj_but (VB )(prep_on (NN )(prep_such_as (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 34:1 101:1 189:1
+-1	|BT| (VB (ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))(conj_but (VB )(prep_on (NN )(prep_such_as (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 54:1 101:1 141:1 189:1
+-1	|BT| (VB (ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))(conj_but (aux (have (R )))(VB )(prep_on (NN )(prep_such_as (NN )(prep_of (NN (NE ))))))) |ET| 36:1 101:1 188:1
+-1	|BT| (VB (ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))(conj_but (VB (R ))(prep_on (NN )(prep_such_as (NN )(prep_of (NN (NE ))))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))(conj_but (VB )(prep_on (NN (R ))(prep_such_as (NN )(prep_of (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))(conj_but (VB (R ))(prep_on (NN )(prep_such_as (NN )(prep_of (NN (NE ))))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))(conj_but (VB (R ))(prep_on (NN )(prep_such_as (NN )(prep_of (NN (NE ))))))) |ET| 38:1 104:1 188:1
+-1	|BT| (NN (NE )(appos (nn (NN (NE )))(nn (NN (R )))(NN ))) |ET| 39:1 107:1 182:1 193:1
+-1	|BT| (NN (R )(prep_of (NN (NE ))(appos (nn (NN (NE )))(NN )))) |ET| 38:1 63:1 105:1 161:1 205:1
+-1	|BT| (NN (R )(prep_of (NN (NE ))(appos (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 133:1 161:1
+1	|BT| (NN (NE )(appos (nn (NN (NE )))(NN (R )))) |ET| 30:1 105:1 193:1
+1	|BT| (NN (NE )(appos (nn (NN (NE )))(NN (R )))) |ET| 30:1 105:1 193:1
+-1	|BT| (VB (ccomp (VB )(xcomp (VB (R ))(prep_to (NN (NE )))))(nsubj (NN (NE )))) |ET| 38:1 63:1 105:1 159:1 175:1
+-1	|BT| (VB (ccomp (VB )(xcomp (VB )(prep_to (NN (NE )))))(nsubj (NN (NE )))(R )) |ET| 30:1 103:1 192:1
+-1	|BT| (VB (ccomp (VB )(xcomp (VB (R ))(prep_to (NN (NE )))))(nsubj (NN (NE )))) |ET| 38:1 105:1 159:1 164:1
+-1	|BT| (VB (ccomp (VB )(xcomp (VB )(dobj (NN (R )))(prep_to (NN (NE )))))(nsubj (NN (NE )))) |ET| 36:1 107:1 161:1
+-1	|BT| (VB (ccomp (VB )(xcomp (VB (R ))(prep_to (NN (NE )))))(nsubj (NN (NE )))) |ET| 38:1 80:1 105:1 110:1 164:1
+-1	|BT| (VB (nsubj (NN (NE )))(dep (IN (R ))(pobj (NN (NE ))))) |ET| 30:1 54:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R )))(dep (IN )(pobj (NN (NE ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dep (IN )(pobj (NN (NE ))))) |ET| 39:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R )))(dep (IN )(pobj (NN (NE ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dep (IN )(pobj (NN (NE ))))) |ET| 39:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN (R ))))(dep (IN )(pobj (NN (NE ))))) |ET| 36:1 103:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(partmod (VB (R ))(xcomp (JJ )(dobj (NN )(prep_from (NN (NE ))))))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(partmod (VB )(xcomp (JJ )(dobj (NN (R ))(prep_from (NN (NE ))))))) |ET| 30:1 55:1 101:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(partmod (VB )(xcomp (JJ )(dobj (NN (R ))(prep_from (NN (NE ))))))) |ET| 14:1 30:1 54:1 101:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(partmod (VB (R ))(xcomp (JJ )(dobj (NN )(prep_from (NN (NE ))))))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (R )))(partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE ))))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(partmod (VB )(xcomp (JJ )(dobj (amod (VB (R )))(NN )(prep_from (NN (NE ))))))) |ET| 39:1 101:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(partmod (VB )(xcomp (JJ )(dobj (NN (R ))(prep_from (NN (NE ))))))) |ET| 30:1 55:1 101:1 188:1
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE )))(prep_for (NN )(prep_of (NN (R )))))))(ccomp (nsubj (NN (NE )))(VB ))) |ET| 35:1 103:1 189:1
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE )))(prep_for (NN )(prep_of (NN )(prep_on (NN (R ))))))))(ccomp (nsubj (NN (NE )))(VB ))) |ET| 35:1 104:1 189:1
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE ))))))(R )(ccomp (nsubj (NN (NE )))(VB ))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE ))))))(R )(ccomp (nsubj (NN (NE )))(VB ))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE )))(prep_for (NN (R ))))))(ccomp (nsubj (NN (NE )))(VB ))) |ET| 35:1 107:1 189:1
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE ))))))(ccomp (nsubj (nn (NN (R )))(NN (NE )))(VB ))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE )))(prep_for (NN )(prep_of (NN (R )))))))(ccomp (nsubj (NN (NE )))(VB ))) |ET| 35:1 103:1 189:1
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE )))(prep_for (NN (R ))))))(ccomp (nsubj (NN (NE )))(VB ))) |ET| 35:1 107:1 189:1
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE ))))))(ccomp (nsubj (nn (NN (R )))(NN (NE )))(VB ))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE )))(prep_for (NN )(prep_of (NN )(prep_on (NN )(prep_to (NN (R )))))))))(ccomp (nsubj (NN (NE )))(VB ))) |ET| 35:1 101:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 80:1 107:1 119:1 186:1
+1	|BT| (NN (poss (NN (NE )))(nn (NN (R )))(NE )) |ET| 30:1 107:1 186:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(dobj (NN (R )))) |ET| 39:1 103:1 186:1 193:1
+-1	|BT| (NN (poss (NN (NE )))(nn (NN (R )))(NE )) |ET| 30:1 80:1 107:1 122:1 186:1
+1	|BT| (NN (poss (NN (NE )))(nn (NN (R )))(NE )) |ET| 30:1 107:1 186:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 107:1 186:1 192:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(dobj (NN (R )))) |ET| 39:1 103:1 186:1 193:1
+-1	|BT| (VB (R )(ccomp (nsubj (poss (NN (NE )))(NN (NE )))(VB ))) |ET| 39:1 103:1 159:1 186:1
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_for (NN )(prep_of (NN )(prep_on (NN )(prep_to (NN (R )))))))))(ccomp (nsubj (poss (NN (NE )))(NN (NE )))(VB ))) |ET| 35:1 101:1 161:1 186:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 80:1 107:1 119:1 186:1
+-1	|BT| (NN (poss (NN (NE )))(nn (NN (R )))(NE )) |ET| 30:1 80:1 92:1 107:1 186:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 80:1 107:1 119:1 186:1
+-1	|BT| (VB (R )(ccomp (nsubj (poss (NN (NE )))(NN (NE )))(VB ))) |ET| 39:1 103:1 159:1 186:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 107:1 186:1 192:1
+-1	|BT| (VB (R )(ccomp (nsubj (poss (NN (NE )))(NN (NE )))(VB ))) |ET| 39:1 80:1 103:1 110:1 186:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 80:1 107:1 119:1 186:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(prepc_into (nsubj (NN (NE )))(VB )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prepc_into (nsubj (NN (NE )))(VB )))) |ET| 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prepc_into (nsubj (NN (NE )))(VB )))) |ET| 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (R ))(prepc_into (nsubj (NN (NE )))(VB )))) |ET| 39:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prepc_into (nsubj (NN (NE )))(VB )))) |ET| 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prepc_into (nsubj (NN (NE )))(VB )))) |ET| 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(prepc_into (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prepc_into (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prepc_into (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (R ))(prepc_into (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prepc_into (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prepc_into (VB (R ))(dobj (nn (NN (NE )))(NN ))))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prepc_into (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (NN (R )(prepc_into (nsubj (NN (NE )))(VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 107:1 161:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (nn (NN (NE )))(NN (R )))) |ET| 30:1 105:1 167:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (nn (NN (NE )))(NN ))) |ET| 39:1 105:1 121:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (nn (NN (NE )))(NN (R )))) |ET| 30:1 107:1 193:1
+-1	|BT| (NN (R )(prepc_into (nsubj (NN (NE )))(VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 107:1 161:1
+-1	|BT| (NN (R )(prepc_into (nsubj (NN (NE )))(VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 107:1 161:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (nn (NN (NE )))(NN ))) |ET| 39:1 105:1 188:1
+-1	|BT| (NN (R )(prepc_into (nsubj (NN (NE )))(VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 107:1 161:1
+-1	|BT| (NN (prep_by (NN (NE )))(prep_of (NN (R ))(prep_for (NN )(prep_of (NN (NE )))))) |ET| 39:1 107:1 189:1
+-1	|BT| (NN (prep_by (NN (NE )))(prep_of (NN )(prep_for (NN (R ))(prep_of (NN (NE )))))) |ET| 30:1 34:1 103:1 189:1
+-1	|BT| (NN (prep_by (NN (NE )))(prep_of (NN (R ))(prep_for (NN )(prep_of (NN (NE )))))) |ET| 39:1 107:1 189:1
+-1	|BT| (NN (prep_by (NN (NE )))(prep_of (NN )(prep_for (NN (R ))(prep_of (NN (NE )))))) |ET| 30:1 54:1 103:1 141:1 189:1
+-1	|BT| (VB (prep_in (NN (R )))(nsubjpass (NN (NE ))(conj_and (NN (NE ))))) |ET| 38:1 107:1 150:1 161:1
+-1	|BT| (NN (NE )(conj_and (NN (NE ))(appos (nn (NN (R )))(NN )))) |ET| 33:1 39:1 103:1 150:1 193:1
+-1	|BT| (NN (NE )(conj_and (NN (NE ))(appos (NN (R ))))) |ET| 30:1 107:1 142:1 150:1 193:1
+-1	|BT| (NN (NE )(conj_and (NN (NE ))(appos (NN (R ))))) |ET| 30:1 107:1 142:1 150:1 193:1
+-1	|BT| (VB (R )(nsubjpass (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 66:1 105:1 150:1 159:1
+-1	|BT| (VB (R )(nsubjpass (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 63:1 66:1 105:1 150:1 159:1
+1	|BT| (NN (NE )(conj_and (NN )(appos (NN (R ))(prep_to (NN (NE )))))) |ET| 30:1 54:1 93:1 107:1 163:1 189:1
+-1	|BT| (NN (NE )(conj_and (NN )(appos (nn (NN (R )))(NN )(prep_to (NN (NE )))))) |ET| 39:1 103:1 189:1
+1	|BT| (NN (NE )(conj_and (NN )(appos (NN (R ))(prep_to (NN (NE )))))) |ET| 30:1 54:1 93:1 107:1 163:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_to (NN (NE ))))) |ET| 30:1 54:1 93:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_to (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_to (NN (NE ))))) |ET| 30:1 54:1 93:1 105:1 189:1
+-1	|BT| (VB (R )(nsubj (NN (NE ))(appos (NN )(prep_with (NN (NE )))))) |ET| 38:1 105:1 159:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (NE ))))) |ET| 27:1 30:1 54:1 80:1 105:1 118:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (NE ))))) |ET| 27:1 30:1 54:1 80:1 105:1 118:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (NE ))))) |ET| 27:1 30:1 54:1 105:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (NE ))))) |ET| 27:1 30:1 54:1 105:1 189:1
+-1	|BT| (VB (ccomp (VB )(xcomp (JJ )(prep_to (NN (R )))))(nsubj (NN (NE ))(appos (NN )(prep_with (NN (NE )))))) |ET| 35:1 104:1 161:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+-1	|BT| (VB (ccomp (VB )(xcomp (JJ )(prep_to (NN (R )))))(nsubj (NN (NE ))(appos (NN )(prep_with (NN (NE )))))) |ET| 35:1 104:1 161:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (VB (prep_on (NN (NE )))(nsubj (nn (NN (NE )))(NN (R )))) |ET| 30:1 74:1 107:1 193:1 204:1
+-1	|BT| (VB (prep_on (NN (NE )))(nsubj (nn (NN (NE )))(nn (NN (R )))(NN ))) |ET| 39:1 103:1 193:1
+-1	|BT| (VB (prep_on (NN (NE )))(nsubj (nn (NN (NE )))(NN (R )))) |ET| 30:1 107:1 193:1
+-1	|BT| (VB (prep_on (NN (NE )))(nsubj (nn (NN (NE )))(NN (R )))) |ET| 30:1 74:1 107:1 193:1 204:1
+-1	|BT| (VB (prep_on (NN (NE )))(nsubj (nn (NN (NE )))(NN (R )))) |ET| 30:1 107:1 193:1
+-1	|BT| (NN (appos (NN (NE )))(rcmod (VB )(dobj (NN (NE )))(conj_and (NN (R ))))) |ET| 39:1 69:1 103:1 193:1
+1	|BT| (NN (appos (NN (NE )))(rcmod (VB (R ))(dobj (NN (NE ))))) |ET| 30:1 87:1 107:1 188:1
+-1	|BT| (NN (appos (NN (NE )))(rcmod (VB (R ))(dobj (NN (NE ))))) |ET| 30:1 87:1 107:1 169:1
+-1	|BT| (NN (appos (NN (NE )))(rcmod (VB )(dobj (NN (NE )))(conj_and (NN (R ))))) |ET| 39:1 69:1 103:1 192:1
+-1	|BT| (NN (R )(appos (NN (NE )))(rcmod (VB )(dobj (NN (NE ))))) |ET| 39:1 105:1 161:1
+-1	|BT| (NN (appos (NN (NE )))(rcmod (VB )(dobj (NN (NE )))(conj_and (cop (become (R )))(NN )))) |ET| 38:1 104:1 192:1
+-1	|BT| (NN (R )(appos (NN (NE )))(rcmod (VB )(dobj (NN (NE ))))) |ET| 39:1 105:1 161:1
+-1	|BT| (NN (appos (NN (NE )))(rcmod (VB )(dobj (NN (NE )))(conj_and (NN (R ))))) |ET| 39:1 69:1 103:1 193:1
+-1	|BT| (NN (appos (NN (NE )))(rcmod (VB (R ))(dobj (NN (NE ))))) |ET| 30:1 80:1 87:1 107:1 169:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R )))(prep_to (nn (NN (NE )))(NN ))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_to (nn (NN (NE )))(NN ))) |ET| 39:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R )))(prep_to (NN )(prep_of (poss (NN (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_to (NN (R ))(prep_of (poss (NN (NE )))(NN )))) |ET| 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_to (NN (R ))(prep_of (poss (NN (NE )))(NN )))) |ET| 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_to (NN )(prep_of (poss (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R )))(prep_to (NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_to (NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_to (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_to (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(prep_of (poss (NN (NE )))(NN (R )))) |ET| 30:1 107:1 193:1
+-1	|BT| (NN (nn (NN (NE )))(R )(prep_of (poss (NN (NE )))(NN ))) |ET| 39:1 80:1 105:1 118:1
+-1	|BT| (NN (nn (NN (NE )))(R )(prep_of (poss (NN (NE )))(NN ))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(R )(prep_of (poss (NN (NE )))(NN ))) |ET| 39:1 105:1 189:1
+-1	|BT| (VB (dobj (NN (R )))(prep_to (nn (NN (NE )))(NN )(prep_of (poss (NN (NE )))(NN )))) |ET| 36:1 103:1 161:1
+-1	|BT| (NN (nn (NN (NE )))(R )(prep_of (nn (NN (NE )))(NN ))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(R )(prep_of (nn (NN (NE )))(NN ))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (R )(prep_of (poss (NN (NE )))(nn (NN (NE )))(NN ))) |ET| 39:1 107:1 161:1
+1	|BT| (NN (poss (NN (NE )))(nn (NN (NE )))(R )) |ET| 30:1 105:1 193:1
+-1	|BT| (NN (R )(prep_of (poss (NN (NE )))(nn (NN (NE )))(NN ))) |ET| 29:1 39:1 80:1 107:1
+-1	|BT| (NN (R )(prep_of (poss (NN (NE )))(nn (NN (NE )))(NN ))) |ET| 39:1 107:1 161:1
+1	|BT| (NN (poss (NN (NE )))(nn (NN (NE )))(R )) |ET| 13:1 30:1 80:1 105:1
+1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (NE )))) |ET| 30:1 105:1 188:1
+1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (NE )))) |ET| 30:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (NE ))(appos (poss (NN (R )))(NN )))) |ET| 33:1 39:1 104:1 193:1
+-1	|BT| (VB (prep_in (NN (NE )))(nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(aux (have (R )))) |ET| 36:1 107:1 192:1
+-1	|BT| (VB (prep_in (NN (NE )))(nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(R )) |ET| 38:1 105:1 192:1
+-1	|BT| (VB (prep_in (NN (NE )))(nsubj (NN )(conj_and (nn (NN (NE )))(NN (R ))))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (prep_in (NN (NE )))(nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(R )) |ET| 38:1 105:1 192:1
+-1	|BT| (VB (prep_in (NN (NE )))(nsubj (NN )(conj_and (nn (NN (NE )))(nn (NN (R )))(NN )))) |ET| 39:1 104:1 193:1
+-1	|BT| (VB (prep_in (NN (NE )))(nsubj (NN )(conj_and (nn (NN (NE )))(NN (R ))))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(R )(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(R )(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(prep_for (NN )(prep_from (NN (R ))))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(R )(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(aux (have (R )))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(prep_for (NN (R )))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(nn (NN (R )))(NN )))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(R )(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(prep_for (NN )(prep_from (NN (R ))))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(prep_under (NN )(prep_of (NN (R ))))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(prep_under (NN )(prep_of (NN (R ))))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN (R ))))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(prep_under (NN )(prep_of (NN (R ))))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(prep_under (NN )(prep_of (nn (NN (R )))(NN )))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(prep_for (NN (R )))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN (R ))))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(prep_under (NN (R )))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(prep_under (NN )(prep_of (amod (JJ (R )))(NN )))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET| 35:1 101:1 189:1
+-1	|BT| (VB (prep_under (NN )(prep_of (nn (NN (R )))(NN )))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN (NE ))))(be ))) |ET| 35:1 101:1 150:1 161:1
+-1	|BT| (VB (prep_under (NN )(prep_of (NN (R ))))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN (NE ))))(be ))) |ET| 35:1 101:1 150:1 161:1
+-1	|BT| (VB (prep_under (NN )(prep_of (NN (R ))))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN (NE ))))(be ))) |ET| 35:1 101:1 150:1 161:1
+-1	|BT| (VB (prep_under (NN )(prep_of (NN (R ))))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN ))(conj_and (NN (NE ))))(be ))) |ET| 35:1 101:1 150:1 161:1
+-1	|BT| (VB (prep_under (NN )(prep_of (nn (NN (R )))(NN )))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN ))(conj_and (NN (NE ))))(be ))) |ET| 35:1 101:1 150:1 161:1
+-1	|BT| (VB (prep_under (NN )(prep_of (NN (R ))))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN ))(conj_and (NN (NE ))))(be ))) |ET| 35:1 101:1 150:1 161:1
+-1	|BT| (be (nsubj (NN )(conj_and (nn (NN (NE )))(NN ))(conj_and (NN (NE ))))(prep_for (NN (R )))) |ET| 38:1 104:1 150:1 193:1
+-1	|BT| (be (nsubj (NN )(conj_and (NN (NE )))(conj_and (NN (NE ))))(prep_for (NN (R )))) |ET| 38:1 103:1 193:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(nsubj (NN )(ccomp (VB (R ))))(prep_in (nn (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 35:1 104:1 159:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (nn (NN (NE )))(NN (R )))))(nsubj (NN (NE )))) |ET| 36:1 105:1 189:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (nn (NN (NE )))(NN (R )))))(nsubj (NN (NE )))) |ET| 36:1 80:1 92:1 105:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (nn (NN (NE )))(NN ))))(nsubj (NN (NE ))(appos (NN (R ))))) |ET| 30:1 101:1 193:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (nn (NN (NE )))(NN (R )))))(nsubj (NN (NE )))) |ET| 36:1 80:1 105:1 122:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(nsubj (NN )(ccomp (VB (R ))))(prep_in (nn (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 35:1 104:1 159:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(nsubj (NN )(ccomp (nsubj (NN (R )))(VB )))(prep_in (nn (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 35:1 101:1 161:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (nn (NN (NE )))(NN ))))(R )(nsubj (NN (NE )))) |ET| 30:1 104:1 188:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(nsubj (NN )(ccomp (VB (R ))))(prep_in (nn (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 35:1 104:1 159:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (nn (NN (NE )))(NN (R )))))(nsubj (NN (NE )))) |ET| 36:1 80:1 92:1 105:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(nsubj (NN )(ccomp (aux (MD (R )))(VB )))(prep_in (nn (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 35:1 101:1 159:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(nsubj (NN )(ccomp (VB (R ))))(prep_in (nn (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET| 35:1 104:1 159:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (nn (NN (NE )))(NN (R )))))(nsubj (NN )(appos (NN )(prep_with (NN (NE )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (nn (NN (NE )))(NN ))))(nsubj (NN )(appos (NN (R ))(prep_with (NN (NE )))))) |ET| 27:1 30:1 54:1 101:1 189:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (nn (NN (NE )))(NN ))))(R )(nsubj (NN )(appos (NN )(prep_with (NN (NE )))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (NN (R )))))(nsubj (NN (NE ))(appos (NN )(prep_with (NN (NE )))))) |ET| 35:1 104:1 161:1
+-1	|BT| (VB (R )(nsubj (NN (NE ))(appos (NN )(prep_with (NN (NE )))))) |ET| 38:1 105:1 159:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (NE ))))) |ET| 27:1 30:1 54:1 105:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(NE )(rcmod (NN (R )))) |ET| 25:1 30:1 107:1 193:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(NE )(rcmod (cop (become (R )))(NN ))) |ET| 25:1 39:1 103:1 192:1
+-1	|BT| (VB (prep_against (NN (R )))(nsubj (nn (NN (NE )))(NN (NE )))) |ET| 25:1 39:1 103:1 161:1
+-1	|BT| (NN (nn (NN (NE )))(rcmod (NN )(prep_of (poss (NN (R )))(nn (NN (NE )))(NN )))) |ET| 39:1 104:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(rcmod (NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(rcmod (NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(rcmod (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 188:1
+-1	|BT| (NN (nn (NN (NE )))(rcmod (cop (become (R )))(NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 38:1 103:1 188:1
+-1	|BT| (NN (nn (NN (NE )))(rcmod (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(rcmod (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(rcmod (NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (NN (NE )(rcmod (cop (become (R )))(NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 38:1 107:1 188:1
+1	|BT| (NN (NE )(rcmod (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(rcmod (NN )(prep_of (poss (NN (R )))(nn (NN (NE )))(NN )))) |ET| 39:1 103:1 189:1
+1	|BT| (NN (NE )(rcmod (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+1	|BT| (NN (NE )(rcmod (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE ))(rcmod (NN )(prep_of (poss (NN (R )))(NN ))))(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET| 35:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE ))(rcmod (NN (R ))))(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET| 35:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE ))(rcmod (NN )(prep_of (NN (R )))))(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET| 35:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE ))(rcmod (cop (become (R )))(NN )))(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET| 35:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE ))(rcmod (NN (R ))))(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dep (VB (R ))(dobj (poss (NN (NE )))(NN )))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE ))(rcmod (NN (R ))))(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R )))(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN )(rcmod (NN )(prep_of (nn (NN (NE )))(NN ))))(dep (VB (R ))(dobj (poss (NN (NE )))(NN )))) |ET| 39:1 101:1 188:1
+-1	|BT| (VB (nsubj (NN )(rcmod (NN )(prep_of (nn (NN (NE )))(NN ))))(R )(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(rcmod (NN )(prep_of (nn (NN (NE )))(NN ))))(dobj (NN (R )))(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET| 36:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(rcmod (NN )(prep_of (nn (NN (NE )))(NN (R )))))(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (prep_at (NN (NE )))(nsubj (NN (R )))(xcomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (prep_at (NN (NE )))(R )(xcomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (prep_at (NN (NE )))(R )(xcomp (VB (R ))(dobj (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 188:1
+-1	|BT| (VB (prep_at (NN (NE )))(xcomp (VB (R ))(dobj (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (prep_at (NN (NE )))(R )(xcomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (prep_at (NN (NE )))(nsubj (NN (R )))(xcomp (VB )(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 35:1 107:1 189:1
+-1	|BT| (VB (prep_at (NN (NE )))(R )(xcomp (VB )(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (prep_at (NN (NE )))(xcomp (VB )(dobj (NN (R ))(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (prep_at (NN (NE )))(R )(xcomp (VB (R ))(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (prep_at (NN (NE )))(xcomp (VB (R ))(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (prep_at (NN (NE )))(R )(xcomp (VB )(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(xcomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB )(dobj (nn (NN (NE )))(NN (R ))))) |ET| 30:1 104:1 193:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(xcomp (VB (R ))(dobj (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(xcomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB )(dobj (nn (NN (NE )))(NN )(ccomp (VB (R )))))) |ET| 39:1 101:1 192:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(xcomp (VB (R ))(dobj (nn (NN (NE )))(NN (R ))))) |ET| 30:1 107:1 167:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB (R ))(dobj (nn (NN (NE )))(NN (R ))))) |ET| 30:1 103:1 167:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (R )))(xcomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 36:1 105:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB (R ))(dobj (nn (NN (NE )))(NN )))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (R )))(xcomp (VB )(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(xcomp (VB )(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 36:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB )(dobj (NN (R ))(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 39:1 104:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(xcomp (VB (R ))(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB (R ))(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(xcomp (VB )(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 36:1 107:1 188:1
+-1	|BT| (NN (nn (NN (NE )))(R )(ccomp (nsubj (NN (NE )))(VB ))) |ET| 39:1 92:1 105:1
+-1	|BT| (VB (R )(dobj (nn (NN (NE )))(NN )(ccomp (nsubj (NN (NE )))(VB )))) |ET| 38:1 107:1 159:1
+-1	|BT| (NN (nn (NN (NE )))(R )(ccomp (nsubj (NN (NE )))(VB ))) |ET| 39:1 105:1 189:1
+-1	|BT| (VB (R )(xcomp (VB )(dobj (nn (NN (NE )))(NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 36:1 103:1 159:1
+-1	|BT| (NN (nn (NN (NE )))(ccomp (nsubj (NN (NE )))(VB (R )))) |ET| 30:1 107:1 192:1
+-1	|BT| (NN (nn (NN (NE )))(R )(ccomp (nsubj (NN (NE )))(VB (R )))) |ET| 30:1 105:1 119:1
+-1	|BT| (NN (nn (NN (NE )))(R )(ccomp (nsubj (NN (NE )))(VB ))) |ET| 39:1 92:1 105:1
+-1	|BT| (NN (nn (NN (NE )))(ccomp (nsubj (NN (NE )))(VB )(dobj (nn (NN (R )))(NN )))) |ET| 38:1 104:1 193:1
+-1	|BT| (VB (aux (TO (R )))(dobj (nn (NN (NE )))(NN )(ccomp (nsubj (NN (NE )))(VB )))) |ET| 36:1 103:1 159:1
+-1	|BT| (NN (nn (NN (NE )))(ccomp (nsubj (NN (NE )))(VB )(dobj (nn (NN (R )))(NN )))) |ET| 38:1 104:1 193:1
+-1	|BT| (VB (R )(dobj (nn (NN (NE )))(NN )(ccomp (nsubj (NN (NE )))(VB )))) |ET| 38:1 107:1 159:1
+-1	|BT| (VB (nsubj (NN (R )))(xcomp (VB )(dobj (nn (NN (NE )))(NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET| 35:1 104:1 161:1
+-1	|BT| (NN (nn (NN (NE )))(ccomp (VB )(dobj (nn (NN (R )))(NN )(rcmod (VB )(dobj (nn (NN (NE )))(NN )))))) |ET| 36:1 104:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(ccomp (VB )(dobj (NN (R ))(rcmod (VB )(dobj (nn (NN (NE )))(NN )))))) |ET| 38:1 103:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(ccomp (VB (R ))(dobj (NN )(rcmod (VB )(dobj (nn (NN (NE )))(NN )))))) |ET| 36:1 107:1 188:1
+-1	|BT| (NN (nn (NN (NE )))(ccomp (VB )(dobj (NN )(rcmod (VB (R ))(dobj (nn (NN (NE )))(NN )))))) |ET| 39:1 104:1 188:1
+-1	|BT| (NN (nn (NN (NE )))(ccomp (VB )(dobj (nn (NN (R )))(NN )(rcmod (VB )(dobj (nn (NN (NE )))(NN )))))) |ET| 36:1 104:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(R )(ccomp (VB )(dobj (NN )(rcmod (VB )(dobj (nn (NN (NE )))(NN )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(ccomp (VB )(dobj (NN (R ))(rcmod (VB )(dobj (nn (NN (NE )))(NN )))))) |ET| 38:1 103:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(ccomp (VB )(dobj (NN (R ))(rcmod (VB )(dobj (nn (NN (NE )))(NN )))))) |ET| 38:1 103:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(ccomp (VB )(dobj (NN )(rcmod (VB (R ))(dobj (nn (NN (NE )))(NN )))))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (nn (NN (R )))(NN )(rcmod (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 36:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(rcmod (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(rcmod (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(rcmod (VB (R ))(dobj (nn (NN (NE )))(NN ))))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (nn (NN (R )))(NN )(rcmod (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 36:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(rcmod (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(rcmod (VB )(dobj (nn (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(rcmod (VB (R ))(dobj (nn (NN (NE )))(NN ))))) |ET| 39:1 103:1 188:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN (NE ))))) |ET| 27:1 30:1 54:1 105:1 189:1
+-1	|BT| (VB (nsubjpass (NN )(prep_at (NN (NE ))(conj_and (NN (NE )))))(R )) |ET| 38:1 107:1 150:1 192:1
+-1	|BT| (NN (R )(prep_at (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 63:1 66:1 105:1 111:1 150:1 161:1
+-1	|BT| (NN (R )(prep_at (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 51:1 66:1 105:1 150:1 161:1
+-1	|BT| (NN (R )(prep_at (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 51:1 66:1 105:1 150:1 161:1
+-1	|BT| (VB (nsubjpass (NN )(prep_at (NN (NE ))(conj_and (NN (NE )))))(prep_to (poss (NN (R )))(NN ))) |ET| 35:1 104:1 150:1 193:1
+-1	|BT| (VB (nsubjpass (NN )(prep_at (NN (NE ))(conj_and (NN (NE )))))(R )) |ET| 38:1 107:1 150:1 192:1
+-1	|BT| (NN (R )(prep_at (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 63:1 66:1 105:1 111:1 150:1 161:1
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(prep_at (NN (R )))(dobj (NN )(rcmod (nsubj (poss (NN (NE )))(NN ))(IN )))) |ET| 35:1 104:1 189:1
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(dobj (NN (R ))(rcmod (nsubj (poss (NN (NE )))(NN ))(IN )))) |ET| 38:1 104:1 189:1
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(R )(dobj (NN )(rcmod (nsubj (poss (NN (NE )))(NN ))(IN )))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(dobj (NN (R ))(rcmod (nsubj (poss (NN (NE )))(NN ))(IN )))) |ET| 38:1 104:1 195:1
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(R )(dobj (NN )(rcmod (nsubj (poss (NN (NE )))(NN ))(IN )))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(prep_at (NN (R )))(dobj (NN )(rcmod (nsubj (NN (NE )))(IN )))) |ET| 36:1 104:1 189:1
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(dobj (NN (R ))(rcmod (nsubj (NN (NE )))(IN )))) |ET| 39:1 104:1 189:1
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(R )(dobj (NN )(rcmod (nsubj (NN (NE )))(IN )))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(dobj (NN (R ))(rcmod (nsubj (NN (NE )))(IN )))) |ET| 39:1 104:1 195:1
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(R )(dobj (NN )(rcmod (nsubj (NN (NE )))(IN )))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_like (NN (NE ))))(dobj (NN (R )))(xcomp (VB )(ccomp (nsubj (NN (NE )))(do )))) |ET| 36:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_like (NN (NE ))))(R )(xcomp (VB )(ccomp (nsubj (NN (NE )))(do )))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_like (NN (NE ))))(prep_on (NN (R )))(xcomp (VB )(ccomp (nsubj (NN (NE )))(do )))) |ET| 36:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_like (NN (NE ))))(dobj (NN (R )))(xcomp (VB )(ccomp (nsubj (NN (NE )))(do )))) |ET| 36:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_like (NN (NE ))))(R )(xcomp (VB )(ccomp (nsubj (NN (NE )))(do )))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_like (NN (NE ))))(xcomp (VB (R ))(ccomp (nsubj (NN (NE )))(do )))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (R )(nsubj (NN (NE ))(appos (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 159:1
+1	|BT| (NN (NE )(appos (nn (NN (NE )))(NN (R )))) |ET| 30:1 105:1 193:1
+-1	|BT| (VB (ccomp (VB )(xcomp (VB )(prep_about (NN (R )))))(nsubj (NN (NE ))(appos (nn (NN (NE )))(NN )))) |ET| 35:1 104:1 161:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_of (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 54:1 105:1 141:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 54:1 105:1 141:1 189:1
+-1	|BT| (NN (NE )(appos (amod (JJ (R )))(NN )(prep_of (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 54:1 105:1 141:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 34:1 105:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 34:1 105:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 34:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(xcomp (VB )(prep_with (NN )(dep (NN (NE )))))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(xcomp (VB (R ))(prep_with (NN )(dep (NN (NE )))))) |ET| 39:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB )(prep_with (NN (R ))(dep (NN (NE )))))) |ET| 30:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB (R ))(prep_with (NN )(dep (NN (NE )))))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN (NE ))))(R )(xcomp (VB )(prep_with (NN )(dep (NN (NE )))))) |ET| 38:1 87:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN (NE ))))(R )(xcomp (VB (R ))(prep_with (NN )(dep (NN (NE )))))) |ET| 39:1 87:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN (NE ))))(xcomp (VB )(prep_with (NN (R ))(dep (NN (NE )))))) |ET| 30:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (NN (NE ))))(xcomp (VB (R ))(prep_with (NN )(dep (NN (NE )))))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(R )) |ET| 39:1 105:1 150:1 166:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(R )) |ET| 39:1 105:1 150:1 166:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(prep_in (NN (R )))) |ET| 38:1 107:1 150:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_into (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_into (nn (NN (NE )))(NN (R ))))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(prep_into (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (R ))(prep_into (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_into (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_into (nn (NN )(conj_and (NN (NE ))))(NN )))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_into (nn (NN )(conj_and (NN (NE ))))(NN (R ))))) |ET| 39:1 103:1 166:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(prep_into (nn (NN )(conj_and (NN (NE ))))(NN )))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (R ))(prep_into (nn (NN )(conj_and (NN (NE ))))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_into (nn (NN )(conj_and (NN (NE ))))(NN )))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(appos (NN (NE )))))(R )) |ET| 38:1 105:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(appos (NN (NE )))))(R )) |ET| 38:1 105:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(appos (NN (NE )))))(aux (MD (R )))) |ET| 36:1 107:1 192:1
+-1	|BT| (NN (NE )(appos (NN (R ))(appos (NN (NE ))))) |ET| 30:1 105:1 189:1
+1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (NE )))) |ET| 30:1 105:1 188:1
+1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (NE )))) |ET| 30:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(aux (MD (R )))(dobj (NN (NE )))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN (R ))))(dobj (NN (NE )))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(appos (NN (NE ))))) |ET| 39:1 60:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN (R ))))(dobj (NN )(appos (NN (NE ))))) |ET| 36:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(appos (NN (NE ))))) |ET| 39:1 60:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(aux (MD (R )))(dobj (NN )(appos (NN (NE ))))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(appos (NN )(appos (NN (NE )))))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN (R ))))(dobj (NN )(appos (NN )(appos (NN (NE )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(appos (NN )(appos (NN (NE )))))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(aux (MD (R )))(dobj (NN )(appos (NN )(appos (NN (NE )))))) |ET| 36:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(appos (NN (NE )))))(R )(dobj (NN (NE )))) |ET| 30:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(appos (NN (NE )))))(R )(dobj (NN (NE )))) |ET| 30:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(appos (NN (NE )))))(aux (MD (R )))(dobj (NN (NE )))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN (R ))(appos (NN (NE )))))(dobj (NN (NE )))) |ET| 38:1 105:1 161:1
+-1	|BT| (NN (NE )(appos (NN )(appos (NN (NE ))))(rcmod (have (R )))) |ET| 38:1 105:1 192:1
+-1	|BT| (VB (R )(dobj (NN (NE ))(appos (NN )(appos (NN (NE )))))) |ET| 38:1 105:1 159:1
+-1	|BT| (VB (R )(dobj (NN (NE ))(appos (NN )(appos (NN (NE )))))) |ET| 38:1 105:1 159:1
+-1	|BT| (VB (aux (MD (R )))(dobj (NN (NE ))(appos (NN )(appos (NN (NE )))))) |ET| 36:1 107:1 159:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_via (NN (NE ))))) |ET| 30:1 54:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of ($ )(dep (NN (R ))))(prep_via (NN (NE ))))) |ET| 38:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_via (NN (NE ))))) |ET| 30:1 54:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of ($ )(dep (NN (R ))))(prep_via (NN (NE ))))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (advcl (VB )(prep_of (NN (R ))(prep_in (NN (NE )))))(nsubj (NN (NE )))) |ET| 38:1 45:1 105:1 161:1
+-1	|BT| (VB (advcl (VB )(prep_of (NN (R ))(prep_in (NN (NE )))))(nsubj (NN (NE )))) |ET| 38:1 47:1 63:1 105:1 161:1
+-1	|BT| (VB (advcl (VB )(prep_of (NN (R ))(prep_in (NN (NE )))))(nsubj (NN (NE )))) |ET| 38:1 47:1 63:1 105:1 161:1
+-1	|BT| (VB (advcl (VB )(prep_of (NN (R ))(prep_in (NN (NE )))))(nsubj (NN (NE )))) |ET| 38:1 45:1 105:1 161:1
+-1	|BT| (VB (advcl (VB )(prep_of (NN )(prep_in (NN (NE )))))(nsubj (NN (NE )))(R )) |ET| 30:1 103:1 192:1
+-1	|BT| (VB (advcl (VB )(prep_of (NN )(prep_in (NN (NE )))))(R )(dobj (NN (NE )))) |ET| 30:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (NE )))) |ET| 30:1 80:1 105:1 196:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (NE )))(prep_for (NN (R )))) |ET| 39:1 107:1 193:1
+1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (NE )))) |ET| 30:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(prep_from (NN (NE ))))) |ET| 39:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN (NE ))))) |ET| 30:1 55:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN (NE ))))) |ET| 14:1 30:1 54:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN (NE ))))) |ET| 14:1 30:1 54:1 107:1 189:1
+1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (R ))(prep_from (NN (NE ))))) |ET| 30:1 55:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN (NE ))))) |ET| 30:1 55:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(prep_from (NN )(conj_and (poss (NN (NE )))(NN ))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN )(conj_and (poss (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN )(conj_and (poss (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN )(conj_and (poss (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (R ))(prep_from (NN )(conj_and (poss (NN (NE )))(NN ))))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN )(conj_and (poss (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(prep_from (NN )(conj_and (NN (NE )))))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 107:1 189:1
+1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (R ))(prep_from (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_from (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 107:1 189:1
+-1	|BT| (NN (R )(prep_from (NN (NE ))(conj_and (poss (NN (NE )))(NN )))) |ET| 38:1 63:1 105:1 155:1 161:1
+-1	|BT| (NN (R )(prep_from (NN (NE ))(conj_and (poss (NN (NE )))(NN )))) |ET| 38:1 63:1 105:1 155:1 161:1
+-1	|BT| (NN (R )(prep_from (NN (NE ))(conj_and (poss (NN (NE )))(NN )))) |ET| 38:1 105:1 161:1 168:1
+-1	|BT| (NN (R )(prep_from (NN (NE ))(conj_and (poss (NN (NE )))(NN )))) |ET| 38:1 105:1 159:1 168:1
+-1	|BT| (VB (R )(dobj (NN )(prep_from (NN (NE ))(conj_and (poss (NN (NE )))(NN ))))) |ET| 36:1 107:1 159:1
+-1	|BT| (NN (R )(prep_from (NN (NE ))(conj_and (poss (NN (NE )))(NN )))) |ET| 38:1 105:1 161:1 168:1
+-1	|BT| (NN (R )(prep_from (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 63:1 66:1 105:1 150:1 155:1 161:1
+-1	|BT| (NN (R )(prep_from (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 63:1 66:1 105:1 150:1 155:1 161:1
+-1	|BT| (NN (R )(prep_from (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 66:1 105:1 150:1 161:1 168:1
+-1	|BT| (NN (R )(prep_from (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 66:1 105:1 150:1 159:1 168:1
+-1	|BT| (VB (R )(dobj (NN )(prep_from (NN (NE ))(conj_and (NN (NE )))))) |ET| 38:1 107:1 150:1 159:1
+-1	|BT| (NN (R )(prep_from (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 66:1 105:1 150:1 161:1 168:1
+-1	|BT| (NN (NE )(appos (NN )(appos (NN (R ))))(prep_of (NN (NE )))) |ET| 38:1 87:1 107:1 171:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN ))(prep_of (NN (NE )))) |ET| 38:1 87:1 107:1 171:1 189:1
+1	|BT| (NN (NE )(appos (NN (R )))(prep_of (NN (NE )))) |ET| 39:1 105:1 171:1 189:1
+1	|BT| (NN (NE )(appos (NN (R )))(prep_of (NN (NE )))) |ET| 39:1 105:1 171:1 189:1
+-1	|BT| (NN (NE )(appos (amod (JJ (R )))(NN ))(prep_of (NN (NE )))) |ET| 38:1 87:1 107:1 171:1 189:1
+1	|BT| (NN (NE )(appos (NN (R )))(prep_of (NN (NE )))) |ET| 39:1 105:1 171:1 189:1
+-1	|BT| (NN (NE )(prep_of (NN )(rcmod (VB )(dobj (NN (R ))(prep_in (NN (NE ))))))) |ET| 30:1 54:1 73:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(appos (NN (R ))))(prep_of (NN )(rcmod (VB )(dobj (NN )(prep_in (NN (NE ))))))) |ET| 35:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(prep_of (NN )(rcmod (VB (R ))(dobj (NN )(prep_in (NN (NE ))))))) |ET| 39:1 107:1 188:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN ))(prep_of (NN )(rcmod (VB )(dobj (NN )(prep_in (NN (NE ))))))) |ET| 35:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R )))(prep_of (NN )(rcmod (VB )(dobj (NN )(prep_in (NN (NE ))))))) |ET| 35:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R )))(prep_of (NN )(rcmod (VB )(dobj (NN )(prep_in (NN (NE ))))))) |ET| 35:1 105:1 189:1
+-1	|BT| (NN (NE )(prep_of (NN )(rcmod (VB )(dobj (NN (R ))(prep_in (NN (NE ))))))) |ET| 30:1 103:1 189:1 197:1
+-1	|BT| (NN (NE )(appos (NN (R )))(prep_of (NN )(rcmod (VB )(dobj (NN )(prep_in (NN (NE ))))))) |ET| 35:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (amod (JJ (R )))(NN ))(prep_of (NN )(rcmod (VB )(dobj (NN )(prep_in (NN (NE ))))))) |ET| 35:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(rcmod (VB )(dobj (NN (R ))(prep_in (NN (NE )))))) |ET| 30:1 54:1 73:1 107:1 189:1
+-1	|BT| (NN (NE )(rcmod (VB (R ))(dobj (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 188:1
+-1	|BT| (NN (NE )(rcmod (VB )(dobj (NN (R ))(prep_in (NN (NE )))))) |ET| 30:1 107:1 189:1 197:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(prep_for (NN (NE )))))(R )) |ET| 38:1 105:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(prep_for (NN (NE )))))(ccomp (VB (R )))) |ET| 36:1 107:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(prep_for (NN (NE )))))(R )) |ET| 38:1 105:1 195:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_for (NN (NE ))))) |ET| 30:1 96:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(prep_for (NN (NE )))))(ccomp (VB (R )))) |ET| 36:1 107:1 192:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_for (NN (NE ))))) |ET| 30:1 54:1 105:1 144:1 189:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(prep_for (NN (NE )))))(R )) |ET| 38:1 105:1 195:1
+-1	|BT| (NN (NE )(partmod (VB (R ))(prep_along_with (NN (NE ))))) |ET| 30:1 54:1 105:1 188:1
+-1	|BT| (NN (NE )(partmod (VB )(prep_to (NN (R )))(prep_along_with (NN (NE ))))) |ET| 39:1 107:1 189:1
+-1	|BT| (NN (NE )(partmod (VB )(prep_to (NN (R )))(prep_along_with (NN (NE ))))) |ET| 39:1 107:1 189:1
+-1	|BT| (NN (NE )(partmod (VB )(prep_along_with (nn (NN (R )))(NN (NE ))))) |ET| 30:1 103:1 189:1
+-1	|BT| (NN (NE )(partmod (VB )(prep_along_with (nn (NN (R )))(NN (NE ))))) |ET| 30:1 103:1 189:1
+-1	|BT| (NN (NE )(partmod (VB (R ))(prep_along_with (NN (NE ))))) |ET| 30:1 54:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))))(ccomp (nsubj (NN )(prep_for (NN (R ))(prep_in (NN (NE )))))(be ))) |ET| 30:1 54:1 73:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))(prepc_for (VB (R )))))(ccomp (nsubj (NN )(prep_for (NN )(prep_in (NN (NE )))))(be ))) |ET| 35:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))))(ccomp (nsubj (NN (R ))(prep_for (NN )(prep_in (NN (NE )))))(be ))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))))(R )(ccomp (nsubj (NN )(prep_for (NN )(prep_in (NN (NE )))))(be ))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))))(ccomp (nsubj (NN )(prep_for (NN (R ))(prep_in (NN (NE )))))(be ))) |ET| 30:1 101:1 189:1 197:1
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))))(R )(ccomp (nsubj (NN (R ))(prep_for (NN )(prep_in (NN (NE )))))(be ))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))(prepc_for (VB (R )))))(ccomp (nsubj (NN )(prep_for (NN )(prep_in (NN (NE )))))(be ))) |ET| 35:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))))(ccomp (nsubj (NN (R ))(prep_for (NN )(prep_in (NN (NE )))))(be ))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))(prepc_for (VB )(xcomp (VB )(dobj (NN (R )))))))(ccomp (nsubj (NN )(prep_for (NN )(prep_in (NN (NE )))))(be ))) |ET| 35:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))(prepc_for (VB )(xcomp (VB (R ))))))(ccomp (nsubj (NN )(prep_for (NN )(prep_in (NN (NE )))))(be ))) |ET| 35:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))(prepc_for (VB (R )))))(ccomp (nsubj (NN )(prep_for (NN )(prep_in (NN (NE )))))(be ))) |ET| 35:1 107:1 188:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 80:1 107:1 119:1 186:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 80:1 107:1 119:1 186:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 107:1 186:1 192:1
+1	|BT| (NN (poss (NN (NE )))(nn (NN (R )))(NE )) |ET| 30:1 107:1 186:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 80:1 107:1 119:1 186:1
+1	|BT| (NN (poss (NN (NE )))(nn (NN (R )))(NE )) |ET| 30:1 107:1 186:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 107:1 158:1 186:1 192:1 204:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (NE )))(R )) |ET| 30:1 80:1 107:1 119:1 186:1
+-1	|BT| (VB (nsubj (nn (NN (R )))(NN (NE )))(prep_to (NN (NE )))) |ET| 38:1 105:1 161:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_to (NN (NE )))) |ET| 30:1 54:1 93:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_to (NN (NE )))) |ET| 30:1 32:1 54:1 80:1 93:1 105:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_to (NN (NE )))) |ET| 30:1 32:1 80:1 85:1 105:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_to (NN (NE )))) |ET| 30:1 80:1 85:1 105:1 196:1
+1	|BT| (VB (nsubj (NN (NE )))(R )(prep_to (NN (NE )))) |ET| 30:1 85:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_to (NN (NE )))(prep_for (NN (R )))) |ET| 39:1 107:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_for (NN )(rcmod (VB )(xcomp (VB )(prep_on (NN )(prep_between (NN (NE )))))))) |ET| 35:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB (R ))(xcomp (VB (R ))(prep_on (NN )(prep_between (NN (NE )))))))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB )(xcomp (VB )(prep_on (NN (R ))(prep_between (NN (NE )))))))) |ET| 30:1 54:1 101:1 160:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB (R ))(xcomp (VB )(prep_on (NN )(prep_between (NN (NE )))))))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB )(xcomp (VB (R ))(prep_on (NN )(prep_between (NN (NE )))))))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN (R ))(rcmod (VB )(xcomp (VB )(prep_on (NN )(prep_between (NN (NE )))))))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB )(xcomp (VB (R ))(prep_on (NN )(prep_between (NN (NE )))))))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB (R ))(xcomp (VB )(prep_on (NN )(prep_between (NN (NE )))))))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_for (NN )(rcmod (VB )(xcomp (VB )(prep_on (NN )(prep_between (NN (NE )))))))) |ET| 35:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB (R ))(xcomp (VB (R ))(prep_on (NN )(prep_between (NN (NE )))))))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB )(xcomp (VB )(prep_on (NN (R ))(prep_between (NN (NE )))))))) |ET| 30:1 43:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_for (NN )(rcmod (VB )(xcomp (VB )(prep_on (NN )(prep_between (NN )(conj_and (NN (NE ))))))))) |ET| 35:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB (R ))(xcomp (VB (R ))(prep_on (NN )(prep_between (NN )(conj_and (NN (NE ))))))))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB )(xcomp (VB )(prep_on (NN (R ))(prep_between (NN )(conj_and (NN (NE ))))))))) |ET| 11:1 39:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB (R ))(xcomp (VB )(prep_on (NN )(prep_between (NN )(conj_and (NN (NE ))))))))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB )(xcomp (VB (R ))(prep_on (NN )(prep_between (NN )(conj_and (NN (NE ))))))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN (R ))(rcmod (VB )(xcomp (VB )(prep_on (NN )(prep_between (NN )(conj_and (NN (NE ))))))))) |ET| 35:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB )(xcomp (VB (R ))(prep_on (NN )(prep_between (NN )(conj_and (NN (NE ))))))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB (R ))(xcomp (VB )(prep_on (NN )(prep_between (NN )(conj_and (NN (NE ))))))))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_for (NN )(rcmod (VB )(xcomp (VB )(prep_on (NN )(prep_between (NN )(conj_and (NN (NE ))))))))) |ET| 35:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB (R ))(xcomp (VB (R ))(prep_on (NN )(prep_between (NN )(conj_and (NN (NE ))))))))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB )(xcomp (VB )(prep_on (NN (R ))(prep_between (NN )(conj_and (NN (NE ))))))))) |ET| 11:1 39:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB )(dobj (NN (R ))(infmod (VB )(dobj (dep (nn (NN (NE )))(NN ))(NN )))))) |ET| 36:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(R )(ccomp (VB (R ))(dobj (NN (R ))(infmod (VB )(dobj (dep (nn (NN (NE )))(NN ))(NN )))))) |ET| 36:1 103:1 195:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN (R ))))(ccomp (VB )(dobj (NN )(infmod (VB )(dobj (dep (nn (NN (NE )))(NN ))(NN )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB (R ))(dobj (NN )(infmod (VB )(dobj (dep (nn (NN (NE )))(NN ))(NN )))))) |ET| 35:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(R )(ccomp (VB )(dobj (NN )(infmod (VB )(dobj (dep (nn (NN (NE )))(NN ))(NN )))))) |ET| 35:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(R )(ccomp (VB (R ))(dobj (NN )(infmod (VB )(dobj (dep (nn (NN (NE )))(NN ))(NN )))))) |ET| 35:1 103:1 195:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB )(dobj (NN )(infmod (VB (R ))(dobj (dep (nn (NN (NE )))(NN ))(NN )))))) |ET| 38:1 101:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN (R ))))(ccomp (VB )(dobj (NN )(infmod (VB )(dobj (dep (nn (NN (NE )))(NN ))(NN )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB (R ))(dobj (NN (R ))(infmod (VB (R ))(dobj (dep (nn (NN (NE )))(NN ))(NN )))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB (R ))(dobj (NN (R ))(infmod (VB )(dobj (dep (nn (NN (NE )))(NN ))(NN )))))) |ET| 36:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(R )(ccomp (VB (R ))(dobj (NN (R ))(infmod (VB )(dobj (dep (NN (NE )))(NN )))))) |ET| 38:1 103:1 195:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(R )(ccomp (VB (R ))(dobj (NN )(infmod (VB )(dobj (dep (NN (NE )))(NN )))))) |ET| 36:1 103:1 195:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB (R ))(dobj (NN (R ))(infmod (VB (R ))(dobj (dep (NN (NE )))(NN )))))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN (R ))))(ccomp (VB )(dobj (NN )(infmod (VB )(dobj (dep (NN (NE )))(NN )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB )(dobj (NN )(infmod (VB (R ))(dobj (dep (NN (NE )))(NN )))))) |ET| 39:1 101:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB )(dobj (NN (R ))(infmod (VB )(dobj (dep (NN (NE )))(NN )))))) |ET| 38:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB )(dobj (NN )(infmod (VB )(dobj (dep (nn (NN (R )))(NN (NE )))(NN )))))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN (R ))))(ccomp (VB )(dobj (NN )(infmod (VB )(dobj (dep (NN (NE )))(NN )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(R )(ccomp (VB )(dobj (NN )(infmod (VB )(dobj (dep (NN (NE )))(NN )))))) |ET| 35:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB (R ))(dobj (NN )(infmod (VB )(dobj (dep (NN (NE )))(NN )))))) |ET| 36:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB (R ))(dobj (NN (R ))(infmod (VB )(dobj (dep (NN (NE )))(NN )))))) |ET| 38:1 104:1 188:1
+-1	|BT| (NN (dep (nn (NN (NE )))(NN (NE )))(R )) |ET| 25:1 30:1 107:1 193:1 204:1
+-1	|BT| (VB (R )(dobj (dep (nn (NN (NE )))(NN (NE )))(NN ))) |ET| 25:1 39:1 103:1 159:1
+-1	|BT| (NN (dep (nn (NN (NE )))(NN (NE )))(prep_of (nn (NN (R )))(NN ))) |ET| 25:1 38:1 104:1 193:1
+-1	|BT| (VB (R )(dobj (dep (nn (NN (NE )))(NN (NE )))(NN ))) |ET| 25:1 39:1 103:1 159:1
+-1	|BT| (VB (R )(dobj (NN )(infmod (VB )(dobj (dep (nn (NN (NE )))(NN (NE )))(NN ))))) |ET| 25:1 36:1 101:1 159:1
+-1	|BT| (NN (dep (nn (NN (NE )))(NN (NE )))(R )) |ET| 25:1 30:1 80:1 107:1 117:1
+-1	|BT| (NN (dep (nn (NN (NE )))(NN (NE )))(R )) |ET| 25:1 30:1 107:1 193:1
+-1	|BT| (NN (R )(infmod (VB )(dobj (dep (nn (NN (NE )))(NN (NE )))(NN )))) |ET| 25:1 38:1 104:1 161:1
+1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 80:1 107:1 118:1
+-1	|BT| (NN (R )(infmod (VB )(dobj (dep (nn (NN (NE )))(NN (NE )))(NN )))) |ET| 25:1 38:1 104:1 159:1
+-1	|BT| (NN (dep (nn (NN (NE )))(NN (NE )))(R )) |ET| 25:1 30:1 107:1 193:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 80:1 92:1 107:1
+-1	|BT| (VB (dobj (NN (NE )))(prep_from (NN )(prep_of (NN (NE ))(conj_and (NN (R )))))) |ET| 104:1 193:1 200:1
+-1	|BT| (VB (aux (TO (R )))(dobj (NN (NE )))(prep_from (NN )(prep_of (NN (NE ))))) |ET| 38:1 107:1 159:1
+1	|BT| (VB (dobj (NN (NE )))(prep_from (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 54:1 107:1 141:1 189:1
+-1	|BT| (NN (R )(infmod (VB )(dobj (NN (NE )))(prep_from (NN )(prep_of (NN (NE )))))) |ET| 38:1 107:1 161:1
+-1	|BT| (VB (R )(dobj (NN (NE )))(prep_from (NN )(prep_of (NN (NE ))))) |ET| 39:1 80:1 105:1 110:1
+-1	|BT| (VB (R )(dobj (NN (NE )))(prep_from (NN )(prep_of (NN (NE ))))) |ET| 39:1 105:1 159:1
+1	|BT| (VB (dobj (NN (NE )))(prep_from (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 34:1 107:1 189:1
+-1	|BT| (VB (R )(dobj (NN )(infmod (VB )(dobj (NN (NE )))(prep_from (NN )(prep_of (NN (NE ))))))) |ET| 36:1 103:1 159:1
+-1	|BT| (VB (dobj (NN (NE )))(prep_from (NN )(prep_of (NN (NE ))(conj_and (NN (R )))))) |ET| 104:1 193:1 200:1
+-1	|BT| (VB (R )(dobj (NN (NE )))(prep_from (NN )(prep_of (NN (NE ))))) |ET| 39:1 105:1 159:1
+-1	|BT| (VB (dobj (NN (NE )))(prep_from (NN (R ))(prep_of (NN )(conj_and (poss (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (dobj (NN (NE )))(prep_from (NN (R ))(prep_of (NN )(conj_and (poss (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (NN (R )(prep_of (NN (NE ))(conj_and (poss (NN (NE )))(NN )))) |ET| 38:1 105:1 133:1 161:1
+-1	|BT| (NN (NE )(conj_and (poss (NN (NE )))(NN (R )))) |ET| 10:1 30:1 193:1
+-1	|BT| (NN (R )(prep_of (NN (NE ))(conj_and (poss (NN (NE )))(NN )))) |ET| 38:1 63:1 105:1 161:1 205:1
+-1	|BT| (NN (NE )(conj_and (poss (NN (NE )))(NN (R )))) |ET| 10:1 30:1 193:1
+-1	|BT| (NN (NE )(appos (NN )(prep_at (NN (NE ))(appos (nn (NN (R )))(NN ))))) |ET| 33:1 39:1 104:1 193:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 22:1 30:1 54:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_at (NN (NE ))(appos (amod (JJ (R )))(NN ))))) |ET| 33:1 39:1 104:1 193:1
+-1	|BT| (VB (R )(nsubj (NN (NE ))(appos (NN )(prep_at (NN (NE )))))) |ET| 38:1 105:1 159:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 105:1 149:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 105:1 149:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 22:1 30:1 54:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(appos (nn (NN (NE )))(NN ))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(appos (nn (NN (NE )))(NN ))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(appos (nn (NN (NE )))(NN ))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(appos (nn (NN (NE )))(NN ))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (NE )))(nn (NN (R )))(NN ))) |ET| 39:1 107:1 182:1 193:1
+1	|BT| (NN (NE )(appos (nn (NN (NE )))(NN (R )))) |ET| 30:1 105:1 193:1
+-1	|BT| (NN (R )(prep_at (NN (NE ))(appos (nn (NN (NE )))(NN )))) |ET| 38:1 51:1 105:1 161:1
+-1	|BT| (NN (NE )(appos (nn (NN (NE )))(amod (JJ (R )))(NN ))) |ET| 39:1 107:1 182:1 193:1
+-1	|BT| (NN (R )(prep_at (NN (NE ))(appos (nn (NN (NE )))(NN )))) |ET| 38:1 63:1 105:1 111:1 161:1
+-1	|BT| (NN (R )(prep_at (NN (NE ))(appos (nn (NN (NE )))(NN )))) |ET| 38:1 63:1 105:1 111:1 161:1
+1	|BT| (NN (NE )(appos (nn (NN (NE )))(NN (R )))) |ET| 30:1 105:1 193:1
+1	|BT| (NN (NE )(appos (nn (NN (NE )))(NN (R )))) |ET| 30:1 105:1 193:1
+-1	|BT| (NN (R )(prep_at (NN (NE ))(appos (nn (NN (NE )))(NN )))) |ET| 38:1 51:1 105:1 161:1
+-1	|BT| (VB (prep_in (nn (NN (NE )))(NN (R )))(nsubj (nn (NN (NE )))(NN ))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (prep_in (nn (NN (NE )))(NN ))(nsubj (nn (NN (NE )))(NN ))(R )) |ET| 39:1 107:1 192:1
+-1	|BT| (VB (prep_in (nn (NN (NE )))(NN (R )))(nsubj (nn (NN (NE )))(NN ))) |ET| 38:1 80:1 105:1 122:1
+-1	|BT| (VB (prep_in (nn (NN (NE )))(NN ))(nsubj (nn (NN (NE )))(NN (R )))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (prep_in (nn (NN (NE )))(NN ))(nsubj (nn (NN (NE )))(NN (R )))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (prep_in (nn (NN (NE )))(NN (R )))(nsubj (nn (NN (NE )))(NN ))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (prep_in (nn (NN (NE )))(NN ))(nsubj (nn (NN (NE )))(NN ))(R )) |ET| 39:1 107:1 192:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN (R )))(prep_for (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_for (NN (NE ))))) |ET| 30:1 54:1 105:1 144:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN (R )))(prep_for (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_for (NN (NE ))))) |ET| 30:1 54:1 68:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_for (NN (NE ))))) |ET| 30:1 54:1 68:1 105:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_for (NN (NE ))))) |ET| 30:1 54:1 105:1 144:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_nor (NN )(dep (JJ )(prep_to (amod (amod (NN (NE )))(JJ ))(NN (NE ))))))(R )) |ET| 36:1 101:1 192:1
+-1	|BT| (VB (nsubj (NN )(conj_nor (NN )(dep (JJ )(prep_to (amod (amod (NN (NE )))(JJ ))(NN (NE ))))))(R )) |ET| 36:1 101:1 192:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN )(appos (NN (NE ))))(R )) |ET| 33:1 39:1 107:1 192:1
+1	|BT| (NN (nn (NN (NE )))(R )(appos (NN (NE )))) |ET| 30:1 105:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(ccomp (JJ (R ))(prep_in (NN (NE ))))) |ET| 30:1 107:1 195:1 197:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(ccomp (JJ )(prep_in (NN (NE ))))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (R )))(ccomp (JJ )(prep_in (NN (NE ))))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (NN (NE ))))(R )(ccomp (JJ (R ))(prep_in (NN (NE ))))) |ET| 30:1 87:1 107:1 195:1 197:1
+-1	|BT| (VB (nsubj (NN )(appos (NN (NE ))))(R )(ccomp (JJ )(prep_in (NN (NE ))))) |ET| 39:1 87:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (R ))(appos (NN (NE ))))(ccomp (JJ )(prep_in (NN (NE ))))) |ET| 38:1 105:1 161:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (NN (R )))(prep_with (poss (NN (NE )))(NN )))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (poss (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (nn (NN (R )))(NN ))(prep_with (poss (NN (NE )))(NN )))) |ET| 36:1 103:1 195:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (poss (NN (NE )))(NN )))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (NN (R )))(prep_with (poss (NN (NE )))(NN )))) |ET| 38:1 87:1 107:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (poss (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (poss (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (nn (NN )(conj_and (NN (R ))))(NN ))(prep_with (poss (NN (NE )))(NN )))) |ET| 35:1 104:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (poss (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (NN (R )))(prep_with (poss (NN (NE )))(NN )))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (nn (NN (R )))(NN ))(prep_with (poss (NN (NE )))(NN )))) |ET| 36:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_with (NN )(appos (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (NN (R )))(prep_with (NN )(appos (NN (NE )))))) |ET| 38:1 87:1 107:1 195:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (nn (NN (R )))(NN ))(prep_with (NN )(appos (NN (NE )))))) |ET| 36:1 103:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_with (NN (R ))(appos (NN (NE )))))) |ET| 30:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (NN (R )))(prep_with (NN )(appos (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_with (NN (R ))(appos (NN (NE )))))) |ET| 30:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (nn (NN (R )))(NN ))(prep_with (NN )(appos (NN (NE )))))) |ET| 36:1 103:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 105:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_with (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (nn (NN )(conj_and (NN (R ))))(NN ))(prep_with (NN )(appos (NN (NE )))))) |ET| 35:1 104:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_for (NN (R )))(prep_with (NN )(appos (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (prep_for (nn (NN (R )))(NN ))(prep_with (poss (NN (NE )))(NN )(appos (NN (NE ))))) |ET| 36:1 104:1 195:1
+-1	|BT| (NN (prep_for (nn (NN )(conj_and (NN (R ))))(NN ))(prep_with (poss (NN (NE )))(NN )(appos (NN (NE ))))) |ET| 35:1 101:1 161:1
+-1	|BT| (NN (prep_for (NN (R )))(prep_with (poss (NN (NE )))(NN )(appos (NN (NE ))))) |ET| 38:1 103:1 191:1
+-1	|BT| (NN (prep_for (NN (R )))(prep_with (poss (NN (NE )))(NN )(appos (NN (NE ))))) |ET| 38:1 103:1 161:1
+-1	|BT| (NN (poss (NN (NE )))(R )(appos (NN (NE )))) |ET| 30:1 31:1 80:1 105:1
+1	|BT| (NN (poss (NN (NE )))(R )(appos (NN (NE )))) |ET| 30:1 105:1 189:1
+-1	|BT| (NN (poss (NN (NE )))(R )(appos (NN (NE )))) |ET| 30:1 31:1 80:1 105:1
+-1	|BT| (NN (prep_for (NN (R )))(prep_with (poss (NN (NE )))(NN )(appos (NN (NE ))))) |ET| 38:1 103:1 161:1
+-1	|BT| (NN (prep_for (nn (NN (R )))(NN ))(prep_with (poss (NN (NE )))(NN )(appos (NN (NE ))))) |ET| 36:1 104:1 161:1
+1	|BT| (NN (poss (NN (NE )))(R )(appos (NN (NE )))) |ET| 30:1 105:1 189:1
+-1	|BT| (NN (prep_for (NN (R )))(prep_with (poss (NN (NE )))(NN )(appos (NN (NE ))))) |ET| 29:1 38:1 80:1 103:1
+-1	|BT| (NN (prep_for (NN (R )))(prep_with (poss (NN (NE )))(NN )(appos (NN (NE ))))) |ET| 29:1 38:1 80:1 103:1
+-1	|BT| (NN (prep_for (NN (R )))(prep_with (poss (NN (NE )))(NN )(appos (NN (NE ))))) |ET| 38:1 103:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN (R ))(prep_of (poss (NN (NE )))(NN )))(VB ))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (nsubj (NN (R ))(prep_of (poss (NN (NE )))(NN )))(VB ))) |ET| 39:1 105:1 194:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN (R ))(prep_of (poss (NN (NE )))(NN )))(VB ))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN )(prep_of (poss (NN (NE )))(amod (VB (R )))(NN )))(VB ))) |ET| 39:1 101:1 192:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN (R ))(prep_of (poss (NN (NE )))(NN )))(VB ))) |ET| 39:1 80:1 103:1 118:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(aux (MD (R )))(VB ))) |ET| 36:1 103:1 192:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(VB ))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (nsubj (NN (R ))(prep_of (poss (NN (NE )))(NN )))(VB ))) |ET| 39:1 105:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN )(prep_of (poss (NN (NE )))(NN (R ))))(VB ))) |ET| 30:1 104:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN )(prep_of (NN (R ))))(VB )(dobj (nn (NN (NE )))(NN )))) |ET| 36:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN (R )))(VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN )(prep_of (amod (VB (R )))(NN )))(VB )(dobj (nn (NN (NE )))(NN )))) |ET| 35:1 101:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB (R ))(dobj (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN (R )))(VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB (R ))(dobj (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (aux (MD (R )))(VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN (R ))))(dobj (nn (NN (NE )))(NN ))) |ET| 36:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(amod (VB (R )))(NN )))(dobj (nn (NN (NE )))(NN ))) |ET| 35:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(R )(dobj (nn (NN (NE )))(NN ))) |ET| 39:1 103:1 195:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(R )(dobj (nn (NN (NE )))(NN ))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(aux (MD (R )))(dobj (nn (NN (NE )))(NN ))) |ET| 38:1 104:1 188:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 105:1 149:1 189:1
+-1	|BT| (VB (R )(nsubj (NN (NE ))(appos (NN )(prep_at (NN (NE )))))) |ET| 38:1 105:1 159:1
+-1	|BT| (VB (ccomp (VB )(conj_and (VB )(dobj (NN (R )))))(nsubj (NN (NE ))(appos (NN )(prep_at (NN (NE )))))) |ET| 35:1 104:1 161:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 22:1 30:1 54:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN (NE ))(rcmod (nsubj (NN (R )))(JJ )))(VB ))) |ET| 39:1 101:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN (NE ))(rcmod (nsubj (nn (NN (R )))(NN ))(JJ )))(VB ))) |ET| 38:1 101:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN (NE ))(rcmod (nsubj (NN (R )))(JJ )))(VB ))) |ET| 39:1 101:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (nsubj (NN (NE )))(VB ))) |ET| 39:1 105:1 188:1
+-1	|BT| (VB (R )(nsubj (NN (NE ))(appos (NN )(prep_of (NN (NE )))))) |ET| 38:1 105:1 159:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_of (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 54:1 105:1 141:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 54:1 105:1 141:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 34:1 105:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 34:1 105:1 189:1
+-1	|BT| (VB (prep_in (NN (R )))(nsubj (NN (NE )))(dobj (NN (NE )))) |ET| 39:1 107:1 161:1
+-1	|BT| (VB (prep_in (nn (NN (R )))(NN ))(nsubj (NN (NE )))(dobj (NN (NE )))) |ET| 38:1 103:1 161:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (NE ))(appos (NN )(partmod (VB (R )))))) |ET| 33:1 39:1 104:1 192:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (NE ))(appos (NN (R ))))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (prep_in (NN (R )))(nsubj (NN (NE )))(dobj (NN (NE )))) |ET| 39:1 107:1 161:1
+1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (NE )))) |ET| 30:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(appos (NN )(partmod (VB (R ))(dobj (NN (NE ))))))) |ET| 30:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(appos (NN (R ))(partmod (VB )(dobj (NN (NE ))))))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(appos (NN )(partmod (VB )(dobj (NN (NE ))))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(appos (NN )(partmod (VB (R ))(dobj (NN )(appos (NN (NE )))))))) |ET| 39:1 60:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(appos (NN (R ))(partmod (VB )(dobj (NN )(appos (NN (NE )))))))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(appos (NN )(partmod (VB )(dobj (NN )(appos (NN (NE )))))))) |ET| 35:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(appos (NN )(partmod (VB (R ))(dobj (NN )(appos (amod (JJ (NE )))(NN ))))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(appos (NN (R ))(partmod (VB )(dobj (NN )(appos (amod (JJ (NE )))(NN ))))))) |ET| 36:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(appos (NN )(partmod (VB )(dobj (NN )(appos (amod (JJ (NE )))(NN ))))))) |ET| 35:1 105:1 188:1
+1	|BT| (NN (NE )(appos (NN )(partmod (VB (R ))(dobj (NN (NE )))))) |ET| 30:1 87:1 107:1 188:1
+-1	|BT| (NN (NE )(appos (NN (R ))(partmod (VB )(dobj (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (VB (R )(dobj (NN (NE ))(appos (NN )(partmod (VB )(dobj (NN (NE ))))))) |ET| 36:1 105:1 159:1
+-1	|BT| (NN (NE )(appos (NN )(partmod (VB (R ))(dobj (NN )(appos (NN (NE ))))))) |ET| 39:1 60:1 87:1 107:1 188:1
+-1	|BT| (NN (NE )(appos (NN (R ))(partmod (VB )(dobj (NN )(appos (NN (NE ))))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(partmod (VB (R ))(dobj (NN )(appos (amod (JJ (NE )))(NN )))))) |ET| 38:1 87:1 107:1 188:1
+-1	|BT| (NN (NE )(appos (NN (R ))(partmod (VB )(dobj (NN )(appos (amod (JJ (NE )))(NN )))))) |ET| 36:1 105:1 189:1
+-1	|BT| (NN (R )(partmod (VB )(dobj (NN )(appos (NN (NE )))(appos (amod (JJ (NE )))(NN ))))) |ET| 36:1 103:1 161:1
+-1	|BT| (NN (appos (NN (NE )))(appos (amod (JJ (NE )))(NN (R )))) |ET| 30:1 107:1 182:1 195:1 204:1
+-1	|BT| (NN (appos (NN (NE )))(appos (amod (JJ (NE )))(NN )(conj_and (NN (R ))))) |ET| 39:1 69:1 103:1 193:1
+-1	|BT| (NN (appos (NN (NE )))(appos (amod (JJ (NE )))(NN (R )))) |ET| 30:1 107:1 182:1 193:1
+-1	|BT| (NN (appos (NN (NE )))(appos (amod (JJ (NE )))(NN (R )))) |ET| 30:1 107:1 182:1 195:1
+-1	|BT| (NN (appos (NN (NE )))(appos (amod (JJ (NE )))(NN )(conj_and (NN (R ))))) |ET| 39:1 69:1 103:1 193:1
+-1	|BT| (VB (R )(dobj (NN )(appos (NN (NE )))(appos (amod (JJ (NE )))(NN )))) |ET| 19:1 38:1 107:1 159:1
+-1	|BT| (VB (dobj (NN )(appos (NN (NE )))(appos (NN (R ))))(prep_against (NN )(prep_of (NN )(appos (NN (NE )))))) |ET| 35:1 87:1 107:1 195:1
+-1	|BT| (VB (dobj (NN )(appos (NN (NE ))))(prep_against (NN )(prep_of (NN (R ))(appos (NN (NE )))))) |ET| 30:1 104:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (NN (NE )))(appos (NN (R ))))(prep_against (NN )(prep_of (NN )(appos (NN (NE )))))) |ET| 35:1 87:1 107:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (NN (NE ))))(prep_against (NN (R ))(prep_of (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 103:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (NN (NE )))(appos (NN (R ))))(prep_against (NN )(prep_of (NN )(appos (NN (NE )))))) |ET| 35:1 87:1 107:1 195:1
+-1	|BT| (VB (dobj (NN )(appos (NN (NE )))(appos (NN )(conj_and (NN (R )))))(prep_against (NN )(prep_of (NN )(appos (NN (NE )))))) |ET| 35:1 103:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (NN (NE ))))(prep_against (NN (R ))(prep_of (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 103:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN (R ))))(prep_against (NN )(prep_of (NN )(appos (NN (NE )))))) |ET| 35:1 105:1 195:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN )))(prep_against (NN )(prep_of (NN (R ))(appos (NN (NE )))))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN (R ))))(prep_against (NN )(prep_of (NN )(appos (NN (NE )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN )))(prep_against (NN (R ))(prep_of (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 104:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN (R ))))(prep_against (NN )(prep_of (NN )(appos (NN (NE )))))) |ET| 35:1 105:1 195:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN )(conj_and (NN (R )))))(prep_against (NN )(prep_of (NN )(appos (NN (NE )))))) |ET| 35:1 107:1 189:1 190:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN )))(prep_against (NN (R ))(prep_of (NN )(appos (NN (NE )))))) |ET| 39:1 60:1 104:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN (R ))))(prep_against (NN )(prep_of (NN )(conj_and (NN (NE )))))) |ET| 35:1 105:1 195:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN )))(prep_against (NN )(prep_of (NN (R ))(conj_and (NN (NE )))))) |ET| 101:1 189:1 200:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN (R ))))(prep_against (NN )(prep_of (NN )(conj_and (NN (NE )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN )))(prep_against (NN )(prep_of (NN )(conj_and (nn (NN (R )))(NN (NE )))))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN )))(prep_against (NN (R ))(prep_of (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 104:1 189:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN (R ))))(prep_against (NN )(prep_of (NN )(conj_and (NN (NE )))))) |ET| 35:1 105:1 195:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN )(conj_and (NN (R )))))(prep_against (NN )(prep_of (NN )(conj_and (NN (NE )))))) |ET| 35:1 107:1 189:1 190:1
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN )))(prep_against (NN (R ))(prep_of (NN )(conj_and (NN (NE )))))) |ET| 11:1 39:1 104:1 189:1
+-1	|BT| (NN (R )(appos (NN (NE )))(conj_and (NN (NE )))) |ET| 105:1 161:1 200:1
+-1	|BT| (NN (appos (NN (NE )))(conj_and (nn (NN (R )))(NN (NE )))) |ET| 30:1 103:1 189:1
+-1	|BT| (NN (R )(prep_of (NN )(appos (NN (NE )))(conj_and (NN (NE ))))) |ET| 19:1 39:1 66:1 107:1 161:1
+-1	|BT| (NN (R )(prep_of (NN )(appos (NN (NE )))(conj_and (NN (NE ))))) |ET| 19:1 39:1 66:1 107:1 161:1
+-1	|BT| (NN (R )(appos (NN (NE )))(conj_and (NN )(appos (NN (NE ))))) |ET| 39:1 79:1 105:1 161:1 181:1
+-1	|BT| (NN (appos (NN (NE )))(conj_and (nn (NN (R )))(NN )(appos (NN (NE ))))) |ET| 39:1 60:1 103:1 189:1
+-1	|BT| (NN (R )(prep_of (NN )(appos (NN (NE )))(conj_and (NN )(appos (NN (NE )))))) |ET| 19:1 38:1 107:1 161:1
+-1	|BT| (NN (R )(prep_of (NN )(appos (NN (NE )))(conj_and (NN )(appos (NN (NE )))))) |ET| 19:1 38:1 107:1 161:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (NE )))(nn (NN (R )))(NN ))) |ET| 39:1 101:1 193:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(R )(nsubj (nn (NN (NE )))(NN ))) |ET| 39:1 80:1 104:1 167:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB (R ))(prep_on (nn (NN (NE )))(NN (R )))))(nsubj (nn (NN (NE )))(NN ))) |ET| 36:1 92:1 105:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB (R ))(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (NE )))(NN ))) |ET| 36:1 107:1 159:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (NE )))(nn (NN (R )))(NN ))) |ET| 39:1 101:1 193:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB (R ))(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (NE )))(NN ))) |ET| 36:1 107:1 159:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB (R ))(prep_on (nn (NN (NE )))(NN (R )))))(nsubj (nn (NN (NE )))(NN ))) |ET| 36:1 92:1 105:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB (R ))(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (NE )))(NN ))) |ET| 36:1 107:1 159:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN (R )))))(nsubj (nn (NN (NE )))(NN ))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (NE )))(nn (NN (R )))(NN ))) |ET| 39:1 101:1 193:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(R )(nsubj (nn (NN (NE )))(NN ))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB (R ))(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (NE )))(NN ))) |ET| 36:1 107:1 159:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN (R )))))(nsubj (nn (NN (NE )))(NN ))) |ET| 35:1 80:1 105:1 122:1
+-1	|BT| (VB (ccomp (VB )(ccomp (aux (MD (R )))(VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (NE )))(NN ))) |ET| 35:1 103:1 159:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(R )(nsubj (nn (NN (NE )))(NN ))) |ET| 39:1 80:1 104:1 167:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (R )))(NN (NE )))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (R )))(NN (NE )))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN (R )))))(nsubj (NN (NE )))) |ET| 36:1 105:1 189:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(R )(nsubj (NN (NE )))) |ET| 30:1 104:1 188:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (R )))(NN (NE )))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (R )))(NN )(appos (NN )(dep (NN (NE )))))) |ET| 38:1 101:1 189:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (R )))(NN )(appos (NN )(dep (NN (NE )))))) |ET| 38:1 101:1 189:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (NN )(appos (NN (R ))(dep (NN (NE )))))) |ET| 30:1 101:1 189:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN (R )))))(nsubj (NN )(appos (NN )(dep (NN (NE )))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(R )(nsubj (NN )(appos (NN )(dep (NN (NE )))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (R )))(NN )(appos (NN )(dep (NN (NE )))))) |ET| 38:1 101:1 189:1
+1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+-1	|BT| (VB (R )(nsubj (nn (NN (NE )))(NN (NE )))) |ET| 25:1 30:1 107:1 159:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 80:1 92:1 107:1
+-1	|BT| (NN (nn (NN (NE )))(NE )(appos (NN (R )))) |ET| 25:1 30:1 107:1 193:1
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (NN (R )))))(nsubj (nn (NN (NE )))(NN (NE )))) |ET| 25:1 36:1 101:1 161:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 80:1 92:1 107:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(appos (NN )(dep (NN (NE ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(appos (NN )(dep (NN (NE ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(appos (NN (R ))(dep (NN (NE ))))) |ET| 30:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(appos (NN )(dep (NN (NE ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (prep_from (nn (NN (NE )))(NN ))(nsubj (poss (NN (NE )))(NN )(prep_of (NN (R ))))) |ET| 39:1 104:1 193:1
+-1	|BT| (VB (prep_from (nn (NN (NE )))(NN ))(nsubj (poss (NN (NE )))(NN (R )))) |ET| 30:1 103:1 193:1 198:1 204:1
+-1	|BT| (VB (prep_from (nn (NN (NE )))(NN ))(nsubj (poss (NN (NE )))(NN (R )))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (R )(prep_from (nn (NN (NE )))(NN ))(nsubj (poss (NN (NE )))(NN ))) |ET| 39:1 107:1 159:1
+-1	|BT| (VB (prep_from (nn (NN (NE )))(NN ))(nsubj (poss (NN (NE )))(NN (R )))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (prep_from (nn (NN (NE )))(NN (R )))(nsubj (poss (NN (NE )))(NN (R )))) |ET| 30:1 80:1 105:1 117:1
+-1	|BT| (VB (R )(prep_from (nn (NN (NE )))(NN ))(nsubj (poss (NN (NE )))(NN ))) |ET| 39:1 107:1 159:1
+-1	|BT| (VB (prep_from (nn (NN (NE )))(NN (R )))(nsubj (poss (NN (NE )))(NN ))) |ET| 38:1 80:1 105:1 118:1
+-1	|BT| (VB (prep_from (nn (NN (NE )))(NN (R )))(nsubj (poss (NN (NE )))(NN ))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (R )(prep_from (nn (NN (NE )))(NN (R )))(nsubj (poss (NN (NE )))(NN ))) |ET| 39:1 92:1 105:1
+-1	|BT| (VB (R )(prep_from (nn (NN (NE )))(NN (R )))(nsubj (poss (NN (NE )))(NN ))) |ET| 39:1 92:1 105:1
+-1	|BT| (VB (R )(prep_from (nn (NN (NE )))(NN ))(nsubj (poss (NN (NE )))(NN ))) |ET| 39:1 107:1 159:1
+-1	|BT| (VB (prep_from (nn (NN (NE )))(NN (R )))(nsubj (poss (NN (NE )))(NN ))) |ET| 38:1 80:1 105:1 122:1
+-1	|BT| (VB (R )(prep_from (nn (NN (NE )))(NN ))(nsubj (poss (NN (NE )))(NN ))) |ET| 39:1 107:1 159:1
+-1	|BT| (JJ (nsubj (NN (R ))(prep_of (nn (NN (NE )))(NN )))(prep_for (NN (NE )))) |ET| 39:1 107:1 161:1
+-1	|BT| (JJ (nsubj (NN )(prep_of (nn (NN (NE )))(NN )))(prep_for (NN (NE ))(rcmod (aux (have (R )))(VB )))) |ET| 39:1 101:1 192:1
+-1	|BT| (JJ (nsubj (NN (R ))(prep_of (nn (NN (NE )))(NN )))(prep_for (NN (NE )))) |ET| 39:1 107:1 161:1
+-1	|BT| (JJ (nsubj (NN )(prep_of (nn (NN (NE )))(NN )))(prep_for (NN (NE ))(rcmod (VB (R ))))) |ET| 30:1 101:1 192:1
+-1	|BT| (JJ (nsubj (NN (R ))(prep_of (nn (NN (NE )))(NN (R ))))(prep_for (NN (NE )))) |ET| 31:1 39:1 105:1
+-1	|BT| (JJ (nsubj (NN )(prep_of (nn (NN (NE )))(NN )))(prep_for (NN (NE ))(rcmod (VB (R ))))) |ET| 30:1 101:1 192:1
+-1	|BT| (JJ (nsubj (NN )(prep_of (nn (NN (NE )))(NN (R ))))(prep_for (NN (NE )))) |ET| 38:1 80:1 105:1 122:1
+-1	|BT| (JJ (nsubj (NN )(prep_of (nn (NN (NE )))(NN (R ))))(prep_for (NN (NE )))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (ccomp (NN )(prep_with (NN (NE ))))(nsubj (NN (NE )))(R )) |ET| 30:1 107:1 192:1
+1	|BT| (VB (ccomp (NN (R ))(prep_with (NN (NE ))))(nsubj (NN (NE )))) |ET| 39:1 63:1 91:1 105:1 161:1
+-1	|BT| (VB (ccomp (NN )(prep_with (NN (NE ))))(nsubj (NN (NE )))(aux (have (R )))) |ET| 39:1 103:1 192:1
+-1	|BT| (VB (ccomp (NN )(prep_with (NN (NE ))))(nsubj (NN (NE )))(R )) |ET| 30:1 107:1 158:1 192:1 204:1
+1	|BT| (VB (ccomp (NN (R ))(prep_with (NN (NE ))))(nsubj (NN (NE )))) |ET| 39:1 63:1 91:1 105:1 161:1
+-1	|BT| (VB (ccomp (NN )(prep_with (NN (NE ))))(nsubj (NN (NE )))(R )) |ET| 30:1 107:1 192:1
+-1	|BT| (VB (ccomp (NN )(prep_with (NN (NE ))))(nsubj (NN (NE )))(xcomp (nsubj (NN (R )))(VB ))) |ET| 38:1 104:1 193:1
+-1	|BT| (VB (ccomp (NN )(prep_with (NN (NE ))))(nsubj (NN (NE )))(R )) |ET| 30:1 107:1 158:1 192:1 204:1
+-1	|BT| (VB (prep_to (NN )(prep_in (NN (NE ))))(conj_and (VB (R ))(xcomp (nsubj (NN (NE )))(VB )))) |ET| 39:1 80:1 103:1 121:1
+-1	|BT| (VB (prep_to (NN (R ))(prep_in (NN (NE ))))(conj_and (VB )(xcomp (nsubj (NN (NE )))(VB )))) |ET| 36:1 47:1 63:1 105:1 161:1
+-1	|BT| (VB (prep_to (NN )(prep_in (NN (NE ))))(conj_and (VB )(xcomp (nsubj (NN (NE )))(VB )(dobj (nn (NN (R )))(NN ))))) |ET| 38:1 101:1 193:1
+-1	|BT| (VB (prep_to (NN )(prep_in (NN (NE ))))(conj_and (VB )(xcomp (nsubj (NN (NE )))(VB (R ))))) |ET| 30:1 104:1 192:1
+-1	|BT| (VB (prep_to (NN (R ))(prep_in (NN (NE ))))(conj_and (VB )(xcomp (nsubj (NN (NE )))(VB )))) |ET| 36:1 47:1 63:1 105:1 161:1
+-1	|BT| (VB (prep_to (NN (R ))(prep_in (NN (NE ))))(conj_and (VB )(xcomp (nsubj (NN (NE )))(VB )))) |ET| 36:1 45:1 105:1 161:1
+-1	|BT| (VB (prep_to (NN )(prep_in (NN (NE ))))(conj_and (VB (R ))(xcomp (nsubj (NN (NE )))(VB )))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (prep_to (NN )(prep_in (NN (NE ))))(conj_and (VB )(xcomp (nsubj (NN (NE )))(VB )(dobj (NN (R )))))) |ET| 39:1 101:1 193:1
+-1	|BT| (VB (prep_to (NN (R ))(prep_in (NN (NE ))))(conj_and (VB )(xcomp (nsubj (NN (NE )))(VB )))) |ET| 36:1 45:1 105:1 161:1
+-1	|BT| (VB (prep_to (NN )(prep_in (NN (NE ))))(conj_and (VB (R ))(xcomp (nsubj (NN (NE )))(VB )))) |ET| 39:1 80:1 103:1 121:1
+-1	|BT| (VB (prep_to (NN )(prep_in (NN (NE ))))(conj_and (VB (R ))(xcomp (nsubj (NN (NE )))(VB )))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (prep_to (NN )(prep_in (NN (NE ))))(conj_and (VB )(xcomp (nsubj (NN (NE )))(VB )(dobj (NN (R )))))) |ET| 39:1 101:1 193:1
+-1	|BT| (VB (prep_to (NN (R ))(prep_in (NN (NE ))))(conj_and (VB (R ))(xcomp (nsubj (NN (NE )))(VB )))) |ET| 32:1 39:1 45:1 80:1 105:1
+-1	|BT| (VB (prep_to (NN (R ))(prep_in (NN (NE ))))(conj_and (VB (R ))(xcomp (nsubj (NN (NE )))(VB )))) |ET| 32:1 39:1 45:1 80:1 105:1
+-1	|BT| (NN (nsubj (NN (NE )))(R )(prep_of (NN (NE )))) |ET| 30:1 31:1 34:1 105:1
+-1	|BT| (VB (dobj (NN (R )))(advcl (nsubj (NN (NE )))(NN )(prep_of (NN (NE ))))) |ET| 38:1 103:1 161:1
+-1	|BT| (NN (mark (IN (R )))(nsubj (NN (NE )))(prep_of (NN (NE )))) |ET| 39:1 107:1 161:1
+1	|BT| (NN (nsubj (NN (NE )))(R )(prep_of (NN (NE )))) |ET| 30:1 34:1 105:1 189:1
+-1	|BT| (NN (nsubj (NN (NE )))(R )(prep_of (NN (NE )))) |ET| 30:1 34:1 105:1 122:1
+-1	|BT| (NN (nsubj (NN (NE )))(R )(prep_of (NN (NE )))) |ET| 30:1 31:1 54:1 105:1 141:1
+-1	|BT| (NN (mark (IN (R )))(nsubj (NN (NE )))(prep_of (NN (NE )))) |ET| 39:1 107:1 159:1
+-1	|BT| (NN (nsubj (NN (NE )))(R )(prep_of (NN (NE )))) |ET| 30:1 54:1 92:1 105:1 141:1
+-1	|BT| (VB (R )(advcl (nsubj (NN (NE )))(NN )(prep_of (NN (NE ))))) |ET| 39:1 107:1 159:1
+-1	|BT| (NN (prep_of (NN (R )))(rcmod (VB )(advcl (nsubj (NN (NE )))(NN )(prep_of (NN (NE )))))) |ET| 36:1 104:1 161:1
+-1	|BT| (NN (nsubj (NN (NE )))(R )(prep_of (NN (NE )))) |ET| 30:1 54:1 105:1 122:1 141:1
+1	|BT| (NN (nsubj (NN (NE )))(R )(prep_of (NN (NE )))) |ET| 30:1 54:1 105:1 141:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (amod (JJ (R )))(NN )(prep_of (nn (NN (NE )))(NN )))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_at (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 22:1 30:1 54:1 105:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 22:1 30:1 54:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 54:1 70:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 54:1 70:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN (R )))(prep_at (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN (R )))(prep_at (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 22:1 30:1 54:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (amod (JJ (R )))(NN )(prep_at (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 54:1 70:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_at (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN (R )))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN (R )))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (amod (JJ (R )))(NN )(prep_at (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (R )(prep_of (nn (NN (NE )))(NN ))(prep_at (NN (NE )))) |ET| 30:1 107:1 161:1
+-1	|BT| (NN (R )(prep_of (nn (NN (NE )))(NN (R )))(prep_at (NN (NE )))) |ET| 30:1 31:1 105:1
+-1	|BT| (NN (R )(prep_of (nn (NN (NE )))(NN ))(prep_at (NN (NE )))) |ET| 30:1 107:1 161:1
+-1	|BT| (NN (R )(prep_of (nn (NN (NE )))(NN (R )))(prep_at (NN (NE )))) |ET| 30:1 31:1 105:1
+-1	|BT| (NN (prep_of (nn (NN (NE )))(NN (R )))(prep_at (NN (NE )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (prep_of (nn (NN (NE )))(NN (R )))(prep_at (NN (NE )))) |ET| 39:1 80:1 105:1 118:1
+-1	|BT| (NN (R )(prep_of (nn (NN (NE )))(NN ))(prep_at (NN (NE )))) |ET| 30:1 107:1 161:1
+-1	|BT| (NN (amod (JJ (R )))(prep_of (nn (NN (NE )))(NN ))(prep_at (NN (NE )))) |ET| 39:1 103:1 161:1
+-1	|BT| (NN (prep_of (nn (NN (NE )))(NN (R )))(prep_at (NN (NE )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (prep_of (nn (NN (NE )))(NN (R )))(prep_at (NN (NE )))) |ET| 39:1 80:1 105:1 122:1
+-1	|BT| (NN (R )(prep_of (nn (NN (NE )))(NN (R )))(prep_at (NN (NE )))) |ET| 30:1 31:1 105:1
+-1	|BT| (NN (R )(prep_of (nn (NN (NE )))(NN ))(prep_at (NN (NE )))) |ET| 30:1 107:1 161:1
+-1	|BT| (NN (R )(prep_of (nn (NN (NE )))(NN ))(prep_at (NN (NE )))) |ET| 30:1 107:1 161:1
+-1	|BT| (NN (nn (NN (R )))(prep_of (nn (NN (NE )))(NN ))(prep_at (NN (NE )))) |ET| 39:1 103:1 161:1
+-1	|BT| (NN (R )(prep_of (nn (NN (NE )))(NN ))(prep_at (NN (NE )))) |ET| 30:1 107:1 161:1
+-1	|BT| (NN (prep_of (nn (NN (NE )))(NN (R )))(prep_at (NN (NE )))) |ET| 39:1 80:1 105:1 122:1
+-1	|BT| (NN (prep_of (nn (NN (NE )))(NN (R )))(prep_at (NN )(prep_in (NN (NE ))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (prep_of (nn (NN (NE )))(NN (R )))(prep_at (NN )(prep_in (NN (NE ))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_at (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 22:1 30:1 54:1 105:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 105:1 149:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_at (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 22:1 30:1 54:1 105:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 105:1 149:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_at (NN (NE ))))) |ET| 39:1 87:1 107:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 22:1 30:1 54:1 105:1 189:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 105:1 149:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_at (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_at (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (nn (NN (R )))(NN )(prep_at (NN )(prep_in (NN (NE )))))) |ET| 38:1 87:1 107:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN )(prep_in (NN (NE )))))) |ET| 39:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE ))(prep_of (NN )(appos (NN (NE )))))(R )) |ET| 38:1 105:1 192:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (NE )))(R )) |ET| 25:1 30:1 107:1 192:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN (NE )))(R )) |ET| 25:1 30:1 80:1 107:1 119:1
+1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (nsubj (NN (NE )))(VB )(dobj (NN (R ))))) |ET| 39:1 104:1 193:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (nsubj (NN (NE )))(VB (R )))) |ET| 30:1 103:1 192:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (nsubj (NN (NE )))(VB )(dobj (NN )(partmod (VB (R )))))) |ET| 38:1 101:1 192:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(xcomp (nsubj (NN (NE )))(VB ))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(nn (NN (R )))(NN ))(xcomp (nsubj (NN (NE )))(VB ))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB )(dobj (NN (R ))(partmod (VB )(agent (NN (NE ))))))) |ET| 39:1 104:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB )(dobj (NN )(partmod (VB (R ))(agent (NN (NE ))))))) |ET| 30:1 101:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(xcomp (VB )(dobj (NN )(partmod (VB )(agent (NN (NE ))))))) |ET| 36:1 107:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB (R ))(dobj (NN )(partmod (VB )(agent (NN (NE ))))))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(nn (NN (R )))(NN ))(xcomp (VB )(dobj (NN )(partmod (VB )(agent (NN (NE ))))))) |ET| 35:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (nsubj (NN (NE )))(VB (R )))) |ET| 30:1 107:1 192:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (nsubj (NN (NE )))(VB )(dobj (NN (R ))))) |ET| 39:1 103:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(xcomp (nsubj (NN (NE )))(VB ))) |ET| 32:1 39:1 80:1 105:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (nsubj (NN (NE )))(VB )(dobj (NN )(partmod (VB (R )))))) |ET| 38:1 104:1 192:1
+-1	|BT| (VB (nsubj (nn (NN (R )))(NN (NE )))(xcomp (nsubj (NN (NE )))(VB ))) |ET| 36:1 105:1 161:1
+1	|BT| (VB (nsubj (NN (NE )))(R )(xcomp (nsubj (NN (NE )))(VB ))) |ET| 39:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB )(dobj (NN (R ))(partmod (VB )(agent (NN (NE ))))))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB )(dobj (NN )(partmod (VB (R ))(agent (NN (NE ))))))) |ET| 30:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB (R ))(dobj (NN )(partmod (VB )(agent (NN (NE ))))))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(xcomp (VB )(dobj (NN )(partmod (VB )(agent (NN (NE ))))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(partmod (VB )(agent (NN (NE )))))) |ET| 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(partmod (VB (R ))(agent (NN (NE )))))) |ET| 30:1 103:1 188:1
+-1	|BT| (VB (nsubj (nn (NN (R )))(NN ))(xcomp (nsubj (NN (NE )))(VB )(dobj (NN )(partmod (VB )(agent (NN (NE ))))))) |ET| 35:1 104:1 161:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(partmod (VB )(agent (NN (NE )))))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (R )(xcomp (nsubj (NN (NE )))(VB )(dobj (NN )(partmod (VB )(agent (NN (NE ))))))) |ET| 36:1 107:1 159:1
+1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+-1	|BT| (VB (ccomp (be )(advcl (VB )(prep_to (NN (R )))))(nsubj (nn (NN (NE )))(NN (NE )))) |ET| 25:1 36:1 101:1 161:1
+-1	|BT| (NN (nn (NN (NE )))(NE )(appos (NN (R )))) |ET| 25:1 30:1 107:1 193:1
+1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(NE )) |ET| 25:1 30:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(appos (NN (R ))(dep (NN (NE ))))) |ET| 30:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(appos (NN )(dep (NN (NE ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(appos (NN )(dep (NN (NE ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (NN (nn (NN (NE )))(nn (NN (R )))(appos (NN )(dep (NN (NE ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN )(appos (NN (R ))))(prep_on (NN (NE )))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(nn (NN (R )))(NN ))(prep_on (NN (NE )))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(nn (NN (R )))(NN ))(prep_on (NN (NE )))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(nn (NN (R )))(NN ))(prep_on (NN (NE )))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(R )(prep_on (NN (NE )))) |ET| 30:1 54:1 67:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN (R ))))(prep_on (NN (NE )))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_on (NN (NE )))) |ET| 30:1 54:1 67:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN (R ))(dep (NN (NE )))))(prep_on (NN (NE )))) |ET| 38:1 105:1 161:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(dep (NN (NE )))))(prep_on (NN (NE ))(dep (NN (R ))))) |ET| 30:1 101:1 193:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(dep (NN (NE )))))(prep_on (NN (NE ))(dep (NN (R ))))) |ET| 30:1 101:1 195:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(dep (NN (NE )))))(R )(prep_on (NN (NE )))) |ET| 30:1 54:1 67:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(dep (NN (NE )))))(prep_on (NN (NE ))(dep (dep (NN (R )))(NN )))) |ET| 39:1 101:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (poss (NN (NE )))(NN (R )))(JJ ))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (nsubj (poss (NN (NE )))(NN ))(JJ ))) |ET| 38:1 80:1 105:1 196:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (nsubj (poss (NN (NE )))(NN ))(JJ ))) |ET| 32:1 38:1 80:1 105:1
+-1	|BT| (VB (nsubj (nn (NN (R )))(NN (NE )))(ccomp (nsubj (poss (NN (NE )))(NN ))(JJ ))) |ET| 35:1 105:1 161:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (nsubj (poss (NN (NE )))(NN ))(JJ ))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (poss (NN (NE )))(NN (R )))(JJ ))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (nsubj (poss (NN (NE )))(NN (R )))(JJ ))) |ET| 30:1 80:1 105:1 167:1
+-1	|BT| (NN (nn (NN (NE )))(R )(appos (NN (NE )))) |ET| 30:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (nn (NN (NE )))(poss (NN (R )))(NN )))) |ET| 39:1 103:1 193:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (nn (NN (NE )))(NN (R ))))) |ET| 30:1 105:1 189:1
+-1	|BT| (VB (R )(nsubj (NN (NE ))(appos (NN )(prep_of (nn (NN (NE )))(NN ))))) |ET| 36:1 105:1 159:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 80:1 105:1 117:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (nn (NN (NE )))(NN (R ))))) |ET| 30:1 107:1 182:1 191:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (nn (NN (NE )))(NN (R ))))) |ET| 30:1 107:1 182:1 193:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (nn (NN (NE )))(poss (NN (R )))(NN )))) |ET| 13:1 39:1 80:1 103:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (nn (NN (NE )))(NN (R ))))) |ET| 30:1 107:1 182:1 195:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(amod (JJ (R )))(NN ))))) |ET| 39:1 104:1 193:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(NN (R )))))) |ET| 30:1 103:1 193:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(NN (R )))))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (R )(nsubj (NN (NE ))(appos (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(NN )))))) |ET| 35:1 105:1 159:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(amod (JJ (R )))(NN ))))) |ET| 13:1 39:1 80:1 104:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(NN (R )))))) |ET| 13:1 30:1 80:1 103:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN )(conj_and (nn (NN (NE )))(NN ))))) |ET| 39:1 80:1 105:1 117:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN )(conj_and (nn (NN (NE )))(NN ))))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(NN (R )))))) |ET| 30:1 103:1 193:1
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(nn (NN (R )))(NN ))))) |ET| 39:1 104:1 193:1
+-1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN )(conj_and (nn (NN (NE )))(NN ))))) |ET| 38:1 105:1 189:1
+-1	|BT| (null) |ET| 10:1 188:1 200:1
+1	|BT| (NN (poss (NN (NE )))(R )(prep_including (NN (NE )))) |ET| 26:1 30:1 54:1 105:1 189:1
+1	|BT| (NN (poss (NN (NE )))(R )(prep_including (NN (NE )))) |ET| 26:1 30:1 54:1 105:1 189:1
+-1	|BT| (null) |ET| 10:1 188:1 200:1
+1	|BT| (NN (poss (NN (NE )))(R )(prep_including (NN )(conj_and (NN (NE ))))) |ET| 11:1 39:1 105:1 189:1
+1	|BT| (NN (poss (NN (NE )))(R )(prep_including (NN )(conj_and (NN (NE ))))) |ET| 11:1 39:1 105:1 189:1
+-1	|BT| (null) |ET| 10:1 188:1 200:1
+-1	|BT| (NN (poss (NN (NE )))(R )(prep_including (NN )(conj_and (NN (NE ))))) |ET| 11:1 39:1 105:1 189:1
+-1	|BT| (NN (poss (NN (NE )))(R )(prep_including (NN )(conj_and (NN (NE ))))) |ET| 11:1 39:1 105:1 189:1
+-1	|BT| (null) |ET| 10:1 188:1 200:1
+1	|BT| (NN (poss (NN (NE )))(R )(prep_including (NN )(conj_and (NN (NE ))))) |ET| 11:1 39:1 105:1 189:1
+1	|BT| (NN (poss (NN (NE )))(R )(prep_including (NN )(conj_and (NN (NE ))))) |ET| 11:1 39:1 105:1 189:1
+-1	|BT| (null) |ET| 10:1 150:1 159:1 200:1
+-1	|BT| (NN (R )(prep_including (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 63:1 66:1 105:1 150:1 161:1 183:1
+-1	|BT| (null) |ET| 10:1 150:1 159:1 200:1
+-1	|BT| (VB (nsubj (NN )(prep_including (NN (NE ))(conj_and (NN (NE )))))(aux (have (R )))) |ET| 36:1 103:1 150:1 192:1
+-1	|BT| (NN (R )(prep_including (NN (NE ))(conj_and (NN (NE ))))) |ET| 39:1 63:1 66:1 105:1 150:1 161:1 183:1
+-1	|BT| (null) |ET| 10:1 159:1 200:1
+-1	|BT| (VB (nsubj (NN )(prep_including (NN )(conj_and (NN (NE )))(conj_and (NN (NE )))))(aux (have (R )))) |ET| 36:1 104:1 192:1
+-1	|BT| (VB (nsubj (NN )(prep_including (NN )(conj_and (NN (NE )))(conj_and (NN (NE )))))(dobj (NN (R )))) |ET| 36:1 104:1 193:1
+-1	|BT| (VB (nsubj (NN )(prep_including (NN )(conj_and (NN (NE )))(conj_and (NN (NE )))))(R )) |ET| 38:1 103:1 192:1
+-1	|BT| (null) |ET| 10:1 159:1 200:1
+-1	|BT| (VB (nsubj (NN )(prep_including (NN )(conj_and (NN (NE )))(conj_and (NN (NE )))))(aux (have (R )))) |ET| 36:1 104:1 192:1
+-1	|BT| (VB (nsubj (NN )(prep_including (NN )(conj_and (NN (NE )))(conj_and (NN (NE )))))(R )) |ET| 38:1 103:1 192:1
+-1	|BT| (VB (nsubj (NN )(prep_including (NN )(conj_and (NN (NE )))(conj_and (NN (NE )))))(aux (have (R )))) |ET| 36:1 104:1 192:1
+-1	|BT| (VB (nsubj (NN )(prep_including (NN )(conj_and (NN (NE )))(conj_and (NN (NE )))))(dobj (NN (R )))) |ET| 36:1 104:1 193:1
+-1	|BT| (VB (nsubj (NN )(prep_including (NN )(conj_and (NN (NE )))(conj_and (NN (NE )))))(R )) |ET| 38:1 103:1 192:1
+-1	|BT| (VB (nsubj (NN )(prep_including (NN )(conj_and (NN (NE )))(conj_and (NN (NE )))))(R )) |ET| 38:1 103:1 192:1
+-1	|BT| (JJ (nsubj (nn (NN (NE )))(NN ))(R )(conj_and (NN (R ))(dobj (JJR )(prep_than (NN (NE )))))) |ET| 39:1 107:1 195:1
+-1	|BT| (JJ (nsubj (nn (NN (NE )))(NN (R )))(conj_and (NN )(dobj (JJR )(prep_than (NN (NE )))))) |ET| 36:1 105:1 189:1
+-1	|BT| (JJ (nsubj (nn (NN (NE )))(NN ))(conj_and (NN (R ))(dobj (JJR )(prep_than (NN (NE )))))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (R )))(conj_and (dep (NN (NE )))($ ))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN (R )))(conj_and (dep (NN (NE )))($ ))) |ET| 38:1 105:1 189:1
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN ))(R )(conj_and (dep (NN (NE )))($ ))) |ET| 15:1 39:1 107:1 188:1
+-1	|BT| (VB (prep_in (NN (NE )))(nsubj (nn (NN (NE )))(NN ))(R )) |ET| 39:1 105:1 192:1
+-1	|BT| (VB (prep_in (NN (NE )))(nsubj (nn (NN (NE )))(NN (R )))) |ET| 30:1 107:1 193:1
+-1	|BT| (VB (prep_in (NN (NE )))(nsubj (nn (NN (NE )))(NN ))(ccomp (nsubj (NN (R )))(be ))) |ET| 36:1 103:1 193:1
+-1	|BT| (VB (nsubjpass (NN (NE )))(R )(prep_in (NN (NE )))) |ET| 30:1 54:1 73:1 105:1 188:1
+1	|BT| (VB (nsubjpass (NN (NE )))(R )(prep_in (NN (NE )))) |ET| 30:1 105:1 188:1 197:1
+1	|BT| (NN (nsubj (NN (NE )))(R )(prep_in (NN (NE )))) |ET| 30:1 54:1 73:1 105:1 189:1
+1	|BT| (NN (nsubj (NN (NE )))(R )(prep_in (NN (NE )))) |ET| 30:1 54:1 73:1 105:1 189:1
+-1	|BT| (NN (nsubj (NN (NE )))(nn (NN (R )))(prep_in (NN (NE )))) |ET| 39:1 107:1 189:1
+1	|BT| (NN (nsubj (NN (NE )))(R )(prep_in (NN (NE )))) |ET| 30:1 105:1 189:1 197:1
+1	|BT| (NN (nsubj (NN (NE )))(R )(prep_in (NN (NE )))) |ET| 30:1 105:1 189:1 197:1
+1	|BT| (NN (nsubj (NN (NE )))(R )(prep_in (NN (NE )))) |ET| 30:1 105:1 189:1 197:1
+1	|BT| (NN (nsubj (NN (NE )))(R )(prep_in (NN (NE )))) |ET| 30:1 54:1 73:1 105:1 189:1
+-1	|BT| (NN (nsubj (NN (NE )))(amod (JJ (R )))(prep_in (NN (NE )))) |ET| 39:1 107:1 189:1
+-1	|BT| (NN (poss (NN (NE )))(ccomp (nsubj (NN (R ))(prep_such_as (NN (NE ))))(VB ))) |ET| 30:1 54:1 103:1 131:1 189:1
+-1	|BT| (NN (poss (NN (NE )))(R )(ccomp (nsubj (NN )(prep_such_as (NN (NE ))))(VB ))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (poss (NN (NE )))(amod (VB (R )))(ccomp (nsubj (NN )(prep_such_as (NN (NE ))))(VB ))) |ET| 36:1 107:1 188:1
+-1	|BT| (NN (poss (NN (NE )))(R )(ccomp (VB )(prep_to (NN (NE ))))) |ET| 39:1 105:1 189:1
+-1	|BT| (NN (poss (NN (NE )))(ccomp (VB )(dobj (NN (R )))(prep_to (NN (NE ))))) |ET| 39:1 103:1 189:1
+-1	|BT| (NN (poss (NN (NE )))(ccomp (VB (R ))(prep_to (NN (NE ))))) |ET| 30:1 54:1 93:1 107:1 188:1
+-1	|BT| (NN (poss (NN (NE )))(ccomp (VB (R ))(prep_to (NN (NE ))))) |ET| 30:1 85:1 107:1 188:1
+-1	|BT| (NN (poss (NN (NE )))(ccomp (nsubj (NN (R )))(VB )(prep_to (NN (NE ))))) |ET| 39:1 103:1 189:1
+-1	|BT| (NN (poss (NN (NE )))(ccomp (VB (R ))(prep_to (NN (NE ))))) |ET| 30:1 85:1 107:1 188:1
+-1	|BT| (NN (poss (NN (NE )))(ccomp (aux (MD (R )))(VB )(prep_to (NN (NE ))))) |ET| 39:1 103:1 188:1
+-1	|BT| (NN (poss (NN (NE )))(ccomp (VB (R ))(prep_to (NN (NE ))))) |ET| 30:1 54:1 93:1 107:1 188:1
+-1	|BT| (NN (poss (NN (NE )))(amod (VB (R )))(ccomp (VB )(prep_to (NN (NE ))))) |ET| 38:1 107:1 188:1
+1	|BT| (VB (nsubj (NN )(prep_such_as (NN (NE ))))(R )(prep_to (NN (NE )))) |ET| 30:1 85:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_such_as (NN (NE ))))(dobj (NN (R )))(prep_to (NN (NE )))) |ET| 39:1 103:1 189:1
+1	|BT| (VB (nsubj (NN )(prep_such_as (NN (NE ))))(R )(prep_to (NN (NE )))) |ET| 30:1 85:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_such_as (NN (NE ))))(R )(prep_to (NN (NE )))) |ET| 30:1 54:1 93:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_such_as (NN (NE ))))(aux (MD (R )))(prep_to (NN (NE )))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(prep_such_as (NN (NE ))))(R )(prep_to (NN (NE )))) |ET| 30:1 54:1 93:1 107:1 188:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 30:1 105:1 149:1 189:1
+-1	|BT| (VB (R )(nsubj (NN (NE ))(appos (NN )(prep_at (NN (NE )))))) |ET| 38:1 105:1 159:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_at (NN (NE ))))) |ET| 22:1 30:1 54:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB (R ))(prep_at (NN )(prep_of (NN (NE )))))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (NN (R ))(prep_of (NN (NE )))))) |ET| 30:1 54:1 103:1 141:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (nn (NN (R )))(NN )(prep_of (NN (NE )))))) |ET| 39:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (NN (R ))(prep_of (NN (NE )))))) |ET| 30:1 34:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (NN (R ))(prep_of (NN (NE )))))) |ET| 30:1 34:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB (R ))(prep_at (NN )(prep_of (NN (NE )))))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (NN (R ))(prep_of (NN (NE )))))) |ET| 30:1 54:1 103:1 141:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (NN (R ))(prep_of (NN )(prep_in (NN (NE ))))))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (nn (NN (R )))(NN )(prep_of (NN )(prep_in (NN (NE ))))))) |ET| 38:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (NN (R ))(prep_of (NN )(prep_in (NN (NE ))))))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB (R ))(prep_at (NN )(prep_of (NN )(prep_in (NN (NE ))))))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (NN (R ))(prep_of (NN )(prep_in (NN (NE ))))))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB (R ))(prep_at (NN )(prep_of (NN )(prep_in (NN (NE ))))))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (NN (R ))(prep_of (NN )(prep_in (NN (NE ))))))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(NN (R )))))) |ET| 30:1 104:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(NN ))(appos (poss (NN (R )))(NN ))))) |ET| 36:1 101:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_of (NN )(conj_and (nn (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_of (NN )(conj_and (nn (NN (NE )))(NN (R )))))) |ET| 30:1 80:1 107:1 117:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_of (NN )(conj_and (nn (NN (NE )))(NN ))))) |ET| 38:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (R ))(prep_of (NN )(conj_and (nn (NN (NE )))(NN (R )))))) |ET| 30:1 80:1 105:1 167:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (R ))(prep_of (NN )(conj_and (nn (NN (NE )))(NN ))))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(NN ))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(NN (R )))))) |ET| 13:1 30:1 80:1 104:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN )(appos (nn (NN (R )))(NN )))(prep_to (NN (NE ))))) |ET| 36:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_to (NN (NE ))))) |ET| 30:1 54:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R ))(prep_to (NN (NE ))))) |ET| 30:1 54:1 93:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN (R ))(prep_to (NN (NE ))))) |ET| 30:1 54:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN )(appos (nn (NN (R )))(NN )))(prep_to (NN (NE ))))) |ET| 36:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN )(appos (NN (R ))))(prep_to (NN (NE ))))) |ET| 38:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN )(appos (NN (R ))))(prep_to (NN (NE ))))) |ET| 38:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN )(appos (NN (R ))))(prep_to (NN (NE ))))) |ET| 38:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN )(appos (poss (NN (R )))(NN )))(prep_to (NN (NE ))))) |ET| 36:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN )(conj_and (NN (R ))))(prep_to (NN (NE ))))) |ET| 38:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(dobj (NN )(prep_to (NN (NE ))))) |ET| 39:1 105:1 188:1
+-1	|BT| (NN (prep_of (NN )(conj_and (nn (NN (NE )))(NN ))(appos (poss (NN (R )))(NN )))(prep_to (NN (NE )))) |ET| 36:1 104:1 189:1
+-1	|BT| (NN (prep_of (NN )(conj_and (nn (NN (NE )))(NN (R ))))(prep_to (NN (NE )))) |ET| 38:1 105:1 189:1
+-1	|BT| (NN (prep_of (NN )(conj_and (nn (NN (NE )))(NN ))(appos (nn (NN (R )))(NN )))(prep_to (NN (NE )))) |ET| 36:1 104:1 189:1
+-1	|BT| (NN (prep_of (NN )(conj_and (nn (NN (NE )))(NN ))(appos (nn (NN (R )))(NN )))(prep_to (NN (NE )))) |ET| 36:1 104:1 189:1
+-1	|BT| (NN (prep_of (NN )(conj_and (nn (NN (NE )))(NN ))(appos (NN (R ))))(prep_to (NN (NE )))) |ET| 38:1 103:1 189:1
+-1	|BT| (NN (prep_of (NN )(conj_and (nn (NN (NE )))(NN ))(appos (NN (R ))))(prep_to (NN (NE )))) |ET| 38:1 103:1 189:1
+-1	|BT| (NN (prep_of (NN )(conj_and (nn (NN (NE )))(NN ))(appos (NN (R ))))(prep_to (NN (NE )))) |ET| 38:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB (R ))(dobj (nn (NN (NE )))(NN (R ))))) |ET| 30:1 107:1 167:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB (R ))(dobj (nn (NN (NE )))(NN (R ))))) |ET| 30:1 105:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB )(dobj (nn (NN (NE )))(NN )))(xcomp (VB (R )))) |ET| 36:1 107:1 192:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB (R ))(dobj (nn (NN (NE )))(NN (R ))))) |ET| 30:1 105:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(aux (have (R )))(ccomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 36:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB )(dobj (nn (NN (NE )))(NN (R ))))) |ET| 30:1 103:1 193:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB (R ))(dobj (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB (R ))(dobj (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB (R ))(dobj (nn (NN (NE )))(NN )))) |ET| 39:1 105:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB )(dobj (NN (R ))))(xcomp (VB )(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 35:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB (R ))(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(xcomp (VB )(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB )(ccomp (VB (R ))(agent (amod (JJ (NE )))(NN ))))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(aux (have (R )))(xcomp (VB )(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 35:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(xcomp (VB )(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(xcomp (VB )(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 36:1 105:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB (R )))(xcomp (VB )(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 35:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(xcomp (VB )(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 36:1 105:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB )(ccomp (VB (R ))(agent (amod (JJ (NE )))(NN ))))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB )(ccomp (nsubjpass (NN (R )))(VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 38:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB )(ccomp (nsubjpass (NN (R )))(VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 38:1 104:1 189:1
+-1	|BT| (VB (ccomp (VB )(dobj (nn (NN (NE )))(NN )))(xcomp (VB (R ))(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (ccomp (VB )(dobj (nn (NN (NE )))(NN (R ))))(xcomp (VB )(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (ccomp (VB )(dobj (nn (NN (NE )))(NN )))(xcomp (VB )(ccomp (VB (R ))(agent (amod (JJ (NE )))(NN ))))) |ET| 39:1 101:1 188:1
+-1	|BT| (VB (ccomp (VB )(dobj (nn (NN (NE )))(NN )))(xcomp (VB )(ccomp (VB (R ))(agent (amod (JJ (NE )))(NN ))))) |ET| 39:1 101:1 188:1
+-1	|BT| (VB (ccomp (VB )(dobj (nn (NN (NE )))(NN )))(xcomp (VB )(ccomp (nsubjpass (NN (R )))(VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 38:1 101:1 189:1
+-1	|BT| (VB (ccomp (VB )(dobj (nn (NN (NE )))(NN )))(xcomp (VB )(ccomp (nsubjpass (NN (R )))(VB )(agent (amod (JJ (NE )))(NN ))))) |ET| 38:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_in (NN )(prep_of (NN (R ))))(advcl (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 35:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(advcl (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_in (NN (R )))(advcl (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_in (NN )(prep_of (NN (R ))))(advcl (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 35:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R )))(advcl (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(advcl (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_in (NN (R )))(advcl (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(advcl (VB (R ))(dobj (nn (NN (NE )))(NN )))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (R )))(advcl (VB )(dobj (nn (NN (NE )))(NN )))) |ET| 36:1 107:1 189:1
+-1	|BT| (VB (dobj (nn (NN (NE )))(NN ))(ccomp (VB )(dobj (NN (R ))(prep_to (nn (NN (NE )))(NN ))))) |ET| 39:1 104:1 189:1
+-1	|BT| (VB (dobj (nn (NN (NE )))(NN (R )))(ccomp (VB )(dobj (NN )(prep_to (nn (NN (NE )))(NN ))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (dobj (nn (NN (NE )))(NN ))(ccomp (VB )(dobj (NN )(prep_to (nn (NN (NE )))(NN (R )))))) |ET| 30:1 101:1 102:1 193:1 204:1
+-1	|BT| (VB (dobj (nn (NN (NE )))(NN ))(ccomp (VB (R ))(dobj (NN )(prep_to (nn (NN (NE )))(NN ))))) |ET| 38:1 103:1 188:1
+-1	|BT| (VB (dobj (nn (NN (NE )))(NN ))(ccomp (VB )(dobj (NN )(prep_to (nn (NN (NE )))(NN )(prep_of (NN (R ))))))) |ET| 39:1 101:1 193:1
+-1	|BT| (VB (dobj (nn (NN (NE )))(NN ))(ccomp (VB )(dobj (NN )(prep_to (nn (NN (NE )))(NN (R )))))) |ET| 30:1 101:1 193:1
+-1	|BT| (VB (dobj (nn (NN (NE )))(NN ))(ccomp (VB )(dobj (NN )(prep_to (nn (NN (NE )))(NN )(prep_of (NN (R ))))))) |ET| 39:1 101:1 193:1
+-1	|BT| (VB (R )(dobj (nn (NN (NE )))(NN ))(ccomp (VB )(dobj (NN )(prep_to (nn (NN (NE )))(NN ))))) |ET| 36:1 107:1 159:1
+-1	|BT| (VB (dobj (nn (NN (NE )))(NN ))(ccomp (VB (R ))(dobj (NN (R ))(prep_to (nn (NN (NE )))(NN ))))) |ET| 39:1 103:1 188:1
+-1	|BT| (VB (R )(dobj (nn (NN (NE )))(NN (R )))(ccomp (VB )(dobj (NN )(prep_to (nn (NN (NE )))(NN ))))) |ET| 36:1 92:1 105:1
+-1	|BT| (VB (prep_in (NN )(prep_of (NN (R ))))(advcl (VB )(dobj (nn (NN (NE )))(NN ))(ccomp (VB )(dobj (NN )(prep_to (nn (NN (NE )))(NN )))))) |ET| 35:1 101:1 161:1
+-1	|BT| (VB (dobj (nn (NN (NE )))(NN ))(ccomp (VB (R ))(dobj (NN (R ))(prep_to (nn (NN (NE )))(NN (R )))))) |ET| 30:1 103:1 167:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(R )) |ET| 39:1 105:1 150:1 166:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(R )) |ET| 39:1 105:1 150:1 166:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(prep_over (NN (R )))) |ET| 38:1 107:1 150:1 193:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(R )) |ET| 39:1 105:1 150:1 166:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(conj_and (NN (NE ))))(R )) |ET| 39:1 105:1 150:1 166:1 192:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_over (NN )(rcmod (nsubj (NN (NE )))(VB )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_over (NN )(rcmod (nsubj (NN (NE )))(VB )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_over (NN )(rcmod (nsubj (NN (NE )))(VB )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(prep_over (NN )(rcmod (nsubj (NN (NE )))(VB )))) |ET| 38:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(prep_over (NN (R ))(rcmod (nsubj (NN (NE )))(VB )))) |ET| 39:1 107:1 189:1
+-1	|BT| (VB (nsubj (NN )(conj_and (NN (NE ))))(R )(prep_over (NN )(rcmod (nsubj (NN (NE )))(VB )))) |ET| 38:1 107:1 163:1 188:1
+-1	|BT| (VB (nsubj (NN )(conj_and (NN (NE ))))(R )(prep_over (NN )(rcmod (nsubj (NN (NE )))(VB )))) |ET| 38:1 107:1 163:1 188:1
+-1	|BT| (VB (nsubj (NN )(conj_and (NN (NE ))))(R )(prep_over (NN )(rcmod (nsubj (NN (NE )))(VB )))) |ET| 38:1 107:1 163:1 188:1
+-1	|BT| (VB (nsubj (NN )(conj_and (NN (NE ))))(R )(prep_over (NN )(rcmod (nsubj (NN (NE )))(VB )))) |ET| 38:1 107:1 163:1 188:1
+-1	|BT| (VB (nsubj (NN )(conj_and (NN (NE ))))(prep_over (NN (R ))(rcmod (nsubj (NN (NE )))(VB )))) |ET| 39:1 103:1 189:1
+1	|BT| (NN (NE )(appos (amod (JJ (NE )))(NN (R )))) |ET| 30:1 105:1 193:1
+-1	|BT| (NN (NE )(appos (amod (JJ (NE )))(NN (R )))) |ET| 30:1 105:1 193:1 204:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(prep_of (NN (NE )))))(R )) |ET| 38:1 105:1 192:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 54:1 105:1 141:1 189:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(prep_of (NN (NE )))))(R )) |ET| 38:1 105:1 195:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(prep_of (NN (NE )))))(ccomp (aux (MD (R )))(VB ))) |ET| 35:1 103:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(prep_of (NN (NE )))))(R )) |ET| 38:1 105:1 195:1
+1	|BT| (NN (NE )(appos (NN (R ))(prep_of (NN (NE ))))) |ET| 30:1 34:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(prep_of (NN (NE )))))(ccomp (VB (R )))) |ET| 36:1 107:1 192:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN )(prep_of (NN (NE )))))(ccomp (VB (R )))) |ET| 36:1 107:1 192:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB (R ))(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 36:1 105:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB )(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB (R ))(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 36:1 105:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB )(dobj (NN )(prep_on (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 54:1 104:1 141:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB (R ))(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN (R ))))(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(R )(ccomp (VB (R ))(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 38:1 105:1 195:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB )(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 103:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB )(dobj (NN )(prep_on (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 34:1 104:1 189:1
+-1	|BT| (VB (nsubj (NN (NE ))(appos (NN (R ))))(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB (R ))(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 38:1 107:1 188:1
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (aux (MD (R )))(VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )(prep_of (NN (NE )))))(ccomp (VB (R )))) |ET| 36:1 104:1 192:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )(prep_of (NN (NE )))))(ccomp (VB (R )))) |ET| 36:1 104:1 192:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )(prep_of (NN (NE )))))(R )) |ET| 38:1 103:1 192:1
+-1	|BT| (NN (amod (JJ (NE )))(R )(prep_of (NN (NE )))) |ET| 30:1 54:1 105:1 141:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )(prep_of (NN (NE )))))(R )) |ET| 38:1 103:1 195:1
+-1	|BT| (NN (amod (JJ (NE )))(R )(prep_of (NN (NE )))) |ET| 30:1 34:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )(prep_of (NN (NE )))))(R )) |ET| 38:1 103:1 195:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )(prep_of (NN (NE )))))(ccomp (aux (MD (R )))(VB ))) |ET| 35:1 101:1 192:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(ccomp (VB (R ))(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(R )(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(ccomp (VB )(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(ccomp (VB (R ))(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(R )(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 36:1 103:1 195:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(ccomp (VB )(dobj (NN )(prep_on (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 54:1 101:1 141:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(ccomp (VB (R ))(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN (R ))))(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(R )(ccomp (VB (R ))(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 38:1 103:1 195:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(ccomp (VB )(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(ccomp (VB )(dobj (NN )(prep_on (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 34:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN (R ))))(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 35:1 105:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(ccomp (VB (R ))(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(ccomp (aux (MD (R )))(VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 36:1 101:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(ccomp (VB (R ))(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(R )(ccomp (VB (R ))(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 38:1 103:1 195:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(ccomp (VB )(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(ccomp (VB (R ))(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(R )(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 36:1 103:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(ccomp (VB )(dobj (NN )(prep_on (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 34:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(ccomp (VB )(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 101:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(R )(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 36:1 103:1 195:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(ccomp (VB (R ))(dobj (NN (R ))(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 39:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(ccomp (VB (R ))(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 38:1 104:1 188:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(ccomp (VB )(dobj (NN )(prep_on (NN (R ))(prep_of (NN (NE ))))))) |ET| 30:1 54:1 101:1 141:1 189:1
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(ccomp (aux (MD (R )))(VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET| 36:1 101:1 188:1

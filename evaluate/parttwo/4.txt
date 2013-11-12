@@ -1,0 +1,17 @@
+B: Ouch.
+
+Ana: Is something wrong B?
+
+B: I'm not feeling well.  My stomach is uncomfortable.
+
+Ana: Would you like me to call 911 or your Doctor?
+
+B: I don't think it's serious.
+
+Ana: Would you like home remedies for your ailment?
+
+B: Yes that would be nice.
+
+Ana: I've found 100 rememdies for "my stomach is uncomfortable".
+
+B: Thanks.

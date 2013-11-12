@@ -1,0 +1,206 @@
+E12E2_abbrev	1
+E1R0edge_prep_among RPOS_NONIN	2
+E2R1edge_prep_behind RPOS_NONIN	3
+E2R1edge_prep_before RPOS_NONIN	4
+E2R2edge_appos RPOS_in	5
+E2R1edge_dobj RPOS_off	6
+E2R2edge_prep_at RPOS_NONIN	7
+E2R2edge_prep_as RPOS_NONIN	8
+E2R1edge_prep_about RPOS_About	9
+E1R_null	10
+E2R1edge_conj_E2	11
+RType1 0 RType2 2	12
+RType1 0 RType2 1	13
+E2R1edge_prep_from RPOS_NONIN	14
+E2R1edge_conj_R	15
+E2R1edge_prep_after RPOS_NONIN	16
+E2R1edge_prep_such_as RPOS_as	17
+E2R2edge_nn RPOS_in	18
+E1R0Edge_appos	19
+E2R1edge_prep_over RPOS_over	20
+E2R2edge_prep_of RPOS_of	21
+E2R1edge_prep_at RPOS_NONIN	22
+E1R0edge_agent RPOS_out	23
+E2R1edge_prep_by RPOS_NONIN	24
+E12E2_nn	25
+E2R1edge_prep_including RPOS_NONIN	26
+E2R1edge_prep_with RPOS_NONIN	27
+E2R1edge_prep_from RPOS_off	28
+RType0 1 RType1 0	29
+E2R_1	30
+RType0 1 RType1 1	31
+RType0 1 RType1 2	32
+E2R2Edge_appos	33
+E2R1edge_prep_of RPOS_of	34
+E2R_5	35
+E2R_4	36
+E2R1edge_prep_toward RPOS_NONIN	37
+E2R_3	38
+E2R_2	39
+E1R0edge_conj_R	40
+E2R1edge_prep_near RPOS_near	41
+E1R0edge_prep_as RPOS_NONIN	42
+E2R1edge_prep_between RPOS_between	43
+E1R0edge_prep_on RPOS_on	44
+E1R0edge_prep_in RPOS_in	45
+E1R0edge_prep_by RPOS_NONIN	46
+E1R0edge_prep_in RPOS_NONIN	47
+E2R1edge_prep_at RPOS_in	48
+E2R1edge_prep_under RPOS_NONIN	49
+E2R1edge_prep_under RPOS_of	50
+E1R0edge_prep_at RPOS_at	51
+E12E2_conj_or	52
+E2R1edge_prep_behind RPOS_behind	53
+E2R1edge_prep_not_match	54
+E2R1edge_prep_from RPOS_from	55
+E2R1edge_prep_on RPOS_behind	56
+E1R0edge_prep_before RPOS_NONIN	57
+E1R0edge_prep_between RPOS_NONIN	58
+E2R1edge_prep_on RPOS_on	59
+E2R1Edge_appos	60
+E2R1edge_prep_into RPOS_into	61
+E1R0edge_prep_against RPOS_against	62
+E1R0edge_prep_not_match	63
+E1R0edge_prep_over RPOS_NONIN	64
+E2R2edge_poss RPOS_in	65
+E2R0edge_conj_E2	66
+E2R1edge_prep_on RPOS_NONIN	67
+E2R1edge_prep_for RPOS_of	68
+E2R2edge_conj_R	69
+E2R1edge_prep_at RPOS_of	70
+E1R0edge_prep_as RPOS_as	71
+E1R0edge_prep_around RPOS_NONIN	72
+E2R1edge_prep_in RPOS_NONIN	73
+E2R2edge_nn RPOS_for	74
+E1R0edge_prep_over RPOS_over	75
+E2R1edge_prep_by RPOS_of	76
+E1R0edge_prep_at RPOS_of	77
+E2R2edge_prep_of RPOS_NONIN	78
+E2R0edge_conj_R	79
+RLink_null	80
+E1R0edge_conj_E1	81
+E2R1edge_prep_near RPOS_NONIN	82
+E2R2edge_nsubjpass RPOS_to	83
+E1R0edge_prep_around RPOS_up	84
+E2R1edge_prep_to RPOS_to	85
+E2R2edge_nsubj RPOS_in	86
+E1R1Edge_appos	87
+E12E2_prep_in	88
+E2R2edge_nn RPOS_toward	89
+RType0 2 RType1 2	90
+E1R0edge_prep_with RPOS_NONIN	91
+RType0 2 RType1 1	92
+E2R1edge_prep_to RPOS_NONIN	93
+E1R0edge_prep_before RPOS_before	94
+E1R0edge_prep_against RPOS_NONIN	95
+E2R1edge_prep_for RPOS_for	96
+E2R1edge_prep_about RPOS_NONIN	97
+E2R1edge_prep_as RPOS_as	98
+E2R2edge_prep_for RPOS_of	99
+E12E2_prep_vs.	100
+E1R_5	101
+E2R2edge_nn RPOS_of	102
+E1R_3	103
+E1R_4	104
+E1R_1	105
+E1R0edge_prep_on RPOS_NONIN	106
+E1R_2	107
+E2R1edge_prep_into RPOS_NONIN	108
+E1R0edge_prep_about RPOS_NONIN	109
+RType0 2 RType1 0	110
+E1R0edge_prep_at RPOS_NONIN	111
+E2R2edge_nn RPOS_on	112
+E2R1edge_prep_toward RPOS_toward	113
+E2R1edge_prep_under RPOS_under	114
+E2R2edge_dep RPOS_in	115
+E2R2edge_dep RPOS_for	116
+RType1 1 RType2 1	117
+RType1 1 RType2 0	118
+RType1 1 RType2 2	119
+E2R2edge_nsubj RPOS_for	120
+RType0 0 RType1 2	121
+RType0 0 RType1 1	122
+E2R1edge_dep RPOS_within	123
+E1R0edge_prep_between RPOS_between	124
+E2R1edge_prep_against RPOS_NONIN	125
+E1R0edge_prep_for RPOS_NONIN	126
+E2R2edge_prep_for RPOS_NONIN	127
+E2R2edge_appos RPOS_of	128
+E1R0edge_prep_behind RPOS_NONIN	129
+E12E2_amod	130
+E2R1edge_prep_such_as RPOS_NONIN	131
+E1R0edge_prep_into RPOS_into	132
+E1R0edge_prep_of RPOS_of	133
+E2R2edge_amod RPOS_for	134
+E1R0edge_dep RPOS_of	135
+E1R0edge_prep_such_as RPOS_as	136
+E2R1edge_prep_to RPOS_in	137
+E2R1edge_prep_before RPOS_before	138
+E2R1edge_prep_about RPOS_about	139
+E1R2edge_conj_R	140
+E2R1edge_prep_of RPOS_NONIN	141
+E1R2edge_conj_E1	142
+judge	143
+E2R1edge_prep_for RPOS_NONIN	144
+E2R1edge_prep_for RPOS_up	145
+E2R2edge_rcmod RPOS_to	146
+E2R2edge_nsubj RPOS_on	147
+E1R0edge_prep_in RPOS_of	148
+E2R1edge_prep_at RPOS_at	149
+E12E2_conj_and	150
+E2R2edge_nsubj RPOS_of	151
+E12E2_dep	152
+E1R0edge_prep_among RPOS_among	153
+E1R0edge_prep_than RPOS_NONIN	154
+E1R0edge_prep_from RPOS_NONIN	155
+E1R0edge_prep_for RPOS_for	156
+E1R0edge_prep_into RPOS_NONIN	157
+E2R2edge_nsubj RPOS_to	158
+RType0 2	159
+E2R1edge_prep_between RPOS_NONIN	160
+RType0 1	161
+E1R0edge_prep_about RPOS_about	162
+E1R1edge_conj_E1	163
+E1R0edge_prep_to RPOS_to	164
+E12E2_appos	165
+E2R2edge_conj_E2	166
+RType1 2 RType2 1	167
+E1R0edge_prep_from RPOS_from	168
+RType1 2 RType2 2	169
+E2R1edge_amod RPOS_de	170
+E12E2_prep_of	171
+E12E2_null	172
+E2R2edge_nsubj RPOS_along	173
+E2R2edge_poss RPOS_for	174
+E1R0edge_prep_to RPOS_NONIN	175
+E2R2edge_nn RPOS_at	176
+E2R2edge_nsubjpass RPOS_in	177
+E2R2edge_nsubj RPOS_up	178
+E2R2edge_nsubj RPOS_at	179
+E2R1edge_prep_after RPOS_in	180
+E2R0Edge_appos	181
+E1R2Edge_appos	182
+E1R0edge_prep_including RPOS_NONIN	183
+E2R2edge_nsubj RPOS_below	184
+E1R0edge_prep_behind RPOS_behind	185
+E12E2_poss	186
+E2R1edge_prep_over RPOS_NONIN	187
+RType1 2	188
+RType1 1	189
+E1R1edge_conj_R	190
+RType1 0	191
+RType2 2	192
+RType2 1	193
+RType2 0	194
+RType_null	195
+RType1 2 RType2 0	196
+E2R1edge_prep_in RPOS_in	197
+E2R2edge_poss RPOS_of	198
+E2R1edge_prep_against RPOS_against	199
+E2R_null	200
+E2R1edge_prep_as RPOS_NONIN	201
+E1R0edge_prep_such_as RPOS_NONIN	202
+E1R0edge_prep_around RPOS_around	203
+E2R2edge_prep_not_match	204
+E1R0edge_prep_of RPOS_NONIN	205
+E2R2edge_nsubj RPOS_from	206

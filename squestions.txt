@@ -1,0 +1,7 @@
+{"question": "When did you wake up this morning?", "type": "woken"}
+{"question": "How are you feeling today?", "type": "condition"}
+{"question": "Do you need to take a nap?", "type": "slept"}
+{"question": "Have you taken your medication today?", "type": "tookmeds"}
+{"question": "Have to eaten breakfast today?", "type": "atebreakfast"}
+{"question": "Have to eaten lunch today?", "type": "atelunch"}
+{"question": "Have to eaten dinner today?", "type": "atedinner"}

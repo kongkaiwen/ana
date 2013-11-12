@@ -1,0 +1,25 @@
+A: Hello.
+
+B: How was your evening?
+
+A: I just had dinner with my father.
+
+B: Where did you eat?
+
+A: We went to Olive Garden.
+
+B: Nice what did you eat?
+
+A: I had the pasta.
+
+B: Ah I see.  What was the occassion?
+
+A: We were celebrating his birthday.
+
+B: How old is he now?
+
+A: He just turned fifty seven.
+
+B: Wow he looks much younger than that.
+
+A: He takes good care of himself.

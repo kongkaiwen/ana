@@ -1,0 +1,9 @@
+{"question": "When is it?", "type": "start", "event": "generic", "tense": "past"}
+{"question": "When was it?", "type": "start", "event": "generic", "tense": "future"}
+{"question": "How long did you stay?", "type": "end", "event": "generic", "tense": "past"}
+{"question": "How long will it last?", "type": "end", "event": "generic", "tense": "future"}
+{"question": "Where was it?", "type": "where", "event": "generic", "tense": "past"}
+{"question": "Where is it?", "type": "where", "event": "generic", "tense": "future"}
+{"question": "Who will you go with?", "type": "who", "event": "generic", "tense": "past"}
+{"question": "Who are you going with?", "type": "who", "event": "generic", "tense": "future"}
+{"question": "Did you enjoy yourself?", "type": "common", "event": "generic", "tense": "past"}

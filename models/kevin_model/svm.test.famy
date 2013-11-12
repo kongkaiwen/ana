@@ -1,0 +1,88 @@
+-1	|BT| (DT (PERSON )(prep_of (PRP (GPE )))) |ET|
+-1	|BT| (NNP (B )(num (CD (GPE )))(prep_of (NNS (GPE )))) |ET|
+-1	|BT| (PRP (PERSON )(dep (VBG (go ))(prep (IN (in ))(pobj (RB (GPE )))))) |ET|
+-1	|BT| (VBD (nsubj (PRP (PERSON )))(go )(prep (IN (in ))(pobj (RB (GPE ))))) |ET|
+-1	|BT| (VBP (dep (VB (have ))(dep (VBN (shore ))(dobj (NNS (LOCATION )))))(advmod (RB (right ))(prepc_after (VBG (go ))(prep (IN (in ))(pobj (RB (GPE ))))))(know )) |ET|
+-1	|BT| (VBP (advcl (NN (goal ))(conj_or (VBP (know ))(ccomp (nsubj (NNS (WEA )))(VBN (be )))))(know )(xcomp (VBG (get ))(prep_from (NNP (GPE ))))) |ET|
+-1	|BT| (RB (PERSON )(prep_in (NN (GPE )))) |ET|
+1	|BT| (NNS (poss (PRP$ (PERSON )))(PERSON )) |ET|
+-1	|BT| (VB (say )(prep_about (NNS (ORGANIZATION )))(dobj (NNS (PERSON )))) |ET|
+-1	|BT| (VBD (ccomp (VBN (be ))(advmod (RB (ORGANIZATION ))))(use )(xcomp (NN (PERSON )))) |ET|
+-1	|BT| (VBP (nsubj (PRP (PERSON )))(remember )(ccomp (nsubj (NNP (ORGANIZATION )))(VBD (be )))) |ET|
+-1	|BT| (VBG (nsubj (NNS (ORGANIZATION )))(go )(prep_for (NN (uh ))(appos (nn (NN (PERSON )))(NN (satisfaction ))))) |ET|
+-1	|BT| (NNS (poss (PRP$ (PERSON )))(PERSON )) |ET|
+-1	|BT| (VBG (nsubj (PRP (PERSON )))(go )(xcomp (VB (work ))(prep_for (PRP (PERSON ))))) |ET|
+-1	|BT| (NNS (PERSON )(prep_for (NNP (PERSON )))) |ET|
+-1	|BT| (VBP (nsubj (PRP (PERSON )))(be )(parataxis (nsubj (DT (the ))(dep (dep (IN (by ))(pobj (NNS (GPE ))))(IN (in ))))(VBP (cool )))) |ET|
+-1	|BT| (DT (the )(dep (dep (IN (by ))(pobj (NNS (GPE ))))(IN (in )))(dep (nn (NNP (GPE )))(NNP (Oh )))) |ET|
+-1	|BT| (VBP (nsubj (PRP (PERSON )))(have )(dobj (NN (ORGANIZATION )))) |ET|
+-1	|BT| (NN (nsubj (PRP (PERSON )))(ORGANIZATION )) |ET|
+-1	|BT| (NN (nsubj (WP (PERSON )))(prep_over (PRP (PERSON )))(person )) |ET|
+-1	|BT| (VBP (nsubj (PRP (ORGANIZATION )))(have )(dobj (NN (PERSON )))) |ET|
+-1	|BT| (NN (poss (PRP$ (PERSON )))(PERSON )) |ET|
+-1	|BT| (NN (uh )(dep (nsubj (PRP (ORGANIZATION )))(VBP (have )))(dep (NN (PERSON )))) |ET|
+-1	|BT| (VBZ (look )(prep_to (PRP (PERSON )))(advcl (nsubj (NNP (PERSON )))(VBD (place )))) |ET|
+-1	|BT| (VBZ (look )(prep_to (PRP (PERSON )))(advcl (VBD (place ))(dep (VBZ (have ))(conj_so (nsubj (PRP (PERSON )))(VB (discuss )))))) |ET|
+-1	|BT| (NNS (nsubj (PRP (PERSON )))(PERSON )) |ET|
+-1	|BT| (VBZ (nsubj (PRP (PERSON )))(have )(xcomp (VB (go ))(prep_before (NN (PERSON ))))) |ET|
+-1	|BT| (VBP (advmod (WRB (where ))(prep_in (NNP (GPE ))))(be )(nsubj (PRP (PERSON )))) |ET|
+-1	|BT| (NNP (GPE )(appos (NN (north ))(prep_of (NNP (GPE ))))) |ET|
+-1	|BT| (VBD (nsubj (PRP (PERSON )))(use )(xcomp (VB (go ))(prep_to (NNP (GPE ))))) |ET|
+-1	|BT| (NN (FACILITY )(prep_in (NNP (GPE )))) |ET|
+-1	|BT| (VBD (nsubj (PRP (ORGANIZATION )))(have )(dobj (NNS (PERSON )))) |ET|
+-1	|BT| (VBD (have )(conj_but (parataxis (nsubj (PRP (ORGANIZATION )))(VBN (uh )))(VBD (have )))(conj_and (nsubj (PRP (PERSON )))(VBD (come )))) |ET|
+-1	|BT| (CD (PERSON )(prep_of (DT (PERSON )))) |ET|
+-1	|BT| (NN (poss (PRP$ (PERSON )))(PERSON )) |ET|
+-1	|BT| (NNS (ORGANIZATION )(partmod (VBN (uh ))(prep_in (NNS (GPE ))))) |ET|
+-1	|BT| (VBD (have )(dobj (SYM (d ))(dep (NN (PERSON ))))(advcl (NN (ORGANIZATION )))) |ET|
+-1	|BT| (VBD (have )(dobj (SYM (d ))(dep (NN (manager ))(conj_and (NN (PERSON )))))(advcl (NN (ORGANIZATION )))) |ET|
+-1	|BT| (VBD (parataxis (nsubj (NNS (ORGANIZATION )))(VBD (have )))(have )(dobj (NNS (PERSON )))) |ET|
+-1	|BT| (NNS (PERSON )(rcmod (JJ (wide ))(prep_in (NN (ORGANIZATION ))))) |ET|
+-1	|BT| (VBD (dobj (NNS (PERSON )))(have )(xcomp (VBG (work ))(prep_for (PRP (PERSON ))))) |ET|
+-1	|BT| (NN (PERSON )(prep_of (PRP (PERSON )))) |ET|
+-1	|BT| (NN (ORGANIZATION )(prep_with (SYM (a ))(dep (NN (PERSON ))))) |ET|
+-1	|BT| (VBD (nsubj (NNS (PERSON )))(start )(conj_and (MD (uh ))(dep (VB (percolate ))(prep_in (NN (ORGANIZATION )))))) |ET|
+-1	|BT| (VBD (nsubj (NNP (Managed ))(dep (NN (LOCATION ))))(uh )(prep_in (NNS (GPE )))) |ET|
+-1	|BT| (VB (advcl (nsubj (NN (PERSON )))(VBD (leave )))(parataxis (VBD (retire ))(conj_and (nsubj (PRP (ORGANIZATION )))(VB (find ))))(ask )) |ET|
+-1	|BT| (NN (amod (JJ (GPE )))(FACILITY )) |ET|
+-1	|BT| (NNS (amod (JJ (GPE )))(FACILITY )) |ET|
+-1	|BT| (VBZ (have )(dobj (NNS (FACILITY )))(prep_of (NNS (part ))(prep_of (NN (FACILITY ))))) |ET|
+-1	|BT| (NN (poss (PRP$ (PERSON )))(oil )(conj_and (NNS (FACILITY )))) |ET|
+-1	|BT| (VBD (nsubj (PRP (PERSON )))(be )(parataxis (VBD (deal ))(advcl (nsubj (PRP (PERSON )))(VBP (ah ))))) |ET|
+-1	|BT| (VBD (nsubj (PRP (ORGANIZATION )))(have )(dobj (NNS (ORGANIZATION )))) |ET|
+-1	|BT| (NN (dep (NNS (LOCATION )))(line )(dep (NNS (marker ))(prep_with_regard_to (NN (LOCATION ))))) |ET|
+-1	|BT| (NN (LOCATION )(dep (NNS (marker ))(prep_with_regard_to (NN (LOCATION ))))) |ET|
+-1	|BT| (VBN (nsubj (PRP (ORGANIZATION )))(parataxis (VB (have ))(dobj (NNS (PERSON ))))(scatter )) |ET|
+-1	|BT| (NN (poss (PRP$ (PERSON )))(ORGANIZATION )) |ET|
+-1	|BT| (VBP (nsubj (PRP (PERSON )))(own )(dobj (NN (ORGANIZATION )))) |ET|
+-1	|BT| (NN (amod (JJ (PERSON )))(work )(prep_in (NN (FACILITY )))) |ET|
+-1	|BT| (DT (some )(prep_of (NNS (PERSON )))(prep_in (NN (FACILITY )))) |ET|
+-1	|BT| (NN (amod (JJ (PERSON )))(ORGANIZATION )) |ET|
+-1	|BT| (VBP (nsubj (WDT (PERSON )))(run )(dobj (NNS (PERSON )))) |ET|
+-1	|BT| (VBP (ccomp (VBN (get ))(ccomp (NNS (one ))(rcmod (VBP (run ))(dobj (NNS (PERSON ))))))(know )(dobj (NN (FACILITY )))) |ET|
+-1	|BT| (VBP (ccomp (VBN (get ))(ccomp (nsubj (NNS (PERSON )))(NNS (one ))))(know )(dobj (NN (area ))(conj_or (NN (area ))(conj_and (NN (kind ))(prepc_of (VB (defer ))(prep_to (PRP (PERSON )))))))) |ET|
+-1	|BT| (VB (work )(dep (VBD (name ))(ccomp (nsubj (PRP (PERSON )))(JJ (regional ))))(prep_for (NNP (ORGANIZATION )))) |ET|
+-1	|BT| (PRP (PERSON )(partmod (VBN (use ))(xcomp (VB (know ))(dobj (NN (PERSON )))))) |ET|
+-1	|BT| (NN (LOCATION )(dep (NNP (PERSON )))) |ET|
+-1	|BT| (NN (amod (JJ (ORGANIZATION )))(GPE )) |ET|
+-1	|BT| (NN (GPE )(conj_negcc (NN (ORGANIZATION )))) |ET|
+-1	|BT| (NN (poss (PRP$ (PERSON )))(ORGANIZATION )) |ET|
+-1	|BT| (VBZ (nsubj (PRP (ORGANIZATION )))(guy )(parataxis (dep (VBP (do ))(ccomp (VBP (have ))(ccomp (advcl (VBP (work ))(dep (nsubj (NNS (PERSON )))(VBZ (have ))))(VBP (know )))))(VBN (make )))) |ET|
+-1	|BT| (NN (poss (PRP$ (PERSON )))(ORGANIZATION )) |ET|
+-1	|BT| (FW (cop (VBZ (PERSON )))(i )(parataxis (nsubj (PRP (ORGANIZATION )))(VBP (have )))) |ET|
+-1	|BT| (VBP (think )(ccomp (nsubj (PRP (ORGANIZATION )))(VBP (have )))(conj_and (VBP (have ))(dobj (NN (PERSON ))))) |ET|
+-1	|BT| (VBP (think )(ccomp (VBP (know ))(dep (dep (WP (PERSON )))(VBZ (be ))))(ccomp (nsubj (PRP (PERSON )))(VBP (know )))) |ET|
+-1	|BT| (VBG (nsubj (NNS (PERSON )))(come )(prep_with (NN (PERSON )))) |ET|
+-1	|BT| (VBD (nsubj (PRP (PERSON )))(go )(prep_through (PRP (PERSON )))) |ET|
+-1	|BT| (VBP (nsubj (PRP (PERSON )))(go )(prep_to (NN (PERSON )))) |ET|
+-1	|BT| (VBP (advmod (WRB (ORGANIZATION )))(nsubj (NN (PERSON )))(know )) |ET|
+-1	|BT| (NNS (PERSON )(rcmod (VBP (be ))(prep_from (NN (GPE ))))) |ET|
+-1	|BT| (VBZ (prep_for (NN (ORGANIZATION )))(have )(ccomp (VBZ (have ))(xcomp (JJ (able ))(xcomp (VB (send ))(dobj (NN (message ))(prepc_as_to (VB (handle ))(conj_and (dep (NN (PERSON )))(VBD (indicate ))))))))) |ET|
+-1	|BT| (VBP (nsubj (NNS (people ))(dep (DT (those ))(prep_in (NN (ORGANIZATION )))))(need )(xcomp (VBN (instruct ))(advcl (nsubj (poss (PRP$ (PERSON )))(NN (place )))(VBZ (be ))))) |ET|
+-1	|BT| (VBD (dep (advcl (dep (PRP (PERSON )))(VBN (um )))(VBP (know )))(jump )(prep_by (NN (PERSON )))) |ET|
+-1	|BT| (VBG (nsubj (NN (PERSON )))(go )(xcomp (VB (jump ))(prep_on (PRP (PERSON ))))) |ET|
+1	|BT| (NNS (poss (PRP$ (PERSON )))(PERSON )) |ET|
+-1	|BT| (VBD (nsubj (PRP (PERSON )))(be )(prep_in (nn (NN (LOCATION )))(NNP (Yeah )))) |ET|
+-1	|BT| (VBD (nsubj (PRP (PERSON )))(meet )(prep_in (NNP (LOCATION )))) |ET|
+-1	|BT| (VBP (think )(ccomp (NNS (PERSON )))(ccomp (nsubj (NNS (people ))(rcmod (VBP (run ))(dobj (NNS (ORGANIZATION )))))(VBP (do )))) |ET|
+-1	|BT| (VBP (run )(dobj (NNS (ORGANIZATION )))(advmod (RB (GPE )))) |ET|

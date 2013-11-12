@@ -1,0 +1,211 @@
+SVM-light Version V5.01-TK-1.5
+5 # kernel type
+3 # kernel parameter -d 
+1 # kernel parameter -g 
+1 # kernel parameter -s 
+1 # kernel parameter -r 
+empty# kernel parameter -u 
+0.4 # kernel parameter -L 
+1 # kernel parameter -T 
+T # kernel parameter -C 
+3 # kernel parameter -F 
+1 # kernel parameter -S 
+0.400000 # kernel parameter -M 
+3 # kernel parameter -N 
+S # kernel parameter -V 
+S # kernel parameter -W 
+0 # kernel parameter -U 
+0 # highest feature index 
+864 # number of training documents 
+191 # number of support vectors plus 1 
+1.5644071 # threshold b, each following line is a SV (starting with alpha*y)
+-0.26785987600439731259882591984933  |BT| (NN (amod (JJ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NNS (PERSON)(prep_in (NN (PERSON)))) |ET| 
+-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (VBD (nsubj (PRP (PERSON)))(be)(xcomp (VBG (see))(dobj (NN (PERSON))))) |ET| 
+-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NNS (PERSON)))) |ET| 
+1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(xcomp (VB (meet))(prep_with (NNS (PERSON))))) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (JJ (PERSON)(prep_to (NNP (PERSON)))) |ET| 
+1  |BT| (DT (PERSON)(prep_of (NNS (people))(dep (nsubj (PRP (PERSON)))(VBP (work))))) |ET| 
+1  |BT| (PRP (PERSON)(conj_and (NN (rest))(prep_of (NN (PERSON))))) |ET| 
+-1  |BT| (JJS (PERSON)(prep_of (NN (PERSON)))) |ET| 
+1  |BT| (NNS (PERSON)(prep_in (NN (PERSON)))) |ET| 
+-0.52213295975952633831695948174456  |BT| (VB (nsubj (PRP (PERSON)))(travel)(xcomp (VB (meet))(prep_with (NN (PERSON))))) |ET| 
+1  |BT| (VBD (nsubj (PRP (PERSON)))(be)(prep_in (NN (charge))(prep_of (NN (number))(prep_of (NNS (PERSON)))))) |ET| 
+-1  |BT| (NN (PERSON)(prep_of (NNS (PERSON)))) |ET| 
+1  |BT| (VBG (nsubj (WP (PERSON)))(go)(xcomp (VBG (surround))(dobj (PRP (PERSON))))) |ET| 
+-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (CD (PERSON)))) |ET| 
+1  |BT| (VBG (nsubj (NNS (PERSON)))(come)(prep_with (NN (PERSON)))) |ET| 
+-1  |BT| (NNS (PERSON)(dep (nsubj (NNS (PERSON)))(VBD (get)))) |ET| 
+1  |BT| (VBN (nsubjpass (PRP (PERSON)))(have)(dobj (CD (PERSON)))) |ET| 
+-0.58458614645153628153195768391015  |BT| (VBN (nsubjpass (PRP (PERSON)))(retire)(dobj (NNP (ORGANIZATION)))) |ET| 
+1  |BT| (VBP (nsubj (WDT (PERSON)))(run)(dobj (NNS (PERSON)))) |ET| 
+-0.13239568386573202785072567166935  |BT| (PRP (PERSON)(dep (VBP (be))(dep (IN (from))(pobj (NNPS (GPE)))))) |ET| 
+1  |BT| (VBN (nsubj (PRP (PERSON)))(get)(ccomp (VBN (get))(dobj (NN (PERSON))))) |ET| 
+-1  |BT| (VBN (nsubj (PRP (PERSON)))(get)(dobj (NN (lot))(prep_of (NNS (PERSON))))) |ET| 
+1  |BT| (NNS (dep (IN (with))(pobj (poss (PRP$ (PERSON)))(NN (cabinet))))(PERSON)) |ET| 
+-0.73782824488459652911842567846179  |BT| (VBG (go)(xcomp (VB (put))(dobj (PRP (PERSON))))(dep (UH (eh))(dep (IN (in))(pobj (NN (FACILITY)))))) |ET| 
+1  |BT| (VBN (um)(dobj (NN (um))(prep_of (NNS (PERSON))))(prep_for (NNS (PERSON)))) |ET| 
+-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NNS (PERSON)))) |ET| 
+1  |BT| (VB (dep (nsubj (PRP (PERSON)))(VB (appoint)))(dep (nsubj (WP (PERSON)))(VBZ (be)))(like)) |ET| 
+-1  |BT| (VB (dep (WP (PERSON)))(like)(xcomp (VB (see))(dep (VBN (appoint))(prep_to (NN (PERSON)))))) |ET| 
+1  |BT| (VBD (nsubj (PRP (PERSON)))(go)(prep_through (PRP (PERSON)))) |ET| 
+-1  |BT| (VBD (nsubj (PRP (PERSON)))(have)(dobj (NNS (PERSON)))) |ET| 
+1  |BT| (VB (dep (WP (PERSON)))(like)(xcomp (VB (see))(dep (VBN (appoint))(prep_to (poss (PRP$ (PERSON)))(NN (cabinet)))))) |ET| 
+-1  |BT| (JJ (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VBZ (lead)(dobj (PRP (PERSON)))(conj_and (VBP (have))(dobj (NN (PERSON))))) |ET| 
+-0.81043487113696277557295388760394  |BT| (VBZ (advcl (VBG (miss))(conj_and (VBG (look))(prep_for (PRP (PERSON)))))(go)(conj_and (VBZ (sell))(dobj (NN (VEH))))) |ET| 
+1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VBZ (nsubj (PRP (PERSON)))(have)(xcomp (VB (go))(prep_before (NN (PERSON))))) |ET| 
+-1  |BT| (VBZ (nsubj (PRP (PERSON)))(have)(dobj (NN (PERSON)))) |ET| 
+1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (VB (dep (WP (PERSON)))(like)(xcomp (VB (see))(dep (VBN (appoint))(prep_to (NN (PERSON)))))) |ET| 
+1  |BT| (VBD (nsubj (PRP (PERSON)))(name)(dobj (NN (PERSON)))) |ET| 
+-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VBN (nsubjpass (PRP (PERSON)))(have)(dep (RB (quite))(pobj (JJ (PERSON))))) |ET| 
+-1  |BT| (VBD (nsubj (PRP (PERSON)))(do)(ccomp (VBP (know))(dobj (PRP (PERSON))))) |ET| 
+1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VB (advcl (nsubj (PRP (PERSON)))(NN (president)))(dobj (NNS (PERSON)))(appoint)) |ET| 
+-1  |BT| (VBP (nsubj (PRP (PERSON)))(go)(prep_with (NN (PERSON)))) |ET| 
+1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VBN (be)(parataxis (VBP (mean))(ccomp (parataxis (nsubjpass (NNP (PERSON)))(NN (one)))(VBP (know))))(prep_with (NNP (PERSON)))) |ET| 
+-0.36459241708970868689476674262551  |BT| (VB (advmod (DT (PERSON)))(know)(dobj (NNP (PERSON)))) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-0.55922203933133085573814469171339  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VBP (dobj (WP (PERSON)))(nsubj (PRP (PERSON)))(report)) |ET| 
+-1  |BT| (VBN (nsubjpass (PRP (PERSON)))(be)(prep_with (PRP (ORGANIZATION)))) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VB (think)(dobj (PRP (PERSON)))(dep (VBN (meet))(prep_with (PRP (PERSON))))) |ET| 
+-1  |BT| (VB (nsubj (PRP (PERSON)))(go)(conj_and (dobj (WP (PERSON)))(VB (visit)))) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VBG (nsubj (PRP (PERSON)))(go)(xcomp (VB (work))(prep_for (PRP (PERSON))))) |ET| 
+-0.97460410446342160550869948565378  |BT| (VBG (nsubj (PRP (PERSON)))(go)(xcomp (VB (come))(prep (IN (over))(pobj (RB (LOCATION)))))) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VB (nsubj (PRP (PERSON)))(go)(prep_to (NN (lot))(prep_of (NNS (party))(prep_with (NNS (PERSON)))))) |ET| 
+-0.69586713399895383513893420968088  |BT| (VB (nsubj (PRP (PERSON)))(go)(prep_to (NN (lot))(prep_of (NNS (party))(prep_with (dep (NNS (PERSON)))(NNS (co-worker)))))) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VBG (nsubj (NNP (PERSON)))(do)(prep_with (NNP (PERSON)))) |ET| 
+-1  |BT| (NNS (dep (VBP (ye))(dep (VBP (try))(conj_and (VBP (think))(ccomp (nsubj (NNP (PERSON)))(VBD (need))))))(PERSON)) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VBP (prep_like (DT (any))(prep_of (PRP$ (PERSON))))(know)(ccomp (nsubj (NNS (PERSON)))(JJ (um)))) |ET| 
+-1  |BT| (JJ (nsubj (PRP (PERSON)))(pregnant)(prep_for (NN (PERSON)))) |ET| 
+1  |BT| (NN (um)(dep (NN (manager))(prep (IN (in))(pcomp (IN (between))(pobj (PRP (PERSON))))))(conj_and (PRP (PERSON)))) |ET| 
+-1  |BT| (NNS (nn (NN (PERSON)))(PERSON)) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VB (appoint)(dobj (NNS (PERSON)))(prep_to (NN (PERSON)))) |ET| 
+-0.60260145003791953932648084446555  |BT| (VB (appoint)(dobj (NNS (PERSON)))(prep_to (NN (PERSON)))) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VB (dobj (NNS (PERSON)))(appoint)(prep_to (NN (PERSON)))) |ET| 
+-0.20953612476224786620448981011577  |BT| (VB (dobj (NNS (PERSON)))(appoint)(prep_to (NN (PERSON)))) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (NN (PERSON)(prep_as (NNS (PERSON)))) |ET| 
+-1  |BT| (NN (PERSON)(prep_as (NNS (PERSON)))) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (NN (PERSON)(prep_as (NNS (PERSON)))) |ET| 
+-1  |BT| (NN (PERSON)(prep_as (NNS (PERSON)))) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VB (nsubj (NN (PERSON)))(know)(dobj (PRP (PERSON)))) |ET| 
+-1  |BT| (VB (nsubj (PRP (PERSON)))(know)(dobj (NNP (PERSON)))) |ET| 
+1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VBN (nsubj (PRP (PERSON)))(start)(xcomp (VB (appoint))(dobj (NNS (PERSON))))) |ET| 
+-0.662109921336207940534279714484  |BT| (VBZ (be)(nsubj (PRP (PERSON)))(dep (VBN (um))(prep_in (NN (FACILITY))))) |ET| 
+1  |BT| (NNS (PERSON)(rcmod (VBG (leave))(dobj (poss (PRP$ (PERSON)))(NN (cabinet))))) |ET| 
+-1  |BT| (VB (dobj (NNS (PERSON)))(appoint)(prep_to (NN (PERSON)))) |ET| 
+1  |BT| (VBD (dep (advcl (dep (PRP (PERSON)))(VBN (um)))(VBP (know)))(jump)(prep_by (NN (PERSON)))) |ET| 
+-0.7975039181153885659014690645563  |BT| (VBP (ccomp (conj_and (PRP (PERSON)))(VBP (um)))(work)(prep_with (NNS (ORGANIZATION)))) |ET| 
+1  |BT| (VBZ (nsubj (NNP (PERSON)))(ye)(dobj (NN (PERSON)))) |ET| 
+-1  |BT| (VBD (nsubj (PRP (PERSON)))(have)(dobj (NN (PERSON)))) |ET| 
+1  |BT| (VBP (nsubj (PRP (PERSON)))(work)(prep_for (NN (PERSON)))) |ET| 
+-1  |BT| (NN (nsubj (NN (PERSON)))(PERSON)) |ET| 
+1  |BT| (VBD (nsubj (PRP (PERSON)))(come)(prep_under (CD (PERSON)))) |ET| 
+-1  |BT| (VBN (nsubj (PRP (PERSON)))(get)(dobj (amod (JJ (PERSON)))(NN (wow)))) |ET| 
+1  |BT| (NN (nsubj (PRP (PERSON)))(employment)(conj_and (VBN (get))(dobj (NNS (PERSON))))) |ET| 
+-0.68180718156588948630769664305262  |BT| (VBN (nsubj (PRP (PERSON)))(work)(prep (IN (at))(pcomp (IN (for))(pobj (NNS (ORGANIZATION)))))) |ET| 
+1  |BT| (VBN (nsubj (PRP (PERSON)))(get)(dobj (NN (PERSON)))) |ET| 
+-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (VBD (nsubj (PRP (PERSON)))(work)(prep_with (NN (uh))(appos (NNS (PERSON))))) |ET| 
+-1  |BT| (VBG (nsubj (PRP (PERSON)))(work)(prep_with (PRP (ORGANIZATION)))) |ET| 
+1  |BT| (VBN (dep (JJ (PERSON)))(prep_of (poss (PRP$ (PERSON)))(NN (staff)))(resign)) |ET| 
+-0.59010923196286713121594402764458  |BT| (VBN (get)(dobj (NN (PERSON)))(ccomp (VBN (hire))(dep (VBD (hire))(dep (amod (JJ (PERSON)))(NN (girl)))))) |ET| 
+1  |BT| (VBG (nsubj (NN (PERSON)))(go)(xcomp (VB (jump))(prep_on (PRP (PERSON))))) |ET| 
+-0.96111456470187417444606126082363  |BT| (VBP (nsubj (PRP (PERSON)))(go)(prep_with (NN (family))(appos (NNS (PERSON))))) |ET| 
+1  |BT| (VBD (dobj (NNS (PERSON)))(have)(xcomp (VBG (work))(prep_for (PRP (PERSON))))) |ET| 
+-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+1  |BT| (NN (PERSON)(rcmod (nsubj (PRP (PERSON)))(VBP (work)))) |ET| 
+-0.67378517941552329428844814174226  |BT| (VBD (nsubj (PRP (PERSON)))(use)(xcomp (VB (know))(dobj (NN (PERSON))))) |ET| 
+1  |BT| (VBN (nsubj (PRP (PERSON)))(get)(ccomp (complm (IN (PERSON)))(VBN (hire)))) |ET| 
+-1  |BT| (NNS (PERSON)(rcmod (nsubj (PRP (PERSON)))(VBP (see)))) |ET| 
+1  |BT| (NNS (PERSON)(prep_underneath (PRP (PERSON)))) |ET| 
+-0.59541569154605877844943506715936  |BT| (VBG (keep)(dobj (PRP (PERSON)))(prep_like (NNP (uh))(partmod (VBN (surround))(prep_in (NN (FACILITY)))))) |ET| 
+1  |BT| (NNS (PERSON)(dep (nsubj (PRP (PERSON)))(VBP (work)))) |ET| 
+-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NNS (PERSON)))) |ET| 
+1  |BT| (VBD (dep (nsubjpass (PRP (PERSON)))(VBN (have)))(check)(advmod (RBR (PERSON)))) |ET| 
+-1  |BT| (DT (PERSON)(prep_of (PRP (GPE)))) |ET| 
+1  |BT| (VBN (nsubj (PRP (PERSON)))(have)(dobj (NNS (kind))(prep_of (NNS (PERSON))))) |ET| 
+-1  |BT| (NN (PERSON)(dep (NNS (PERSON)))) |ET| 
+1  |BT| (NN (PERSON)(prep_of (PRP (PERSON)))) |ET| 
+-0.34172349482596303671400050916418  |BT| (VBN (advmod (WRB (GPE)))(nsubj (PRP (PERSON)))(commit)) |ET| 
+1  |BT| (NNS (PERSON)(prep_for (NNP (PERSON)))) |ET| 
+-1  |BT| (JJS (PERSON)(prep_of (NN (PERSON)))) |ET| 
+1  |BT| (VBG (nsubj (PRP (PERSON)))(talk)(prep_to (PRP (PERSON)))) |ET| 
+-1  |BT| (VB (nsubj (PRP (PERSON)))(have)(dobj (NNS (PERSON)))) |ET| 
+1  |BT| (CD (PERSON)(prep_of (DT (PERSON)))) |ET| 
+-0.85746797434245680680220402791747  |BT| (VBN (nsubjpass (PRP (PERSON)))(bury)(prep_in (NNP (GPE)))) |ET| 
+1  |BT| (NN (PERSON)(rcmod (nsubj (PRP (PERSON)))(VBP (work)))) |ET| 
+-0.83339908939979523427865615303745  |BT| (VBP (nsubj (PRP (PERSON)))(work)(prep_for (NN (ORGANIZATION)))) |ET| 
+1  |BT| (NN (nsubj (WP (PERSON)))(prep_over (PRP (PERSON)))(person)) |ET| 
+-1  |BT| (NN (PERSON)(prep_of (NN (PERSON)))) |ET| 
+1  |BT| (VBG (nsubj (NNS (PERSON)))(surround)(dobj (PRP (PERSON)))) |ET| 
+-0.20704452686630336888384817939368  |BT| (VBD (nsubj (PRP (PERSON)))(get)(prep_from (NNP (LOCATION)))) |ET| 
+1  |BT| (NNS (PERSON)(dep (nsubj (PRP (PERSON)))(VBP (work)))) |ET| 
+-0.61209524380131397069959575674147  |BT| (VBG (nsubj (PRP (PERSON)))(work)(advmod (RB (ORGANIZATION)))) |ET| 
+0.83016382473917538220575806917623  |BT| (NN (nsubj (WP (PERSON)))(prep_over (PRP (PERSON)))(person)) |ET| 
+-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-1  |BT| (VBG (nsubj (PRP (PERSON)))(go)(prep_to (NNP (GPE)))) |ET| 
+1  |BT| (VBZ (nsubj (WP (PERSON)))(work)(prep_for (WP (PERSON)))) |ET| 
+-1  |BT| (VBD (advmod (DT (PERSON)))(do)(ccomp (VBP (know))(dobj (PRP (PERSON))))) |ET| 
+1  |BT| (VBG (nsubj (PRP (PERSON)))(go)(xcomp (VB (work))(prep_for (PRP (PERSON))))) |ET| 
+-0.72006943393457323310258288984187  |BT| (VBP (nsubj (PRP (PERSON)))(work)(prepc_for (VBG (ORGANIZATION)))) |ET| 
+-0.97250056406299900668699365269276  |BT| (VB (nsubj (WP (PERSON)))(be)(prep_in (NN (PERSON)))) |ET| 
+-1  |BT| (VB (nsubj (PRP (PERSON)))(recommend)(dobj (NNS (PERSON)))) |ET| 
+1  |BT| (DT (PERSON)(prep_of (NNS (people))(dep (nsubj (PRP (PERSON)))(VBP (work))))) |ET| 
+-0.3814605836169300268068127479637  |BT| (VB (nsubj (NNS (child))(conj_and (PRP (PERSON))))(know)(dep (VBG (take))(dep (dep (JJ (PERSON)))(VB (have))))) |ET| 
+-0.35870348996895790039118878667068  |BT| (VBZ (nsubj (NN (one))(prep_of (PRP (PERSON))))(live)(prep_at (NN (FACILITY)))) |ET| 
+-0.63344839679538045285056568900472  |BT| (VBZ (nsubj (NN (PERSON)))(work)(prep_for (PRP (ORGANIZATION)))) |ET| 
+-0.60743164859991560788898823375348  |BT| (VBN (nsubj (PRP (PERSON)))(get)(dobj (amod (JJ (old))(conj_and (JJ (PERSON))))(NN (wow)))) |ET| 
+-0.27640271255193088473234297453018  |BT| (VBG (nsubj (PRP (PERSON)))(resign)(prep_as (NNP (Governor))(prep_of (NNP (GPE))))) |ET| 
+-0.29960060005300770402669741088175  |BT| (NN (LOCATION)(dep (NNP (PERSON)))) |ET| 
+-0.39185592419223641558190251998894  |BT| (VBN (nsubj (PRP (PERSON)))(be)(advmod (RB (FACILITY)))) |ET| 
+-0.52182953646856000684550735968514  |BT| (VB (see)(dobj (PRP$ (PERSON)))(dep (CD (PERSON)))) |ET| 
+-0.3483930291444518601018387471413  |BT| (NNS (nn (NN (PERSON)))(PERSON)) |ET| 
+-0.48671086673832830715724639958353  |BT| (WRB (LOCATION)(dep (nsubj (PRP (PERSON)))(VB (travel)))) |ET| 
+-0.23198871246369567877820827561663  |BT| (NN (GPE)(rcmod (nsubj (PRP (PERSON)))(VBP (want)))) |ET| 
+-0.41922433522811347605951937111968  |BT| (VBD (nsubj (PRP (PERSON)))(work)(prep_for (NN (ORGANIZATION)))) |ET| 
+-0.18620561096754345564718846617325  |BT| (VBN (nsubj (PRP (PERSON)))(be)(prep_to (NNP (GPE)))) |ET| 
+-0.24706597275515063127926396191469  |BT| (NN (PERSON)(prep_on (NN (run))(prep_from (NNS (PERSON))))) |ET| 
+-0.52363430615805872658796715768403  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
+-0.18903118910931188123569768322341  |BT| (VBD (nsubj (NN (PERSON)))(say)(ccomp (VB (know))(dobj (PRP (PERSON))))) |ET| 
+-0.11623415408753054456347797440685  |BT| (IN (nsubj (PRP (PERSON)))(out)(prep_of (NNP (GPE)))) |ET| 
+-0.10087418542937609533538534378749  |BT| (JJ (nsubj (PRP (PERSON)))(rid)(advcl (VBD (want))(xcomp (VB (be))(prep_with (NN (PERSON)))))) |ET| 
+-0.17072706631359213513832173703122  |BT| (VBZ (nsubj (PRP (PERSON)))(work)(prep_in (NNP (GPE)))) |ET| 
+-0.13645586743672702412233377344819  |BT| (VBG (nsubj (PRP (PERSON)))(live)(xcomp (VBG (go))(prep_to (NN (ORGANIZATION))))) |ET| 
+-0.027388874180086262427602505908908  |BT| (NN (dep (DT (PERSON)))(LOCATION)) |ET| 
+-0.052123426246092952052180180544383  |BT| (VB (nsubj (PRP (PERSON)))(like)(xcomp (VB (see))(dep (VBN (appoint))(prep_to (NN (PERSON)))))) |ET| 
+-0.12187187194229316677951402425606  |BT| (VB (nsubj (PRP (PERSON)))(go)(prep_to (NN (lot))(prep_of (NNS (party))(prep_with (NNS (co-worker))(conj_or (NNS (PERSON))))))) |ET| 
+-0.026434517285725239732485647436988  |BT| (VBG (nsubj (PRP (PERSON)))(call)(prep_from (NNP (GPE)))) |ET| 
+-0.0072598793426304902842716160193959  |BT| (NNS (poss (NN (PERSON)))(PERSON)) |ET| 

@@ -1,0 +1,213 @@
+body {
+	background-color: #F5F5F5;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#model-a-input {
+	border: 1px solid black;
+	border-radius:5px;
+	border-bottom-right-radius:0;
+	border-top-right-radius:0;
+	background: #ddd;
+	margin-top: 15px;
+	padding: 5px;
+	position: absolute;
+	width: 465px;
+    background-repeat: no-repeat;
+    text-indent: 15px;
+    height: 30px;
+    box-shadow: inset 0 0 2px #000000;
+}
+
+#model-a-button {
+	border: 1px solid black;
+	position: absolute;
+	width: 45px;
+	height: 42px;
+	box-shadow: inset 0 0 2px #000000;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	background-image: url(../images/chat-search.png);
+	bottom: 5px;
+}
+
+#model-b-input {
+	border: 1px solid black;
+	border-radius:5px;
+	border-bottom-right-radius:0;
+	border-top-right-radius:0;
+	background: #ddd;
+	margin-top: 15px;
+	padding: 5px;
+	position: absolute;
+	width: 465px;
+    background-repeat: no-repeat;
+    text-indent: 15px;
+    height: 30px;
+    box-shadow: inset 0 0 2px #000000;
+}
+
+#model-b-button {
+	border: 1px solid black;
+	position: absolute;
+	width: 45px;
+	height: 42px;
+	box-shadow: inset 0 0 2px #000000;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	background-image: url(../images/chat-search.png);
+}
+
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+
+#model-a {
+	background-color: #fff;
+	height: 500px;
+	position: absolute;
+	bottom: 53px;
+	-moz-box-shadow:    inset 0 0 5px #333;
+    -webkit-box-shadow: inset 0 0 5px #333;
+    box-shadow:         inset 0 0 5px #333;
+    padding: 10px;
+    border-radius:5px;
+}
+
+#model-a-header {
+	background-color: #555;
+	color: whitesmoke;
+	height: 50px;
+}
+
+#model-a-body {
+	height: 450px;
+	overflow-y: auto;
+}
+
+#model-b {
+	background-color: #fff;
+	height: 500px;
+	position: absolute;
+	bottom: 53px;
+	-moz-box-shadow:    inset 0 0 5px #333;
+    -webkit-box-shadow: inset 0 0 5px #333;
+    box-shadow:         inset 0 0 5px #333;
+    padding: 10px;
+    border-radius:5px;
+}
+
+#model-b-header {
+	background-color: #555;
+	color: whitesmoke;
+	height: 50px;
+}
+
+#model-b-body {
+	height: 450px;
+	overflow-y: auto;
+}
+
+#submit-result {
+	position: absolute;
+	bottom:10px;
+}
+
+.title {
+	color:red;
+	font-style:italic;
+}
+
+.desc {
+	color: #aaa;
+	font-style:italic;
+	font-size: 16px;
+}
+
+#thumbs {
+	width: 800px;
+	margin: 0 auto;
+	border-spacing: 10px;
+}
+
+.scenario-thumb {
+	width: 200px;
+	height: 250px;
+	border-radius:5px;
+	border: 1px solid #656565;
+
+	margin-right: 10px;
+	-moz-box-shadow:    inset 0 0 5px #333;
+    -webkit-box-shadow: inset 0 0 5px #333;
+    box-shadow:         inset 0 0 5px #333;
+    font-size: 54px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    color: #656565;
+  
+}
+
+.scenario-thumb:hover {
+	cursor: pointer;
+	border: 1px solid black;
+	color: black;
+	-moz-box-shadow:    inset 0 0 5px #000;
+    -webkit-box-shadow: inset 0 0 5px #000;
+    box-shadow:         inset 0 0 5px #000;	
+}
+
+.odd {
+	color: #333;
+}
+
+.even {
+	color: #222;
+}
+
+#submit-radio {
+	height: 82px;
+}
+
+#submit-text {
+	width: 400px;
+	height: 75px;
+}
+
+.ana-button {
+	width: 100px;
+}
+
+
+/*****************************************************************************
+
+Knowledge Base
+
+*****************************************************************************/
+
+#cy {
+    height: 400px;
+    width: 480px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid black;
+    margin: 10px;
+}
+/*
+#next-button {
+	position:absolute;
+	top: 60px;
+}
+
+#home-button {
+	position:absolute;
+	top: 60px;
+}
+
+#kb-button {
+	position:absolute;
+	top: 60px;
+}
+
+*/

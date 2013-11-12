@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Conversation</title>
+        <link rel="stylesheet" media="screen" href="../stylesheets/evaluate.css">
+        <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+        <script src="../javascripts/jquery-1.7.1.min.js"></script>
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+        <meta charset=utf-8 />
+        <script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+        <script src="../javascripts/evaluate.js"></script>
+    </head>
+	<body>
+        <style>
+        #mask {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+            top: 0;
+            left: 0;
+        }
+
+        #popup {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 1);
+            z-index:9999;
+            -webkit-border-radius: 10px;
+            -moz-box-shadow: 0px 0px 25px #000;
+            -webkit-box-shadow: 0px 0px 25px #000;
+            box-shadow: 0px 0px 25px #000;
+        }
+
+        #close {
+            position: absolute;
+            top: -25px;
+            right: -25px;
+        }
+
+        #close:hover {
+            cursor: pointer;
+        }
+
+        #load {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+        }
+
+        #events {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 480px;
+        }
+
+        #events td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        </style>
+		<div id="wrapper">
+			
+			<h1 style="margin-top: 5px;margin-bottom:10px;" align="center">Evaluation</h1>
+
+            <div align="center">
+			<input class="ana-button" id="home-button" type="button" value="Home" href="parttwo.html" />
+			<input class="ana-button" id="next-button" type="button" value="Next" href="scenario2.jsp" />
+            <input class="ana-button" id="kb-button" type="button" value="KB" />
+            </div>
+
+            <div id="mask"><div id="popup">
+                <div id="cy"></div>
+                <input id="load" type="button" value="Refresh"/>
+                <a id="close"><img src="close.png" /></a>
+                <table id="events"></table>
+		    </div></div>
+
+		    <input type="text" id="model-a-input" placeholder="Ask" x-webkit-speech/>
+		    <input type="button" id="model-a-button" />
+
+            <input type="text" id="model-b-input" placeholder="Ask" x-webkit-speech/>
+            <input type="button" id="model-b-button" />
+		    
+		    <p align="center" class="desc">Please enter your text here.  Compare both models and enter which sounds the most "human-like".</p>
+			
+		    <div id="model-a">
+		    	<p class="title">Model A</p>
+		    	<div id="model-a-body"></div>
+		    </div>
+		    <div id="model-b">
+		    	<p class="title">Model B</p>
+		    	<div id="model-b-body"></div>
+		    </div>
+
+            <div id="submit-result" align="center">
+                <form id="rating-form">
+                    <table>
+                        <tr><td></td><td style="width:50px;">A <input type="radio" name="Rating" value="a"> </td><td style="width:50px;">B <input type="radio" name="Rating" value="b"></td><td></td><td></td></tr>
+                        <tr><td></td><td rowspan="2" colspan="3"><textarea id="submit-text"></textarea></td><td rowspan="2"><input type="button" value="Submit" id="submit-radio"/></td></tr>
+                        <tr><td></td></tr>
+                        <input type="hidden" value="c1" id="submit-type" />  
+                    </table>
+                </form>
+            </div>
+		</div>
+	</body>
+</html>

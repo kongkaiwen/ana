@@ -1,0 +1,20 @@
+{"question": "When did he die?", "type": "date_of_death"}
+{"question": "When was he born?", "type": "date_of_birth"}
+{"question": "Which university did he graduate from?", "type": "education_institute"}
+{"question": "What is his profession?", "type": "profession_position"}
+{"question": "Where did he go to college?", "type": "education_institute"}
+{"question": "Where did he attend university?", "type": "education_institute"}
+{"question": "Does he go to university?", "type": "education_institute"}
+{"question": "How old is he?", "type": "age"}
+{"question": "What is his age?", "type": "age"}
+{"question": "What does he like to eat?", "type": "likes"}
+{"question": "What food does he like?", "type": "likes"}
+{"question": "Is it a girl or boy?", "type": "sex"}
+{"question": "What's his name?", "type": "name"}
+{"question": "What did he study in college?", "type": "education_degree"}
+{"question": "Where does he work?", "type": "profession_institute"}
+{"question": "Where does he live?", "type": "residence"}
+{"question": "What ethnicity is he?", "type": "ethnicity"}
+{"question": "Do you have a religion?", "type": "religion"}
+{"question": "How much does he weigh?", "type": "weight"}
+{"question": "How tall is he?", "type": "height"}

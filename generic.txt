@@ -1,0 +1,53 @@
+mumble  I see.
+mumble  OK.
+greeting    Yes?
+greeting    How can I help you?
+greeting    I'm here.
+greeting    Hello.
+greeting    What's up?
+greeting    How are you?
+greeting    Need anything?
+greeting    Good day.
+greeting    Good morning.
+greeting    Good evening.
+greeting    Greetings.
+greeting    Hi.
+greeting    Hey.
+
+intro = 9
+related = 8
+chapter1 = 13
+chapter2 = 10
+conclusion = 2
+
+intro
+    elderly
+    inf extr
+    intelligent comp
+    outline
+   
+related work
+    inf extr
+        relation extr
+        ner
+    response generation
+        speech act identification
+        question generation
+
+information extraction from conversation
+    conversation data
+    knowledge base construction
+    experiment
+    discussion
+    summary
+
+generating response from agent
+    sentence function
+    gen question
+    experiment
+    discussion
+    summary
+
+conclusion
+
+open problems

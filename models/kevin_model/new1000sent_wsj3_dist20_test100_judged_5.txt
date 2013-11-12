@@ -1,0 +1,268 @@
+-1	|BT| (NN (NE )(conj_and (NN (NE )))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_in (NN (NE ))))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_in (NN )(appos (NN (NE )))))) |ET|
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_to (NN (NE )))))))(VB ))(ccomp (nsubj (amod (JJ (NE )))(NN ))(VB ))) |ET|
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(ccomp (nsubj (amod (JJ (NE )))(NN ))(VB ))) |ET|
+-1	|BT| (VB (advcl (nsubj (JJ )(prep_of (NN )(partmod (VB )(xcomp (VB )(prep_through (NN (NE )))))))(VB ))(ccomp (VB )(dobj (NN )(prep_of (NN (NE )))))) |ET|
+-1	|BT| (VB (nsubj (amod (JJ (NE )))(NN ))(dobj (NN )(prep_of (NN (NE ))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB )(prep_with (poss (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN )(prep_of (CD )(prep_of (poss (NN (NE )))(NN ))))(VB ))) |ET|
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(dobj (NN )(prep_of (NN (NE ))))) |ET|
+-1	|BT| (VB (dep (VB )(advcl (VB )(prep_from (poss (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (JJR )(xcomp (VB )(dobj (NN (NE )))))) |ET|
+-1	|BT| (VB (prep_after (nn (NN (NE )))(NN ))(nsubj (NN )(ccomp (nsubj (nn (NN (NE )))(NN ))(VB )))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_of (dep (NN (NE )))(NN )))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_of (dep (NN )(prep_of (NN (NE ))))(NN )))) |ET|
+1	|BT| (NN (NE )(prep_of (NN (NE )))) |ET|
+-1	|BT| (VB (ccomp (JJ )(conj_but (VB )(dobj (NN )(dep (VB )(prep_in (poss (NN (NE )))(NN ))))))(nsubj (NN (NE )))) |ET|
+-1	|BT| (NN (prep_in (NN (NE )))(conj_plus (NN (NE )))) |ET|
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN (NE )))) |ET|
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN (NE ))))(conj_plus (NN )(appos (NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET|
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN (NE )))) |ET|
+-1	|BT| (NN (conj_plus (NN )(prep_in (NN )(conj_and (NN (NE )))))(conj_plus (NN )(appos (NN )(rcmod (do )(prep_as (NN (NE ))))))) |ET|
+1	|BT| (NN (NE )(appos (NN )(rcmod (do )(prep_as (NN (NE )))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(advmod (RB )(prep_to (poss (JJ (NE )))(NN )))) |ET|
+-1	|BT| (VB (advmod (RB )(prep_to (poss (JJ (NE )))(NN )))(conj_and (VB )(xcomp (VB )(dobj (NN )(conj_and (nn (NN (NE )))(NN )))))) |ET|
+-1	|BT| (NN (NE )(conj_and (NN (NE )))) |ET|
+1	|BT| (NN (NE )(rcmod (VB )(dobj (poss (NN (NE )))(NN )))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN )(prep_at (NN (NE ))))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN )(prep_at (NN )(appos (NN (NE )))))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN )(prep_at (NN )(conj_and (NN (NE )))))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE ))))))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN )(prep_at (NN )(conj_and (NN (NE )))))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE ))))))) |ET|
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN (NE )))))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(appos (NN (NE ))))))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN (NE ))))))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubjpass (NN )(prep_including (NN )(prep_at (NN )(conj_and (NN )(appos (NN (NE )))))))(agent (NN )(prep_in (nn (NN (NE )))(NN )))) |ET|
+1	|BT| (NN (nn (NN (NE )))(NE )) |ET|
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(ccomp (nsubj (poss (NN (NE )))(NN ))(VB )))) |ET|
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN ))(dobj (NN )(prep_of (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(partmod (VB )(dobj (nn (NN (NE )))(NN ))))) |ET|
+-1	|BT| (NN (nsubj (NN )(appos (NN (NE ))))(prep_with (NN )(partmod (VB )(agent (NN )(prep_of (NN (NE ))))))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_of (NN (NE ))))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_with (NN )(prep_in (NN (NE )))))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_with (NN )(prep_in (NN )(conj_and (NN (NE ))))))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_with (NN )(prep_in (NN )(conj_and (NN )(appos (NN (NE )))))))) |ET|
+-1	|BT| (VB (prep_through (NN )(prep_with (NN )(appos (NN (NE )))))(dobj (NN )(prep_of (NN (NE ))))) |ET|
+-1	|BT| (NN (NE )(conj_and (NN (NE )))) |ET|
+1	|BT| (NN (NE )(dep (poss (NN (NE )))(NN ))) |ET|
+-1	|BT| (VB (dobj (NN (NE )))(prep_in (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))) |ET|
+-1	|BT| (VB (ccomp (JJ )(prepc_in (VB )(prep_in (NN (NE )))))(conj_but (VB )(prep_on (NN )(prep_such_as (NN )(prep_of (NN (NE ))))))) |ET|
+1	|BT| (NN (NE )(appos (nn (NN (NE )))(NN ))) |ET|
+-1	|BT| (VB (ccomp (VB )(xcomp (VB )(prep_to (NN (NE )))))(nsubj (NN (NE )))) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(dep (IN )(pobj (NN (NE ))))) |ET|
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE ))))))) |ET|
+-1	|BT| (VB (partmod (VB )(xcomp (JJ )(dobj (NN )(prep_from (NN (NE ))))))(ccomp (nsubj (NN (NE )))(VB ))) |ET|
+1	|BT| (NN (poss (NN (NE )))(NE )) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prepc_into (nsubj (NN (NE )))(VB )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prepc_into (VB )(dobj (nn (NN (NE )))(NN ))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (nn (NN (NE )))(NN ))) |ET|
+1	|BT| (NN (prep_by (NN (NE )))(prep_of (NN )(prep_for (NN )(prep_of (NN (NE )))))) |ET|
+-1	|BT| (NN (NE )(conj_and (NN (NE )))) |ET|
+1	|BT| (NN (NE )(conj_and (NN )(appos (NN )(prep_to (NN (NE )))))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_to (NN (NE ))))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_with (NN (NE ))))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_with (NN )(prep_in (NN (NE )))))) |ET|
+1	|BT| (NN (NE )(prep_in (NN (NE )))) |ET|
+-1	|BT| (VB (prep_on (NN (NE )))(nsubj (nn (NN (NE )))(NN ))) |ET|
+1	|BT| (NN (appos (NN (NE )))(rcmod (VB )(dobj (NN (NE ))))) |ET|
+1	|BT| (NN (poss (NN (NE )))(NE )) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(prep_to (nn (NN (NE )))(NN ))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(prep_to (NN )(prep_of (poss (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(prep_to (NN )(prep_of (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(prep_of (poss (NN (NE )))(NN ))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(prep_of (nn (NN (NE )))(NN ))) |ET|
+1	|BT| (NN (poss (NN (NE )))(nn (NN (NE )))) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (NE )))) |ET|
+-1	|BT| (VB (prep_in (NN (NE )))(nsubj (NN )(conj_and (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(advcl (nsubj (NN )(conj_and (nn (NN (NE )))(NN )))(be ))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(NE )) |ET|
+-1	|BT| (NN (conj_and (nn (NN (NE )))(NN ))(conj_and (NN (NE )))) |ET|
+-1	|BT| (NN (conj_and (NN (NE )))(conj_and (NN (NE )))) |ET|
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (nn (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET|
+-1	|BT| (VB (ccomp (VB )(conj_but (be )(prep_in (nn (NN (NE )))(NN ))))(nsubj (NN )(appos (NN )(prep_with (NN (NE )))))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_with (NN (NE ))))) |ET|
+1	|BT| (NN (nn (NN (NE )))(NE )) |ET|
+-1	|BT| (NN (nn (NN (NE )))(rcmod (NN )(prep_of (nn (NN (NE )))(NN )))) |ET|
+1	|BT| (NN (NE )(rcmod (NN )(prep_of (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubj (NN )(rcmod (NN )(prep_of (nn (NN (NE )))(NN ))))(dep (VB )(dobj (poss (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (prep_at (NN (NE )))(xcomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (prep_at (NN (NE )))(xcomp (VB )(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET|
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB )(dobj (NN )(ccomp (nsubj (NN (NE )))(VB ))))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(ccomp (nsubj (NN (NE )))(VB ))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(ccomp (VB )(dobj (NN )(rcmod (VB )(dobj (nn (NN (NE )))(NN )))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(rcmod (VB )(dobj (nn (NN (NE )))(NN ))))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_with (NN (NE ))))) |ET|
+-1	|BT| (NN (NE )(conj_and (NN (NE )))) |ET|
+1	|BT| (VB (prep_in (NN (NE )))(nsubj (NN (NE )))) |ET|
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(dobj (NN )(rcmod (nsubj (poss (NN (NE )))(NN ))(IN )))) |ET|
+-1	|BT| (VB (partmod (VB )(prep_to (NN )(prep_of (NN (NE )))))(dobj (NN )(rcmod (nsubj (NN (NE )))(IN )))) |ET|
+1	|BT| (NN (poss (NN (NE )))(NE )) |ET|
+-1	|BT| (VB (nsubj (NN )(prep_like (NN (NE ))))(xcomp (VB )(ccomp (nsubj (NN (NE )))(do )))) |ET|
+1	|BT| (NN (NE )(appos (nn (NN (NE )))(NN ))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_of (NN (NE ))))) |ET|
+1	|BT| (NN (NE )(appos (NN (NE )))) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB )(prep_with (NN )(dep (NN (NE )))))) |ET|
+-1	|BT| (VB (nsubj (NN )(appos (NN (NE ))))(xcomp (VB )(prep_with (NN )(dep (NN (NE )))))) |ET|
+-1	|BT| (NN (NE )(conj_and (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_into (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_into (nn (NN )(conj_and (NN (NE ))))(NN )))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(appos (NN (NE ))))) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(appos (NN (NE ))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(appos (NN )(appos (NN (NE )))))) |ET|
+-1	|BT| (VB (nsubj (NN )(appos (NN )(appos (NN (NE )))))(dobj (NN (NE )))) |ET|
+1	|BT| (NN (NE )(appos (NN (NE )))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(appos (NN (NE ))))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_via (NN (NE ))))) |ET|
+-1	|BT| (VB (advcl (VB )(prep_of (NN )(prep_in (NN (NE )))))(nsubj (NN (NE )))) |ET|
+-1	|BT| (VB (advcl (VB )(prep_of (NN )(prep_in (NN (NE )))))(dobj (NN (NE )))) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (NE )))) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_from (NN (NE ))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_from (NN )(conj_and (poss (NN (NE )))(NN ))))) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_from (NN )(conj_and (NN (NE )))))) |ET|
+-1	|BT| (NN (NE )(conj_and (poss (NN (NE )))(NN ))) |ET|
+-1	|BT| (NN (NE )(conj_and (NN (NE )))) |ET|
+1	|BT| (NN (poss (NN (NE )))(NE )) |ET|
+1	|BT| (NN (NE )(prep_of (NN (NE )))) |ET|
+1	|BT| (NN (NE )(prep_of (NN )(rcmod (VB )(dobj (NN )(prep_in (NN (NE ))))))) |ET|
+-1	|BT| (NN (NE )(rcmod (VB )(dobj (NN )(prep_in (NN (NE )))))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_for (NN (NE ))))) |ET|
+1	|BT| (NN (NE )(partmod (VB )(prep_along_with (NN (NE ))))) |ET|
+-1	|BT| (VB (nsubj (NN )(partmod (VB )(prep_along_with (NN (NE )))))(ccomp (nsubj (NN )(prep_for (NN )(prep_in (NN (NE )))))(be ))) |ET|
+1	|BT| (NN (poss (NN (NE )))(NE )) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(prep_to (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB )(xcomp (VB )(prep_on (NN )(prep_between (NN (NE )))))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(prep_for (NN )(rcmod (VB )(xcomp (VB )(prep_on (NN )(prep_between (NN )(conj_and (NN (NE ))))))))) |ET|
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB )(dobj (NN )(infmod (VB )(dobj (dep (nn (NN (NE )))(NN ))(NN )))))) |ET|
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(ccomp (VB )(dobj (NN )(infmod (VB )(dobj (dep (NN (NE )))(NN )))))) |ET|
+1	|BT| (NN (nn (NN (NE )))(NE )) |ET|
+1	|BT| (VB (dobj (NN (NE )))(prep_from (NN )(prep_of (NN (NE ))))) |ET|
+-1	|BT| (VB (dobj (NN (NE )))(prep_from (NN )(prep_of (NN )(conj_and (poss (NN (NE )))(NN ))))) |ET|
+-1	|BT| (NN (NE )(conj_and (poss (NN (NE )))(NN ))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_at (NN (NE ))))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_at (NN )(appos (nn (NN (NE )))(NN ))))) |ET|
+1	|BT| (NN (NE )(appos (nn (NN (NE )))(NN ))) |ET|
+-1	|BT| (VB (prep_in (nn (NN (NE )))(NN ))(nsubj (nn (NN (NE )))(NN ))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_for (NN (NE ))))) |ET|
+-1	|BT| (NN (NE )(conj_nor (NN (NE )))) |ET|
+1	|BT| (NN (NE )(conj_nor (NN )(dep (JJ )(prep_to (amod (amod (NN (NE )))(JJ ))(NN ))))) |ET|
+-1	|BT| (NN (NE )(conj_nor (NN )(dep (JJ )(prep_to (NN (NE )))))) |ET|
+1	|BT| (NN (NE )(dep (JJ )(prep_to (amod (amod (NN (NE )))(JJ ))(NN )))) |ET|
+-1	|BT| (NN (NE )(dep (JJ )(prep_to (NN (NE ))))) |ET|
+-1	|BT| (NN (amod (amod (NN (NE )))(JJ ))(NE )) |ET|
+1	|BT| (NN (nn (NN (NE )))(appos (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(ccomp (JJ )(prep_in (NN (NE ))))) |ET|
+-1	|BT| (VB (nsubj (NN )(appos (NN (NE ))))(ccomp (JJ )(prep_in (NN (NE ))))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_with (poss (NN (NE )))(NN )))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_with (NN )(appos (NN (NE )))))) |ET|
+1	|BT| (NN (poss (NN (NE )))(appos (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(VB ))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubj (NN )(prep_of (poss (NN (NE )))(NN )))(dobj (nn (NN (NE )))(NN ))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_at (NN (NE ))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (NN (NE )))(VB ))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_of (NN (NE ))))) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(dobj (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(appos (NN )(partmod (VB )(dobj (NN (NE ))))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(appos (NN )(partmod (VB )(dobj (NN )(appos (NN (NE )))))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(appos (NN )(partmod (VB )(dobj (NN )(appos (amod (JJ (NE )))(NN ))))))) |ET|
+1	|BT| (NN (NE )(appos (NN )(partmod (VB )(dobj (NN (NE )))))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(partmod (VB )(dobj (NN )(appos (NN (NE ))))))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(partmod (VB )(dobj (NN )(appos (amod (JJ (NE )))(NN )))))) |ET|
+1	|BT| (NN (NE )(appos (NN (NE )))) |ET|
+1	|BT| (NN (NE )(appos (amod (JJ (NE )))(NN ))) |ET|
+-1	|BT| (NN (appos (NN (NE )))(appos (amod (JJ (NE )))(NN ))) |ET|
+-1	|BT| (VB (dobj (NN )(appos (NN (NE ))))(prep_against (NN )(prep_of (NN )(appos (NN (NE )))))) |ET|
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN )))(prep_against (NN )(prep_of (NN )(appos (NN (NE )))))) |ET|
+-1	|BT| (VB (dobj (NN )(appos (amod (JJ (NE )))(NN )))(prep_against (NN )(prep_of (NN )(conj_and (NN (NE )))))) |ET|
+-1	|BT| (NN (appos (NN (NE )))(conj_and (NN (NE )))) |ET|
+-1	|BT| (NN (appos (NN (NE )))(conj_and (NN )(appos (NN (NE ))))) |ET|
+1	|BT| (NN (NE )(appos (NN (NE )))) |ET|
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (nn (NN (NE )))(NN ))) |ET|
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (NN (NE )))) |ET|
+-1	|BT| (VB (ccomp (VB )(ccomp (VB )(prep_on (nn (NN (NE )))(NN ))))(nsubj (NN )(appos (NN )(dep (NN (NE )))))) |ET|
+1	|BT| (NN (nn (NN (NE )))(NE )) |ET|
+-1	|BT| (NN (nn (NN (NE )))(appos (NN )(dep (NN (NE ))))) |ET|
+1	|BT| (NN (NE )(appos (NN )(dep (NN (NE ))))) |ET|
+-1	|BT| (VB (prep_from (nn (NN (NE )))(NN ))(nsubj (poss (NN (NE )))(NN ))) |ET|
+-1	|BT| (JJ (nsubj (NN )(prep_of (nn (NN (NE )))(NN )))(prep_for (NN (NE )))) |ET|
+1	|BT| (VB (ccomp (NN )(prep_with (NN (NE ))))(nsubj (NN (NE )))) |ET|
+-1	|BT| (VB (prep_to (NN )(prep_in (NN (NE ))))(conj_and (VB )(xcomp (nsubj (NN (NE )))(VB )))) |ET|
+1	|BT| (NN (nsubj (NN (NE )))(prep_of (NN (NE )))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_of (nn (NN (NE )))(NN )))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_at (NN (NE ))))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_at (NN )(prep_in (NN (NE )))))) |ET|
+-1	|BT| (NN (prep_of (nn (NN (NE )))(NN ))(prep_at (NN (NE )))) |ET|
+-1	|BT| (NN (prep_of (nn (NN (NE )))(NN ))(prep_at (NN )(prep_in (NN (NE ))))) |ET|
+1	|BT| (NN (NE )(prep_in (NN (NE )))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_at (NN (NE ))))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_at (NN )(prep_in (NN (NE )))))) |ET|
+1	|BT| (NN (NE )(prep_in (NN (NE )))) |ET|
+1	|BT| (NN (NE )(prep_of (NN (NE )))) |ET|
+1	|BT| (NN (NE )(appos (NN (NE )))) |ET|
+1	|BT| (NN (NE )(rcmod (nsubj (NN (NE )))(VB ))) |ET|
+1	|BT| (NN (NE )(prep_of (NN (NE )))) |ET|
+-1	|BT| (NN (NE )(prep_of (NN )(appos (NN (NE ))))) |ET|
+1	|BT| (NN (nn (NN (NE )))(NE )) |ET|
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (nsubj (NN (NE )))(VB ))) |ET|
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(xcomp (VB )(dobj (NN )(partmod (VB )(agent (NN (NE ))))))) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(xcomp (nsubj (NN (NE )))(VB ))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB )(dobj (NN )(partmod (VB )(agent (NN (NE ))))))) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(partmod (VB )(agent (NN (NE )))))) |ET|
+1	|BT| (NN (nn (NN (NE )))(NE )) |ET|
+-1	|BT| (NN (nn (NN (NE )))(appos (NN )(dep (NN (NE ))))) |ET|
+-1	|BT| (VB (nsubj (nn (NN (NE )))(NN ))(prep_on (NN (NE )))) |ET|
+1	|BT| (NN (NE )(appos (NN )(dep (NN (NE ))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(prep_on (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN )(appos (NN )(dep (NN (NE )))))(prep_on (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (nsubj (poss (NN (NE )))(NN ))(JJ ))) |ET|
+-1	|BT| (NN (nn (NN (NE )))(appos (NN (NE )))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_of (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (NN (NE )(appos (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(NN ))))) |ET|
+1	|BT| (NN (poss (NN (NE )))(prep_including (NN (NE )))) |ET|
+1	|BT| (NN (poss (NN (NE )))(prep_including (NN )(conj_and (NN (NE ))))) |ET|
+-1	|BT| (NN (poss (NN (NE )))(prep_including (NN )(conj_and (NN (NE ))))) |ET|
+1	|BT| (NN (poss (NN (NE )))(prep_including (NN )(conj_and (NN (NE ))))) |ET|
+-1	|BT| (NN (NE )(conj_and (NN (NE )))) |ET|
+-1	|BT| (NN (NE )(conj_and (NN (NE )))) |ET|
+-1	|BT| (NN (NE )(conj_and (NN (NE )))) |ET|
+-1	|BT| (NN (conj_and (NN (NE )))(conj_and (NN (NE )))) |ET|
+-1	|BT| (NN (conj_and (NN (NE )))(conj_and (NN (NE )))) |ET|
+-1	|BT| (NN (conj_and (NN (NE )))(conj_and (NN (NE )))) |ET|
+-1	|BT| (JJ (nsubj (nn (NN (NE )))(NN ))(conj_and (NN )(dobj (JJR )(prep_than (NN (NE )))))) |ET|
+-1	|BT| (VB (nsubj (poss (NN (NE )))(NN ))(conj_and (dep (NN (NE )))($ ))) |ET|
+-1	|BT| (VB (prep_in (NN (NE )))(nsubj (nn (NN (NE )))(NN ))) |ET|
+1	|BT| (VB (nsubjpass (NN (NE )))(prep_in (NN (NE )))) |ET|
+1	|BT| (NN (nsubj (NN (NE )))(prep_in (NN (NE )))) |ET|
+-1	|BT| (NN (poss (NN (NE )))(ccomp (nsubj (NN )(prep_such_as (NN (NE ))))(VB ))) |ET|
+-1	|BT| (NN (poss (NN (NE )))(ccomp (VB )(prep_to (NN (NE ))))) |ET|
+1	|BT| (VB (nsubj (NN )(prep_such_as (NN (NE ))))(prep_to (NN (NE )))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_at (NN (NE ))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (NN )(prep_of (NN (NE )))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(partmod (VB )(prep_at (NN )(prep_of (NN )(prep_in (NN (NE ))))))) |ET|
+1	|BT| (NN (NE )(prep_in (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_of (NN )(conj_and (nn (NN (NE )))(NN ))))) |ET|
+1	|BT| (VB (nsubj (NN (NE )))(dobj (NN )(prep_to (NN (NE ))))) |ET|
+1	|BT| (NN (prep_of (NN )(conj_and (nn (NN (NE )))(NN )))(prep_to (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB )(dobj (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(xcomp (VB )(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET|
+-1	|BT| (VB (ccomp (VB )(dobj (nn (NN (NE )))(NN )))(xcomp (VB )(ccomp (VB )(agent (amod (JJ (NE )))(NN ))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(advcl (VB )(dobj (nn (NN (NE )))(NN )))) |ET|
+-1	|BT| (VB (dobj (nn (NN (NE )))(NN ))(ccomp (VB )(dobj (NN )(prep_to (nn (NN (NE )))(NN ))))) |ET|
+-1	|BT| (NN (NE )(conj_and (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(prep_over (NN )(rcmod (nsubj (NN (NE )))(VB )))) |ET|
+-1	|BT| (VB (nsubj (NN )(conj_and (NN (NE ))))(prep_over (NN )(rcmod (nsubj (NN (NE )))(VB )))) |ET|
+1	|BT| (NN (NE )(appos (amod (JJ (NE )))(NN ))) |ET|
+1	|BT| (NN (NE )(appos (NN )(prep_of (NN (NE ))))) |ET|
+-1	|BT| (VB (nsubj (NN (NE )))(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET|
+-1	|BT| (NN (amod (JJ (NE )))(prep_of (NN (NE )))) |ET|
+-1	|BT| (VB (nsubj (NN )(appos (amod (JJ (NE )))(NN )))(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET|
+-1	|BT| (VB (nsubj (NN )(appos (NN )(prep_of (NN (NE )))))(ccomp (VB )(dobj (NN )(prep_on (NN )(prep_of (NN (NE ))))))) |ET|
