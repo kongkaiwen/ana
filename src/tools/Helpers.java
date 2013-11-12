@@ -72,12 +72,12 @@ public class Helpers {
 	
 	public static void main(String args[]) throws IOException, InterruptedException, JSONException, ParseException {
 		//System.out.println(loadDrugNames());
-		//System.out.println(predictGender("Kevin"));
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP( props );
-		
-		sentenceFunction( pipeline, "What do you want?" );
+//		System.out.println(predictGender("Kevin"));
+//		Properties props = new Properties();
+//		props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+//		StanfordCoreNLP pipeline = new StanfordCoreNLP( props );
+//		
+//		sentenceFunction( pipeline, "What do you want?" );
 		
 //		ArrayList<String> dialogue = new ArrayList<String>();
 //		dialogue.add("Phil is my father.");

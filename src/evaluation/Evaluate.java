@@ -13,7 +13,7 @@ public class Evaluate {
 	public static Ana ana;
 	
 	public static void main(String args[]) throws Exception {
-//		ana = new Ana();
+		ana = new Ana();
 //		ana.ask("I am Kevin.", false);
 //		ana.ask("Phil is my father.", false);
 //		ana.ask("He likes to cook.", false);
@@ -39,10 +39,9 @@ public class Evaluate {
 	}
 	
 	public JSONObject getKB() throws JSONException {
-		return ana.getKB();
-	}
-	
-	public JSONArray getEvents() throws JSONException {
-		return ana.getEvents();
+		JSONObject kb = new JSONObject();
+		kb.put("graph", ana.getKB());
+		kb.put("table", ana.getTables());
+		return kb;
 	}
 }

@@ -38,7 +38,7 @@ function init() {
 
 		cydiv = document.getElementById("cy");
 		cydiv.style.width = (window.innerWidth - 400 - 40)/2 + "px";
-		cydiv.style.height = graphheight + "px";
+		cydiv.style.height = graphheight - 20 + "px";
 
 		table1 = document.getElementById("events-div");
 		table1.style.width = ((window.innerWidth - 400 - 40) /2) + "px";
@@ -65,29 +65,13 @@ function init() {
 		//input.style.left = (window.innerWidth/2) - (500/2) + "px";
 		//input.addEventListener("keypress", model_a_function, false);
 		input.addEventListener("keypress", function(e) {
-			addText(e, $("#kb-dialogue-input").val(), "");
+			addText(e, $("#kb-dialogue-input").val(), "../server.jsp");
 		}, false);
 
 		button = document.getElementById("kb-dialogue-button");
 		button.style.top = "150px";
 		//button.style.left = (window.innerWidth/2) - (500/2) + (input.offsetWidth) + "px";
 		//button.addEventListener("click", model_a_function, false);
-
-		$.ajax({
-	        url: "events.jsp",
-	        success: function(data) {	
-	            json = JSON.parse(data);
-
-	            table = "<tr><th>ID</th><th>Event Name</th><th>Created On</th></tr>";
-	            for(var i=0;i<json.length;i++) {
-	                table += "<tr><td>ID</td><td>" + json[i]["name"] +"</td><td>"+ json[i]["created"] + "</td></tr>";
-	            }
-
-	            $("#events").html(table);
-	            $("#daily").html(table);
-	            $("#medical").html(table);
-	        }
-	    });
 
 		$('#cy').cytoscape({
           style: cytoscape.stylesheet()
@@ -145,6 +129,11 @@ function init() {
                 var node = e.cyTarget;
                 alert(node.json()["data"]["age"] + "\n" + node.json()["data"]["likes"]);
             });
+
+            cy.on('tap', 'edge', function(e) {
+                var edge = e.cyTarget;
+                alert(edge.json()["data"]["relation"]);
+            });
             
             cy.on('tap', function(e){
               if( e.cyTarget === cy ){
@@ -154,9 +143,7 @@ function init() {
           }
         });
 
-		var getGraph = function() {$.ajax({url: "kb.jsp",success: function(data) {	cy.load(JSON.parse(data));}})};
-        $("#load").click(getGraph);
-
+		loadKB();
         $("#submit-ratings").click(sendRating);
 	}
 }
@@ -175,7 +162,7 @@ function sendRating() {
 	// {"missing": {"boolean": true, "text": text}, "incorrect": {"boolean": true, "text": text}}
 		
 	$.ajax({
-		url: "db.jsp",
+		url: "../db.jsp",
 		data: "type=kbeval&missing="+checked1+"&incorrect="+checked2+"&missing_text="+missing_txt+"&incorrect_text="+incorrect_txt,
 		success: function(data) {
 			//var json = JSON.parse(data);
@@ -199,17 +186,63 @@ function addText( e, text, server ) {
 		if (text != "silence")
 			$("#kb-dialogue-body").prepend(prettyText(text, "You", "even"));
 
-/*		$.ajax({
+		$("#ana-img").attr("src", "../images/loading.gif");
+
+		$.ajax({
 			url: server,
 			data: "a=" + text,
 			success: function(data) {
-				$("#kb-dialogue-body").prepend(prettyText(data, "Model", "odd"));
+				$("#kb-dialogue-body").prepend(prettyText(data, "Ana", "odd"));
 			}
-		});*/
+		});
 		
-		
+		$("#ana-img").attr("src", "");
 		$("#kb-dialogue-input").val("");
+		loadKB();
 	}
+}
+
+function cap(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function toTable( json ) {
+
+	for (var obj in json) {
+
+		data = json[obj];
+
+		table = "<tr>";
+		for(var key in data[0])
+			table += "<th>" + cap(key) + "</th>";
+		table += "</tr>"
+
+	    for(var i=0;i<data.length;i++) {
+	        row = "<tr>";
+	        for(var key in data[i])
+	        	row += "<td>" + data[i][key] + "</td>";
+	        table += row + "</tr>";
+	    }
+
+	    $("#"+obj).html(table);
+	}	
+}
+
+function loadKB() {
+
+    $.ajax({
+    	url: "../kb.jsp",
+    	success: function(data) {
+    		json = JSON.parse(data);	
+
+    		graph = json["graph"];
+    		table = json["table"];
+
+    		toTable( table );
+    		cy.load( graph );
+    	}
+    });
+      
 }
 
 window.onload = init;

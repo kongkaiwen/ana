@@ -48,7 +48,6 @@ public class KnowledgeBase {
 		KnowledgeBase kb = new KnowledgeBase();
 		kb.initKB();
 		System.out.println(kb.toJSON());
-		System.out.println(kb.toeventJSON());
 	}
 	
 	public KnowledgeBase() {
@@ -79,14 +78,13 @@ public class KnowledgeBase {
 		addPerson("Kevin");
 		setSpeaker("Kevin");
 		addPerson("Phil");
-		//addPerson("Sarah");
 		updatePerson("Phil", "age", "56");
 		updatePerson("Phil", "likes", "cook, cookies");
-		addRelation("father", 0, 1);
-		//addRelation("son", 1, 0);
+		addRelation("son", 0, 1);
 		addEvent("hockey game");
+		addMedical("chest pain");
 		addDialogue("I am Kevin.");
-	}
+	}	
 	
 	public void initKB2() throws IOException {
 		addPerson("Irene");
@@ -134,15 +132,25 @@ public class KnowledgeBase {
 		return obj;
 	}
 	
-	public JSONArray toeventJSON() throws JSONException {
-		JSONArray obj = new JSONArray();
+	public JSONObject toTableJSON() throws JSONException {
+		JSONObject obj = new JSONObject();
 		
-		for (Event e: events) {
-			JSONObject evt = new JSONObject();
-			evt.put("name", e.get("name"));
-			evt.put("created", e.get("created"));
-			obj.put(evt);
-		}
+		JSONArray evnts = new JSONArray();
+		JSONArray medcl = new JSONArray();
+		JSONArray daily = new JSONArray();
+		
+		for (Event e: events)
+			evnts.put(e.toTableJSON());
+
+		for (Medical m: medicals)
+			medcl.put(m.toTableJSON());
+		
+		daily.put(getDaily().toTableJSON());
+		
+		obj.put("event", evnts);
+		obj.put("medcl", medcl);
+		obj.put("daily", daily);
+		
 		return obj;
 	}
 	
@@ -179,8 +187,7 @@ public class KnowledgeBase {
 	}
 	
 	public void delBuffer() {
-		//this.rBuffer = null;
-		//this.cBuffer = new CallbackBuffer();
+		this.cBuffer = new CallbackBuffer();
 	}
 	
 	public void update( int oid, String object, String attr, String value ) throws IOException {
@@ -297,6 +304,23 @@ public class KnowledgeBase {
 		return false;
 	}
 	
+	public boolean hasRelation( int id1, int id2, String relation ) {
+		
+		for(Relation r: relations) {
+			int rid1 = r.getE1();
+			int rid2 = r.getE2();
+			String rel = r.getType();
+			
+			if ( id1 == rid1 && id2 == rid2 && rel.equals(relation) )
+				return true;
+			
+			if ( id1 == rid2 && id2 == rid1 && rel.equals(relation) ) 
+				return true;
+		}
+		
+		return false;
+	}
+	
 	public Person getPersonFromRelation( int id, String relation ) {
 		
 		for(Relation r: relations) {
@@ -330,11 +354,20 @@ public class KnowledgeBase {
 	
 	public void addRelation( String rel, int n1, int n2 ) {
 
+		if (hasRelation(n1,n2,rel))
+			return;
+		
 		Relation r1 = new Relation(num_relations, n1, n2, rel);
 		num_relations++;
-		
-		// does this relation already exist?
 		this.relations.add(r1);
+		
+		if ( rel.equals("son") ) {
+			if (!hasRelation(n1,n2,"father")) {
+				Relation r2 = new Relation(num_relations, n2, n1, "father");
+				num_relations++;
+				this.relations.add(r2);
+			}
+		}
 	}
 	
 	public void addDialogue( String line ) {
@@ -468,7 +501,7 @@ public class KnowledgeBase {
 		dailies.put(current, daily);
 	}
 	
-	public void addEvent( String name ) {
+	public int addEvent( String name ) {
 		Event event = new Event(num_events);
 		num_events++;
 		
@@ -476,6 +509,8 @@ public class KnowledgeBase {
 		
 		// does this event already exist?
 		this.events.add(event);
+		
+		return event.getId();
 	}
 	
 	public void updateMedical( int mid, String attr, String val ) {

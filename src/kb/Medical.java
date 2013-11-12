@@ -4,6 +4,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import answer.Extract;
 import answer.ExtractName;
 import answer.ExtractOrganization;
@@ -43,5 +47,13 @@ public class Medical {
 		} 
 		
 		return null;
+	}
+	
+	public JSONObject toTableJSON() throws JSONException {
+		JSONObject med = new JSONObject();
+		med.put("id", getId());
+		med.put("issue", get("issue"));
+		med.put("created", get("created"));
+		return med;
 	}
 }

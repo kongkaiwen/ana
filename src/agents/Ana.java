@@ -77,6 +77,7 @@ public class Ana {
 		}
 			
 		// init data
+		int eid = -1;
 		String response = "";
 		knowledge.addDialogue(line);
 		int linenum = knowledge.getDialogue().size();
@@ -136,6 +137,9 @@ public class Ana {
   				boolean askq = false;
   				String last_line = buffer.getLine();
   				boolean found = buffer.executeCallback(response, knowledge, tkns, entitiesInText, pos);
+  				
+  				// delete buffer
+  				knowledge.delBuffer();
   				
   				//  q2.ask, RBuffer.add(q2.callback), QBuffer.pop()
   				if (found) {
@@ -242,10 +246,12 @@ public class Ana {
 
 		// extract event word
 		if (hasEvent) {
-			String event = Helpers.getEvent(line);
-			//System.out.println("event: "+event);
-			if (event != null) {
-				knowledge.addEvent( event );
+			String ename = Helpers.getEvent(line);
+			Event event = knowledge.getEvent(ename);  // doesn't consider duplicate events...
+			if (event == null) {
+				eid = knowledge.addEvent( ename );
+			} else {
+				eid = event.getId();
 			}
 		}
 		
@@ -317,18 +323,17 @@ public class Ana {
 			boolean askq = true;
 			
 			// which attribute to ask about? get the first person?
-			Event e = knowledge.getEvent(event);
+			Event e = knowledge.getEvent(eid);
 			knowledge.updateEvent(e.getId(), "tense", tense);
 			if (askq) {
 				// add potential question
 				Question question = new Question(pipeline, line, e.getId(), "event", e.getEmptyAttr(), null, tense, e.getCallback(e.getEmptyAttr()), false);
 				potential.add(question);
-				
 			}
 		}
 		
-		// is there an entity to ask about?
-		if ( entitiesInKB.size() > 0 ) {
+		// is there an person to ask about?
+		if ( peopleInKB.size() > 0 ) {
 			
 			boolean askq = true;
 			
@@ -472,7 +477,7 @@ public class Ana {
 		return knowledge.toJSON();
 	}
 	
-	public JSONArray getEvents() throws JSONException {
-		return knowledge.toeventJSON();
+	public JSONObject getTables() throws JSONException {
+		return knowledge.toTableJSON();
 	}
 }

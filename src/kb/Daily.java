@@ -4,6 +4,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import answer.Extract;
 import answer.ExtractBinary;
 import answer.ExtractCondition;
@@ -81,5 +84,17 @@ public class Daily {
 		}
 		
 		return null;
+	}
+	
+	public JSONObject toTableJSON() throws JSONException {
+		JSONObject dai = new JSONObject();
+		dai.put("condition", get("condition"));
+		dai.put("woken", get("woken"));
+		dai.put("slept", get("slept"));
+		dai.put("tookmeds", get("tookmeds"));
+		dai.put("breakfast", get("atebreakfast"));
+		dai.put("lunch", get("atelunch"));
+		dai.put("dinner", get("atedinner"));
+		return dai;
 	}
 }

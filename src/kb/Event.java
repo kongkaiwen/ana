@@ -4,6 +4,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import answer.Extract;
 import answer.ExtractAge;
 import answer.ExtractDate;
@@ -85,5 +88,17 @@ public class Event implements Entity {
 		}
 		
 		return null;
+	}
+	
+	public JSONObject toTableJSON() throws JSONException {
+		JSONObject evt = new JSONObject();
+		evt.put("id", getId());
+		evt.put("name", get("name"));
+		evt.put("where", get("where"));
+		evt.put("who", get("who"));
+		evt.put("start", get("start"));
+		evt.put("end", get("end"));
+		evt.put("created", get("created"));
+		return evt;
 	}
 }

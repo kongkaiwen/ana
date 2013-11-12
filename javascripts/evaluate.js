@@ -33,8 +33,8 @@ function init() {
 
 	if (document.contains(document.getElementById("model-a"))) {
 
-		submitResult = document.getElementById("submit-result");
-		submitResult.style.left = (window.innerWidth/2 - submitResult.offsetWidth/2 + 10) + "px";
+		input_top = 130;
+		input_gap = 60;
 
 		home.addEventListener("click", send, false);
 		next.addEventListener("click", send, false);
@@ -42,11 +42,8 @@ function init() {
 		modelA = document.getElementById("model-a");
 		modelB = document.getElementById("model-b");
 
-		modelA.style.bottom = "175px";
-		modelB.style.bottom = "175px";
-
-		//modelA.style.width = (window.innerWidth/2) + "px";
-		//modelB.style.width = (window.innerWidth/2) + "px";
+		modelA.style.top = (input_top + input_gap) + "px";
+		modelB.style.top = (input_top + input_gap) + "px";
 		
 		modelA.style.width = "500px";
 		modelB.style.width = "500px";
@@ -61,20 +58,6 @@ function init() {
 		modelA.style.left = (window.innerWidth/2 - boxwidth) - (gapsize/2) + "px";
 		modelB.style.left = (window.innerWidth/2) + (gapsize/2) + "px";
 
-
-		
-		/*
-		input = document.getElementById("text1");
-		input.style.left = (window.innerWidth/2) - ((input.offsetWidth+45)/2) + "px";
-		input.style.bottom = (75 + boxwidth) + "px";
-		input.addEventListener("keypress", addText, false);
-		
-		button = document.getElementById("text2");
-		button.style.left = (window.innerWidth/2) - ((input.offsetWidth+45)/2) + (500)+10 + "px";
-		button.style.bottom = (75 + boxwidth) + "px";
-		button.addEventListener("click", addText, false);
-		*/
-
 		var model_a_function = function(e) {
 			silence = 0;
 			addText( e, $("#model-a-input").val(), "a", "server.jsp" );
@@ -86,33 +69,32 @@ function init() {
 
 		input = document.getElementById("model-a-input");
 		input.style.left = (window.innerWidth/2 - boxwidth) - (gapsize/2) + "px";
-		//input.style.bottom = (75 + boxwidth) + "px";
-		input.style.bottom = (bottomgap + boxheight + input.offsetHeight - 10) + "px";
+		input.style.top = input_top + "px";
 		input.addEventListener("keypress", model_a_function, false);
+
+		button = document.getElementById("model-a-button");
+		button.style.left = (window.innerWidth/2 - boxwidth) - (gapsize/2) + (465)+10 + "px";
+		button.style.top = input_top + "px";
+		button.addEventListener("click", model_a_function, false);
+
+		input = document.getElementById("model-b-input");
+		input.style.left = (window.innerWidth/2) + (gapsize/2) + "px";
+		input.style.top = input_top + "px";
+		input.addEventListener("keypress", model_b_function, false);
+
+		button = document.getElementById("model-b-button");
+		button.style.left = (window.innerWidth/2) + (gapsize/2)  + (465)+10 + "px";
+		button.style.top = input_top + "px";
+		button.addEventListener("click", model_b_function, false);
+
+		rating_button = document.getElementById("submit-radio");
+		rating_button.addEventListener("click", sendRating, false);
 
 		input.addEventListener("keyup", function(e) {
 			if (e.type != "click" & e.keyCode != 13) {
 				$("#model-b-input").val($("#model-a-input").val());
 			}
 		}, false);
-
-		button = document.getElementById("model-a-button");
-		button.style.left = (window.innerWidth/2 - boxwidth) - (gapsize/2) + (465)+10 + "px";
-		button.style.bottom = (bottomgap + boxheight + input.offsetHeight - 10) + "px";
-		button.addEventListener("click", model_a_function, false);
-
-		input = document.getElementById("model-b-input");
-		input.style.left = (window.innerWidth/2) + (gapsize/2) + "px";
-		input.style.bottom = (bottomgap + boxheight + input.offsetHeight - 10) + "px";
-		input.addEventListener("keypress", model_b_function, false);
-
-		button = document.getElementById("model-b-button");
-		button.style.left = (window.innerWidth/2) + (gapsize/2)  + (465)+10 + "px";
-		button.style.bottom = (bottomgap + boxheight + input.offsetHeight - 10) + "px";
-		button.addEventListener("click", model_b_function, false);
-
-		rating_button = document.getElementById("submit-radio");
-		rating_button.addEventListener("click", sendRating, false);
 
         $('#cy').cytoscape({
           style: cytoscape.stylesheet()
@@ -170,6 +152,11 @@ function init() {
                 var node = e.cyTarget;
                 alert(node.json()["data"]["age"] + "\n" + node.json()["data"]["likes"]);
             });
+
+            cy.on('tap', 'edge', function(e) {
+                var edge = e.cyTarget;
+                alert(edge.json()["data"]["relation"]);
+            });
             
             cy.on('tap', function(e){
               if( e.cyTarget === cy ){
@@ -179,7 +166,7 @@ function init() {
           }
         });
 
-		var getGraph = function() {$.ajax({url: "kb.jsp",success: function(data) {	cy.load(JSON.parse(data));}})};
+		var getGraph = function() {$.ajax({url: "../kb.jsp",success: function(data) {	cy.load(JSON.parse(data));}})};
         $("#load").click(getGraph);
 
 	} else {
@@ -203,8 +190,14 @@ function popup( e ) {
 
 	close = document.getElementById("close");
 
-    w = 1000;
-    h = 500;
+    w = 1200;
+    h = 700;
+
+    graphwidth = Math.round(w/2) - 50;
+    graphheight = h - 50;
+    tablewidth = graphwidth;
+	tableheight = Math.round(graphheight/3);
+
 	popup.style.width = w + "px";
     popup.style.height = h + "px";
 
@@ -214,19 +207,62 @@ function popup( e ) {
 	close = document.getElementById("close");
     close.addEventListener('click', closePopup, false);
 
+    cydiv = document.getElementById("cy");
+	cydiv.style.width = graphwidth + "px";
+	cydiv.style.height = graphheight + "px";
+
+	table1 = document.getElementById("events-div");
+	table1.style.width = graphwidth + "px";
+	table1.style.height = tableheight + "px";
+	table1.style.maxHeight = tableheight + "px";
+	table1.style.top = "0";
+
+	table2 = document.getElementById("medical-div");
+	table2.style.width = tablewidth + "px";
+	table2.style.height = tableheight + "px";
+	table2.style.maxHeight = tableheight + "px";
+	table2.style.top = tableheight + "px";
+
+	table3 = document.getElementById("daily-div");
+	table3.style.width = tablewidth + "px";
+	table3.style.height = tableheight + "px";
+	table3.style.maxHeight = tableheight + "px";
+	table3.style.top = (2*tableheight) + "px";
+
     $.ajax({
-        url: "events.jsp",
-        success: function(data) {	
-            json = JSON.parse(data);
+    	url: "../kb.jsp",
+    	success: function(data) {
+    		json = JSON.parse(data);	
 
-            table = "<tr><th>ID</th><th>Event Name</th><th>Created On</th></tr>";
-            for(var i=0;i<json.length;i++) {
-                table += "<tr><td>ID</td><td>" + json[i]["name"] +"</td><td>"+ json[i]["created"] + "</td></tr>";
-            }
+    		graph = json["graph"];
+    		table = json["table"];
 
-            $("#events").html(table);
-        }
+    		toTable( table );
+    		cy.load( graph );
+    	}
     });
+}
+
+function toTable( json ) {
+
+	for (var obj in json) {
+
+		data = json[obj];
+
+		table = "<tr>";
+		for(var key in data[0])
+			table += "<th>" + cap(key) + "</th>";
+		table += "</tr>"
+
+	    for(var i=0;i<data.length;i++) {
+	        row = "<tr>";
+	        for(var key in data[i])
+	        	row += "<td>" + data[i][key] + "</td>";
+	        table += row + "</tr>";
+	    }
+
+	    $("#"+obj).html(table);
+	}	
 }
 
 function closePopup() {
@@ -261,6 +297,8 @@ function addText( e, text, model, server ) {
 		if (text != "silence")
 			$("#model-"+model+"-body").prepend(prettyText(text, "You", "even"));
 
+		$("#model-"+model+"-img").attr("src", "../images/loading.gif");
+		
 		$.ajax({
 			url: server,
 			data: "a=" + text,
@@ -270,6 +308,7 @@ function addText( e, text, model, server ) {
 				//$("#model-a-body").prepend(prettyText(json["modela"], "Model", "odd"));
 				//$("#model-b-body").prepend(prettyText(json["modelb"], "Model", "odd"));
 				$("#model-"+model+"-body").prepend(prettyText(data, "Model", "odd"));
+				$("#model-"+model+"-img").attr("src", "");
 			}
 		});
 		
@@ -280,6 +319,10 @@ function addText( e, text, model, server ) {
 
 function prettyText( txt, who, cls ) {
 	return "<p class='"+cls+"'><b>"+who+":</b>  "+txt+"</p>";
+}
+
+function cap(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 		
 		

@@ -109,13 +109,13 @@ body {
     right: 15px;
 }
 
-#events {
+#event {
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
 }
 
-#events td, th {
+#event td, th {
     border: 1px solid black;
     padding: 10px;
 }
@@ -129,13 +129,13 @@ body {
     right: 15px;
 }
 
-#medical {
+#medcl {
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
 }
 
-#medical td, th {
+#medcl td, th {
     border: 1px solid black;
     padding: 10px;
 }

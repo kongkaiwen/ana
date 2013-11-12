@@ -13,5 +13,5 @@ if ( session.getAttribute("eval") == null ) {
 	e = (Evaluate)session.getAttribute("eval");
 }
 
-out.print(e.getEvents());
+out.print(e.getTables());
 %>

@@ -19,6 +19,7 @@ public class Bot {
 	    ChatterBotSession botsession = bot.createSession();
 		//ChatterBot bot = factory.create(ChatterBotType.PANDORABOTS, "d689f7b8de347251");
 	    //ChatterBotSession botsession = bot.createSession();     
-		return botsession.think(line);
+	    String response = botsession.think(line).replace("Cleverbot", "Ana");
+		return response;
 	}
 }

@@ -39,6 +39,7 @@ public class Relation {
 		//jso.put("id", String.valueOf(getId()));
 		jso.put("source", String.valueOf(getE1()));
 		jso.put("target", String.valueOf(getE2()));
+		jso.put("relation", type);
 		
 		obj.put("data", jso);
 		
