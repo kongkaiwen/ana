@@ -232,6 +232,7 @@ function loadKB() {
 
     $.ajax({
     	url: "../kb.jsp",
+    	data: "scenario=1",
     	success: function(data) {
     		json = JSON.parse(data);	
 

@@ -46,7 +46,7 @@ public class KnowledgeBase {
 	
 	public static void main(String args[]) throws JSONException, IOException {
 		KnowledgeBase kb = new KnowledgeBase();
-		kb.initKB();
+		kb.initKB(1);
 		System.out.println(kb.toJSON());
 	}
 	
@@ -74,28 +74,53 @@ public class KnowledgeBase {
 		this.speaker = null;
 	}
 	
-	public void initKB() throws IOException {
-		addPerson("Kevin");
-		setSpeaker("Kevin");
-		addPerson("Phil");
-		updatePerson("Phil", "age", "56");
-		updatePerson("Phil", "likes", "cook, cookies");
-		addRelation("son", 0, 1);
-		addEvent("hockey game");
-		addMedical("chest pain");
-		addDialogue("I am Kevin.");
+	public void initKB( int scenario ) throws IOException {
+		if (scenario == 1) {
+			addPerson("Kevin");
+			setSpeaker("Kevin");
+			addPerson("Phil");
+			updatePerson("Phil", "age", "56");
+			updatePerson("Phil", "likes", "cook, cookies");
+			addRelation("son", 0, 1);
+			addEvent("hockey game");
+			addMedical("chest pain");
+			addDialogue("I am Kevin.");
+		}
+		
+		if (scenario == 2) {
+			addPerson("Irene");
+			setSpeaker("Irene");
+			addDialogue("I am Irene.");
+			addPerson("Phil");
+			addPerson("David");
+			addRelation("son", 0, 1);
+			addRelation("son", 0, 2);
+		}
 	}	
 	
-	public void initKB2() throws IOException {
-		addPerson("Irene");
-		setSpeaker("Irene");
-		addDialogue("I am Irene.");
+	public void resetKB( int scenario ) throws IOException {
+		this.num_events = 0;
+		this.num_dailies = 0;
+		this.num_medicals = 0;
+		this.num_entities = 0;
+		this.num_relations = 0;
+		this.num_responses = 0;
 		
-		addPerson("Phil");
-		addPerson("David");
+		this.people = new ArrayList<Person>();
+		this.dialogue = new ArrayList<String>();
+		this.relations = new ArrayList<Relation>();
+		this.events = new ArrayList<Event>();
+		this.medicals = new ArrayList<Medical>();
+		this.responses = new ArrayList<Response>();
 		
-		addRelation("son", 0, 1);
-		addRelation("son", 0, 2);
+		this.dailies = new HashMap<String, Daily>();
+		
+		this.rBuffer = null;
+		this.qBuffer = new QuestionBuffer();
+		this.cBuffer = new CallbackBuffer();
+		this.speaker = null;
+		
+		initKB(scenario);
 	}
 	
 	public JSONObject toJSON() throws JSONException {
@@ -361,13 +386,6 @@ public class KnowledgeBase {
 		num_relations++;
 		this.relations.add(r1);
 		
-		if ( rel.equals("son") ) {
-			if (!hasRelation(n1,n2,"father")) {
-				Relation r2 = new Relation(num_relations, n2, n1, "father");
-				num_relations++;
-				this.relations.add(r2);
-			}
-		}
 	}
 	
 	public void addDialogue( String line ) {

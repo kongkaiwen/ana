@@ -36,7 +36,7 @@ public class Ana {
 	
 	public static void main(String[] args) throws Exception {
 		Ana ana = new Ana();
-		ana.knowledge.initKB();
+		ana.knowledge.initKB(1);
 //		System.out.println(ana.ask("I went shopping with Sarah.", false));
 //		System.out.println(ana.ask("She is my sister.", false));
 //		System.out.println(ana.ask("She is 24 years old.", false));
@@ -50,7 +50,7 @@ public class Ana {
 //		System.out.println(ana.ask("Nathan.",false));
 //		System.out.println(ana.ask("I'm not feeling well.",false));
 //		System.out.println(ana.ask("I think I have a runny nose and a fever.",false));
-		System.out.println(ana.ask("Does Phil like to cook?", false));
+		System.out.println(ana.ask("Nathan is my son.", false));
 	}
 	
 	public Ana () {
@@ -365,6 +365,8 @@ public class Ana {
   		// if request -> attempt to resolve request
 		if ( function == 2.0 ) {
 			//return "As you wish.";
+			
+			// could be call doctor, reminder, scheduling, call family member, etc
 		}
   		
   		// if question -> attempt to answer
@@ -384,8 +386,14 @@ public class Ana {
 				// assume question is about person in KB
 				
 				String attr = Helpers.getAttr(tkns);
-				String answer = knowledge.get(peopleInKB.get(0).getId(), "person", attr);
 				
+				if (attr == null) {
+					knowledge.addResponse(line, "", "I'm not sure.", "answer");
+					return "Could you repeat that?";
+				}
+				
+				String answer = knowledge.get(peopleInKB.get(0).getId(), "person", attr);
+		
 				// add response
 				knowledge.addResponse(line, "", answer, "answer");
 				return answer;
@@ -396,15 +404,6 @@ public class Ana {
 		if ( function == 0.0 ) {
 			//response = getFact();
 		}
-		
-//		// rank questions
-//		for (Question q: potential) {
-//			
-//			// person, event, medical, or daily
-//			String obj = q.getObj();
-//			String atr = q.getAtr();
-//			
-//		}
 		
 		ArrayList<Question> medQ = new ArrayList<Question>();
 		ArrayList<Question> perQ = new ArrayList<Question>();
@@ -459,6 +458,8 @@ public class Ana {
 			Question qtwo = willask.get(1);
 			knowledge.addQuestion(qtwo);
 		}
+		
+		System.out.println(potential.size());
 		
 		// add to buffer
 		knowledge.addCallback(qone.getCallback());

@@ -790,6 +790,6 @@ public class Helpers {
 			}
 		}
 		
-		return "nothing";
+		return null;
 	}
 }

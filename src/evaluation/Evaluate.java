@@ -22,9 +22,9 @@ public class Evaluate {
 //		System.out.println(ana.getKB());
 	}
 	
-	public Evaluate() throws IOException {
+	public Evaluate(int scenario) throws IOException {
 		ana = new Ana();
-		ana.knowledge.initKB();
+		ana.knowledge.initKB(scenario);
 	}
 	
 	public String analyze(String line) throws Exception {
@@ -43,5 +43,9 @@ public class Evaluate {
 		kb.put("graph", ana.getKB());
 		kb.put("table", ana.getTables());
 		return kb;
+	}
+	
+	public void resetKB( int scenario ) throws IOException {
+		ana.knowledge.resetKB(scenario);
 	}
 }

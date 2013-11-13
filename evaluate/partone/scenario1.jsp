@@ -1,3 +1,14 @@
+<%@ page import="evaluation.Evaluate" %>
+
+<%
+
+if ( request.getSession().getAttribute("eval") != null ) {
+    Evaluate e = (Evaluate)session.getAttribute("eval");
+    e.resetKB(1);
+}
+
+%>
+
 <!DOCTYPE html>
 
 <html>
@@ -62,6 +73,9 @@
                     </table>
                 </form>
             </div>
+
+            <input id="scenario" type="hidden" value="1" />
+            <input id="correct" type="hidden" value="a" />
 		</div>
 	</body>
 </html>

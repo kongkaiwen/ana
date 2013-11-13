@@ -2,6 +2,8 @@ package db;
 
 import java.sql.*;
 
+import config.Settings;
+
 public class DataBase {
 
 	private Statement stmt;
@@ -9,8 +11,8 @@ public class DataBase {
 	
 	public static void main(String args[]) throws ClassNotFoundException, SQLException {
 		DataBase db = new DataBase();
-		//db.insertChat("a", "herrrrrro");
-		db.insertKB("yes", "herrrrrro", "no", "hhh");
+		db.insertChat("a", "herrrrrro", "a");
+		//db.insertKB("yes", "herrrrrro", "no", "hhh");
 		db.close();
 	}
 	
@@ -19,12 +21,12 @@ public class DataBase {
 	*/
 	public DataBase() throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/thesis", "root", "VenWed58"); 
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + Settings.database, Settings.username, Settings.password); 
 		stmt = con.createStatement();
 	}
 	
-	public void insertChat( String model, String desc ) throws SQLException {
-		stmt.executeUpdate("insert into chat (Model, Description) values ('"+model+"', '"+desc+"')");
+	public void insertChat( String model, String desc, String corr ) throws SQLException {
+		stmt.executeUpdate("insert into chat (Model, Description, Correct) values ('"+model+"', '"+desc+"', '"+corr+"')");
 	}
 	
 	public void insertKB( String miss, String miss_text, String incorr, String incorr_text ) throws SQLException {

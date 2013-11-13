@@ -5,13 +5,14 @@
 
 */
 
-/*DROP TABLE chat;
-DROP TABLE kbeval;*/
+DROP TABLE IF EXISTS chat;
+DROP TABLE IF EXISTS kbeval;
 
 CREATE TABLE chat (
 	ID int NOT NULL AUTO_INCREMENT,
 	Model varchar(255) NOT NULL,
 	Description varchar(255),
+	Correct varchar(255),
 	PRIMARY KEY (ID)
 );
 

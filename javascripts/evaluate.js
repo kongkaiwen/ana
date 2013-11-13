@@ -58,13 +58,21 @@ function init() {
 		modelA.style.left = (window.innerWidth/2 - boxwidth) - (gapsize/2) + "px";
 		modelB.style.left = (window.innerWidth/2) + (gapsize/2) + "px";
 
+		correct = $("#correct").val();
+
 		var model_a_function = function(e) {
 			silence = 0;
-			addText( e, $("#model-a-input").val(), "a", "server.jsp" );
+			if (correct === "a")
+				addText( e, $("#model-a-input").val(), "a", "../server.jsp" );
+			else
+				addText( e, $("#model-a-input").val(), "a", "../bot.jsp" );
 		};
 
 		var model_b_function = function(e) {
-			addText( e, $("#model-b-input").val(), "b", "bot.jsp" );
+			if (correct === "b")
+				addText( e, $("#model-b-input").val(), "b", "../server.jsp" );
+			else
+				addText( e, $("#model-b-input").val(), "b", "../bot.jsp" );
 		};
 
 		input = document.getElementById("model-a-input");
@@ -165,10 +173,6 @@ function init() {
             });
           }
         });
-
-		var getGraph = function() {$.ajax({url: "../kb.jsp",success: function(data) {	cy.load(JSON.parse(data));}})};
-        $("#load").click(getGraph);
-
 	} else {
 		thumbs = document.getElementsByClassName("scenario-thumb");
 		for(var i=0;i<thumbs.length;i++) {
@@ -231,6 +235,7 @@ function popup( e ) {
 
     $.ajax({
     	url: "../kb.jsp",
+    	data: "scenario="+$("#scenario").val(),
     	success: function(data) {
     		json = JSON.parse(data);	
 
@@ -275,16 +280,16 @@ function send( e ) {
 }
 
 function sendRating() {
-	// {"model": value, "description": text} 
+	// {"model": value, "description": text, "correct": value} 
 
 	checked = $('input[name="Rating"]:checked').val();
+	correct = $("#correct").val();
 
 	$.ajax({
-		url: "db.jsp",
-		data: "text=" + $("#submit-text").val() + "&model=" +checked + "&type=chat",
+		url: "../db.jsp",
+		data: "text=" + $("#submit-text").val() + "&model=" +checked + "&type=chat&correct="+correct,
 		success: function(data) {
-			//var json = JSON.parse(data);
-			alert(data);
+			alert("Success!");
 		}
 	});
 }
@@ -297,11 +302,12 @@ function addText( e, text, model, server ) {
 		if (text != "silence")
 			$("#model-"+model+"-body").prepend(prettyText(text, "You", "even"));
 
-		$("#model-"+model+"-img").attr("src", "../images/loading.gif");
-		
+		$("#model-"+model+"-img").attr("src", "../../images/loading.gif");
+		scenario = $("#scenario").val();
+
 		$.ajax({
 			url: server,
-			data: "a=" + text,
+			data: "a=" + text + "&scenario=" + scenario,
 			success: function(data) {
 				//var json = JSON.parse(data);
 				
