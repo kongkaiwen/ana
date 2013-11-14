@@ -3,7 +3,7 @@ package attributes;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import edu.stanford.nlp.trees.semgraph.SemanticGraph;
+import edu.stanford.nlp.semgraph.SemanticGraph;
 import entities.AnaEntity;
 
 public class PatternMatcher {

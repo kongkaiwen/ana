@@ -19,6 +19,8 @@ public class Question {
 	public Question( StanfordCoreNLP pipeline, String line, int oid, String obj, String atr, String question, String genderortense, Extract function, boolean silence ) throws IOException, JSONException {
 		this.obj = obj;
 		this.atr = atr;
+		
+		
 
 		if (question == null)
 			this.question = Helpers.genQuestion(obj, atr, genderortense);
@@ -29,6 +31,7 @@ public class Question {
 			this.question = Helpers.replacePronouns(Helpers.getTokens(pipeline, this.question));
 		
 		this.callback = new Callback(line, question, oid, obj, atr, new DateTime(), function);
+		System.out.println("Question: " + this.question + ", for: " + oid);
 	}
 	
 	public String getQuestion() {

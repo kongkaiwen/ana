@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import agents.Ana;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -47,5 +46,5 @@ public class Evaluate {
 	
 	public void resetKB( int scenario ) throws IOException {
 		ana.knowledge.resetKB(scenario);
-	}
+	} 
 }

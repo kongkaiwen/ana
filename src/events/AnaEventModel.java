@@ -32,7 +32,6 @@ import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.process.CoreLabelTokenFactory;
 import edu.stanford.nlp.process.PTBTokenizer;
-import edu.stanford.nlp.trees.semgraph.SemanticGraph;
 import edu.stanford.nlp.util.CoreMap;
 import entities.AnaEntity;
 import entities.AnaEntityFactory;

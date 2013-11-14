@@ -2,10 +2,12 @@
 
 <%
 
+/*
 if ( request.getSession().getAttribute("eval") != null ) {
     Evaluate e = (Evaluate)session.getAttribute("eval");
     e.resetKB(1);
 }
+*/
 
 %>
 
@@ -13,7 +15,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
 
 <html>
     <head>
-        <title>Conversation</title>
+        <title>Conversation</title> 
         <link rel="stylesheet" media="screen" href="../../stylesheets/evaluate.css">
         <link rel="shortcut icon" type="image/png" href="../../images/favicon.png">
         <script src="../../javascripts/jquery-1.7.1.min.js"></script>
@@ -22,6 +24,9 @@ if ( request.getSession().getAttribute("eval") != null ) {
         <script src="../../javascripts/evaluate.js"></script>
     </head>
 	<body>
+
+        <div id="loading"><img align="center" id="loading-gif" src="../../images/big_loading.gif" /></div>
+
 		<div id="wrapper">
 			
 			<h1 style="margin-top: 5px;margin-bottom:10px;" align="center">Scenario One</h1>

@@ -27,6 +27,13 @@ public class ExtractTime implements Extract {
 				time = e.getName();
 		}
 		
+		if (time.equals("")) {
+			for(String tkn: tkns) {
+				if (tkn.contains("am") || tkn.contains("pm"))
+					time = tkn;
+			}
+		}
+		
 		// if i found a time for the object -> update
 		if (!time.equals(""))
 			kb.update(oid, object, attr, time);

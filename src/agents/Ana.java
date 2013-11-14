@@ -16,7 +16,6 @@ import medical.AnaDrugPattern;
 import medical.AnaForgotPattern;
 import medical.AnaIllnessPattern;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -26,7 +25,7 @@ import relations.Entity;
 import tools.Helpers;
 
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.trees.semgraph.SemanticGraph;
+import edu.stanford.nlp.semgraph.SemanticGraph;
 import entities.AnaEntity;
 
 public class Ana {
@@ -50,14 +49,19 @@ public class Ana {
 //		System.out.println(ana.ask("Nathan.",false));
 //		System.out.println(ana.ask("I'm not feeling well.",false));
 //		System.out.println(ana.ask("I think I have a runny nose and a fever.",false));
-		System.out.println(ana.ask("Nathan is my son.", false));
+//		System.out.println(ana.ask("I'm going to a concert tonight.", false));
+		System.out.println(ana.ask("I need to buy a gift for my grandson's birthday.", false));
+		System.out.println("---");
+		System.out.println(ana.ask("Jacob.", false));
+		System.out.println("---");
+		System.out.println(ana.ask("He is turning 16.", false));
+		System.out.println(ana.knowledge.toJSON());
 	}
 	
 	public Ana () {
 		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-		
-		pipeline = new StanfordCoreNLP(props);
+	    props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+	    pipeline = new StanfordCoreNLP(props);
 		knowledge = new KnowledgeBase();
 	}
 
@@ -206,7 +210,7 @@ public class Ana {
 				knowledge.addRelation(title, focus.getId(), pid);
 				
 				// add the potential question
-				Question question = new Question(pipeline, line, p.getId(), "person", p.getEmptyAttr(), null, p.get("sex"), p.getCallback(p.getEmptyAttr()), false);
+				Question question = new Question(pipeline, line, pid, "person", p.getEmptyAttr(), null, p.get("sex"), p.getCallback(p.getEmptyAttr()), false);
 				potential.add(question);
 				
 			}
@@ -222,6 +226,7 @@ public class Ana {
 		// people from the line in kb
 		ArrayList<Person> peopleInKB = new ArrayList<Person>();
 		for(AnaEntity ae: entitiesInKB) {
+			System.out.println("PERSON!!" + ae.getName());
 			if (ae.getType().equals("PER")) {
 				peopleInKB.add(knowledge.getPerson(Integer.parseInt(ae.getId())));
 			}
@@ -262,6 +267,8 @@ public class Ana {
 			Question question = new Question(pipeline, line, medical.getId(), "medical", "issue", "What are your symptoms?", null, medical.getCallback("issue"), false);
 			potential.add(question);
 		}
+		
+		// detect illness, I think I have a runny nose and a fever.
 		
 		// has the user taken medication
 		boolean takenMeds = AnaDrugPattern.match(line, pos, drugs);
@@ -317,9 +324,7 @@ public class Ana {
 		
 		// is there an event to ask about?
 		if ( hasEvent ) {
-			String event = Helpers.getEvent(line);
 			String tense = Helpers.getEventTense(tkns, pos);
-			
 			boolean askq = true;
 			
 			// which attribute to ask about? get the first person?
@@ -334,7 +339,6 @@ public class Ana {
 		
 		// is there an person to ask about?
 		if ( peopleInKB.size() > 0 ) {
-			
 			boolean askq = true;
 			
 			ArrayList<String> people = new ArrayList<String>();
@@ -347,7 +351,6 @@ public class Ana {
 			}
 			
 			// which attribute to ask about? get the first person?
-			
 			if (askq) {
 				// get first person in line
 				Person target = knowledge.getPerson(people.get(0));
@@ -458,8 +461,6 @@ public class Ana {
 			Question qtwo = willask.get(1);
 			knowledge.addQuestion(qtwo);
 		}
-		
-		System.out.println(potential.size());
 		
 		// add to buffer
 		knowledge.addCallback(qone.getCallback());

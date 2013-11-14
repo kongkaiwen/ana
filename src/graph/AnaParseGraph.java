@@ -5,8 +5,7 @@ import java.util.HashMap;
 
 import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.trees.GrammaticalRelation;
-import edu.stanford.nlp.trees.semgraph.SemanticGraph;
-import edu.stanford.nlp.trees.semgraph.SemanticGraphEdge;
+import edu.stanford.nlp.semgraph.SemanticGraph;
 
 public class AnaParseGraph {
 	
@@ -20,7 +19,7 @@ public class AnaParseGraph {
   		for (IndexedWord iw: dependencies.vertexListSorted()) 
   			this.nodes.put(iw.index(), new AnaNode(iw.index(), iw.tag(), iw.word()));
   		
-  		for( SemanticGraphEdge e1: dependencies.edgeIterable() ) {
+  		for( edu.stanford.nlp.semgraph.SemanticGraphEdge e1: dependencies.edgeIterable() ) {
   			IndexedWord dep = e1.getDependent();
         	IndexedWord gov = e1.getGovernor();
         	GrammaticalRelation rel = e1.getRelation();

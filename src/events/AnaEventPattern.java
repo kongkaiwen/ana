@@ -5,7 +5,6 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import edu.stanford.nlp.trees.semgraph.SemanticGraph;
 import entities.AnaEntity;
 import graph.AnaParseGraph;
 
@@ -27,7 +26,7 @@ public class AnaEventPattern {
 		"meeting", "date", "trip", "conference"	};
 	
 	// keyword + (DATE || TIME)
-	public static String match1(String line, ArrayList<AnaEntity> entities, ArrayList<String> pos, SemanticGraph dep) {
+	public static String match1(String line, ArrayList<AnaEntity> entities, ArrayList<String> pos, edu.stanford.nlp.semgraph.SemanticGraph dep) {
 		boolean has_pers = false;
 		boolean has_date = false;
 		boolean has_time = false;
@@ -72,7 +71,7 @@ public class AnaEventPattern {
 	}
 	
 	// tmod link + NN-VBZ-NN + (DATE || TIME)
-	public static String match2(String line, ArrayList<AnaEntity> entities, ArrayList<String> pos, SemanticGraph dep) {
+	public static String match2(String line, ArrayList<AnaEntity> entities, ArrayList<String> pos, edu.stanford.nlp.semgraph.SemanticGraph dep) {
 		String verb = "";
   		String patt = "";
   		String output = "";
@@ -101,7 +100,7 @@ public class AnaEventPattern {
 	}
 	
 	public static String match3(String line, ArrayList<AnaEntity> entities, ArrayList<String> pos, ArrayList<String> tkn,
-			SemanticGraph dep) throws ParseException, IOException {
+			edu.stanford.nlp.semgraph.SemanticGraph dep) throws ParseException, IOException {
 		
 		ArrayList<String> new_entities = new ArrayList<String>();
 		for(AnaEntity ae: entities)

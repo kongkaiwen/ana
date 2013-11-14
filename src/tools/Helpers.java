@@ -2,11 +2,8 @@ package tools;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -44,8 +41,8 @@ import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.trees.semgraph.SemanticGraph;
-import edu.stanford.nlp.trees.semgraph.SemanticGraphCoreAnnotations.CollapsedCCProcessedDependenciesAnnotation;
+import edu.stanford.nlp.semgraph.SemanticGraph;
+import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.CollapsedCCProcessedDependenciesAnnotation;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
 import events.AnaEventModel;
@@ -54,7 +51,7 @@ public class Helpers {
 	
 	public static String femaleRegex = "(daughter|mother|grandmother|neice|aunt|wife)";
 	
-	public static String familyTitles[] = {"daughter", "son", "father", "mother", "grandfather", "grandmother", "neice", "nephew", "cousin", "uncle", "aunt", "wife", "husband"};
+	public static String familyTitles[] = {"daughter", "son", "father", "mother", "grandfather", "grandmother", "neice", "nephew", "cousin", "uncle", "aunt", "wife", "husband", "grandson", "granddaughter"};
 	
 	public static String greetingWords[] = {"hello", "hey", "hi", "howdy", "yo"};
 	
@@ -64,7 +61,8 @@ public class Helpers {
 		"klatch", "breakfast", "lunch", "dinner", "supper", "barbeque", "gala", "function", "seminar", "yoga", "lecture",
 		"meeting", "date", "trip", "conference", "dance", "shopping"};
 	
-	public static String[] pronouns = {"my", "you", "he", "she", "it", "we", "they", "me", "him",
+	// removed 'i' and 'my'
+	public static String[] pronouns = {"you", "he", "she", "it", "we", "they", "me", "him",
 		"her", "us", "them", "what", "who", "me", "whom", "mine", "yours", "his", "hers",
 		"ours", "theirs", "this", "that", "these", "those", "who", "which", "whose", "whoever",
 		"whatever", "whichever", "whomever", "myself", "yourself", " himself", " herself", "itself",
@@ -72,10 +70,15 @@ public class Helpers {
 	
 	public static void main(String args[]) throws IOException, InterruptedException, JSONException, ParseException {
 		//System.out.println(loadDrugNames());
-//		System.out.println(predictGender("Kevin"));
-//		Properties props = new Properties();
-//		props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-//		StanfordCoreNLP pipeline = new StanfordCoreNLP( props );
+		//System.out.println(predictGender("Kevin"));
+		Properties props = new Properties();
+		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
+		//props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+		StanfordCoreNLP pipeline = new StanfordCoreNLP( props );
+		
+		ArrayList<Entity> entitiesInText = Helpers.getYingEntities( pipeline, "I need to buy a gift for my grandson's birthday." );
+		for(Entity e: entitiesInText) 
+			System.out.println(e.getName() + ":" + e.getType());
 //		
 //		sentenceFunction( pipeline, "What do you want?" );
 		
@@ -510,10 +513,10 @@ public class Helpers {
 		    Map<Integer, CorefChain> graph = COREFdocument.get(CorefChainAnnotation.class);
 		    for(Integer key: graph.keySet()) {
 		    	CorefChain crc = graph.get(key);
-	
-		    	if ( crc != null && crc.getCorefMentions().size() != 0 ) {
+
+		    	if ( crc != null && crc.getMentionsInTextualOrder().size() != 0 ) {
 		    		ArrayList<String> mentions = new ArrayList<String>();
-		    		for (CorefMention c: crc.getCorefMentions())
+		    		for (CorefMention c: crc.getMentionsInTextualOrder())
 		    			mentions.add(c.mentionSpan + ":" +c.sentNum+":"+c.headIndex);
 		    		anaMentions.add(mentions);
 		    	}

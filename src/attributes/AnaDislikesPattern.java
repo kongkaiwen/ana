@@ -5,8 +5,7 @@ import java.util.HashMap;
 
 import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.trees.GrammaticalRelation;
-import edu.stanford.nlp.trees.semgraph.SemanticGraph;
-import edu.stanford.nlp.trees.semgraph.SemanticGraphEdge;
+import edu.stanford.nlp.semgraph.*;
 import entities.AnaEntity;
 import graph.AnaEdge;
 import graph.AnaNode;

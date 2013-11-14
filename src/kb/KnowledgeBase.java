@@ -6,15 +6,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Queue;
 import java.util.Random;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import answer.Extract;
 
 import relations.Entity;
 import tools.Helpers;
@@ -40,7 +36,6 @@ public class KnowledgeBase {
 	private ArrayList<Response> responses;
 	private HashMap<String, Daily> dailies;
 	
-	private ResponseBuffer rBuffer;
 	private QuestionBuffer qBuffer;
 	private CallbackBuffer cBuffer;
 	
@@ -68,7 +63,6 @@ public class KnowledgeBase {
 		
 		this.dailies = new HashMap<String, Daily>();
 		
-		this.rBuffer = null;
 		this.qBuffer = new QuestionBuffer();
 		this.cBuffer = new CallbackBuffer();
 		this.speaker = null;
@@ -115,7 +109,6 @@ public class KnowledgeBase {
 		
 		this.dailies = new HashMap<String, Daily>();
 		
-		this.rBuffer = null;
 		this.qBuffer = new QuestionBuffer();
 		this.cBuffer = new CallbackBuffer();
 		this.speaker = null;
@@ -201,10 +194,6 @@ public class KnowledgeBase {
 	
 	public Person getSpeaker() {
 		return speaker;
-	}
-	
-	public void setBuffer( ResponseBuffer buffer ) {
-		this.rBuffer = buffer;
 	}
 	
 	public Callback getCallback() {

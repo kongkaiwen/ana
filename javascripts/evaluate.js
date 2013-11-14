@@ -29,13 +29,30 @@ function init() {
 		//home.style.left = (window.innerWidth/2 - home.offsetWidth) + "px";
 		//next.style.left = (window.innerWidth/2) + "px";
         //kb.style.left = (window.innerWidth/2 + next.offsetWidth) + "px";
-	}
+	} 
 
 	if (document.contains(document.getElementById("model-a"))) {
 
+		// <div id="loading"><img id="loading-gif" src="../../images/big_loading.gif" /></div>
+
+		$("#loading").css("width", window.innerWidth);
+		$("#loading").css("height", window.innerHeight);
+		$("#loading").css("display", "block");
+
+		$("#loading-gif").css("left", (window.innerWidth/2 - document.getElementById("loading-gif").offsetWidth/2)  + "px");
+		$("#loading-gif").css("top", (window.innerHeight/2 - document.getElementById("loading-gif").offsetHeight/2)  + "px");
+
+		$.ajax({
+			url: "../load.jsp",
+			data: "scenario="+$("#scenario").val(),
+			success: function() {
+				toggleLoading();
+			}
+		});
+
 		input_top = 130;
 		input_gap = 60;
-
+		
 		home.addEventListener("click", send, false);
 		next.addEventListener("click", send, false);
 
@@ -80,6 +97,12 @@ function init() {
 		input.style.top = input_top + "px";
 		input.addEventListener("keypress", model_a_function, false);
 
+		input.addEventListener("keyup", function(e) {
+			if (e.type != "click" & e.keyCode != 13) {
+				$("#model-b-input").val($("#model-a-input").val());
+			}
+		}, false);
+
 		button = document.getElementById("model-a-button");
 		button.style.left = (window.innerWidth/2 - boxwidth) - (gapsize/2) + (465)+10 + "px";
 		button.style.top = input_top + "px";
@@ -98,11 +121,7 @@ function init() {
 		rating_button = document.getElementById("submit-radio");
 		rating_button.addEventListener("click", sendRating, false);
 
-		input.addEventListener("keyup", function(e) {
-			if (e.type != "click" & e.keyCode != 13) {
-				$("#model-b-input").val($("#model-a-input").val());
-			}
-		}, false);
+		
 
         $('#cy').cytoscape({
           style: cytoscape.stylesheet()
@@ -329,6 +348,17 @@ function prettyText( txt, who, cls ) {
 
 function cap(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function toggleLoading() {
+
+	display = $("#loading-gif").css("display");
+	if (display == "block")
+		$("#loading").css("display", "none");
+	else 
+		$("#loading").css("display", "block");
+
+	
 }
 		
 		

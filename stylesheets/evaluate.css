@@ -311,3 +311,16 @@ poopup
     border: 1px solid black;
     padding: 10px;
 }
+
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index:9999;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#loading-gif {
+    position: absolute;
+}
