@@ -158,4 +158,45 @@ public class Person implements Entity {
 		return null;
 	}
 	
+	public String formulateResponse( String attr, String val ) {
+		
+		if ( attr.equals("age") ) {
+			return get("name") + " is " + val + "years old.";
+		} else if ( attr.equals("name") ) {
+			return "His name is " +val;
+		} else if ( attr.equals("education_institute") ) {
+			return get("name") + " went to " + get("education_institute");
+		} else if ( attr.equals("education_degree") ) {
+			return get("name") + " has a degree in " + get("education_degree");
+		} else if ( attr.equals("date_of_birth") ) {
+			return get("name") + " was born on " + get("date_of_birth");
+		} else if ( attr.equals("date_of_death") ) {
+			return get("name") + " died on " + get("date_of_death");
+		} else if ( attr.equals("profession_institute") ) {
+			return get("name") + " works at " + get("profession_institute");
+		} else if ( attr.equals("profession_position") ) {
+			return get("name") + " is a " + get("profession_position");
+		} else if ( attr.equals("residence") ) {
+			return get("residence");
+		} else if ( attr.equals("ethnicity") ) {
+			return get("ethnicity");
+		} else if ( attr.equals("religion") ) {
+			return get("religion");
+		} else if ( attr.equals("height") ) {
+			return get("height");
+		} else if ( attr.equals("weight") ) {
+			return get("weight");
+		} else if ( attr.equals("languages") ) {
+			return get("languages");
+		} else if ( attr.equals("born_in") ) {
+			return get("born_in");
+		} else if ( attr.equals("likes") ) {
+			return get("name") + " likes; " + get("likes") + ".";
+		} else if ( attr.equals("dislikes") ) {
+			return get("name") + " doesn't like; " + get("dislikes");
+		}
+		
+		return get(attr);
+	}
+	
 }

@@ -2,22 +2,38 @@ package graph;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Properties;
+
+import tools.Helpers;
 
 import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.trees.GrammaticalRelation;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 
 public class AnaParseGraph {
 	
 	private HashMap<Integer, AnaEdge> edges;
 	private HashMap<Integer, AnaNode> nodes;
+	
+	public static void main(String args[]) {
+		System.out.println("AAA");
+		Properties props = new Properties();
+	    props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+	    StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+	    
+	    String line = "Jacob is my nephew.";
+		SemanticGraph dependencies = Helpers.getDependencies(pipeline, line);
+		AnaParseGraph apg = new AnaParseGraph( dependencies );
+		apg.hasLink("nephew", "Jacob");
+	}
 
 	public AnaParseGraph( SemanticGraph dependencies ) {
 		this.edges = new HashMap<Integer, AnaEdge>();
   		this.nodes = new HashMap<Integer, AnaNode>();
   		
   		for (IndexedWord iw: dependencies.vertexListSorted()) 
-  			this.nodes.put(iw.index(), new AnaNode(iw.index(), iw.tag(), iw.word()));
+  			this.nodes.put(iw.index(), new AnaNode(iw.index(), iw.tag(), iw.word(), iw.ner()));
   		
   		for( edu.stanford.nlp.semgraph.SemanticGraphEdge e1: dependencies.edgeIterable() ) {
   			IndexedWord dep = e1.getDependent();
@@ -27,6 +43,34 @@ public class AnaParseGraph {
         	AnaEdge ae = new AnaEdge(gov.index(), rel.toString(), dep.index());
         	this.edges.put(e1.hashCode(), ae);
         }
+	}
+	
+	// nephew, Jacob
+	public boolean hasLink( String node, String person ) {
+		
+		// find the correct node
+		for(Integer k: edges.keySet()) {
+			AnaEdge ae = edges.get(k);
+			
+			int di = ae.getDep();
+			int gi = ae.getGov();
+			String link = ae.getRel();
+			
+			AnaNode dep = nodes.get(di);
+			AnaNode gov = nodes.get(gi);
+			
+			//System.out.println(dep.getWord() + "(" + dep.getNer() + ")" + " " + link + " " + "(" + gov.getNer() + ")" +  gov.getWord());
+			
+			if (dep.getWord().equals(person) && gov.getWord().equals(node)) {
+				return true;
+			}
+			
+			if (dep.getWord().equals(node) && gov.getWord().equals(person)) {
+				return true;
+			}
+		}
+		
+		return false;
 	}
 	
 	// VBZ-dobj>-NN

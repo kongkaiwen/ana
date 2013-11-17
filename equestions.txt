@@ -6,4 +6,11 @@
 {"question": "Where is it?", "type": "where", "event": "generic", "tense": "future"}
 {"question": "Who will you go with?", "type": "who", "event": "generic", "tense": "past"}
 {"question": "Who are you going with?", "type": "who", "event": "generic", "tense": "future"}
-{"question": "Did you enjoy yourself?", "type": "common", "event": "generic", "tense": "past"}
+{"question": "When does it start?", "type": "start", "event": "generic", "tense": "past"}
+{"question": "When did it start?", "type": "start", "event": "generic", "tense": "future"}
+{"question": "How long did it last?", "type": "end", "event": "generic", "tense": "past"}
+{"question": "When will it end?", "type": "end", "event": "generic", "tense": "future"}
+{"question": "Where did you go?", "type": "where", "event": "generic", "tense": "past"}
+{"question": "Where is it located?", "type": "where", "event": "generic", "tense": "future"}
+{"question": "Who will you go with?", "type": "who", "event": "generic", "tense": "past"}
+{"question": "Who accompanied you?", "type": "who", "event": "generic", "tense": "future"}

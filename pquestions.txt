@@ -11,7 +11,7 @@
 {"question": "What food does he like?", "type": "likes"}
 {"question": "Is it a girl or boy?", "type": "sex"}
 {"question": "What's his name?", "type": "name"}
-{"question": "What did he study in college?", "type": "education_degree"}
+{"question": "What did he study?", "type": "education_degree"}
 {"question": "Where does he work?", "type": "profession_institute"}
 {"question": "Where does he live?", "type": "residence"}
 {"question": "What ethnicity is he?", "type": "ethnicity"}

@@ -4,7 +4,7 @@
 
 if ( request.getSession().getAttribute("eval") != null ) {
     Evaluate e = (Evaluate)session.getAttribute("eval");
-    e.resetKB(1);
+    e.resetKB(3);
 }
 
 %>
@@ -26,7 +26,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
         <div id="loading"><img align="center" id="loading-gif" src="../../images/big_loading.gif" /></div>
 		<div id="wrapper">
 			
-			<h1 style="margin-top: 5px;margin-bottom:10px;" align="center">Scenario One</h1>
+			<h1 style="margin-top: 5px;margin-bottom:10px;" align="center">Scenario Three</h1>
 
             <div align="center">
 			<input class="ana-button" id="home-button" type="button" value="Home" href="partone.html" />
@@ -49,7 +49,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
             <input type="text" id="model-b-input" placeholder="Ask" x-webkit-speech/>
             <input type="button" id="model-b-button" />
 		    
-		    <p align="center" class="scenario"><b>Scenario:</b> Your name is Irene. You have a two granddaughter's named Jana and Wendy. You just spent the day with Jana yesterday.   Discuss what you did with Jana.</p>
+		    <p align="center" class="scenario"><b>Scenario:</b> Introduce yourself (your real name).  Talk about yourself and your relatives. </p>
 			
 		    <div id="model-a">
 		    	<p class="title">Model A <img id="model-a-img" src="" style="width:15px;height:15px;" /></p>

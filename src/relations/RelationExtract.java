@@ -273,8 +273,12 @@ public class RelationExtract {
 			HashMap govListMap, ArrayList tokenList, ArrayList posList,
 			int start1, int end1, int start2, int end2, String type1, String type2 ) throws IOException{
 		String relation = null;
+		
+		//System.out.println("start1: " + start1 + ", start2: " + start2);
+		//System.out.println("end1: " + end1 + ", end2: " + end2);
 		int head1 = DpLinkTranEx.getHead(govListMap, tokenList, posList, start1, end1);
 		int head2 = DpLinkTranEx.getHead(govListMap, tokenList, posList, start2, end2);
+		//System.out.println("head1: " + head1 + ", head2: " + head2);
 		String result = dpPath2TB.getTreePath(head1, head2);
 		if(result!=null){
 			String line = "1\t|BT| "+result+" |ET|";

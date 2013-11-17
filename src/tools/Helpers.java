@@ -21,9 +21,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import attributes.PersonMatcher;
+
 import config.Settings;
 
 import jnisvmlight.SVMLightModel;
+import kb.Question;
 
 import relations.RelationExtract;
 import relations.Entity;
@@ -51,7 +54,7 @@ public class Helpers {
 	
 	public static String femaleRegex = "(daughter|mother|grandmother|neice|aunt|wife)";
 	
-	public static String familyTitles[] = {"daughter", "son", "father", "mother", "grandfather", "grandmother", "neice", "nephew", "cousin", "uncle", "aunt", "wife", "husband", "grandson", "granddaughter"};
+	public static String familyTitles[] = {"daughter", "son", "father", "mother", "grandfather", "grandmother", "neice", "nephew", "cousin", "uncle", "aunt", "wife", "husband", "grandson", "granddaughter", "friend", "brother", "sister"};
 	
 	public static String greetingWords[] = {"hello", "hey", "hi", "howdy", "yo"};
 	
@@ -59,7 +62,7 @@ public class Helpers {
 	
 	public static String keyWords[] = {"concert", "class", "party", "graduation", "game", "event", "potluck", "gathering",
 		"klatch", "breakfast", "lunch", "dinner", "supper", "barbeque", "gala", "function", "seminar", "yoga", "lecture",
-		"meeting", "date", "trip", "conference", "dance", "shopping"};
+		"meeting", "date", "trip", "conference", "dance", "shopping", "wedding", "funeral", "appointment"};
 	
 	// removed 'i' and 'my'
 	public static String[] pronouns = {"you", "he", "she", "it", "we", "they", "me", "him",
@@ -69,16 +72,22 @@ public class Helpers {
 		"ourselves", "themselves"};
 	
 	public static void main(String args[]) throws IOException, InterruptedException, JSONException, ParseException {
+		System.out.println(ummPhrase());
 		//System.out.println(loadDrugNames());
 		//System.out.println(predictGender("Kevin"));
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
-		//props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP( props );
-		
-		ArrayList<Entity> entitiesInText = Helpers.getYingEntities( pipeline, "I need to buy a gift for my grandson's birthday." );
-		for(Entity e: entitiesInText) 
-			System.out.println(e.getName() + ":" + e.getType());
+//		Properties props = new Properties();
+//		//props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
+//		props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+//		StanfordCoreNLP pipeline = new StanfordCoreNLP( props );
+//		
+//		HashMap<String, String> relations = getRelations( pipeline, "She is my sister.",  0 );
+//		for (String k: relations.keySet()) {
+//			System.out.println(k + ": " + relations.get(k));
+//		}
+
+//		ArrayList<Entity> entitiesInText = Helpers.getYingEntities( pipeline, "I need to buy a gift for my grandson's birthday." );
+//		for(Entity e: entitiesInText) 
+//			System.out.println(e.getName() + ":" + e.getType());
 //		
 //		sentenceFunction( pipeline, "What do you want?" );
 		
@@ -149,10 +158,12 @@ public class Helpers {
 		
 		Data d = new Data(line, "0.0");
 		
-		d.setPos(getPOS(pipeline, line));
+		ArrayList<String> pos = getPOS(pipeline, line);
+		//pos.set(0, "<START>");
+		d.setPos(pos);
 		d.setTkns(getTokens(pipeline, line));
 		
-		SVMLightModel[] models = new SVMLightModel[4];
+		SVMLightModel[] models = new SVMLightModel[3];
 		models[0] = SVMLightModel.readSVMLightModelFromURL(new java.io.File(Settings.path + "single_model0.dat").toURL());
 		models[1] = SVMLightModel.readSVMLightModelFromURL(new java.io.File(Settings.path + "single_model1.dat").toURL());
 		models[2] = SVMLightModel.readSVMLightModelFromURL(new java.io.File(Settings.path + "single_model2.dat").toURL());
@@ -794,5 +805,72 @@ public class Helpers {
 		}
 		
 		return null;
+	}
+	
+	public static ArrayList<Question> rank( ArrayList<Question> potential ) {
+		
+		ArrayList<Question> medQ = new ArrayList<Question>();
+		ArrayList<Question> perQ = new ArrayList<Question>();
+		ArrayList<Question> eveQ = new ArrayList<Question>();
+		
+		for(Question q: potential) {
+			if (q.getObj().equals("event"))
+				eveQ.add(q);
+			if (q.getObj().equals("person"))
+				perQ.add(q);
+			if (q.getObj().equals("medical"))
+				medQ.add(q);
+		}
+		
+		int person_index = 0;
+		for(Question pq: perQ) {
+			if (pq.getAtr().equals("who")) {
+				person_index = perQ.indexOf(pq);
+			}
+		}
+
+		ArrayList<Question> willask = new ArrayList<Question>();
+		
+		// choose at most two questions, if theres a medical question it must be included
+		if (medQ.size() > 0) {
+			willask.add(medQ.get(0));
+		
+			if ( perQ.size() > 0 && eveQ.size() > 0) {
+				willask.add(perQ.get(person_index));
+			} else if (perQ.size() > 0 && eveQ.size() == 0) {
+				willask.add(perQ.get(person_index));
+			} else if (perQ.size() == 0 && eveQ.size() > 0) {
+				willask.add(eveQ.get(0));
+			}
+		} else {
+			if ( perQ.size() > 0 && eveQ.size() > 0) {
+				willask.add(perQ.get(person_index));
+				willask.add(eveQ.get(0));
+			} else if (perQ.size() > 0 && eveQ.size() == 0) {
+				willask.add(perQ.get(person_index));
+				perQ.remove(person_index);
+				for (Question pq: perQ) {
+					if (willask.size() == 2)
+						break;
+					willask.add(pq);
+				}
+			} else if (perQ.size() == 0 && eveQ.size() > 0) {
+				for (Question eq: eveQ) {
+					if (willask.size() == 2)
+						break;
+					willask.add(eq);
+				}
+			}
+		}
+		
+		return willask;
+	}
+	
+	public static String ummPhrase() {
+		String ummPhrases[] = {"I see.", "Nice.", "Oh ok.", "Interesting.", "Sure.", "Ooook.", "Alright."};
+		Random random = new Random();
+		int index = random.nextInt(ummPhrases.length);
+		
+		return ummPhrases[index];
 	}
 }

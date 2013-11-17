@@ -121,82 +121,7 @@ function init() {
 		rating_button = document.getElementById("submit-radio");
 		rating_button.addEventListener("click", sendRating, false);
 
-		
-
-        $('#cy').cytoscape({
-          style: cytoscape.stylesheet()
-            .selector('node')
-              .css({
-                'content': 'data(name)',
-                'text-valign': 'center',
-                'color': 'white',
-                'text-outline-width': 2,
-                'text-outline-color': '#888'
-              })
-            .selector('edge')
-              .css({
-                'target-arrow-shape': 'triangle'
-              })
-            .selector(':selected')
-              .css({
-                'background-color': 'black',
-                'line-color': 'black',
-                'target-arrow-color': 'black',
-                'source-arrow-color': 'black'
-              })
-            .selector('.faded')
-              .css({
-                'opacity': 0.25,
-                'text-opacity': 0
-              }),
-          
-          elements: {
-            nodes: [
-              { data: { id: 'j', name: 'Jerry' } },
-              { data: { id: 'e', name: 'Elaine' } },
-              { data: { id: 'k', name: 'Kramer' } },
-              { data: { id: 'g', name: 'George' } }
-            ],
-            edges: [
-              { data: { source: 'j', target: 'e' } },
-              { data: { source: 'j', target: 'k' } },
-              { data: { source: 'j', target: 'g' } },
-              { data: { source: 'e', target: 'j' } },
-              { data: { source: 'e', target: 'k' } },
-              { data: { source: 'k', target: 'j' } },
-              { data: { source: 'k', target: 'e' } },
-              { data: { source: 'k', target: 'g' } },
-              { data: { source: 'g', target: 'j' } }
-            ]
-          },
-          
-          ready: function(){
-            window.cy = this;
-            
-            cy.elements().unselectify();
-
-            cy.on('tap', 'node', function(e) {
-                var node = e.cyTarget;
-                alert(node.json()["data"]["age"] + "\n" + node.json()["data"]["likes"]);
-            });
-
-            cy.on('tap', 'edge', function(e) {
-                var edge = e.cyTarget;
-                alert(edge.json()["data"]["relation"]);
-            });
-            
-            cy.on('tap', function(e){
-              if( e.cyTarget === cy ){
-                cy.elements().removeClass('faded');
-              }
-            });
-          }
-        });
-	} else {
-		thumbs = document.getElementsByClassName("scenario-thumb");
-		for(var i=0;i<thumbs.length;i++) {
-			thumbs[i].addEventListener("click", go, false);
-		}
+		initGraph();
 	}
 }
 
@@ -280,8 +205,12 @@ function toTable( json ) {
 
 	    for(var i=0;i<data.length;i++) {
 	        row = "<tr>";
-	        for(var key in data[i])
-	        	row += "<td>" + data[i][key] + "</td>";
+	        for(var key in data[i]) {
+                if (data[i][key] === "") 
+	        	    row += "<td>N/A</td>";
+                else
+                    row += "<td>" + data[i][key] + "</td>";
+            }
 	        table += row + "</tr>";
 	    }
 

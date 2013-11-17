@@ -24,8 +24,19 @@ public class EventWhere {
 		String prep[] = {"in", "at"};
 		String verb[] = {"went", "go"};
 		
+		String nnp = "";
+		for(String prt: pos) {
+			int index = pos.indexOf(prt);
+			if (prt.toLowerCase().equals("nnp")) {
+				if (index+1 < pos.size()) {
+					if (pos.get(index+1).toLowerCase().equals("nnp")) {
+						return pos.get(index) + " " + pos.get(index+1);
+					}
+					nnp = prt;
+				}
+			}
+		}
 		
-		
-		return null;
+		return nnp;
 	}
 }

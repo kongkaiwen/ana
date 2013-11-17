@@ -24,6 +24,7 @@ public class Event implements Entity {
 		this.id = id;
 		
 		attributes = new HashMap<String, String>();
+		attributes.put("name", "");
 		attributes.put("start", "");
 		attributes.put("end", "");
 		attributes.put("where", "");
@@ -78,9 +79,9 @@ public class Event implements Entity {
 	public Extract getCallback( String attr ) {
 		
 		if ( attr.equals("start") ) {
-			return new ExtractTime();
+			return new ExtractDate();
 		} else if ( attr.equals("end") ) {
-			return new ExtractTime();
+			return new ExtractDate();
 		} else if ( attr.equals("where") ) {
 			return new ExtractOrganization();
 		} else if ( attr.equals("who") ) {

@@ -3,12 +3,13 @@ package graph;
 public class AnaNode {
 	
 	private int id;
-	private String pos, word;
+	private String pos, word, ner;
 	
-	public AnaNode ( int id, String pos, String word ) {
+	public AnaNode ( int id, String pos, String word, String ner ) {
 		this.id = id;
 		this.pos = pos;
 		this.word = word;
+		this.ner = ner;
 	}
 	
 	public int getId() {
@@ -21,5 +22,9 @@ public class AnaNode {
 	
 	public String getWord() {
 		return word;
+	}
+	
+	public String getNer() {
+		return ner;
 	}
 }

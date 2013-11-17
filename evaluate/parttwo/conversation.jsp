@@ -20,9 +20,11 @@ if ( request.getSession().getAttribute("eval") != null ) {
         <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
         <meta charset=utf-8 />
         <script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
-        <script src="../../javascripts/kbeval.js"></script>++
+        <script src="../../javascripts/kb.js"></script>
+        <script src="../../javascripts/kbeval.js"></script>
     </head>
 	<body>
+        <div id="loading"><img align="center" id="loading-gif" src="../../images/big_loading.gif" /></div>
         <div id="wrapper">
             <div id="sidebar">
                 <h2 style="margin-left: 15px;color: #eee;">KB Evaluation</h2>
@@ -60,7 +62,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
                                 <td>Anything missing?</td><td><input type="radio" name="missing" value="yes"></td><td><input type="radio" name="missing" value="no" ></td><td><input type="text" id="missing_txt" /></td>
                             </tr>
                             <tr>
-                                <td>Too much added?</td><td><input type="radio" name="incorrect" value="yes"></td><td><input type="radio" name="incorrect" value="no" ></td><td><input type="text" id="incorrect_txt" /></td>
+                                <td>Anything incorrect?</td><td><input type="radio" name="incorrect" value="yes"></td><td><input type="radio" name="incorrect" value="no" ></td><td><input type="text" id="incorrect_txt" /></td>
                             </tr>
                             <tr>
                                 <td><input style="width:100px;" type="button" value="Submit" id="submit-ratings" /></td><td></td><td></td><td></td>

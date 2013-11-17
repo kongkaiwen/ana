@@ -26,6 +26,7 @@ body {
     border-radius:5px;
     text-align: left;
     bottom: 15px;
+    overflow-y: scroll;
 }
 
 #kb-dialogue-header {
@@ -34,7 +35,7 @@ body {
 }
 
 #kb-dialogue-body {
-	overflow-y: auto;
+
 }
 
 #kb-dialogue-input {

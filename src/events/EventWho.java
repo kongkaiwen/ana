@@ -2,6 +2,8 @@ package events;
 
 import java.util.ArrayList;
 
+import kb.Event;
+
 import tools.Helpers;
 
 import entities.AnaEntity;
@@ -13,11 +15,11 @@ public class EventWho {
 	I went to lunch with Sarah.
 	I need to take my girlfriend on a picnic soon.
 	*/
-	public static String match( String line, ArrayList<String> tkns, ArrayList<AnaEntity> ent, ArrayList<String> pos ) {
+	public static String match( Event event, ArrayList<String> tkns, ArrayList<AnaEntity> ent, ArrayList<String> pos ) {
 		
 		boolean flag = false;
 		boolean has_wrd = false;
-		boolean has_ttl = false; 
+		boolean has_title = false; 
 		boolean has_per = false;
 		boolean poss_nn = false; // possesive noun, my daughter
 		
@@ -33,7 +35,7 @@ public class EventWho {
 		}
 		
 		if ( Helpers.hasFamilyTitles(tkns, pos) ) {
-			has_ttl = true;
+			has_title = true;
 		}
 		
 		for (String tkn: tkns) {
@@ -47,8 +49,9 @@ public class EventWho {
 		if (pos.toString().equals("PRP$ NN"))
 			poss_nn = true;
 		
-		if ( (has_wrd && has_ttl) || (has_wrd && has_per) ) {
-			return has_ttl ? Helpers.getFamilyTitle(tkns, pos) : per.getName();
+		if ( (has_wrd && has_title) || (has_wrd && has_per) ) {
+			String name =  has_title ? Helpers.getFamilyTitle(tkns, pos) : per.getName();
+			event.update("who", name);
 		}
 		
 		// id#age#12

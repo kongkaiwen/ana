@@ -2,42 +2,31 @@ nns cc nns
 jj cd nns
 prp , prp
 cc nn .
-vbz prp rb
 in nnp in
 rb prp vbd
 vbn to vb
 nn in nn
 vb in nn
-<start> rb rb
 vbg rb .
-prp jj in
 rb prp vbp
 prp$ nn rb
-dt nnp .
 vb dt in
 `` nns ''
 rb prp vbz
 <start> wp vbz
 prp vbd in
-rb rb cc
 vb dt jj
 <start> wp vbp
 in cd nn
 vbz prp vbg
-<start> jj cc
 vbd dt nn
 <start> wp vbd
-to nnp in
 nn to prp$
 nns in vbg
 rb in nn
-jj prp md
 dt nns cc
-prp vbd jj
 md vb dt
-<start> nns .
-vbn vbg dt
-, rb in
+prp vbd jj
 jj in dt
 md vb cd
 rb , nn
@@ -48,8 +37,6 @@ wp prp vbp
 jj nn nnp
 jj nn nns
 <start> dt nns
-<start> dt nnp
-prp$ nn to
 jj to vb
 , cc vbp
 nns nn .
@@ -57,27 +44,17 @@ in nns cc
 vbg in nn
 prp md rb
 wrb jj nns
-nn in rb
 vb prp to
-in nn vbd
-dt nns dt
 cc rb .
-nns nns .
 nn vbz ,
-jj prp vbd
 nnp jj nn
-rb vb vbn
 nn vbz .
 ex vbp jj
 <start> nnp dt
-rb vb vbg
 in nn to
-nn nnp nnp
 <start> rb vb
 vb in rb
 vbz vbn nn
-in prp cc
-nnp cc vb
 wrb prp vbp
 prp vbd dt
 prp$ nn vb
@@ -87,29 +64,20 @@ vb dt nn
 rb vbd prp
 <start> md prp
 md prp rb
-wrb prp vbd
-vbn in .
 <start> nnp cc
-in nnp cc
-rb in jj
 rb prp md
-nnp , dt
 nn rb .
-rb jj cc
-nn rb ,
-dt nn :
 , jj nns
 nn cc rb
 vbd prp prp
 md vb .
-vbp vbn rb
 : prp vbp
-cd nns .
 <start> rb ,
+cd nns .
 prp vb wrb
-cd nns ,
-rb , rb
 <start> rb .
+rb , rb
+cd nns ,
 wdt vbz jj
 jj nn prp
 dt nn ,
@@ -120,7 +88,6 @@ vbg prp$ nn
 <start> cc dt
 nn to vb
 dt nn pos
-vbz prp jj
 prp md vb
 , vb prp
 vb prp vb
@@ -129,12 +96,9 @@ vbz jj .
 in nn vbz
 prp vbp prp
 vbp dt nn
-jjr in dt
-nnp , nn
 cc jj nn
 rb rb jj
 <start> wrb prp
-rb vbn to
 prp$ nn in
 rb cc rb
 <start> jj jj
@@ -145,29 +109,22 @@ vbn dt nn
 <start> nn ,
 jj jj .
 , cc dt
-vbp prp$ nn
 nns in dt
-<start> rb in
-cd nns cc
+vbp prp$ nn
 vbz prp in
 rb vb nn
 nn nns .
 <start> nn prp$
-nn vbd prp
 rp in dt
 <start> vbp rb
 <start> in vbg
 cd nns dt
 wrb vbz prp
 in nns in
-nns in cd
 , nn cc
-<start> rb jj
-prp in vbg
-vbd vbn prp
 jj in nn
+vbd vbn prp
 <start> uh ,
-prp vbd rp
 rb wrb vbp
 vbg rp in
 <start> uh .
@@ -177,23 +134,17 @@ vb dt nns
 vb dt nnp
 prp vbd rb
 <start> nn vbz
-vb prp rp
 vbg in dt
 wrb vbd dt
 nn pos nns
 nn in wp
-rb prp$ jj
-cc vbd rb
-dt nns vbp
 vbp dt jj
+dt nns vbp
 wdt vbz vbn
-nn nns prp
 in nn nns
-vbz dt rb
 vb prp rb
 vbp prp vbz
 rb rb in
-<start> jj in
 vbd prp in
 rb cc prp
 jj dt nn
@@ -203,12 +154,10 @@ rb cc vb
 nn vbp prp
 dt nns in
 in prp md
-dt nns md
 <start> prp vbz
-nnp nnp prp
+dt nns md
 <start> jj nn
 vb jj nns
-in cd in
 nnp cd in
 vb prp md
 cc nns in
@@ -218,33 +167,24 @@ md vb jj
 <start> prp$ nn
 nns cc vb
 cc vbd prp
-nnp , in
 md vb in
-rb prp vb
+nnp , in
 rb vb jj
 nn nn rb
 prp$ nn nn
-nnp nnp in
 <start> rb nn
-vbd jj .
-, cc in
 prp jj .
 cd cc cd
 vb prp$ nns
-nn vbd rb
 rb vb in
 nn prp$ nn
 nnp dt nn
 vb jj nn
 nns vbp vbn
-<start> uh sym
 prp vbd nn
-nn nn -rrb-
-vbd vbn rp
 prp$ nns in
-nn , vbp
 to vb nns
-vbd jj in
+nn , vbp
 vb prp .
 , prp md
 nn nn to
@@ -253,51 +193,35 @@ vbd prp .
 vbp jj .
 dt nns nn
 vb prp ,
-nn cc jj
 vbn in nnp
 jj , prp
-nnp vbd in
 vbn in nns
 in wp prp
 prp vb prp
-dt nn vb
 wp vbp prp
+dt nn vb
 to dt nn
-nnp prp vbp
-nn vbd jj
-rb vb wp
 jj nn rb
 in dt jj
 nn prp md
-in vbg rp
 vbd prp$ nn
 cd nn in
 cc vb in
 pdt dt nns
-prp vbd nnp
 prp in .
-dt jjr nn
-<start> prp$ jj
 dt jj jj
 nn prp$ nns
 nn , wrb
-rb vbp in
 prp$ nn ,
 vbd prp rb
-<start> nnp prp
 prp$ nn .
-vbd vbn to
 cc vb rb
 nn nn md
-nn nn prp
 nn , rb
-cc vb jj
-dt nn to
 in cd nns
+dt nn to
 <start> nnp pos
-to vb vbn
 vb jj in
-nns cc jj
 to vb prp$
 vb in prp
 <start> prp vbd
@@ -305,52 +229,41 @@ vbd in dt
 in nn in
 jj nn to
 in jjs nns
-rb dt nn
-vbn in rb
-nn nn nn
 <start> cc rb
-rb vbp vbg
+nn nn nn
+vbn in rb
 nn vbz vbn
 nns dt nn
 nnp nnp nnp
-jj in vbg
 wp vbz dt
-prp$ nn cc
 md vb prp
+prp$ nn cc
 vbz in prp
 dt nn rp
 dt nn rb
-vbp vbn vbg
 vb in vbg
-rb wrb prp
 nns rb in
 nns in nn
 prp vbg .
 nn vbz vbg
 md rb vb
-vbd jj to
 pos nn nn
-vbn vbn in
 nn nn in
+vbn vbn in
 prp vbd prp
-to prp .
 vbz cd nns
-nn , wp
 nn cc dt
 in nn prp
 vbp nn .
-<start> cc wp
 dt nn wdt
+<start> cc wp
 in dt nn
 jj nns vbp
 in jj .
-rb jj rb
 in nn cc
 in in nn
 in vbg nn
-<start> jj ,
 vbp prp vbn
-<start> jj .
 vbp prp vbp
 in nn dt
 rb , cc
@@ -358,48 +271,36 @@ prp vbd to
 vbd rb in
 vbp prp vbd
 nns , vb
-jj nn md
 vbp prp vbg
+jj nn md
 nn nn nns
 nn , vb
-jjr nn in
 vbg in prp$
-vb wrb prp
 nns cc nn
+vb wrb prp
 cc rb prp
-vbg to dt
 dt nns .
 cc nn nn
-to nn .
-vb jjr in
 <start> rb dt
 cc vb prp
-rb vbp jj
-jj nn wdt
-dt nns ,
 prp$ nns rb
-prp$ nn :
-vbd rb jj
-nn vbd in
-vb dt .
+dt nns ,
 vbz in nnp
 vbz nn in
 vbp jj nns
 prp vb dt
+md vb nns
 rb vb rb
-nn nn jj
-cc vb to
 prp dt nn
 jj nn nn
-cc rb in
+in , prp
 nns in jj
 in cd cd
 cd nns in
 vbn in nn
 vbp jj to
-cc vbg nn
-vb prp vbd
 nn : rb
+vb prp vbd
 vb in .
 dt nn md
 vb jj .
@@ -410,14 +311,10 @@ jj nn in
 in cd .
 nn prp vbd
 <start> nnp jj
-prp$ nn prp
 nn nn dt
-dt nnp in
-nn , jj
 nn nns cc
 , nns ,
 , nn to
-vb prp vbz
 vbd rb vb
 <start> nnp in
 prp vb in
@@ -426,7 +323,6 @@ vb in prp$
 vb wp prp
 , cc prp
 in nn rb
-prp vbd prp$
 cc dt nn
 nnp in cd
 pos nn vbz
@@ -435,21 +331,19 @@ rb in prp$
 nnp in dt
 vbz rb vbn
 pos nn in
-prp dt jj
 vbp rb vbn
 nn md vb
-rb vbd dt
-vbd in nn
 vbd rb prp
-cc rb dt
 dt nn jj
-vbp rb vbg
 <start> nns in
+vbp rb vbg
 nns wp vbp
 in wrb jj
 wp vbd prp
 , wrb vbp
 <start> wrb vbd
+vbn in wp
+vbz nn .
 prp prp vbp
 vbp dt nns
 in dt .
@@ -459,25 +353,22 @@ rb vbp dt
 nnp , nnp
 cc nnp .
 cc vb dt
-nnp nnp vbd
 prp vbp wrb
 in dt ,
-vbd to vb
 to dt jj
+vbd to vb
 <start> vb vbg
 nn vb .
+cc vb .
 nnp nnp vbz
-jj nn dt
 vbz prp vb
 prp vb nn
 <start> vb dt
 prp vbp prp$
 rb prp .
-<start> prp$ nns
 vbp prp$ nns
 rb jj in
 nn , nn
-vbd rb rb
 prp vb prp$
 dt jj nn
 vbd prp vb
@@ -486,12 +377,10 @@ vbn prp in
 : nnp nnp
 rb vbp prp
 cc dt jj
-vb vbn .
 vbp jj jj
 vbd dt jj
 in wp vbd
 nn nn cc
-<start> nns md
 <start> vbp dt
 cd nns rb
 in in dt
@@ -499,92 +388,75 @@ vb in nns
 in nn nn
 wrb vbd prp
 nnp pos nn
-dt nn nn
 vbp to vb
-nn vbn in
-rb , in
+dt nn nn
 vb dt vbn
+rb , in
 <start> wrb vbp
-nn vbg in
 <start> wrb vbz
 rb dt jj
 nns , nns
 wrb vbz dt
 vb nns .
 in prp .
-<start> nn nn
 <start> vb jj
+<start> nn nn
 in jj jj
 vb to prp
-prp vbz cd
 nn dt nn
-nn nns in
 nn vbz cd
+nn nns in
 <start> rb prp
 prp$ nns .
-vbp jj cc
 jj nns ,
 <start> wrb md
 vbp vbg in
 vbd dt jjs
-nnp vbp rb
 nn , cc
-in jj in
 prp in dt
 vbd in .
 dt nn cc
 jj nns .
-rbs jj nn
 <start> prp rb
+nn , wdt
 prp vb rb
 jj jj nn
 <start> vb in
-nn vbz prp
 vb nn .
 rb jj .
-dt vbg nn
 vbp in nn
 vbz to vb
 nns nn in
 nn cc vbd
 vb prp$ jj
-nn cc vbg
-nns cc vbp
 vbp rb rb
-nn : nnp
 <start> nnp nnp
-<start> nnp nns
+nn : nnp
 dt jjs nn
+<start> nnp nns
 nns wdt vbp
-vbz in cd
 to prp$ nn
-nn cc vbz
 wrb dt nn
 vb to dt
 prp vb to
 wp vbz prp
 nn cc vbp
-prp vbp to
 in jj nns
-, in nn
+prp vbp to
 dt nn dt
 vb nns in
 nn , dt
-<start> jjs nn
-dt prp vbp
 prp vbz dt
+vbn in cd
 nn dt cd
 in vbg dt
 cc in dt
 <start> vb nn
 jj , jj
-in jj nn
 in prp$ nns
-nnp vbz rb
+in jj nn
 vb cd nns
 nns nn cc
-jj rb .
-nn nns vbp
 nns vbn in
 <start> nn rb
 cc nns .
@@ -599,41 +471,28 @@ nns , cc
 prp vbg to
 md vb vbn
 vbg jj nn
-md vb vbg
-in nn wdt
 md prp vb
 jjs nn in
-vb rb rb
-jj cc prp
-prp nn in
-vbp in jj
 prp vbz in
+vbp in jj
 nns to vb
 vbg dt jj
 prp vbp rb
 vbg to vb
-vb vbg in
 vbp rb vb
 rb rb .
 , dt nn
 nn , in
 prp rb in
-nnp , prp
 nnp nn ,
 dt nn in
 nns rb .
-nns rb ,
-<start> wdt .
 vbz rb rb
 prp md .
-in dt jjr
-in vbn in
 <start> wrb rb
-to prp$ nns
 <start> in prp
 dt , prp
 <start> nn wdt
-nn nns rb
 prp$ jj nn
 vbp in nnp
 wrb to vb
@@ -642,7 +501,6 @@ vbp vbg rb
 vbd in prp
 <start> vb rp
 vbd nn cc
-nn nn vbd
 to vb rb
 nns , nn
 dt jj nns
@@ -652,55 +510,53 @@ nnp vbz dt
 nn wdt vbz
 nn wrb prp
 vb wp nn
-wrb prp md
 prp vbz jj
-nn vbz in
 wrb jj .
+nn vbz in
 prp in prp
 , cc nn
+cc nn cc
 vbz vbn vbn
 to vb rp
 vbp vbg to
 nns , rb
 in dt nns
-in rb dt
 rb vbp rb
+in rb dt
 nn nn vbz
 in dt nnp
 nns vbp rb
 vb nn to
-vbp rb .
 nn to dt
+vbp rb .
 nn vbz jj
-<start> vb prp$
 nns vbp .
+<start> vb prp$
 in nns .
 in nns ,
 <start> nn dt
 vbz rb vb
+rb vbp .
 rb in prp
 jj jj nns
 rb vbn .
 dt jj cd
 prp rb vbd
-nnp in nnp
 prp vbg rb
 prp vbp vbg
 vb vbn in
 cc nn in
-nn cd nns
 wrb md prp
+<start> rb wrb
+vbz rb prp
 <start> in nnp
-jj nn cc
 prp vbp vbn
+jj nn cc
 to vb to
 vbp in prp
 <start> dt nn
-vbz vbg to
-prp in prp$
-<start> vb vb
 , in dt
-vbn to dt
+<start> vb vb
 <start> jj nns
 nns , jj
 vbn in dt
@@ -709,11 +565,10 @@ vbz jj to
 prp vbz rb
 , cc jj
 dt cd nns
-dt nnp nnp
-in vbg jj
 vb prp$ nn
 rb vb .
 nn jj nns
+nnp dt nns
 <start> vb to
 nn vbz dt
 <start> wrb jj
@@ -724,38 +579,34 @@ vb wrb dt
 prp vb .
 in vbg in
 <start> vb wrb
-rb vbd rb
 nnp in prp
-cd jj nn
 vbz dt vbn
+cd jj nn
 in jj cc
 vbp vbg .
 <start> nn in
 <start> dt ,
-dt rbs jj
 <start> vbd prp
 prp to vb
 nnp nn nns
+<start> uh prp
 ex vbz dt
 <start> vbp prp
 vb prp in
 dt nns rb
-<start> dt jjs
-<start> in prp$
+nn vbz to
 <start> in dt
 to vb in
-vb nn in
 wrb vbp prp
+vb nn in
 vbp dt vbz
 vbp vbn dt
 vbz dt nn
 nn to nnp
-cd in dt
-vb prp jj
 md vb to
 nn in nnp
 nn in nns
-nns vbd in
+<start> nnp vbp
 <start> wdt nn
 prp vbz to
 nn nn .
@@ -763,50 +614,45 @@ nn nn ,
 <start> nnp vbz
 in prp$ nn
 rb vbn nn
-rp dt nn
 <start> vbz in
+rp dt nn
 pos jj nn
 vbp prp vb
 <start> vb wp
 nn vbz rb
-nnp cc dt
-jj nns wdt
 <start> vb prp
 nn rp .
+<start> vbz ex
 to vb prp
 cd nn .
-nns in prp
 nn in prp$
+nns in prp
 cd cd nns
 rb vb prp$
 wdt nn in
 prp vbd .
-vb to vb
 nn , prp
-cc , cc
+vb to vb
 prp vbp dt
-nns vbp jj
+cc , cc
 to vb jj
 dt vbz dt
-vbp prp to
+cd in cd
 nnp cc nnp
 nns vbp in
 nn md prp
 in dt in
-prp vbp nnp
+in nnp ,
 <start> rb vbp
 in nnp .
 <start> nns vbp
 prp vbp nns
-<start> rb vbn
 nn cc vb
 , nn ,
 nn to prp
 , nn .
-nnp nnp cc
-in prp rb
-vbn nn in
 wdt md vb
+vbn nn in
 in to vb
 vb rb cc
 vbg nn .
@@ -814,11 +660,8 @@ vbg nn .
 jj nn vbz
 vbz dt jj
 nn vbd vbn
-nn in cc
 jj nn vbp
 nn in cd
-, jj cc
-rp in prp
 vbp rb prp
 , vbp prp
 <start> vbz dt
@@ -830,14 +673,13 @@ nn rb in
 to vb .
 nns md vb
 jj nns in
-md vb jjr
 in dt cd
-vb to nn
+md vb jjr
 in prp$ jj
 pos nn .
 dt nn vbg
-nns in nns
 , prp vbp
+nns in nns
 dt nn vbd
 nns in nnp
 in prp vbd
@@ -845,35 +687,29 @@ vbz jj nn
 vbp prp rb
 , prp vbd
 in prp vbp
-rb nn prp$
 <start> nnp prp$
+rb nn prp$
 vbz in nn
 dt nn vbz
 md vb rb
 dt rb jj
 nn vbz nn
-dt jjs .
 in prp vbz
 rb to vb
 prp vbg dt
-jj cc rb
 <start> vbz prp
 to vb nn
-dt rb in
 dt nn nns
 , prp vbz
-cc jj .
 vb prp dt
+cc jj .
 prp rb .
 nn vb dt
-prp$ nn vbz
 <start> dt vbz
-cc prp md
-nnp md vb
+prp$ nn vbz
 vbd rb vbn
-rb vbg prp
 <start> to vb
-prp$ nn vbd
+nns vbp dt
 prp vbp nn
 dt jj .
 dt jj ,
@@ -885,48 +721,41 @@ jj in prp
 vbz jj in
 vbz rb dt
 nn in jjs
-vbn jj .
-prp in jj
-rb nn in
+wrb jj nn
 vbp in dt
+rb nn in
 vb rb .
 to vb cd
 cc prp vbd
-rb in cd
 vbp prp md
 cc prp$ nn
 jj rb rb
-prp vbp ,
 cc prp vbz
 vb nn cc
 prp vbd vbp
-vbz prp .
 prp rb vb
+vbz prp .
 prp vbd vbn
 nn in dt
 vb nns rb
-nn cc nns
 nn pos nn
+nn cc nns
 nns prp vbp
 prp vbd vbg
 cc prp vbp
 vb rp .
 wdt vbz prp
-to prp in
 vb rp in
-, jj nn
 prp$ nns vbp
 prp in in
 prp vbd vbd
 nn jj .
-rb vbz dt
 dt nn wrb
 prp vbp .
 vbg dt nn
 <start> in nn
 vbp rb jj
 nn rp in
-<start> nn to
 vbz vbn in
 vbn rb .
 rb in dt
@@ -936,78 +765,65 @@ nns jj .
 vbg nn in
 , ex vbz
 in nnp nnp
-nn in .
 nn in prp
 cc jj nns
 vbp vbn in
 prp vbp jj
 rb dt vbz
-dt vbz rb
 vbz in dt
+dt vbz rb
 vbg nns ,
 vbg nns .
 jj nns rb
 nnp nnp ,
-cc prp rb
 nnp nnp .
-nn : prp
 <start> rb wp
 to vb dt
-vb rp cc
+vbz prp vbz
 rb vb nns
 jj nn ,
 jj nn .
-<start> cc prp$
 cc vb prp$
 <start> nnp .
 pdt dt nn
 <start> nnp ,
-vbp in prp$
 in nn ,
 vb in in
 jj cc jj
 prp in nn
 in nn .
+<start> vbp prp$
 , cc wrb
 vbz rb in
 <start> cc prp
 vbz rb jj
-jj nns to
-, vbz rb
 vb cc vb
+jj nns to
 in nns wdt
-cc nns vbp
 rb vbn in
 nn rb rb
 in nn :
-nn cc prp
 vbd prp vbp
 vbz dt jjs
 dt vbn nn
 nns in .
 <start> wdt md
 prp vbp in
-to jj nns
-wp dt nn
-vbg dt nns
+vbz vbn dt
 vbd prp vbd
+vbg dt nns
 nn in vbg
 vb in jj
 nn in jj
-vbn in prp$
 nn in in
 <start> in jj
-vb nnp nnp
-wrb jj prp
 nns md
 cd cc
 dt vbg
-nn rbr
 dt vbz
 in nns
 vbz jjr
 prp in
-dt vbp
 dt vbn
 in nnp
 jj rb
@@ -1020,19 +836,16 @@ vbz rb
 rb to
 prp jj
 nn -lrb-
-wp dt
 nn prp
 nns ,
 jj nns
 jj nnp
-: cc
 uh .
 nn ``
 vbp nn
 <start> prp$
 to vb
 wp .
-: dt
 uh ,
 jj to
 <start> wp
@@ -1042,7 +855,6 @@ rb rb
 '' .
 prp dt
 <start> to
-<start> jjs
 md nn
 nns rb
 rb wp
@@ -1055,7 +867,6 @@ vbn rb
 <start> vb
 cc prp$
 prp$ jj
-uh sym
 nn vb
 vbn rp
 nn dt
@@ -1067,18 +878,12 @@ nn nnp
 nns wdt
 , cc
 prp cc
-nns nnp
-vbp rp
 nns nns
-vbn nnp
 nnp vbz
-prp nnp
 rb prp
 vbn nns
 nnp vbp
--lrb- rb
 <start> wrb
-cd vbp
 : prp
 rp .
 nn cc
@@ -1100,10 +905,8 @@ vb vbg
 cc wp
 vb prp$
 in dt
-vb vbz
 vbd rb
 , ex
-nns vbg
 jj in
 nns vbd
 md rb
@@ -1124,7 +927,6 @@ nnp cd
 jj vbg
 nnp cc
 nns to
-jj vbd
 in cd
 : nnp
 in cc
@@ -1134,11 +936,8 @@ vbn dt
 vbn prp
 nns wp
 vb vb
-rp cc
 pos nns
 rb prp$
-pos nnp
-vbp vb
 nnp prp$
 uh prp
 nns prp
@@ -1174,7 +973,6 @@ wp vbz
 vb rp
 wrb to
 nns pos
-dt prp
 nn md
 cc ,
 vbg cc
@@ -1183,7 +981,6 @@ cd .
 prp vbg
 , nnp
 dt nnps
-, vbz
 , nns
 vbz vbn
 prp vbd
@@ -1199,37 +996,31 @@ vbd ,
 , vbn
 cc vb
 cc vbn
-pos dt
 prp vbz
 nn wrb
 wdt .
-, vbd
 prp vbp
 vbd nns
+, vbd
 nn ''
 vbd nnp
 cc vbz
 , vbg
 rb wrb
 prp vbn
-vbn prp$
 nnp in
 wdt nn
-dt prp$
 , nn
+dt prp$
 wrb vbz
-to nns
-rp prp$
 vb in
 to nnp
 vbp cd
-cd rb
 <start> nns
 to cd
 <start> nnp
 wrb vbp
 vbg rp
-rb cd
 rb cc
 cc nn
 vbz prp$
@@ -1246,10 +1037,8 @@ rb vbd
 rb vbg
 <start> vbg
 <start> vbd
-dt jjr
-dt jjs
 <start> vbp
-<start> vbn
+dt jjs
 vbz prp
 vb prp
 in in
@@ -1257,25 +1046,23 @@ vbg nns
 <start> in
 vbg rb
 nnp nnps
-jjs nn
 in jj
+jjs nn
 , wdt
 cc rb
 vbp dt
 vbd jj
-to dt
 vbz cd
+to dt
 vbz cc
 <start> wdt
 vbd in
 prp to
 jjr .
-rp jj
 <start> cd
 <start> cc
 <start> prp
 wdt vbp
-jjs .
 md .
 wdt vbz
 pos jj
@@ -1285,13 +1072,12 @@ nnp dt
 rp in
 cc jj
 vb nn
-ex .
 `` nnp
 vbn cc
 `` nns
-wdt vbd
 dt in
 jjr nn
+wdt vbd
 vbz dt
 vbp nnp
 vbp nns
@@ -1301,16 +1087,14 @@ cd to
 vbz nnp
 <start> ex
 vbd nn
-dt rbs
 dt .
 dt ,
 dt jj
 in nn
 vbz ex
-nn -rrb-
+wrb vbd
 nns cc
 nnp pos
-wrb vbd
 nnp nns
 vbg to
 nnp nnp
@@ -1332,32 +1116,23 @@ jjr nns
 wp prp
 vbd dt
 jjr in
-$ cd
 vbp in
-to jj
-nnp rb
 nnp prp
 in prp$
-, prp$
 cc nns
 cc nnp
 nn jjr
-jj prp$
 vbz in
 dt md
 vbg jj
 vbp jj
 <start> nn
 dt nn
-prp rp
 vbn vbn
--rrb- cc
 <start> rb
-nns rbr
-. prp
-cc in
 in rb
 prp rb
+cc in
 vb cd
 vb cc
 vbz jj
@@ -1365,11 +1140,8 @@ rb jj
 md prp
 vbg in
 pdt dt
-rp to
 prp$ cc
-, wp
 wrb pos
-nnp to
 wp nn
 rb in
 prp$ nns
@@ -1377,17 +1149,14 @@ vbn vbg
 prp .
 prp ,
 vb jjr
-nns :
 nn pos
 nn :
-nnp md
 nns .
 vbp vbn
 vb dt
 dt nnp
 cd nnp
 dt nns
-nnp :
 cd nns
 cc cd
 nn .
@@ -1395,9 +1164,9 @@ wrb nns
 nn ,
 jj dt
 wrb dt
-vbd vbd
 cc prp
 jjs nns
+vbd vbd
 md dt
 vbd vbg
 vbp ex
@@ -1412,10 +1181,9 @@ vb ,
 nn wdt
 rb .
 vbp vbg
-<start> jj
 rb ,
+<start> jj
 vbz .
-sym nnp
 vbg nn
 nnp nn
 to prp
@@ -1424,29 +1192,24 @@ nn vbd
 nn vbg
 prp nn
 nns jj
-rb jjr
 in ,
-in .
 vbz nn
+in .
 to rb
 dt rb
 rb nn
-nnp ,
 <start> md
+nnp ,
 in wp
 nnp .
-rb md
-jjs cd
 nns ''
+jjs cd
 vbg prp$
-fw vbd
 cc dt
 prp md
-vb nnp
 vbg vbn
 vb nns
 nn vbz
-nn vbn
 in jjs
 vbg prp
 nn vbp

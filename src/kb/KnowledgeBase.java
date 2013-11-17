@@ -24,6 +24,7 @@ public class KnowledgeBase {
 	private int num_events;
 	private int num_dailies;
 	private int num_medicals;
+	private int num_requests;
 	private int num_entities;
 	private int num_relations;
 	private int num_responses;
@@ -31,9 +32,11 @@ public class KnowledgeBase {
 	private ArrayList<Event> events;
 	private ArrayList<Person> people;
 	private ArrayList<Medical> medicals;
+	private ArrayList<Request> requests;
 	private ArrayList<Relation> relations;
-	private ArrayList<String> dialogue;
 	private ArrayList<Response> responses;
+	
+	private ArrayList<String> dialogue;
 	private HashMap<String, Daily> dailies;
 	
 	private QuestionBuffer qBuffer;
@@ -50,17 +53,19 @@ public class KnowledgeBase {
 		this.num_events = 0;
 		this.num_dailies = 0;
 		this.num_medicals = 0;
+		this.num_requests = 0;
 		this.num_entities = 0;
 		this.num_relations = 0;
 		this.num_responses = 0;
 		
-		this.people = new ArrayList<Person>();
-		this.dialogue = new ArrayList<String>();
-		this.relations = new ArrayList<Relation>();
 		this.events = new ArrayList<Event>();
-		this.medicals = new ArrayList<Medical>();
+		this.people = new ArrayList<Person>();
+		this.requests = new ArrayList<Request>();
+		this.medicals = new ArrayList<Medical>();	
+		this.relations = new ArrayList<Relation>();
 		this.responses = new ArrayList<Response>();
 		
+		this.dialogue = new ArrayList<String>();
 		this.dailies = new HashMap<String, Daily>();
 		
 		this.qBuffer = new QuestionBuffer();
@@ -69,7 +74,9 @@ public class KnowledgeBase {
 	}
 	
 	public void initKB( int scenario ) throws IOException {
-		if (scenario == 1) {
+		
+		// debugging scenario
+		if (scenario == 0) {
 			addPerson("Kevin");
 			setSpeaker("Kevin");
 			addPerson("Phil");
@@ -81,14 +88,34 @@ public class KnowledgeBase {
 			addDialogue("I am Kevin.");
 		}
 		
+		// Scenario: Your name is Irene. You have a two granddaughter's named Jana and Wendy. You just spent the day with Jana yesterday.   Discuss what you did with Jana.
+		if (scenario == 1) {
+			addPerson("Irene");
+			setSpeaker("Irene");
+			addDialogue("I am Irene.");
+			addPerson("Jana");
+			addPerson("Wendy");
+			addRelation("granddaughter", 0, 1);
+			addRelation("granddaughter", 0, 2);
+		}
+		
+		// Your name is Irene.  Your son Phil is coming over.  You need to cook for him but you don't know what to make. 
 		if (scenario == 2) {
 			addPerson("Irene");
 			setSpeaker("Irene");
 			addDialogue("I am Irene.");
 			addPerson("Phil");
+			updatePerson("Phil", "likes", "fish, pasta");
 			addPerson("David");
+			addPerson("Al");
 			addRelation("son", 0, 1);
 			addRelation("son", 0, 2);
+			addRelation("son", 0, 3);
+		}
+		
+		// Scenario: Introduce yourself (your real name).  Talk about yourself. 
+		if (scenario == 3) {
+			
 		}
 	}	
 	
@@ -725,10 +752,10 @@ public class KnowledgeBase {
 	public String getnewPerson( ArrayList<String> tkns, ArrayList<Entity> entities) {
 		
 		ArrayList<String> people = new ArrayList<String>();
+		
 		// go through each entity and check if it is already in the KB
 		for (Entity e: entities) {
-        	
-        	// check for weird NE
+
 			if (e.getType() == "PER") {
         		people.add(e.getName());
 			}

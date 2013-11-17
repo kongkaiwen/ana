@@ -4,7 +4,7 @@
 
 if ( request.getSession().getAttribute("eval") != null ) {
     Evaluate e = (Evaluate)session.getAttribute("eval");
-    e.resetKB(1);
+    e.resetKB(2);
 }
 
 %>
@@ -26,11 +26,11 @@ if ( request.getSession().getAttribute("eval") != null ) {
         <div id="loading"><img align="center" id="loading-gif" src="../../images/big_loading.gif" /></div>
 		<div id="wrapper">
 			
-			<h1 style="margin-top: 5px;margin-bottom:10px;" align="center">Scenario One</h1>
+			<h1 style="margin-top: 5px;margin-bottom:10px;" align="center">Scenario Two</h1>
 
             <div align="center">
 			<input class="ana-button" id="home-button" type="button" value="Home" href="partone.html" />
-			<input class="ana-button" id="next-button" type="button" value="Next" href="scenario2.jsp" />
+			<input class="ana-button" id="next-button" type="button" value="Next" href="scenario3.jsp" />
             <input class="ana-button" id="kb-button" type="button" value="KB" />
             </div>
 
@@ -49,7 +49,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
             <input type="text" id="model-b-input" placeholder="Ask" x-webkit-speech/>
             <input type="button" id="model-b-button" />
 		    
-		    <p align="center" class="scenario"><b>Scenario:</b> Your name is Irene. You have a two granddaughter's named Jana and Wendy. You just spent the day with Jana yesterday.   Discuss what you did with Jana.</p>
+		    <p align="center" class="scenario"><b>Scenario:</b> Your name is Irene.  Your son Phil is coming over.  You need to cook for him but you don't know what to make. </p>
 			
 		    <div id="model-a">
 		    	<p class="title">Model A <img id="model-a-img" src="" style="width:15px;height:15px;" /></p>
@@ -76,8 +76,8 @@ if ( request.getSession().getAttribute("eval") != null ) {
                 </form>
             </div>
 
-            <input id="scenario" type="hidden" value="3" />
-            <input id="correct" type="hidden" value="a" />
+            <input id="scenario" type="hidden" value="2" />
+            <input id="correct" type="hidden" value="b" />
 		</div>
 	</body>
 </html>

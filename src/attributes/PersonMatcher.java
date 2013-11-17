@@ -3,12 +3,15 @@ package attributes;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import kb.Event;
+import kb.Person;
+
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import entities.AnaEntity;
 
-public class PatternMatcher {
+public class PersonMatcher {
 
-	public static ArrayList<String> check(String line, ArrayList<AnaEntity> entities, ArrayList<String> pos, SemanticGraph dep) {
+	public static ArrayList<String> check(String line, ArrayList<Person> people, ArrayList<AnaEntity> entities, ArrayList<String> pos, ArrayList<String> tkns, SemanticGraph dep) {
 		HashMap<String, Integer> ei = new HashMap<String, Integer>();
 		ArrayList<String> triples = new ArrayList<String>();
 		
@@ -17,7 +20,7 @@ public class PatternMatcher {
 			ei.put(ae.getName(), line.indexOf(ae.getName()));
 		
 		// age pattern ( or date of birth )
-		String ageMatch = AnaAgePattern.match(line, entities, pos);
+		String ageMatch = AnaAgePattern.match(line, people, entities, pos, tkns);
 		if (ageMatch != null)
 			triples.add(ageMatch);
 		

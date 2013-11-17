@@ -9,6 +9,21 @@ function init() {
 
 	if (document.contains(document.getElementById("kb-dialogue"))) {
 
+		$("#loading").css("width", window.innerWidth);
+		$("#loading").css("height", window.innerHeight);
+		$("#loading").css("display", "block");
+
+		$("#loading-gif").css("left", (window.innerWidth/2 - document.getElementById("loading-gif").offsetWidth/2)  + "px");
+		$("#loading-gif").css("top", (window.innerHeight/2 - document.getElementById("loading-gif").offsetHeight/2)  + "px");
+
+		$.ajax({
+			url: "../load.jsp",
+			data: "scenario="+$("#scenario").val(),
+			success: function() {
+				toggleLoading();
+			}
+		});
+
 		evaluationheight = document.getElementById("evaluation-table").offsetHeight;
 		sidebarheight = window.innerHeight;
 		graphheight = window.innerHeight - evaluationheight;
@@ -73,75 +88,7 @@ function init() {
 		//button.style.left = (window.innerWidth/2) - (500/2) + (input.offsetWidth) + "px";
 		//button.addEventListener("click", model_a_function, false);
 
-		$('#cy').cytoscape({
-          style: cytoscape.stylesheet()
-            .selector('node')
-              .css({
-                'content': 'data(name)',
-                'text-valign': 'center',
-                'color': 'white',
-                'text-outline-width': 2,
-                'text-outline-color': '#888'
-              })
-            .selector('edge')
-              .css({
-                'target-arrow-shape': 'triangle'
-              })
-            .selector(':selected')
-              .css({
-                'background-color': 'black',
-                'line-color': 'black',
-                'target-arrow-color': 'black',
-                'source-arrow-color': 'black'
-              })
-            .selector('.faded')
-              .css({
-                'opacity': 0.25,
-                'text-opacity': 0
-              }),
-          
-          elements: {
-            nodes: [
-              { data: { id: 'j', name: 'Jerry' } },
-              { data: { id: 'e', name: 'Elaine' } },
-              { data: { id: 'k', name: 'Kramer' } },
-              { data: { id: 'g', name: 'George' } }
-            ],
-            edges: [
-              { data: { source: 'j', target: 'e' } },
-              { data: { source: 'j', target: 'k' } },
-              { data: { source: 'j', target: 'g' } },
-              { data: { source: 'e', target: 'j' } },
-              { data: { source: 'e', target: 'k' } },
-              { data: { source: 'k', target: 'j' } },
-              { data: { source: 'k', target: 'e' } },
-              { data: { source: 'k', target: 'g' } },
-              { data: { source: 'g', target: 'j' } }
-            ]
-          },
-          
-          ready: function(){
-            window.cy = this;
-            
-            cy.elements().unselectify();
-
-            cy.on('tap', 'node', function(e) {
-                var node = e.cyTarget;
-                alert(node.json()["data"]["age"] + "\n" + node.json()["data"]["likes"]);
-            });
-
-            cy.on('tap', 'edge', function(e) {
-                var edge = e.cyTarget;
-                alert(edge.json()["data"]["relation"]);
-            });
-            
-            cy.on('tap', function(e){
-              if( e.cyTarget === cy ){
-                cy.elements().removeClass('faded');
-              }
-            });
-          }
-        });
+		initGraph();
 
 		loadKB();
         $("#submit-ratings").click(sendRating);
@@ -190,7 +137,7 @@ function addText( e, text, server ) {
 
 		$.ajax({
 			url: server,
-			data: "a=" + text,
+			data: "a=" + text + "&scenario=1",
 			success: function(data) {
 				$("#kb-dialogue-body").prepend(prettyText(data, "Ana", "odd"));
 			}
@@ -220,7 +167,10 @@ function toTable( json ) {
 	    for(var i=0;i<data.length;i++) {
 	        row = "<tr>";
 	        for(var key in data[i])
-	        	row += "<td>" + data[i][key] + "</td>";
+	        	if (data[i][key] === "") 
+	        	    row += "<td>N/A</td>";
+                else
+                    row += "<td>" + data[i][key] + "</td>";
 	        table += row + "</tr>";
 	    }
 

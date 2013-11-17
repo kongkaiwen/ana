@@ -11,16 +11,6 @@ public class Evaluate {
 	
 	public static Ana ana;
 	
-	public static void main(String args[]) throws Exception {
-		ana = new Ana();
-//		ana.ask("I am Kevin.", false);
-//		ana.ask("Phil is my father.", false);
-//		ana.ask("He likes to cook.", false);
-//		ana.ask("He is 56 years old.", false);
-//		ana.ask("Phil likes cookies.", false);
-//		System.out.println(ana.getKB());
-	}
-	
 	public Evaluate(int scenario) throws IOException {
 		ana = new Ana();
 		ana.knowledge.initKB(scenario);

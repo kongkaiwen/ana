@@ -12,14 +12,18 @@ import kb.Daily;
 import kb.Event;
 import kb.KnowledgeBase;
 import kb.Person;
+import kb.Request;
 import medical.AnaDrugPattern;
 import medical.AnaForgotPattern;
 import medical.AnaIllnessPattern;
+import medical.AnaSymptomPattern;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import attributes.PatternMatcher;
+import answer.ExtractName;
+import answer.ExtractRelation;
+import attributes.PersonMatcher;
 
 import relations.Entity;
 import tools.Helpers;
@@ -27,6 +31,9 @@ import tools.Helpers;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import entities.AnaEntity;
+import entities.AnaPer;
+import events.EventMatcher;
+import graph.AnaParseGraph;
 
 public class Ana {
 
@@ -35,27 +42,17 @@ public class Ana {
 	
 	public static void main(String[] args) throws Exception {
 		Ana ana = new Ana();
-		ana.knowledge.initKB(1);
-//		System.out.println(ana.ask("I went shopping with Sarah.", false));
-//		System.out.println(ana.ask("She is my sister.", false));
-//		System.out.println(ana.ask("She is 24 years old.", false));
-//		System.out.println(ana.ask("I'm taking my medication.",false));
-//		System.out.println(ana.ask("Have i taken my meds this morning.",false));
-//		System.out.println(ana.ask("I just went to lunch with my son.",false));
-//		System.out.println(ana.ask("Nathan.",false));
-//		System.out.println(ana.ask("12.",false));
-//		System.out.println(ana.ask("Hello.",false));
-//		System.out.println(ana.ask("I'm taking my medication.",false));
-//		System.out.println(ana.ask("Nathan.",false));
-//		System.out.println(ana.ask("I'm not feeling well.",false));
-//		System.out.println(ana.ask("I think I have a runny nose and a fever.",false));
-//		System.out.println(ana.ask("I'm going to a concert tonight.", false));
-		System.out.println(ana.ask("I need to buy a gift for my grandson's birthday.", false));
-		System.out.println("---");
-		System.out.println(ana.ask("Jacob.", false));
-		System.out.println("---");
-		System.out.println(ana.ask("He is turning 16.", false));
+		ana.initKB(0);
+		
+//		System.out.println("response: " + ana.ask("I need to buy a gift for my grandson's birthday party.", false));
+//		System.out.println("response: " + ana.ask("Nathan.", false));
+//		System.out.println("response: " + ana.ask("Saturday.", false));
+//		System.out.println("response: " + ana.ask("He is turning 5.", false));
+		System.out.println("response: " + ana.ask("I'm going to a concert on Saturday with Jana.", false));
+		System.out.println("response: " + ana.ask("She is my sister.", false));
+		System.out.println("response: " + ana.ask("It's at the Shaw Conference.", false));
 		System.out.println(ana.knowledge.toJSON());
+		System.out.println(ana.knowledge.toTableJSON());
 	}
 	
 	public Ana () {
@@ -64,12 +61,15 @@ public class Ana {
 	    pipeline = new StanfordCoreNLP(props);
 		knowledge = new KnowledgeBase();
 	}
+	
+	public void initKB( int scenario ) throws IOException {
+		knowledge.initKB(scenario);
+	}
 
 	public String ask ( String line, boolean silence ) throws Exception {
 		
 		// if there is silence for a period of time, ask the user a "daily" question
 		if (silence) {
-			
 			Daily today = knowledge.getDaily();
 			String attr = today.getEmptyAttr();
 			String ques = Helpers.genSilenceQuestion(attr);
@@ -77,7 +77,15 @@ public class Ana {
 			Question question = new Question(pipeline, line, today.getId(), "daily", attr, ques, null, today.getCallback(attr), false);
 			knowledge.addQuestion(question);
 			
+			knowledge.addResponse(line, knowledge.getSpeaker().get("name"), question.getQuestion(), "question");
 			return ques;
+		}
+		
+		// we don't know the speaker
+		if (knowledge.getSpeaker() == null) {
+			String response = "Who are you?";
+			knowledge.addResponse(line, "", response, "question");
+			return response;
 		}
 			
 		// init data
@@ -90,12 +98,20 @@ public class Ana {
 		ArrayList<String> drugs = Helpers.loadDrugNames();
 		ArrayList<Question> potential = new ArrayList<Question>();
 		SemanticGraph dependencies = Helpers.getDependencies(pipeline, line);
+		AnaParseGraph apg = new AnaParseGraph( dependencies );
+		
+		// is the utterance a statement, request, or question
+		double function = Helpers.sentenceFunction( pipeline, line );
 		
 		// pronoun resolution
   		ArrayList<ArrayList<String>> resolutions = Helpers.pronounResolution(pipeline, line, knowledge.getDialogue());
   			
   		// extract entities 
 		ArrayList<Entity> entitiesInText = Helpers.getYingEntities( pipeline, line );
+		
+		// new person?
+  		boolean newperson = knowledge.newEntity(tkns, entitiesInText);
+  		String newpersonname = knowledge.getnewPerson(tkns, entitiesInText);
 		
 		// check the buffers
   		Callback buffer = knowledge.getCallback();
@@ -149,22 +165,24 @@ public class Ana {
   				if (found) {
   					Question question = knowledge.getQuestion();
   					if (question != null) {
+  						// found answer, and question in buffer
   						knowledge.addResponse(line, "", question.getQuestion(), "question");
   						knowledge.addCallback(question.getCallback());
   						return question.getQuestion();
   					} else {
-  						return "I see.";
+  						// no question in buffer
+  						String umm = Helpers.ummPhrase();
+  		  				knowledge.addResponse(line, "", umm, "umm");
+  		  				return umm;
   					}
   				} else {
   					// may have changed subject
+  					String umm = Helpers.ummPhrase();
+  	  				knowledge.addResponse(line, "", umm, "umm");
+  	  				return umm;
   				}
-
-  				return "I see.";
   			}
   		}
-  		
-  		// is the utterance a statement, request, or question
-		double function = Helpers.sentenceFunction( pipeline, line );
 		
 		// check for family titles ( nephew, daughter, etc )
 		boolean hasTitle = Helpers.hasFamilyTitles(tkns, pos);
@@ -197,28 +215,38 @@ public class Ana {
 					// ask about attribute
 					Question question = new Question(pipeline, line, relPerson.getId(), "person", relPerson.getEmptyAttr(), null, relPerson.get("sex"), relPerson.getCallback(relPerson.getEmptyAttr()), false);		
 					potential.add(question);
-					
 				}
 			} else {
-				// add the person
-				int pid = knowledge.addPerson();
-				if (Helpers.isFemaleTitle(title))
-					knowledge.updatePerson(pid, "sex", "female");
-				Person p = knowledge.getPerson(pid);
 				
-				// add the relation
-				knowledge.addRelation(title, focus.getId(), pid);
+				int pid = -1;
 				
-				// add the potential question
-				Question question = new Question(pipeline, line, pid, "person", p.getEmptyAttr(), null, p.get("sex"), p.getCallback(p.getEmptyAttr()), false);
-				potential.add(question);
+				// check if the title is linked with a name
+				boolean has_link = false;
+				for(Entity e: entitiesInText) {
+					if (e.getType().equals("PER")) {
+						if (apg.hasLink(title, e.getName())) {
+							has_link = true;
+						}
+					}
+				}
 				
+				// if title is not linked to a person, add the person
+				if (!has_link) {
+					pid = knowledge.addPerson();
+					if (Helpers.isFemaleTitle(title))
+						knowledge.updatePerson(pid, "sex", "female");
+					
+					Person p = knowledge.getPerson(pid);
+					
+					// add the relation
+					knowledge.addRelation(title, focus.getId(), pid);
+					
+					// add the potential question
+					Question question = new Question(pipeline, line, pid, "person", p.getEmptyAttr(), null, p.get("sex"), p.getCallback(p.getEmptyAttr()), false);
+					potential.add(question);
+				}
 			}
 		}
-		
-		// new person?
-  		boolean newperson = knowledge.newEntity(tkns, entitiesInText);
-  		String name = knowledge.getnewPerson(tkns, entitiesInText);
 		
   		// disambiguation entities ( add the entities from the KB that represent those found in text )
 		ArrayList<AnaEntity> entitiesInKB = knowledge.disambiguate( tkns, entitiesInText, resolutions, linenum );
@@ -226,7 +254,6 @@ public class Ana {
 		// people from the line in kb
 		ArrayList<Person> peopleInKB = new ArrayList<Person>();
 		for(AnaEntity ae: entitiesInKB) {
-			System.out.println("PERSON!!" + ae.getName());
 			if (ae.getType().equals("PER")) {
 				peopleInKB.add(knowledge.getPerson(Integer.parseInt(ae.getId())));
 			}
@@ -239,25 +266,52 @@ public class Ana {
 		knowledge.disambiguate(resolutions, relations);
 		
 		// extract entity attributes
-		ArrayList<String> matches = PatternMatcher.check(line, entitiesInKB, pos, dependencies);
-		for(String match: matches) {
-			// find the person in our db and assign them the school ( eid # attr # val )
-			String tokens[] = match.split("#");
-			knowledge.updatePerson(Integer.parseInt(tokens[0]), tokens[1], tokens[2]);
+		if (peopleInKB.size() == 0 && line.toLowerCase().startsWith("i ")) {
+			// add speaker
+			Person pp = knowledge.getSpeaker();
+			peopleInKB.add(pp);;
+			
+			HashMap<String, String> attr = new HashMap<String, String>();
+			attr.put("id", String.valueOf(pp.getId()));
+			attr.put("name", pp.get("name"));
+			entitiesInKB.add(new AnaPer(attr));
+		}
+		
+		if (peopleInKB.size() == 1) {
+			ArrayList<String> matches = PersonMatcher.check(line, peopleInKB, entitiesInKB, pos, tkns, dependencies);
+			for(String match: matches) {
+				System.out.println("match: " + match);
+				// find the person in our db and assign them the school ( eid # attr # val )
+				String tokens[] = match.split("#");
+				knowledge.updatePerson(Integer.parseInt(tokens[0]), tokens[1], tokens[2]);
+			}
+			
+		    if (line.toLowerCase().startsWith("i ")) {
+		    	entitiesInKB.remove(entitiesInKB.size() - 1);
+		    	peopleInKB.remove(0);
+		    }
 		}
   		
   		// detect events ( extract single word events )
 		boolean hasEvent = Helpers.hasEvent( pipeline, line );
-
+		
 		// extract event word
 		if (hasEvent) {
 			String ename = Helpers.getEvent(line);
+			String tense = Helpers.getEventTense(tkns, pos);
+			
 			Event event = knowledge.getEvent(ename);  // doesn't consider duplicate events...
 			if (event == null) {
 				eid = knowledge.addEvent( ename );
 			} else {
 				eid = event.getId();
 			}
+			
+			Event e = knowledge.getEvent(eid);
+			e.update("tense", tense);
+			
+			// extract event attributes
+			boolean updated = EventMatcher.check(e, tkns, entitiesInKB, pos, dependencies);
 		}
 		
 		// user isn't feeling well
@@ -268,7 +322,14 @@ public class Ana {
 			potential.add(question);
 		}
 		
-		// detect illness, I think I have a runny nose and a fever.
+		// detect symptoms, I think I have a runny nose and a fever.
+		String symptoms = AnaSymptomPattern.match(line);
+		if (!symptoms.equals("")) {
+			Medical medical = knowledge.addMedical();
+			medical.update("issue", symptoms);
+
+			return "Would you like me to call your doctor?";
+		}
 		
 		// has the user taken medication
 		boolean takenMeds = AnaDrugPattern.match(line, pos, drugs);
@@ -304,22 +365,9 @@ public class Ana {
 				replace = knowledge.getSpeaker().get("name");
 			response = "Hello <NAME>.";
 			response = response.replace("<NAME>", replace);
-			knowledge.addResponse(line, name, response, "greeting");
+			knowledge.addResponse(line, knowledge.getSpeaker().get("name"), response, "greeting");
 			
 			return response;
-		}
-		
-		// is there a new event or person?
-		if ( newperson ) {
-			// add the person
-			int pid = knowledge.addPerson(name);
-			Person cand = knowledge.getPerson(pid);
-			if (cand.get("sex").equals("female"))
-				knowledge.updatePerson(pid, "sex", "female");
-			
-			Question question = new Question(pipeline, line, pid, "person", "who", "Who is <NAME>?".replace("<NAME>", name), cand.get("sex"), null, false);
-			potential.add(question);
-			
 		}
 		
 		// is there an event to ask about?
@@ -339,6 +387,7 @@ public class Ana {
 		
 		// is there an person to ask about?
 		if ( peopleInKB.size() > 0 ) {
+
 			boolean askq = true;
 			
 			ArrayList<String> people = new ArrayList<String>();
@@ -361,15 +410,24 @@ public class Ana {
 			}
 		}
 		
+		// is there a new person?
+		if ( newperson ) {
+			if ( !(Helpers.join(pos, " ").contains("PRP$ NN") && hasTitle) ) {
+				Person cand = knowledge.getPerson(newpersonname);
+				Question question = new Question(pipeline, line, cand.getId(), "person", "who", "Who is <NAME>?".replace("<NAME>", newpersonname), cand.get("sex"), new ExtractRelation(), false);
+				potential.add(question);
+			}
+		}
+		
 		// get default response
 		Bot bot = new Bot();
 		response = bot.ask(line);
 		
   		// if request -> attempt to resolve request
 		if ( function == 2.0 ) {
-			//return "As you wish.";
-			
 			// could be call doctor, reminder, scheduling, call family member, etc
+			
+			return "I'll try my best.";
 		}
   		
   		// if question -> attempt to answer
@@ -382,24 +440,25 @@ public class Ana {
 			A: I'm not sure.  What does he like?
 			
 			A: Is Kevin's birthday tomorrow? -> When is Kevin's birthday?
-			 
 			*/
 			
 			if (peopleInKB.size() > 0) { 
 				// assume question is about person in KB
 				
+				// attr has to be precise
 				String attr = Helpers.getAttr(tkns);
 				
 				if (attr == null) {
 					knowledge.addResponse(line, "", "I'm not sure.", "answer");
-					return "Could you repeat that?";
+					return "I'm not sure.";
 				}
 				
 				String answer = knowledge.get(peopleInKB.get(0).getId(), "person", attr);
-		
+				String prettyAnswer = peopleInKB.get(0).formulateResponse(attr, answer);
+				
 				// add response
-				knowledge.addResponse(line, "", answer, "answer");
-				return answer;
+				knowledge.addResponse(line, "", prettyAnswer, "answer");
+				return prettyAnswer;
 			}
 		}
 		
@@ -408,47 +467,8 @@ public class Ana {
 			//response = getFact();
 		}
 		
-		ArrayList<Question> medQ = new ArrayList<Question>();
-		ArrayList<Question> perQ = new ArrayList<Question>();
-		ArrayList<Question> eveQ = new ArrayList<Question>();
-		
-		for(Question q: potential) {
-			if (q.getObj().equals("event"))
-				eveQ.add(q);
-			if (q.getObj().equals("person"))
-				perQ.add(q);
-			if (q.getObj().equals("medical"))
-				medQ.add(q);
-		}
-
-		ArrayList<Question> willask = new ArrayList<Question>();
-		
-		// choose at most two questions, if theres a medical question it must be included
-		if (medQ.size() > 0) {
-			willask.add(medQ.get(0));
-		
-			if ( perQ.size() > 0 && eveQ.size() > 0) {
-				willask.add(perQ.get(0));
-			} else if (perQ.size() > 0 && eveQ.size() == 0) {
-				willask.add(perQ.get(0));
-			} else if (perQ.size() == 0 && eveQ.size() > 0) {
-				willask.add(eveQ.get(0));
-			}
-		} else {
-			if ( perQ.size() > 0 && eveQ.size() > 0) {
-				willask.add(perQ.get(0));
-				willask.add(eveQ.get(0));
-			} else if (perQ.size() > 0 && eveQ.size() == 0) {
-				for (Question pq: perQ)
-					willask.add(pq);
-			} else if (perQ.size() == 0 && eveQ.size() > 0) {
-				for (Question eq: eveQ) 
-					willask.add(eq);
-			}
-		}
-		
-		//for (Question q: willask)
-			//System.out.println("QASK: "+ q.getQuestion());
+		// rank questions
+		ArrayList<Question> willask = Helpers.rank(potential);
 		
 		// if no questions
 		if (willask.size() == 0)
@@ -481,5 +501,9 @@ public class Ana {
 	
 	public JSONObject getTables() throws JSONException {
 		return knowledge.toTableJSON();
+	}
+	
+	public KnowledgeBase getKnowledge() {
+		return knowledge;
 	}
 }
