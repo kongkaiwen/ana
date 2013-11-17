@@ -42,15 +42,17 @@ public class Ana {
 	
 	public static void main(String[] args) throws Exception {
 		Ana ana = new Ana();
-		ana.initKB(0);
+		ana.initKB(3);
 		
 //		System.out.println("response: " + ana.ask("I need to buy a gift for my grandson's birthday party.", false));
 //		System.out.println("response: " + ana.ask("Nathan.", false));
 //		System.out.println("response: " + ana.ask("Saturday.", false));
 //		System.out.println("response: " + ana.ask("He is turning 5.", false));
-		System.out.println("response: " + ana.ask("I'm going to a concert on Saturday with Jana.", false));
-		System.out.println("response: " + ana.ask("She is my sister.", false));
-		System.out.println("response: " + ana.ask("It's at the Shaw Conference.", false));
+//		System.out.println("response: " + ana.ask("I'm going to a concert on Saturday with Jana.", false));
+//		System.out.println("response: " + ana.ask("She is my sister.", false));
+//		System.out.println("response: " + ana.ask("It's at the Shaw Conference.", false));
+		System.out.println("response: " + ana.ask("Hello.", false));
+		System.out.println("response: " + ana.ask("My name is Kevin.", false));
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
 	}
@@ -68,26 +70,6 @@ public class Ana {
 
 	public String ask ( String line, boolean silence ) throws Exception {
 		
-		// if there is silence for a period of time, ask the user a "daily" question
-		if (silence) {
-			Daily today = knowledge.getDaily();
-			String attr = today.getEmptyAttr();
-			String ques = Helpers.genSilenceQuestion(attr);
-			
-			Question question = new Question(pipeline, line, today.getId(), "daily", attr, ques, null, today.getCallback(attr), false);
-			knowledge.addQuestion(question);
-			
-			knowledge.addResponse(line, knowledge.getSpeaker().get("name"), question.getQuestion(), "question");
-			return ques;
-		}
-		
-		// we don't know the speaker
-		if (knowledge.getSpeaker() == null) {
-			String response = "Who are you?";
-			knowledge.addResponse(line, "", response, "question");
-			return response;
-		}
-			
 		// init data
 		int eid = -1;
 		String response = "";
@@ -154,6 +136,7 @@ public class Ana {
   				knowledge.delBuffer();
   				
   			} else {
+  				boolean hasspeaker = (knowledge.getSpeaker() == null) ? false : true;
   				boolean askq = false;
   				String last_line = buffer.getLine();
   				boolean found = buffer.executeCallback(response, knowledge, tkns, entitiesInText, pos);
@@ -164,6 +147,7 @@ public class Ana {
   				//  q2.ask, RBuffer.add(q2.callback), QBuffer.pop()
   				if (found) {
   					Question question = knowledge.getQuestion();
+
   					if (question != null) {
   						// found answer, and question in buffer
   						knowledge.addResponse(line, "", question.getQuestion(), "question");
@@ -171,6 +155,14 @@ public class Ana {
   						return question.getQuestion();
   					} else {
   						// no question in buffer
+
+  						boolean hasspeakernow = (knowledge.getSpeaker() == null) ? false : true;
+  						if (!hasspeaker && hasspeakernow) {
+  							String umm = "Nice to meet you!";
+  	  		  				knowledge.addResponse(line, "", "Nice to meet you!", "umm");
+  	  		  				return umm;
+  						}
+  						
   						String umm = Helpers.ummPhrase();
   		  				knowledge.addResponse(line, "", umm, "umm");
   		  				return umm;
@@ -183,6 +175,44 @@ public class Ana {
   				}
   			}
   		}
+  		
+  		// if there is silence for a period of time, ask the user a "daily" question
+		if (silence) {
+			Daily today = knowledge.getDaily();
+			String attr = today.getEmptyAttr();
+			String ques = Helpers.genSilenceQuestion(attr);
+			
+			Question question = new Question(pipeline, line, today.getId(), "daily", attr, ques, null, today.getCallback(attr), false);
+			knowledge.addQuestion(question);
+			
+			knowledge.addResponse(line, knowledge.getSpeaker().get("name"), question.getQuestion(), "question");
+			return ques;
+		}
+		
+		// we don't know the speaker
+		if (knowledge.getSpeaker() == null) {
+			
+			int pid = knowledge.addPerson();
+			boolean isGreeting = Helpers.isGreeting(tkns);
+			
+			if (!isGreeting) {
+				String r = "Who are you?";
+				Question question = new Question(pipeline, line, pid, "person", "name", r, null, new ExtractName(), false);
+				//knowledge.addQuestion(question);
+				
+				knowledge.addResponse(line, "", r, "question");
+				knowledge.addCallback(question.getCallback());
+				return r;
+			} else {
+				String r = "Hello! Who are you?";
+				Question question = new Question(pipeline, line, pid, "person", "name", r, null, new ExtractName(), false);
+				//knowledge.addQuestion(question);
+				
+				knowledge.addResponse(line, "", r, "question");
+				knowledge.addCallback(question.getCallback());
+				return r;
+			}
+		}
 		
 		// check for family titles ( nephew, daughter, etc )
 		boolean hasTitle = Helpers.hasFamilyTitles(tkns, pos);
@@ -465,6 +495,14 @@ public class Ana {
   		// if statement -> attempt to response or send to chatterbot
 		if ( function == 0.0 ) {
 			//response = getFact();
+			
+			// if no people mentioned, no relations, no events, then...
+			
+			if (!hasEvent && relations.size() == 0 && peopleInKB.size() == 0) {
+				// try to move the conversation
+				
+				return "Tell me about yourself.";
+			}
 		}
 		
 		// rank questions

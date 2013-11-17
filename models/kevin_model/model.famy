@@ -16,208 +16,243 @@ S # kernel parameter -V
 S # kernel parameter -W 
 0 # kernel parameter -U 
 0 # highest feature index 
-864 # number of training documents 
-203 # number of support vectors plus 1 
-2.4171663 # threshold b, each following line is a SV (starting with alpha*y)
--0.18609910178222097143496682747354  |BT| (NNS (poss (PRP$ (GPE)))(PERSON)) |ET| 
--1  |BT| (NNS (PERSON)(prep_in (NN (PERSON)))) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(FACILITY)) |ET| 
--1  |BT| (NNS (poss (PRP$ (PERSON)))(GPE)) |ET| 
-0.17448322409255603848698967794917  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (NN (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VB (nsubj (PRP (PERSON)))(recommend)(dobj (NNS (PERSON)))) |ET| 
-1  |BT| (VB (nsubj (PRP (PERSON)))(travel)(xcomp (VB (meet))(prep_with (NN (PERSON))))) |ET| 
--1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBN (nsubj (PRP (PERSON)))(get)(dobj (amod (JJ (old))(conj_and (JJ (PERSON))))(NN (wow)))) |ET| 
--0.32172703178546890878664044066682  |BT| (VBD (nsubj (NN (PERSON)))(say)(ccomp (VB (know))(dobj (PRP (PERSON))))) |ET| 
-1  |BT| (VBP (have)(parataxis (nsubj (NN (PERSON)))(VBZ (be)))(dep (nsubj (NN (PERSON)))(VBP (live)))) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VB (nsubj (PRP (PERSON)))(go)(prep_to (NN (lot))(prep_of (NNS (party))(prep_with (NNS (co-worker))(conj_or (NNS (PERSON))))))) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(ORGANIZATION)) |ET| 
-1  |BT| (JJS (PERSON)(prep_of (poss (PRP$ (PERSON)))(NN (family)))) |ET| 
--0.51284715686312543070357605756726  |BT| (VB (appoint)(dobj (NNS (PERSON)))(prep_to (NN (PERSON)))) |ET| 
-1  |BT| (NNS (PERSON)(dep (nsubj (NNS (PERSON)))(VBD (get)))) |ET| 
--0.35110766533083215268362664573942  |BT| (NN (poss (PRP$ (PERSON)))(GPE)) |ET| 
-1  |BT| (VBZ (nsubj (NNP (Big))(dep (NN (PERSON))))(do)(dobj (nn (NN (PERSON)))(NN (party)))) |ET| 
--1  |BT| (NN (PERSON)(dep (NNS (PERSON)))) |ET| 
-1  |BT| (VBD (want)(conj_and (VB (want))(xcomp (NN (PERSON))))(conj_and (VB (want))(xcomp (VBN (tie))(prep_with (NN (PERSON)))))) |ET| 
--1  |BT| (VBZ (lead)(dobj (PRP (PERSON)))(conj_and (VBP (have))(dobj (NN (PERSON))))) |ET| 
-1  |BT| (NN (PERSON)(prep_on (NN (run))(prep_from (NNS (PERSON))))) |ET| 
--1  |BT| (NN (PERSON)(prep_of (poss (NN (PERSON)))(NN (sister)))) |ET| 
-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (CD (PERSON)))) |ET| 
--1  |BT| (VB (nsubj (PRP (PERSON)))(recommend)(dobj (NNS (member))(conj_and (NNS (PERSON))))) |ET| 
-1  |BT| (NN (PERSON)(prep_of (NN (PERSON)))) |ET| 
--1  |BT| (CD (PERSON)(prep_of (DT (PERSON)))) |ET| 
-1  |BT| (VB (nsubj (NNS (child))(conj_and (PRP (PERSON))))(know)(dep (VBG (take))(dep (dep (JJ (PERSON)))(VB (have))))) |ET| 
--1  |BT| (NNS (PERSON)(prep_in (NN (PERSON)))) |ET| 
--0.41435113267620560240089844228351  |BT| (NN (PERSON)(prep_as (NNS (PERSON)))) |ET| 
-1  |BT| (VB (nsubj (PRP (PERSON)))(recommend)(dobj (nn (NN (PERSON)))(NNS (member)))) |ET| 
--1  |BT| (NNS (nn (NN (PERSON)))(PERSON)) |ET| 
-1  |BT| (VB (see)(dobj (PRP$ (PERSON)))(dep (CD (PERSON)))) |ET| 
--0.58632517653146987157697367365472  |BT| (VB (nsubj (PRP (PERSON)))(have)(dobj (NN (VEH)))) |ET| 
-1  |BT| (NNS (poss (NN (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBZ (nsubj (PRP (PERSON)))(have)(dobj (NN (PERSON)))) |ET| 
--1  |BT| (VBP (nsubj (WDT (PERSON)))(run)(dobj (NNS (PERSON)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(nn (NN (PERSON)))(i)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NNS (PERSON)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (VBZ (nsubj (PRP (PERSON)))(have)(xcomp (VB (go))(prep_before (NN (PERSON))))) |ET| 
-1  |BT| (VBP (parataxis (VBP (think))(ccomp (nsubj (poss (PRP$ (PERSON)))(NN (motive)))(VBN (be))))(kill)(dobj (NN (PERSON)))) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VB (nsubj (PRP (PERSON)))(have)(dobj (NNS (PERSON)))) |ET| 
--1  |BT| (NN (poss (PRP$ (GPE)))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(mother)(conj_or (NN (PERSON)))) |ET| 
--1  |BT| (VBN (nsubj (PRP (PERSON)))(get)(dobj (NN (PERSON)))) |ET| 
-1  |BT| (VBP (ccomp (nsubj (PRP (PERSON)))(VBP (have)))(have)(dobj (CD (six))(conj_and (NNS (PERSON))))) |ET| 
--0.67439571481703752819925057337969  |BT| (VBP (think)(ccomp (nsubj (PRP (ORGANIZATION)))(VBP (have)))(conj_and (VBP (have))(dobj (NN (PERSON))))) |ET| 
-1  |BT| (JJ (nsubj (PRP (PERSON)))(pregnant)(prep_for (NN (PERSON)))) |ET| 
--1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBP (nsubj (PRP (PERSON)))(go)(prep_with (NN (PERSON)))) |ET| 
--1  |BT| (VBP (nsubj (PRP (PERSON)))(work)(prep_for (NN (PERSON)))) |ET| 
-0.98262404694005722749494680101634  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBN (nsubj (PRP (PERSON)))(get)(dobj (amod (JJ (PERSON)))(NN (wow)))) |ET| 
--1  |BT| (VB (nsubj (NN (PERSON)))(know)(dobj (PRP (PERSON)))) |ET| 
-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (amod (JJ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBP (know)(parataxis (neg (RB (not))(dep (VBG (see))(dobj (poss (PRP$ (PERSON)))(NN (mother)))))(VBP (know)))(dep (VB (see))(conj_but (VBP (see))(conj_and (dep (NNS (PERSON)))(NN (time)))))) |ET| 
--1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (nsubj (NN (PERSON)))(PERSON)) |ET| 
--1  |BT| (JJ (nsubj (PRP (PERSON)))(single)(ccomp (VB (have))(dobj (SYM (a))(dep (NN (PERSON)))))) |ET| 
-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (VBN (nsubj (poss (PRP$ (PERSON)))(NN (motive)))(be)(xcomp (VB (be))(prep_with (NN (PERSON))))) |ET| 
-1  |BT| (VBD (nsubj (PRP (PERSON)))(have)(dobj (NN (PERSON)))) |ET| 
--1  |BT| (VBD (nsubj (PRP (PERSON)))(name)(dobj (NN (PERSON)))) |ET| 
-1  |BT| (JJ (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NN (PERSON)))) |ET| 
--0.27185992892917348884296302458097  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NN (FACILITY)))) |ET| 
-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NN (son))(conj_and (NN (PERSON))))) |ET| 
--1  |BT| (PRP (PERSON)(conj_and (NN (rest))(prep_of (NN (PERSON))))) |ET| 
-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (JJS (PERSON)(prep_of (NN (PERSON)))) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NNS (PERSON)(rcmod (nsubj (PRP (PERSON)))(VBP (see)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(mom)(conj_and (NN (PERSON)))) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBD (nsubj (PRP (PERSON)))(have)(dobj (NNS (PERSON)))) |ET| 
--0.19780767582716857200253457449435  |BT| (VBP (prep_on (NN (site))(advmod (RB (LOCATION))))(have)(dobj (NNS (PERSON)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NNS (PERSON)))) |ET| 
--0.58886830774035769930918604586623  |BT| (NN (nsubj (PRP (PERSON)))(employment)(conj_and (VBN (get))(dobj (NNS (PERSON))))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (mother-in-law)(conj_and (PRP$ (PERSON)))(conj_and (NN (PERSON)))) |ET| 
--1  |BT| (VBG (nsubj (NNS (PERSON)))(come)(prep_with (NN (PERSON)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBZ (nsubj (NNP (Big))(dep (poss (PRP$ (PERSON)))(NN (sister))))(do)(dobj (nn (NN (PERSON)))(NN (party)))) |ET| 
--1  |BT| (VBZ (nsubj (NNP (PERSON)))(ye)(dobj (NN (PERSON)))) |ET| 
-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (NN (PERSON)))(PERSON)) |ET| 
--1  |BT| (VBN (dep (JJ (PERSON)))(prep_of (poss (PRP$ (PERSON)))(NN (staff)))(resign)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NNS (PERSON)))) |ET| 
--0.0032677681904570016202526971937914  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NN (ORGANIZATION)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NNS (nn (NN (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NN (PERSON)))) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(nn (NN (PERSON)))(m)) |ET| 
--1  |BT| (VBG (go)(prep_into (poss (PRP$ (PERSON)))(NN (territory)))(conj_and (VBP (fight))(conj_and (VBP (have))(dobj (NNS (WEA)))))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (VBP (know)(parataxis (neg (RB (not))(dep (VBG (see))(dobj (poss (PRP$ (PERSON)))(NN (mother)))))(VBP (know)))(dep (VB (see))(conj_but (VBP (see))(dobj (NNS (aunt))(conj_and (NNS (PERSON))))))) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NNS (dep (IN (with))(pobj (poss (PRP$ (PERSON)))(NN (cabinet))))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(LOCATION)) |ET| 
-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NNS (nn (NN (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (NN (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(FACILITY)) |ET| 
-1  |BT| (JJS (PERSON)(prep_of (NN (PERSON)))) |ET| 
--1  |BT| (NN (PERSON)(prep_of (NNS (PERSON)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (VBP (dobj (WP (PERSON)))(nsubj (PRP (PERSON)))(report)) |ET| 
-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(LOCATION)) |ET| 
--1  |BT| (NN (PERSON)(prep_as (NNS (PERSON)))) |ET| 
-1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(dobj (NN (PERSON)))) |ET| 
--1  |BT| (VBP (nsubj (PRP (ORGANIZATION)))(have)(dobj (NN (PERSON)))) |ET| 
-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (VBD (nsubj (PRP (PERSON)))(be)(xcomp (VBG (see))(dobj (NN (PERSON))))) |ET| 
-1  |BT| (NNS (poss (poss (PRP$ (PERSON)))(NN (mom)))(PERSON)) |ET| 
--0.81014684821650351231880904379068  |BT| (JJ (PERSON)(prep_to (NNP (PERSON)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(GPE)) |ET| 
-1  |BT| (VBP (know)(parataxis (neg (RB (not))(dep (VBG (see))(dobj (poss (PRP$ (PERSON)))(NN (mother)))))(VBP (know)))(dep (VB (see))(conj_but (VBP (see))(dobj (NNS (PERSON)))))) |ET| 
--0.054414526081662292766871757976332  |BT| (NNS (PERSON)(prep_for (NNP (PERSON)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NNS (PERSON)(rcmod (VBG (leave))(dobj (poss (PRP$ (PERSON)))(NN (cabinet))))) |ET| 
-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(GPE)) |ET| 
--0.3321818981595121567096384751494  |BT| (VBD (dep (advcl (dep (PRP (PERSON)))(VBN (um)))(VBP (know)))(jump)(prep_by (NN (PERSON)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(ORGANIZATION)) |ET| 
--1  |BT| (VBN (nsubjpass (PRP (PERSON)))(have)(dobj (CD (PERSON)))) |ET| 
--0.96428557672567960512566287434311  |BT| (NNS (PERSON)(dep (nsubj (PRP (PERSON)))(VBP (work)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (VB (dobj (NNS (PERSON)))(appoint)(prep_to (NN (PERSON)))) |ET| 
--1  |BT| (VBP (nsubj (PRP (PERSON)))(have)(xcomp (VB (meet))(prep_with (NNS (PERSON))))) |ET| 
--1  |BT| (NN (PERSON)(prep_of (PRP (PERSON)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--0.26902976456800992144380302306672  |BT| (JJ (poss (PRP$ (PERSON)))(current)(conj_or (NN (ORGANIZATION)))) |ET| 
--1  |BT| (NN (PERSON)(prep_as (NNS (PERSON)))) |ET| 
-0.80758842722810642023034688463667  |BT| (JJS (PERSON)(prep_of (poss (PRP$ (PERSON)))(NN (family)))) |ET| 
--0.81943108570563305548262178490404  |BT| (VBP (nsubj (PRP (PERSON)))(go)(prep_with (NN (family))(appos (NNS (PERSON))))) |ET| 
--0.45803283881854556236490338960721  |BT| (VB (dep (WP (PERSON)))(like)(xcomp (VB (see))(dep (VBN (appoint))(prep_to (poss (PRP$ (PERSON)))(NN (cabinet)))))) |ET| 
-1  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(FACILITY)) |ET| 
--1  |BT| (VB (nsubj (PRP (PERSON)))(know)(dobj (NNP (PERSON)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--0.47533257763015240859871823886351  |BT| (VBP (prep_like (DT (any))(prep_of (PRP$ (PERSON))))(know)(ccomp (nsubj (NNS (PERSON)))(JJ (um)))) |ET| 
--1  |BT| (VBP (nsubj (PRP (ORGANIZATION)))(have)(dobj (NN (PERSON)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--0.10399324546358579279825562480255  |BT| (NN (poss (PRP$ (PERSON)))(oil)(conj_and (NNS (FACILITY)))) |ET| 
--0.45000038993036983736573120040703  |BT| (VBD (nsubj (PRP (PERSON)))(come)(prep_under (CD (PERSON)))) |ET| 
--0.67025465845630316508163559774403  |BT| (NN (PERSON)(rcmod (nsubj (PRP (PERSON)))(VBP (work)))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(ORGANIZATION)) |ET| 
--1  |BT| (NN (poss (PRP$ (PERSON)))(FACILITY)) |ET| 
--0.28963717981096454012757135387801  |BT| (VB (nsubj (WP (PERSON)))(be)(prep_in (NN (PERSON)))) |ET| 
-0.94452872171916224530718864116352  |BT| (NNS (poss (PRP$ (PERSON)))(PERSON)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--1  |BT| (NN (poss (PRP$ (GPE)))(PERSON)) |ET| 
--0.25260328429903466940231737680733  |BT| (NNS (poss (PRP$ (PERSON)))(start)(partmod (JJ (rid))(prep_of (DT (some))(dep (NN (VEH)))))) |ET| 
--0.2045599487617528189353777179349  |BT| (NNS (PERSON)(dep (nsubj (PRP (PERSON)))(VBP (work)))) |ET| 
--0.23530281685522319579106920173217  |BT| (VBD (nsubj (PRP (PERSON)))(use)(xcomp (VB (know))(dobj (NN (PERSON))))) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--0.30335530876537070144038921171159  |BT| (NN (poss (PRP$ (PERSON)))(FACILITY)) |ET| 
-1  |BT| (NN (poss (PRP$ (PERSON)))(PERSON)) |ET| 
--0.039680807577449919709700054681889  |BT| (NNS (PERSON)(prep_underneath (PRP (PERSON)))) |ET| 
--0.055355229882179224354388225037837  |BT| (NN (poss (PRP$ (PERSON)))(ORGANIZATION)) |ET| 
--0.012969773798432934763802393263177  |BT| (VBD (dep (nsubjpass (PRP (PERSON)))(VBN (have)))(check)(advmod (RBR (PERSON)))) |ET| 
+1003 # number of training documents 
+238 # number of support vectors plus 1 
+2.381291 # threshold b, each following line is a SV (starting with alpha*y)
+-1  |BT| (ROOT (PERSON_NN (PERSON))(prep_of (PERSON_NNS (PERSON)))) |ET| 
+-1  |BT| (ROOT (PERSON_NNS (PERSON))(prep_in (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(FACILITY_NN (FACILITY))) |ET| 
+-1  |BT| (ROOT (amod (PERSON_JJ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_NN (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VB (recommend))(dobj (PERSON_NNS (PERSON)))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VB (travel))(xcomp (VB (meet))(prep_with (PERSON_NN (PERSON))))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (ccomp (nsubj (PERSON_PRP (PERSON)))(VBP (have)))(VBP (have))(dobj (CD (six))(conj_and (PERSON_NNS (PERSON))))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(xcomp (VB (meet))(prep_with (PERSON_NNS (PERSON))))) |ET| 
+1  |BT| (ROOT (nsubj (NNP (Big))(dep (PERSON_NN (PERSON))))(VBZ (do))(dobj (nn (PERSON_NN (PERSON)))(NN (party)))) |ET| 
+-0.93552895545210779104650100634899  |BT| (ROOT (VB (appoint))(dobj (PERSON_NNS (PERSON)))(prep_to (PERSON_NN (PERSON)))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_NNP (PERSON)))(NN (son))(prep_of (PERSON_NNP (PERSON)))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_NNP (PERSON)))(NN (policy))(prep_towards (PERSON_NNP (PERSON)))) |ET| 
+1  |BT| (ROOT (VBP (know))(parataxis (neg (RB (not))(dep (VBG (see))(dobj (poss (PERSON_PRP$ (PERSON)))(NN (mother)))))(VBP (know)))(dep (VB (see))(conj_but (VBP (see))(dobj (PERSON_NNS (PERSON)))))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VB (recommend))(dobj (NNS (member))(conj_and (PERSON_NNS (PERSON))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_NNP (PERSON)))(nn (PERSON_NNP (PERSON)))(NNP (Daniel))) |ET| 
+-0.26535851516626385304675750376191  |BT| (ROOT (nn (PERSON_NNP (PERSON)))(nn (PERSON_NNP (PERSON)))(NNP (Bush))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VB (go))(prep_to (NN (lot))(prep_of (NNS (party))(prep_with (NNS (co-worker))(conj_or (PERSON_NNS (PERSON))))))) |ET| 
+-0.52904748002529466965881965734297  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VB (go))(prep_to (NN (lot))(prep_of (NNS (party))(prep_with (dep (PERSON_NNS (PERSON)))(NNS (co-worker)))))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(JJ (pregnant))(prep_for (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (PERSON_NNS (PERSON))(dep (nsubj (PERSON_NNS (PERSON)))(VBD (get)))) |ET| 
+-0.29068862537675255186542244700831  |BT| (ROOT (dep (VBP (ye))(dep (VBP (try))(conj_and (VBP (think))(ccomp (nsubj (PERSON_NNP (PERSON)))(VBD (need))))))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (PERSON_NN (PERSON))(prep_of (poss (PERSON_NN (PERSON)))(NN (sister)))) |ET| 
+1  |BT| (ROOT (VBD (want))(conj_and (VB (want))(xcomp (PERSON_NN (PERSON))))(conj_and (VB (want))(xcomp (VBN (tie))(prep_with (PERSON_NN (PERSON)))))) |ET| 
+0.15948323567811495404811239495757  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(poss (PERSON_PRP$ (PERSON)))(NN (brother))) |ET| 
+0.95695514080823929070618305559037  |BT| (ROOT (PERSON_JJS (PERSON))(prep_of (poss (PERSON_PRP$ (PERSON)))(NN (family)))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VB (recommend))(dobj (nn (PERSON_NN (PERSON)))(NNS (member)))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_NN (PERSON)))(VB (know))(dobj (PERSON_PRP (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (go))(prep_with (PERSON_NN (PERSON)))) |ET| 
+-0.090427377453436486032245511523797  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(JJ (rid))(advcl (VBD (want))(xcomp (VB (be))(prep_with (PERSON_NN (PERSON)))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (NNS (child))(conj_and (PERSON_PRP (PERSON))))(VB (know))(dep (VBG (take))(dep (dep (PERSON_JJ (PERSON)))(VB (have))))) |ET| 
+-1  |BT| (ROOT (dep (PERSON_JJ (PERSON)))(prep_of (poss (PERSON_PRP$ (PERSON)))(NN (staff)))(VBN (resign))) |ET| 
+1  |BT| (ROOT (poss (PERSON_NN (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(JJ (single))(ccomp (VB (have))(dobj (SYM (a))(dep (PERSON_NN (PERSON)))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(NN (mother))(conj_or (NN (sister))(appos (PERSON_NNS (PERSON))))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_NNS (PERSON)))(VBG (come))(prep_with (PERSON_NN (PERSON)))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (work))(prep_for (PERSON_NN (PERSON)))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VB (have))(dobj (PERSON_NNS (PERSON)))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(NN (employment))(conj_and (VBN (get))(dobj (PERSON_NNS (PERSON))))) |ET| 
+1  |BT| (ROOT (PERSON_NN (PERSON))(prep_of (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBN (get))(dobj (amod (JJ (old))(conj_and (PERSON_JJ (PERSON))))(NN (wow)))) |ET| 
+-0.64630210559424738914202634987305  |BT| (ROOT (PERSON_NNS (PERSON))(dep (nsubj (PERSON_PRP (PERSON)))(VBP (work)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNP (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (PERSON_CD (PERSON)))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (guess))(ccomp (VBP (have))(dobj (PERSON_CD (PERSON))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (parataxis (VBP (think))(ccomp (nsubj (poss (PERSON_PRP$ (PERSON)))(NN (motive)))(VBN (be))))(VBP (kill))(dobj (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_NNP (PERSON)))(VBZ (ye))(dobj (PERSON_NN (PERSON)))) |ET| 
+0.11697835053021191087374575090507  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(poss (PERSON_PRP$ (PERSON)))(NN (nephew))) |ET| 
+-1  |BT| (ROOT (dep (IN (with))(pobj (poss (PERSON_PRP$ (PERSON)))(NN (cabinet))))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_NN (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBN (get))(dobj (PERSON_NN (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBZ (have))(dobj (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (PERSON_PRP (PERSON))(conj_and (NN (rest))(prep_of (PERSON_NN (PERSON))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (PERSON_NN (PERSON))(prep_on (NN (run))(prep_from (PERSON_NNS (PERSON))))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (PERSON_NNS (PERSON))(conj_and (poss (PERSON_PRP$ (PERSON)))(NNS (kid)))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_WDT (PERSON)))(VBP (run))(dobj (PERSON_NNS (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (NN (sister))(partmod (VBN (name))(dobj (PERSON_NNP (PERSON)))))) |ET| 
+-1  |BT| (ROOT (nn (PERSON_NN (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBD (have))(dobj (PERSON_NNS (PERSON)))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBD (name))(dobj (PERSON_NN (PERSON)))) |ET| 
+1  |BT| (ROOT (advmod (PERSON_RB (PERSON)))(poss (PERSON_PRP$ (PERSON)))(NN (grandma))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBD (visit))(dobj (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VB (know))(dobj (PERSON_NNP (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (VB (see))(dobj (PERSON_PRP$ (PERSON)))(dep (PERSON_CD (PERSON)))) |ET| 
+-0.41722750768152061517923812061781  |BT| (ROOT (nsubjpass (PERSON_PRP (PERSON)))(VBN (have))(dobj (PERSON_CD (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBN (get))(dobj (amod (PERSON_JJ (PERSON)))(NN (wow)))) |ET| 
+-0.30742087027671483046020739493542  |BT| (ROOT (advmod (PERSON_DT (PERSON)))(VB (know))(dobj (PERSON_NNP (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBD (go))(prep_with (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (amod (PERSON_JJ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (PERSON_JJS (PERSON))(prep_of (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBZ (have))(xcomp (VB (go))(prep_before (PERSON_NN (PERSON))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (VBP (have))(parataxis (nsubj (PERSON_NN (PERSON)))(VBZ (be)))(dep (nsubj (PERSON_NN (PERSON)))(VBP (live)))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (go))(prep_to (PERSON_NN (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBD (have))(dobj (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (PERSON_NNS (PERSON))(rcmod (nsubj (PERSON_PRP (PERSON)))(VBP (see)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (PERSON_NNS (PERSON)))) |ET| 
+-0.9086830716057722190370782300306  |BT| (ROOT (prep_on (NN (site))(advmod (LOCATION_RB (LOCATION))))(VBP (have))(dobj (PERSON_NNS (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (poss (PERSON_NNP (PERSON)))(NN (name)))(cop (PERSON_VBZ (PERSON)))(NNP (Kevin))) |ET| 
+-0.95813775786171639925470344678615  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBD (come))(prep_under (PERSON_CD (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBD (go))(prep_with (PERSON_NN (PERSON)))) |ET| 
+-0.44381135313065933623022374376887  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBD (work))(prep_with (NN (uh))(appos (PERSON_NNS (PERSON))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (PERSON_NNS (PERSON)))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBN (have))(dobj (NNS (kind))(prep_of (PERSON_NNS (PERSON))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (NN (mother-in-law))(conj_and (PERSON_PRP$ (PERSON)))(conj_and (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (VBZ (lead))(dobj (PERSON_PRP (PERSON)))(conj_and (VBP (have))(dobj (PERSON_NN (PERSON))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (PERSON_NNS (PERSON)))) |ET| 
+-1  |BT| (ROOT (PERSON_NNS (PERSON))(dep (nsubj (PERSON_PRP (PERSON)))(VBP (work)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_NN (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (nn (PERSON_NN (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(NN (oil))(conj_and (FACILITY_NNS (FACILITY)))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (NN (mother))(partmod (VBN (name))(dobj (PERSON_NNP (PERSON)))))) |ET| 
+-1  |BT| (ROOT (dobj (PERSON_WP (PERSON)))(nsubj (PERSON_PRP (PERSON)))(VBP (report))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (nsubj (poss (PERSON_PRP$ (PERSON)))(NN (motive)))(VBN (be))(xcomp (VB (be))(prep_with (PERSON_NN (PERSON))))) |ET| 
+1  |BT| (ROOT (VBP (know))(parataxis (neg (RB (not))(dep (VBG (see))(dobj (poss (PERSON_PRP$ (PERSON)))(NN (mother)))))(VBP (know)))(dep (VB (see))(conj_but (VBP (see))(dobj (NNS (aunt))(conj_and (PERSON_NNS (PERSON))))))) |ET| 
+-1  |BT| (ROOT (PERSON_NN (PERSON))(dep (PERSON_NNS (PERSON)))) |ET| 
+-0.13480846784211417133114707667119  |BT| (ROOT (VBG (go))(prep_into (poss (PERSON_PRP$ (PERSON)))(NN (territory)))(conj_and (VBP (fight))(conj_and (VBP (have))(dobj (NNS (gun))(conj_and (VEH_NNS (VEH))))))) |ET| 
+0.87516201069138188639584541306249  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(nn (PERSON_NN (PERSON)))(NN (i))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(LOCATION_NN (LOCATION))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (PERSON_NN (PERSON)))) |ET| 
+0.12770405387453373502459896826622  |BT| (ROOT (poss (poss (PERSON_PRP$ (PERSON)))(NN (mom)))(PERSON_NNS (PERSON))) |ET| 
+-0.10776651809242589197257444766365  |BT| (ROOT (nsubj (PERSON_NN (PERSON)))(VBD (say))(ccomp (VB (know))(dobj (PERSON_PRP (PERSON))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_JJ (PERSON))) |ET| 
+-1  |BT| (ROOT (nn (PERSON_NN (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (NN (son))(conj_and (PERSON_NN (PERSON))))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(GPE_NNS (GPE))) |ET| 
+1  |BT| (ROOT (poss (PERSON_NN (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-0.88266856412439220758159308388713  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(ORGANIZATION_NN (ORGANIZATION))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (PERSON_NNS (PERSON))(rcmod (VBG (leave))(dobj (poss (PERSON_PRP$ (PERSON)))(NN (cabinet))))) |ET| 
+1  |BT| (ROOT (PERSON_JJS (PERSON))(prep_of (PERSON_NN (PERSON)))) |ET| 
+-0.54446762015352123675882012321381  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBD (go))(prep_through (PERSON_PRP (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(GPE_NN (GPE))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (nsubj (ORGANIZATION_PRP (ORGANIZATION)))(VBP (have))(dobj (PERSON_NN (PERSON)))) |ET| 
+0.8753315125350631387135535987909  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(nn (PERSON_NN (PERSON)))(NN (m))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBN (get))(dobj (NN (lot))(prep_of (PERSON_NNS (PERSON))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(ORGANIZATION_NN (ORGANIZATION))) |ET| 
+-0.47252499243647605453588766977191  |BT| (ROOT (complm (PERSON_IN (PERSON)))(nsubj (PERSON_PRP (PERSON)))(VBP (work))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(LOCATION_NN (LOCATION))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (PERSON_NNS (PERSON))(prep_in (PERSON_NN (PERSON)))) |ET| 
+1  |BT| (ROOT (VBP (know))(parataxis (neg (RB (not))(dep (VBG (see))(dobj (poss (PERSON_PRP$ (PERSON)))(NN (mother)))))(VBP (know)))(dep (VB (see))(conj_but (VBP (see))(conj_and (dep (PERSON_NNS (PERSON)))(NN (time)))))) |ET| 
+-1  |BT| (ROOT (nsubj (ORGANIZATION_PRP (ORGANIZATION)))(VBP (have))(dobj (PERSON_NN (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(GPE_NN (GPE))) |ET| 
+-0.59080949978879193640324274383602  |BT| (ROOT (prep_like (DT (any))(prep_of (PERSON_PRP$ (PERSON))))(VBP (know))(ccomp (nsubj (PERSON_NNS (PERSON)))(JJ (um)))) |ET| 
+1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (PERSON_NN (PERSON)))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBD (be))(xcomp (VBG (see))(dobj (PERSON_NN (PERSON))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-1  |BT| (ROOT (PERSON_NNS (PERSON))(prep_for (PERSON_NNP (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-0.42830302406998266295801158776158  |BT| (ROOT (VBD (buy))(dobj (poss (ORGANIZATION_PRP$ (ORGANIZATION)))(NN (company)))(prep_from (PERSON_NN (PERSON)))) |ET| 
+0.92642965913258112919947961927392  |BT| (ROOT (nsubj (poss (PERSON_PRP$ (PERSON)))(NN (father)))(PERSON_NNP (PERSON))) |ET| 
+-1  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (go))(prep_with (NN (family))(appos (PERSON_NNS (PERSON))))) |ET| 
+0.99180801791342521056549230706878  |BT| (ROOT (PERSON_JJS (PERSON))(prep_of (poss (PERSON_PRP$ (PERSON)))(NN (family)))) |ET| 
+-0.56937742774141597568160477749188  |BT| (ROOT (nsubj (PERSON_WP (PERSON)))(prep_over (PERSON_PRP (PERSON)))(NN (person))) |ET| 
+-0.92223626703187955300222711230163  |BT| (ROOT (advcl (nsubj (PERSON_PRP (PERSON)))(NN (president)))(dobj (PERSON_NNS (PERSON)))(VB (appoint))) |ET| 
+-0.37070896749034754069640484885895  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(NNS (start))(partmod (JJ (rid))(prep_of (DT (some))(dep (VEH_NN (VEH)))))) |ET| 
+-0.66883566005819428124112846489879  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (NN (lunch))(prep_at (ORGANIZATION_NN (ORGANIZATION))))) |ET| 
+-1  |BT| (ROOT (PERSON_NN (PERSON))(prep_as (PERSON_NNS (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+0.43089986596075335878452960969298  |BT| (ROOT (nsubj (NNP (Big))(dep (poss (PERSON_PRP$ (PERSON)))(NN (sister))))(VBZ (do))(dobj (nn (PERSON_NN (PERSON)))(NN (party)))) |ET| 
+-0.37513373658414073119615750329103  |BT| (ROOT (nsubj (ORGANIZATION_PRP (ORGANIZATION)))(VBG (call))(dobj (poss (PERSON_PRP$ (PERSON)))(NN (back)))) |ET| 
+-1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(FACILITY_NN (FACILITY))) |ET| 
+-0.27333518060790795711767486864119  |BT| (ROOT (dep (PERSON_WP (PERSON)))(VB (like))(xcomp (VB (see))(dep (VBN (appoint))(prep_to (poss (PERSON_PRP$ (PERSON)))(NN (cabinet)))))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-1  |BT| (ROOT (PERSON_NN (PERSON))(prep_of (PERSON_PRP (PERSON)))) |ET| 
+-0.59229788507679026476893113795086  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VB (have))(dobj (VEH_NN (VEH)))) |ET| 
+-0.72077171609561951903799581486965  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(GPE_NN (GPE))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-0.96549945981640583614336037499015  |BT| (ROOT (VBG (go))(prep_into (poss (PERSON_PRP$ (PERSON)))(NN (territory)))(conj_and (VBP (fight))(conj_and (VBP (have))(dobj (WEA_NNS (WEA)))))) |ET| 
+-0.70393194169336947840776019802433  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(FACILITY_NN (FACILITY))) |ET| 
+-0.44489574549244670365055753791239  |BT| (ROOT (nsubj (PERSON_NNP (PERSON)))(VBG (do))(prep_with (PERSON_NNP (PERSON)))) |ET| 
+0.23078714031634603442988407095982  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNP (PERSON))) |ET| 
+-0.10097140703015497487093909967371  |BT| (ROOT (VBN (be))(parataxis (VBP (mean))(ccomp (parataxis (nsubjpass (PERSON_NNP (PERSON)))(NN (one)))(VBP (know))))(prep_with (PERSON_NNP (PERSON)))) |ET| 
+-0.66188835134669865567502711201087  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBD (use))(xcomp (VB (know))(dobj (PERSON_NN (PERSON))))) |ET| 
+-0.37491845426184877698716491067898  |BT| (ROOT (PERSON_NNS (PERSON))(prep_underneath (PERSON_PRP (PERSON)))) |ET| 
+1  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-0.19171573818607748340703267331264  |BT| (ROOT (nsubj (poss (PERSON_PRP$ (PERSON)))(NN (position)))(VBZ (be))(prep_with (ORGANIZATION_NN (ORGANIZATION)))) |ET| 
+-0.57722607448057683399156303494237  |BT| (ROOT (PERSON_NN (PERSON))(prep_as (PERSON_NNS (PERSON)))) |ET| 
+-0.21017574597367369437783679586573  |BT| (ROOT (PERSON_JJ (PERSON))(prep_to (PERSON_NNP (PERSON)))) |ET| 
+0.78348747771516946691860994178569  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NNS (PERSON))) |ET| 
+-0.15750469006350187317622157934238  |BT| (ROOT (nsubj (PERSON_PRP (PERSON)))(VBP (have))(dobj (FACILITY_NN (FACILITY)))) |ET| 
+-0.054548657186446976308236145314368  |BT| (ROOT (VBP (do))(dobj (NN (reading))(prep_on (PERSON_NNS (PERSON))))(nsubj (NNP (Arizona))(dep (GPE_NNP (GPE))))) |ET| 
+0.38515387332904943429312538683007  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 
+-0.026442505275837843714548114348872  |BT| (ROOT (poss (GPE_PRP$ (GPE)))(PERSON_NN (PERSON))) |ET| 
+0.055960612484305061187228602648247  |BT| (ROOT (nsubj (PERSON_NNP (PERSON)))(poss (PERSON_PRP$ (PERSON)))(NN (nephew))) |ET| 
+0.00025696665635166482388740405440331  |BT| (ROOT (poss (PERSON_PRP$ (PERSON)))(PERSON_NN (PERSON))) |ET| 

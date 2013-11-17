@@ -23,7 +23,11 @@ public class ExtractName implements Extract {
 		}
 		
 		if (!name.equals("")) {
+			
 			kb.update(oid, object, attr, name);
+			if (kb.getSpeaker() == null) {
+				kb.setSpeaker(oid);
+			}
 		}
 		
 		if (!name.equals(""))

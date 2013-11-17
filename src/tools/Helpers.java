@@ -295,13 +295,12 @@ public class Helpers {
 	public static HashMap<String, String> getRelations( StanfordCoreNLP pipeline, String line, int linenum ) {
 
 	    String path = Settings.path + "models/kevin_model/";
-		String flatFeatureMap = path+"tb_judged_withRpt_flat.txt.featureMap3";
 		String stopFile = path+"smallStopWords.txt";
 		String modelPath = path;
 		
 		HashMap<String, String> reMap = null;		
 		try {
-			RelationExtract relationExtractor = new RelationExtract(stopFile, flatFeatureMap, modelPath, pipeline, false);
+			RelationExtract relationExtractor = new RelationExtract(stopFile, modelPath, pipeline);
 			Annotation newCOREFdocument = new Annotation( line );
 		    pipeline.annotate(newCOREFdocument);
 			reMap = relationExtractor.extractRE_trad(newCOREFdocument, null);

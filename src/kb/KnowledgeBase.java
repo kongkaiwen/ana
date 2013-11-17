@@ -78,7 +78,7 @@ public class KnowledgeBase {
 		// debugging scenario
 		if (scenario == 0) {
 			addPerson("Kevin");
-			setSpeaker("Kevin");
+			setSpeaker(0);
 			addPerson("Phil");
 			updatePerson("Phil", "age", "56");
 			updatePerson("Phil", "likes", "cook, cookies");
@@ -91,7 +91,7 @@ public class KnowledgeBase {
 		// Scenario: Your name is Irene. You have a two granddaughter's named Jana and Wendy. You just spent the day with Jana yesterday.   Discuss what you did with Jana.
 		if (scenario == 1) {
 			addPerson("Irene");
-			setSpeaker("Irene");
+			setSpeaker(0);
 			addDialogue("I am Irene.");
 			addPerson("Jana");
 			addPerson("Wendy");
@@ -102,7 +102,7 @@ public class KnowledgeBase {
 		// Your name is Irene.  Your son Phil is coming over.  You need to cook for him but you don't know what to make. 
 		if (scenario == 2) {
 			addPerson("Irene");
-			setSpeaker("Irene");
+			setSpeaker(0);
 			addDialogue("I am Irene.");
 			addPerson("Phil");
 			updatePerson("Phil", "likes", "fish, pasta");
@@ -214,8 +214,8 @@ public class KnowledgeBase {
 		}
 	}
 	
-	public void setSpeaker( String name ) {
-		Person p = getPerson(name);
+	public void setSpeaker( int id ) {
+		Person p = getPerson(id);
 		speaker = p;
 	}
 	
