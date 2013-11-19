@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="ana">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../usr/lib/eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="ana.classpath">
+        <pathelement location="WEB-INF/classes"/>
+        <pathelement location="WEB-INF/lib/xom.jar"/>
+        <pathelement location="WEB-INF/lib/joda-time.jar"/>
+        <pathelement location="WEB-INF/lib/jakarta-oro-2.0.8.jar"/>
+        <pathelement location="WEB-INF/lib/jgrapht-jdk1.6.jar"/>
+        <pathelement location="WEB-INF/lib/lucene-core-3.3.0.jar"/>
+        <pathelement location="WEB-INF/lib/YingLibLinear.jar"/>
+        <pathelement location="WEB-INF/lib/YingPatternREAll.jar"/>
+        <pathelement location="WEB-INF/lib/json.jar"/>
+        <pathelement location="WEB-INF/lib/chatter-bot-api.jar"/>
+        <pathelement location="WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar"/>
+        <pathelement location="WEB-INF/lib/function.jar"/>
+        <pathelement location="WEB-INF/lib/lucene-core-4.5.1.jar"/>
+        <pathelement location="WEB-INF/lib/stanford-corenlp-3.3.0-models.jar"/>
+        <pathelement location="WEB-INF/lib/stanford-corenlp-3.3.0.jar"/>
+        <pathelement location="WEB-INF/lib/jollyday.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="WEB-INF/classes"/>
+        <copy includeemptydirs="false" todir="WEB-INF/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="WEB-INF/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="WEB-INF/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="ana.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="GenerateQuestion">
+        <java classname="qgen.GenerateQuestion" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="Extraction">
+        <java classname="response.Extraction" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="Input">
+        <java classname="main.Ana" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="Helpers (3)">
+        <java classname="tools.Helpers" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="Chatter">
+        <java classname="main.Chatter" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="AnswerPersonQuestion">
+        <java classname="qa.AnswerPersonQuestion" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="SVMLightInterface2 (1)">
+        <java classname="jnisvmtree.SVMLightInterface2" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="RelationExtract">
+        <java classname="relations.RelationExtract" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="DataBase">
+        <java classname="db.DataBase" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="Ana">
+        <java classname="agents.Ana" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="AnaEventModel">
+        <java classname="events.AnaEventModel" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="KnowledgeBase">
+        <java classname="kb.KnowledgeBase" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="Evaluate (1)">
+        <java classname="evaluation.Evaluate" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="TestCases">
+        <java classname="tests.TestCases" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="AnaParseGraph">
+        <java classname="graph.AnaParseGraph" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="Test (1)">
+        <java classname="tests.Test" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="SVMLightInterface2">
+        <java classname="jnisvmtree.SVMLightInterface2" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+</project>
