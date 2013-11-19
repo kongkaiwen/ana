@@ -30,7 +30,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
 
             <div align="center">
 			<input class="ana-button" id="home-button" type="button" value="Home" href="partone.html" />
-			<input class="ana-button" id="next-button" type="button" value="Next" href="scenario2.jsp" />
+			<input class="ana-button" id="next-button" type="button" value="Next" href="scenario4.jsp" />
             <input class="ana-button" id="kb-button" type="button" value="KB" />
             </div>
 
@@ -64,10 +64,10 @@ if ( request.getSession().getAttribute("eval") != null ) {
                 <form id="rating-form">
                     <table id="evaluation-table">
                         <tr>
-                            <th>Question</th><th>A</th><th>B</th><th>Why?</th>
+                            <th>Question</th><th>A</th><th>B</th><th>Equal</th><th>Why?</th>
                         </tr>
                         <tr>
-                            <td>Better? (more human)</td><td><input type="radio" name="Rating" value="a"></td><td><input type="radio" name="Rating" value="b"></td><td><input type="text" id="submit-text" /></td>
+                            <td>Better? (more human)</td><td><input type="radio" name="Rating" value="a"></td><td><input type="radio" name="Rating" value="b"></td><td><input type="radio" name="Rating" value="c"></td><td><input type="text" id="submit-text" /></td>
                         </tr>
                         <tr>
                             <td><input type="button" value="Submit" id="submit-radio"/></td><td></td><td></td><td></td>

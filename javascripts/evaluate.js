@@ -245,8 +245,6 @@ function sendRating() {
 function addText( e, text, model, server ) {
 
 	if (e == null || e.type == "click" || e.keyCode == 13) {
-		//$("#model-a-body").prepend(prettyText($("#text1").val(), "You", "even"));
-		//$("#model-b-body").prepend(prettyText($("#text1").val(), "You", "even"));
 		if (text != "silence")
 			$("#model-"+model+"-body").prepend(prettyText(text, "You", "even"));
 
@@ -257,10 +255,6 @@ function addText( e, text, model, server ) {
 			url: server,
 			data: "a=" + text + "&scenario=" + scenario,
 			success: function(data) {
-				//var json = JSON.parse(data);
-				
-				//$("#model-a-body").prepend(prettyText(json["modela"], "Model", "odd"));
-				//$("#model-b-body").prepend(prettyText(json["modelb"], "Model", "odd"));
 				$("#model-"+model+"-body").prepend(prettyText(data, "Model", "odd"));
 				$("#model-"+model+"-img").attr("src", "");
 			}

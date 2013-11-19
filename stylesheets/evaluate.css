@@ -69,17 +69,13 @@ input[type="text"], input[type="password"], textarea, select {
     box-shadow:         inset 0 0 5px #333;
     padding: 10px;
     border-radius:5px;
+    overflow-y: auto;
 }
 
 #model-a-header {
 	background-color: #555;
 	color: whitesmoke;
 	height: 50px;
-}
-
-#model-a-body {
-	height: 450px;
-	overflow-y: auto;
 }
 
 #model-b {
@@ -91,17 +87,13 @@ input[type="text"], input[type="password"], textarea, select {
     box-shadow:         inset 0 0 5px #333;
     padding: 10px;
     border-radius:5px;
+    overflow-y: auto;
 }
 
 #model-b-header {
 	background-color: #555;
 	color: whitesmoke;
 	height: 50px;
-}
-
-#model-b-body {
-	height: 450px;
-	overflow-y: auto;
 }
 
 #submit-result {

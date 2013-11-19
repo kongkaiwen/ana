@@ -38,6 +38,10 @@ public class Callback {
 		return this.line;
 	}
 	
+	public int getOID() {
+		return this.oid;
+	}
+	
 	public boolean executeCallback( String data, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos ) throws IOException {
 		return function.execute( oid, obj, atr, kb, tkns, ent, pos );
 	}

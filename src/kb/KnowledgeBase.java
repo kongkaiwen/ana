@@ -117,6 +117,24 @@ public class KnowledgeBase {
 		if (scenario == 3) {
 			
 		}
+		
+		// Scenario: Your name is Irene.  You think your nephew's birthday is coming up.  Find out when and what you should buy.
+		if (scenario == 4) {
+			addPerson("Irene");
+			setSpeaker(0);
+			addDialogue("I am Irene.");
+			addPerson("Jacob");
+			updatePerson(1, "date_of_birth", "November 11, 2009");
+			updatePerson(1, "likes", "lego");
+			addRelation("nephew", 0, 1);
+		}
+
+		// Scenario: Your name is Irene.  An unknown member of your family has visited.  Introduce and describe them. 
+		if (scenario == 5) {
+			addPerson("Irene");
+			setSpeaker(0);
+			addDialogue("I am Irene.");
+		}
 	}	
 	
 	public void resetKB( int scenario ) throws IOException {
@@ -429,10 +447,16 @@ public class KnowledgeBase {
 	}
 	
 	public void addQuestion( Question question ) {
+		//System.out.println("ADDING Q: " + question.getQuestion());
 		this.qBuffer.add(question);
 	}
 	
 	public Question getQuestion() {
+		
+//		for(Question q: qBuffer.getQuestions()) {
+//			System.out.print(q.getQuestion() +":::");
+//		}
+//		System.out.println("////");
 		return this.qBuffer.pop();
 	}
 	

@@ -32,6 +32,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
 			<input class="ana-button" id="home-button" type="button" value="Home" href="partone.html" />
 			<input class="ana-button" id="next-button" type="button" value="Next" href="scenario2.jsp" />
             <input class="ana-button" id="kb-button" type="button" value="KB" />
+            <input class="ana-button" id="help-button" type="button" value="Help" />
             </div>
 
             <div id="mask"><div id="popup">
@@ -76,7 +77,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
                 </form>
             </div>
 
-            <input id="scenario" type="hidden" value="3" />
+            <input id="scenario" type="hidden" value="1" />
             <input id="correct" type="hidden" value="a" />
 		</div>
 	</body>

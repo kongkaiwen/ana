@@ -16,7 +16,7 @@ public class Question {
 	private String obj, atr, question;
 	private Callback callback;
 
-	public Question( StanfordCoreNLP pipeline, String line, int oid, String obj, String atr, String question, String genderortense, Extract function, boolean silence ) throws IOException, JSONException {
+	public Question( StanfordCoreNLP pipeline, String line, int oid, String obj, String atr, String question, String genderortense, Extract function ) throws IOException, JSONException {
 		this.obj = obj;
 		this.atr = atr;
 

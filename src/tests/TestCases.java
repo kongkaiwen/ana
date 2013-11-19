@@ -29,7 +29,7 @@ public class TestCases {
 		bw.write("\n");
 		
 		executeExample( ana, "I just went to lunch with my son.", bw );
-		executeExample( ana, "Nathan.", bw );
+		executeExample( ana, "Yes.", bw );
 		executeExample( ana, "12.", bw );
 		bw.write("\n");
 		

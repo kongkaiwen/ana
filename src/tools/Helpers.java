@@ -62,11 +62,12 @@ public class Helpers {
 	
 	public static String keyWords[] = {"concert", "class", "party", "graduation", "game", "event", "potluck", "gathering",
 		"klatch", "breakfast", "lunch", "dinner", "supper", "barbeque", "gala", "function", "seminar", "yoga", "lecture",
-		"meeting", "date", "trip", "conference", "dance", "shopping", "wedding", "funeral", "appointment"};
+		"meeting", "date", "trip", "conference", "dance", "shopping", "wedding", "funeral", "appointment", "visited", "visiting",
+		"mall", "movie"};
 	
-	// removed 'i' and 'my'
+	// removed 'i' and 'my' and 'me'
 	public static String[] pronouns = {"you", "he", "she", "it", "we", "they", "me", "him",
-		"her", "us", "them", "what", "who", "me", "whom", "mine", "yours", "his", "hers",
+		"her", "us", "them", "what", "who", "whom", "mine", "yours", "his", "hers",
 		"ours", "theirs", "this", "that", "these", "those", "who", "which", "whose", "whoever",
 		"whatever", "whichever", "whomever", "myself", "yourself", " himself", " herself", "itself",
 		"ourselves", "themselves"};
@@ -348,6 +349,23 @@ public class Helpers {
 		}
 		
 		return null;
+	}
+	
+	public static String replaceFamilyTitle( String person, ArrayList<String> tkns, ArrayList<String> pos ) {
+
+		int cindex = 0;
+		for(String p: pos) {
+			cindex = pos.indexOf(p);
+			
+			// for example: my son -> Kevin
+			if (p.equals("PRP$") && pos.get(cindex+1).equals("NN")) {
+				tkns.remove(cindex);
+				tkns.set(cindex, person);
+				break;
+			}
+		}
+		
+		return join(tkns, " ");
 	}
 	
 	public static boolean hasFamilyTitles( ArrayList<String> tkns, ArrayList<String> pos ) {
@@ -871,5 +889,13 @@ public class Helpers {
 		int index = random.nextInt(ummPhrases.length);
 		
 		return ummPhrases[index];
+	}
+	
+	public static String reqPhrase() {
+		String reqPhrases[] = {"Yes I can.", "Sure thing.", "Okie Dokie.", "Right away.", "Sure.", "Ok.", "If I must."};
+		Random random = new Random();
+		int index = random.nextInt(reqPhrases.length);
+		
+		return reqPhrases[index];
 	}
 }
