@@ -3,6 +3,8 @@ package attributes;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import tools.Helpers;
+
 import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.trees.GrammaticalRelation;
 import edu.stanford.nlp.semgraph.*;
@@ -17,7 +19,7 @@ public class AnaProfessionPattern {
 	/*
 	In order to match there must be a person and an organization.  There must also be a keyword.
 	*/
-	public static String match( String line, ArrayList<AnaEntity> ent, ArrayList<String> pos, 
+	public static String match( String line, ArrayList<String> tkns, ArrayList<AnaEntity> ent, ArrayList<String> pos, 
 			SemanticGraph dep, HashMap<String, Integer> ei ) {
 		boolean flag = false;
 		boolean has_per = false;
@@ -38,6 +40,11 @@ public class AnaProfessionPattern {
 				has_org = true;
 				org = ae;
 			}
+		}
+		
+		// jane works at safeway
+		if (has_per && Helpers.join(pos, " ").equals("nn vbz in nn .")) {
+			return per.getId() + "#profession#" + tkns.get(3);
 		}
 		
 		for (String s: keyWords) {

@@ -10,7 +10,7 @@ import answer.Extract;
 import answer.ExtractAge;
 import answer.ExtractDate;
 import answer.ExtractName;
-import answer.ExtractOrganization;
+import answer.ExtractPlace;
 import answer.ExtractTime;
 
 import tools.Helpers;
@@ -126,7 +126,7 @@ public class Person implements Entity {
 		} else if ( attr.equals("name") ) {
 			return new ExtractName();
 		} else if ( attr.equals("education_institute") ) {
-			return new ExtractOrganization();
+			return new ExtractPlace();
 		} else if ( attr.equals("education_degree") ) {
 			
 		} else if ( attr.equals("date_of_birth") ) {
@@ -134,7 +134,7 @@ public class Person implements Entity {
 		} else if ( attr.equals("date_of_death") ) {
 			
 		} else if ( attr.equals("profession_institute") ) {
-			return new ExtractOrganization();
+			return new ExtractPlace();
 		} else if ( attr.equals("profession_position") ) {
 			
 		} else if ( attr.equals("residence") ) {

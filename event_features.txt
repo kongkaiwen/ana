@@ -13,6 +13,7 @@ tomorrow
 next
 I
 The
+tonight
 Friday
 is
 with
@@ -35,8 +36,8 @@ NN
 VB
 VBP
 CC
-NNP
 CD
+NNP
 PRP
 MD
 VBZ

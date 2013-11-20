@@ -11,7 +11,7 @@ import answer.Extract;
 import answer.ExtractAge;
 import answer.ExtractDate;
 import answer.ExtractName;
-import answer.ExtractOrganization;
+import answer.ExtractPlace;
 import answer.ExtractTime;
 
 public class Event implements Entity {
@@ -83,7 +83,7 @@ public class Event implements Entity {
 		} else if ( attr.equals("end") ) {
 			return new ExtractDate();
 		} else if ( attr.equals("where") ) {
-			return new ExtractOrganization();
+			return new ExtractPlace();
 		} else if ( attr.equals("who") ) {
 			return new ExtractName();
 		}

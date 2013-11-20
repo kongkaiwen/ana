@@ -129,11 +129,11 @@ public class KnowledgeBase {
 			addRelation("nephew", 0, 1);
 		}
 
-		// Scenario: Your name is Irene.  An unknown member of your family has visited.  Introduce and describe them. 
+		// Scenario: Your name is Ed.  An unknown member of your family has visited.  Introduce and describe them. 
 		if (scenario == 5) {
-			addPerson("Irene");
+			addPerson("Ed");
 			setSpeaker(0);
-			addDialogue("I am Irene.");
+			addDialogue("I am Ed.");
 		}
 	}	
 	

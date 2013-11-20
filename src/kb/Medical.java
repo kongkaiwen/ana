@@ -10,7 +10,7 @@ import org.json.JSONObject;
 
 import answer.Extract;
 import answer.ExtractName;
-import answer.ExtractOrganization;
+import answer.ExtractPlace;
 import answer.ExtractSymptom;
 import answer.ExtractTime;
 

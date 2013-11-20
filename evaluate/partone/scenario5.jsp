@@ -49,7 +49,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
             <input type="text" id="model-b-input" placeholder="Ask" x-webkit-speech/>
             <input type="button" id="model-b-button" />
 		    
-		    <p align="center" class="scenario"><b>Scenario:</b> Your name is Irene.  An unknown member of your family has visited.  Introduce and describe them.  </p>
+		    <p align="center" class="scenario"><b>Scenario:</b> Your name is Ed.  An unknown member of your family has visited.  Introduce and describe them.  </p>
 			
 		    <div id="model-a">
 		    	<p class="title">Model A <img id="model-a-img" src="" style="width:15px;height:15px;" /></p>

@@ -42,7 +42,7 @@ public class Ana {
 	
 	public static void main(String[] args) throws Exception {
 		Ana ana = new Ana();
-		ana.initKB(4);
+		ana.initKB(1);
 		
 //		System.out.println("response: " + ana.ask("I need to buy a gift for my grandson's birthday party.", false));
 //		System.out.println("response: " + ana.ask("Nathan.", false));
@@ -63,8 +63,10 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("When is my nephew's birthday?", false));
 //		System.out.println("response: " + ana.ask("Yes.", false));
 		
-		System.out.println("response: " + ana.ask("I am Kevin.", false));
-		System.out.println("response: " + ana.ask("Well I'm 25 years old and I am a student at the University of Alberta.", false));
+//		System.out.println("response: " + ana.ask("I am Kevin.", false));
+//		System.out.println("response: " + ana.ask("Well I'm 25 years old and I am a student at the University of Alberta.", false));
+		
+		System.out.println("response: " + ana.ask("I just went to a movie with Wendy.", false));
 		
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
@@ -234,7 +236,7 @@ public class Ana {
 			boolean isGreeting = Helpers.isGreeting(tkns);
 			
 			if (!isGreeting) {
-				String r = "Who are you?";
+				String r =  Helpers.genWhoIs();
 				Question question = new Question(pipeline, line, pid, "person", "name", r, null, new ExtractName() );
 				//knowledge.addQuestion(question);
 				
@@ -242,7 +244,7 @@ public class Ana {
 				knowledge.addCallback(question.getCallback());
 				return r;
 			} else {
-				String r = "Hello! Who are you?";
+				String r = Helpers.genGreeting() + "! " + Helpers.genWhoIs();
 				Question question = new Question(pipeline, line, pid, "person", "name", r, null, new ExtractName() );
 				//knowledge.addQuestion(question);
 				
@@ -280,11 +282,11 @@ public class Ana {
 					potential.add(question);
 				} else {
 					// confirm
-					Question question = new Question(pipeline, line, relPerson.getId(), "person", "which", relPerson.get("name")+"?".replace("<RELATION>", title), relPerson.get("sex"), null );
-					potential.add(question);
-					// ask about attribute
-//					Question question = new Question(pipeline, line, relPerson.getId(), "person", relPerson.getEmptyAttr(), null, relPerson.get("sex"), relPerson.getCallback(relPerson.getEmptyAttr()), false);		
+//					Question question = new Question(pipeline, line, relPerson.getId(), "person", "which", relPerson.get("name")+"?".replace("<RELATION>", title), relPerson.get("sex"), null );
 //					potential.add(question);
+					// ask about attribute
+					Question question = new Question(pipeline, line, relPerson.getId(), "person", relPerson.getEmptyAttr(), null, relPerson.get("sex"), relPerson.getCallback(relPerson.getEmptyAttr()));		
+					potential.add(question);
 				}
 			} else {
 				
@@ -442,7 +444,7 @@ public class Ana {
 			String replace = "";
 			if (knowledge.getSpeaker() != null)
 				replace = knowledge.getSpeaker().get("name");
-			response = "Hello <NAME>.";
+			response = Helpers.genGreeting() + " <NAME>.";
 			response = response.replace("<NAME>", replace);
 			knowledge.addResponse(line, knowledge.getSpeaker().get("name"), response, "greeting");
 			
@@ -526,6 +528,13 @@ public class Ana {
 			*/
 			if (line.toLowerCase().contains("what") && line.contains("your") && line.contains("name")) {
 				return "I'm Ana!";
+			}
+			
+			/*
+			How are you?
+			*/
+			if (line.toLowerCase().contains("how") && line.contains("are") && line.contains("you")) {
+				return "Good!";
 			}
 			
 			/*

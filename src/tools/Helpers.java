@@ -54,7 +54,7 @@ public class Helpers {
 	
 	public static String femaleRegex = "(daughter|mother|grandmother|neice|aunt|wife)";
 	
-	public static String familyTitles[] = {"daughter", "son", "father", "mother", "grandfather", "grandmother", "neice", "nephew", "cousin", "uncle", "aunt", "wife", "husband", "grandson", "granddaughter", "friend", "brother", "sister"};
+	public static String familyTitles[] = {"daughter", "son", "father", "mother", "grandfather", "grandmother", "niece", "nephew", "cousin", "uncle", "aunt", "wife", "husband", "grandson", "granddaughter", "friend", "brother", "sister"};
 	
 	public static String greetingWords[] = {"hello", "hey", "hi", "howdy", "yo"};
 	
@@ -62,8 +62,8 @@ public class Helpers {
 	
 	public static String keyWords[] = {"concert", "class", "party", "graduation", "game", "event", "potluck", "gathering",
 		"klatch", "breakfast", "lunch", "dinner", "supper", "barbeque", "gala", "function", "seminar", "yoga", "lecture",
-		"meeting", "date", "trip", "conference", "dance", "shopping", "wedding", "funeral", "appointment", "visited", "visiting",
-		"mall", "movie"};
+		"meeting", "date", "trip", "conference", "dance", "shopping", "function", "wedding", "funeral", "appointment",
+		"mall", "movie", "visited", "visiting", "bowling", "skiing", "skating", "mahjiang", "cards"};
 	
 	// removed 'i' and 'my' and 'me'
 	public static String[] pronouns = {"you", "he", "she", "it", "we", "they", "me", "him",
@@ -422,6 +422,15 @@ public class Helpers {
 	
 	public static String getEventTense( ArrayList<String> tkns, ArrayList<String> pos ) {
 		
+		
+		for (String t: tkns) {
+			if (t.toLowerCase().equals("yesterday")) {
+				return "past";
+			} else if (t.toLowerCase().equals("tomorrow")) {
+				return "future";
+			}
+		}
+		
 		for (String e: pos) {
 			if (e.toLowerCase().equals("vbd")) {
 				return "past";
@@ -500,6 +509,24 @@ public class Helpers {
 		}
 		
 		return false;
+	}
+	
+	public static String genGreeting() {
+		String phrases[] = {"Hello", "Hey", "Hi", "Hiya"};
+		
+		Random random = new Random();
+		int index = random.nextInt(phrases.length);
+		
+		return phrases[index];
+	}
+	
+	public static String genWhoIs() {
+		String phrases[] = {"Who are you?", "What is your name?"};
+		
+		Random random = new Random();
+		int index = random.nextInt(phrases.length);
+		
+		return phrases[index];
 	}
 	
 	public static boolean isMorning() {

@@ -25,7 +25,7 @@ public class PersonMatcher {
 			triples.add(ageMatch);
 		
 		// profession pattern ( PER works at ORG )
-		String professionMatch = AnaProfessionPattern.match(line, entities, pos, dep, ei);
+		String professionMatch = AnaProfessionPattern.match(line, tkns, entities, pos, dep, ei);
 		if (professionMatch != null)
 			triples.add(professionMatch);
 		
