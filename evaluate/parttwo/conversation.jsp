@@ -48,9 +48,9 @@ if ( request.getSession().getAttribute("eval") != null ) {
             </div>
             <div id="content">
                 <div id="cy"></div>
-                <div id="events-div"><table id="event"></table></div>
-                <div id="daily-div"><table id="daily"></table></div>
-                <div id="medical-div"><table id="medcl"></table></div>
+                <div id="events-div"><p align="center" class="table-title">Events</p><table id="event"></table></div>
+                <div id="daily-div"><p align="center" class="table-title">Daily</p><table id="daily"></table></div>
+                <div id="medical-div"><p align="center" class="table-title">Medical</p><table id="medcl"></table></div>
                 <!--<input id="load" type="button" value="Refresh"/>-->
                 <div id="evaluation">
                     <form id="rating-form">

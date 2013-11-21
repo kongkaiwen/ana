@@ -1,12 +1,12 @@
 <%@ page import="evaluation.Evaluate" %>
 
 <%
-
+/*
 if ( request.getSession().getAttribute("eval") != null ) {
     Evaluate e = (Evaluate)session.getAttribute("eval");
     e.resetKB(1);
 }
-
+*/
 %>
 
 <!DOCTYPE html>
@@ -32,16 +32,15 @@ if ( request.getSession().getAttribute("eval") != null ) {
 			<input class="ana-button" id="home-button" type="button" value="Home" href="partone.html" />
 			<input class="ana-button" id="next-button" type="button" value="Next" href="scenario2.jsp" />
             <input class="ana-button" id="kb-button" type="button" value="KB" />
-            <input class="ana-button" id="help-button" type="button" value="Help" />
             </div>
 
             <div id="mask"><div id="popup">
                 <div id="cy"></div>
                 <input id="load" type="button" value="Refresh"/>
                 <a id="close"><img src="../../images/close.png" /></a>
-                <div id="events-div"><table id="event"></table></div>
-                <div id="daily-div"><table id="daily"></table></div>
-                <div id="medical-div"><table id="medcl"></table></div>
+                <div id="events-div"><p align="center" class="table-title">Events</p><table id="event"></table></div>
+                <div id="daily-div"><p align="center" class="table-title">Daily</p><table id="daily"></table></div>
+                <div id="medical-div"><p align="center" class="table-title">Medical</p><table id="medcl"></table></div>
 		    </div></div>
 
 		    <input type="text" id="model-a-input" placeholder="Ask" x-webkit-speech/>
@@ -50,7 +49,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
             <input type="text" id="model-b-input" placeholder="Ask" x-webkit-speech/>
             <input type="button" id="model-b-button" />
 		    
-		    <p align="center" class="scenario"><b>Scenario:</b> Your name is Irene. The agents know you have two granddaughters named Jana and Wendy. You just spent the day with Jana yesterday.   Discuss what you did with Jana.</p>
+		    <p align="center" class="scenario"><b>Scenario:</b> Your name is Irene. You have two granddaughters named Jana and Wendy. You just spent the day with Jana yesterday.   Discuss what you did with Jana.</p>
 			
 		    <div id="model-a">
 		    	<p class="title">Model A <img id="model-a-img" src="" style="width:15px;height:15px;" /></p>

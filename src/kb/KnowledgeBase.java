@@ -621,21 +621,52 @@ public class KnowledgeBase {
 		//System.out.println("\nlooking for: "+ref);
 		//System.out.println(mentions+"\n");
 		
+//		for(ArrayList<String> resolutions: mentions) {
+//			// check if the ref is in this anaphora set
+//			if ( resolutions.contains(ref)) {
+//				// name is in this set, now check if there is an entity in this set (I, my, Kevin)
+//			    for(String e3: resolutions) {
+//			    	String perName = e3.split(":")[0];
+//				    if (hasPerson(perName)) {
+//					    Person person = getPerson(perName);
+//			    	    return person.getId() + "#" + person.get("name");
+//				    }
+//			    }
+//			}
+//		}
+		
+		// my nephew 's:2:9::He:3:1::he:4:3::
 		for(ArrayList<String> resolutions: mentions) {
 			// check if the ref is in this anaphora set
 			if ( resolutions.contains(ref)) {
 				// name is in this set, now check if there is an entity in this set (I, my, Kevin)
 			    for(String e3: resolutions) {
 			    	String perName = e3.split(":")[0];
+			    	
 				    if (hasPerson(perName)) {
 					    Person person = getPerson(perName);
 			    	    return person.getId() + "#" + person.get("name");
 				    }
+				    
+				    String title = Helpers.containsFamilyTitle(perName);
+				    if ( title != null ) {
+				    	for(Relation r: relations) {
+				    		if (r.getE1() == 0 && r.getType() == title) {
+				    			return r.getE2() + "#" + getPerson(r.getE2());
+				    		}
+				    		
+				    		if (r.getE2() == 0 && r.getType() == title) {
+				    			return r.getE1() + "#" + getPerson(r.getE1());
+				    		}
+				    	}
+				    }
 			    }
 			}
-		  }
-		  return null;
-	  }
+		}
+		
+		
+		return null;
+	}
 	
 	public ArrayList<AnaEntity> disambiguate( ArrayList<String> tkns, ArrayList<Entity> entities, ArrayList<ArrayList<String>> resolutions, int linenum ) throws IOException {
 		
@@ -669,7 +700,7 @@ public class KnowledgeBase {
             	ana_names.add(e.getName());
             	ana_entities.add(ae);
         	} else {
-        		// not person entitiy, don't add to KB
+        		// not person entity, don't add to KB
         		HashMap<String, String> attributes = new HashMap<String, String>();
         		attributes.put("name", e.getName());
             	AnaEntity ae = AnaEntityFactory.createEntity(e.getType(), attributes);

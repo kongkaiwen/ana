@@ -2,24 +2,26 @@ package events;
 
 import java.util.ArrayList;
 
+import relations.Entity;
+
 import kb.Event;
 
 import entities.AnaEntity;
 
 public class EventWhen {
 
-	public static String match( Event event, ArrayList<String> tkns, ArrayList<AnaEntity> ent, ArrayList<String> pos ) {
+	public static String match( Event event, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos ) {
 		
 		boolean flag = false;
 		boolean has_dte = false;
 		boolean has_tme = false;
 		
-		AnaEntity dte = null;
-		AnaEntity tme = null;
+		Entity dte = null;
+		Entity tme = null;
 		
 		String tense = event.get("tense");
 		
-		for (AnaEntity ae: ent) {
+		for (Entity ae: ent) {
 
 			if (ae.getType().equals("DATE") ) {
 				has_dte = true;

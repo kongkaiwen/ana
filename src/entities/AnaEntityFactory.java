@@ -11,7 +11,7 @@ public class AnaEntityFactory {
 	    if (type.equalsIgnoreCase ("ORG")) 
 	        return new AnaOrg(attributes);
 	    if (type.equalsIgnoreCase ("LOC")) 
-	    	return new AnaPer(attributes);
+	    	return new AnaLoc(attributes);
 	    if (type.equalsIgnoreCase ("NUM")) 
 	    	return new AnaNum(attributes);
 	    if (type.equalsIgnoreCase ("DUR")) 

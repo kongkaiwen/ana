@@ -244,64 +244,117 @@ Knowledge Base
 /*********************
 poopup
 **********************/
+
 #events-div {
     height: 200px;
     max-height: 200px;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: absolute;
     top: 0px;
     right: 15px;
 }
 
-#event {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 100%;
+.table-title {
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 16px;
+    margin: 10px;
+    color: #003399;
 }
 
-#event td, th {
-    border: 1px solid black;
-    padding: 10px;
+#event {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-collapse: collapse;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 12px;
+    margin: 20px;
+    margin-top: 5px;
+    text-align: left;
+    width: 95%;
+}
+
+#event td {
+    border-bottom: 1px solid #CCCCCC;
+    color: #666699;
+    padding: 6px 8px;
+}
+
+#event th {
+    border: none;
+    border-bottom: 2px solid #6678B1;
+    color: #003399;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 8px;
 }
 
 #medical-div {
     height: 200px;
     max-height: 200px;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: absolute;
     top: 200px;
     right: 15px;
 }
 
 #medcl {
-    border: 1px solid black;
+    background: none repeat scroll 0 0 #FFFFFF;
     border-collapse: collapse;
-    width: 100%;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 12px;
+    margin: 20px;
+    margin-top: 5px;
+    text-align: left;
+    width: 95%;
 }
 
-#medcl td, th {
-    border: 1px solid black;
-    padding: 10px;
+#medcl td {
+    border-bottom: 1px solid #CCCCCC;
+    color: #666699;
+    padding: 6px 8px;
+}
+
+#medcl th {
+    border: none;
+    border-bottom: 2px solid #6678B1;
+    color: #003399;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 8px;
 }
 
 #daily-div {
 	height: 200px;
     max-height: 200px;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: absolute;
     top: 400px;
     right: 15px;
 }
 
 #daily {
-    border: 1px solid black;
+    background: none repeat scroll 0 0 #FFFFFF;
     border-collapse: collapse;
-    width: 100%;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 12px;
+    margin: 20px;
+    margin-top: 5px;
+    text-align: left;
+    width: 95%;
 }
 
-#daily td, th {
-    border: 1px solid black;
-    padding: 10px;
+#daily td {
+    border-bottom: 1px solid #CCCCCC;
+    color: #666699;
+    padding: 6px 8px;
+}
+
+#daily th {
+    border: none;
+    border-bottom: 2px solid #6678B1;
+    color: #003399;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 8px;
 }
 
 #loading {

@@ -155,6 +155,8 @@ function cap(string) {
 
 function toTable( json ) {
 
+	lookup = {"event": "events", "medcl": "medical issues"};
+
 	for (var obj in json) {
 
 		data = json[obj];
@@ -166,12 +168,17 @@ function toTable( json ) {
 
 	    for(var i=0;i<data.length;i++) {
 	        row = "<tr>";
-	        for(var key in data[i])
-	        	if (data[i][key] === "") 
+	        for(var key in data[i]) {
+                if (data[i][key] === "") 
 	        	    row += "<td>N/A</td>";
                 else
                     row += "<td>" + data[i][key] + "</td>";
+            }
 	        table += row + "</tr>";
+	    }
+
+	    if (table === "<tr></tr>") {
+	    	table = "<tr><td colspan='6'>No "+lookup[obj]+" recorded.</td></tr>";
 	    }
 
 	    $("#"+obj).html(table);

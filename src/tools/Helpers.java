@@ -26,6 +26,8 @@ import attributes.PersonMatcher;
 import config.Settings;
 
 import jnisvmlight.SVMLightModel;
+import kb.KnowledgeBase;
+import kb.Person;
 import kb.Question;
 
 import relations.RelationExtract;
@@ -54,7 +56,7 @@ public class Helpers {
 	
 	public static String femaleRegex = "(daughter|mother|grandmother|neice|aunt|wife)";
 	
-	public static String familyTitles[] = {"daughter", "son", "father", "mother", "grandfather", "grandmother", "niece", "nephew", "cousin", "uncle", "aunt", "wife", "husband", "grandson", "granddaughter", "friend", "brother", "sister"};
+	public static String familyTitles[] = {"daughter", "son", "father", "dad", "mom", "mother", "grandfather", "grandmother", "niece", "nephew", "cousin", "uncle", "aunt", "wife", "husband", "grandson", "granddaughter", "friend", "brother", "sister", "grandma", "grandpa"};
 	
 	public static String greetingWords[] = {"hello", "hey", "hi", "howdy", "yo"};
 	
@@ -65,22 +67,28 @@ public class Helpers {
 		"meeting", "date", "trip", "conference", "dance", "shopping", "function", "wedding", "funeral", "appointment",
 		"mall", "movie", "visited", "visiting", "bowling", "skiing", "skating", "mahjiang", "cards"};
 	
-	// removed 'i' and 'my' and 'me'
+	// removed 'i' and 'my' and 'me' and 'myself'
 	public static String[] pronouns = {"you", "he", "she", "it", "we", "they", "me", "him",
 		"her", "us", "them", "what", "who", "whom", "mine", "yours", "his", "hers",
 		"ours", "theirs", "this", "that", "these", "those", "who", "which", "whose", "whoever",
-		"whatever", "whichever", "whomever", "myself", "yourself", " himself", " herself", "itself",
+		"whatever", "whichever", "whomever", "yourself", " himself", " herself", "itself",
 		"ourselves", "themselves"};
 	
 	public static void main(String args[]) throws IOException, InterruptedException, JSONException, ParseException {
 		System.out.println(ummPhrase());
 		//System.out.println(loadDrugNames());
 		//System.out.println(predictGender("Kevin"));
-//		Properties props = new Properties();
-//		//props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
-//		props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-//		StanfordCoreNLP pipeline = new StanfordCoreNLP( props );
-//		
+		Properties props = new Properties();
+		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
+		//props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+		StanfordCoreNLP pipeline = new StanfordCoreNLP( props );
+		String line = "I went shopping with Jana on Tuesday.";
+		
+		ArrayList<Entity> ents = getYingEntities(pipeline, line);
+		for (Entity e: ents) {
+			System.out.println(e.getName());
+		}
+		
 //		HashMap<String, String> relations = getRelations( pipeline, "She is my sister.",  0 );
 //		for (String k: relations.keySet()) {
 //			System.out.println(k + ": " + relations.get(k));
@@ -243,11 +251,13 @@ public class Helpers {
 	        
 	        // ying's NE, consider multi word entities
 			
+	        int position = 0;
 			String name = "";
 			String lastStanfordType = "O";
 			for(int i=0;i<neList.size();i++) {
 				String ne = neList.get(i);
 				String word = tokenList.get(i);
+				
 				if ( lastStanfordType.equals("O") ) {
 					if(!ne.equals("O")){
 						name = word;
@@ -256,7 +266,7 @@ public class Helpers {
 					if( ne.equals("O") ) {
 						new_entities.add(createEntity(name, lastStanfordType));
 					} else {
-						if( ne.equals(lastStanfordType) ) {
+						if( ne.equals(lastStanfordType) && !word.equals(".") ) {
 							name += " " + word;
 						}
 					}
@@ -267,6 +277,13 @@ public class Helpers {
 					}
 				}
 				lastStanfordType = ne;
+				position++;
+			}
+			// verify mention ending at the last token
+			if(!lastStanfordType.equals("O") && !lastStanfordType.equals(".")){
+				int endEntity = position-1;
+				Entity entity = createEntity(name,  lastStanfordType);
+				new_entities.add(entity);
 			}
 	    }
 	    
@@ -366,6 +383,16 @@ public class Helpers {
 		}
 		
 		return join(tkns, " ");
+	}
+	
+	public static String containsFamilyTitle( String tkn ) {
+		
+		for(String title: familyTitles) {
+			if (tkn.toLowerCase().contains(title))
+				return title;
+		}
+		
+		return null;
 	}
 	
 	public static boolean hasFamilyTitles( ArrayList<String> tkns, ArrayList<String> pos ) {
@@ -507,6 +534,19 @@ public class Helpers {
 				return true;
 			}
 		}
+		
+		return false;
+	}
+	
+	public static boolean isThanks( ArrayList<String> tkns ) {
+		
+		String raw = join(tkns, " ").toLowerCase();
+		
+		if (raw.toLowerCase().contains("thank") && raw.toLowerCase().contains("ana")) 
+			return true;
+		
+		if (raw.toLowerCase().contains("thank") && raw.toLowerCase().contains("you")) 
+			return true;
 		
 		return false;
 	}
@@ -757,6 +797,69 @@ public class Helpers {
 		return question.getString("question");
 	}
 	
+	public static String askQuestion( KnowledgeBase kb, ArrayList<String> tkns, Person person ) throws IOException, JSONException {
+			
+		String line = join(tkns, " ");
+		
+		/*
+		What should I cook?  
+		*/
+		if (line.toLowerCase().contains("what") && line.contains("cook")) {
+			return Helpers.foodSuggestion();
+		}
+		
+		/*
+		What is your name? 
+		*/
+		if (line.toLowerCase().contains("what") && line.contains("your") && line.contains("name")) {
+			return Helpers.introduceAna();
+		}
+		
+		/*
+		How are you?
+		*/
+		if (line.toLowerCase().contains("how") && line.contains("are") && line.contains("you")) {
+			return "Good!";
+		}
+		
+		/*
+		A: Phil is coming here for dinner tomorrow.
+		B: What will you eat?
+		A: I'm not sure.  What does he like?
+		
+		A: Is Kevin's birthday tomorrow? -> When is Kevin's birthday?
+		*/
+		
+		
+		if (line.toLowerCase().contains("what") && line.toLowerCase().contains("buy")) {
+			String answer = kb.get(person.getId(), "person", "likes");
+			String prettyAnswer = person.formulateResponse("likes", answer);
+			
+			kb.addResponse(line, "", prettyAnswer, "answer");
+			return prettyAnswer;
+		}
+		
+		// attr has to be precise
+		String attr = getAttr(tkns);
+		
+		if (attr == null) {
+			kb.addResponse(line, "", "I'm not sure.", "answer");
+			return "I'm not sure.";
+		}
+		
+		String answer = kb.get(person.getId(), "person", attr);
+		if (answer.equals("")) {
+			kb.addResponse(line, "", "I don't know, sorry.", "answer");
+			return "I don't know, sorry.";
+		}
+		
+		String prettyAnswer = person.formulateResponse(attr, answer);
+		
+		// add response
+		kb.addResponse(line, "", prettyAnswer, "answer");
+		return prettyAnswer;
+	}
+	
 	public static String genSilenceQuestion( String attribute ) throws IOException, JSONException {
 		// the input would be [person, age], [person, education_institute], or maybe [event, who]
 		
@@ -801,7 +904,7 @@ public class Helpers {
 	
 	public static String replacePronouns( ArrayList<String> tkns ) {
 
-		String output = "";
+		String output = "";	
 		for(String tkn: tkns) {
 			if (tkn.equals("he")) {
 				output += "she ";
@@ -920,6 +1023,30 @@ public class Helpers {
 	
 	public static String reqPhrase() {
 		String reqPhrases[] = {"Yes I can.", "Sure thing.", "Okie Dokie.", "Right away.", "Sure.", "Ok.", "If I must."};
+		Random random = new Random();
+		int index = random.nextInt(reqPhrases.length);
+		
+		return reqPhrases[index];
+	}
+	
+	public static String foodSuggestion() {
+		String reqPhrases[] = {"How about chicken?", "Fish?", "Beef?", "How about pasta?"};
+		Random random = new Random();
+		int index = random.nextInt(reqPhrases.length);
+		
+		return reqPhrases[index];
+	}
+	
+	public static String introduceAna() {
+		String intro[] = {"I'm Ana.", "Ana.", "My name is Ana.", "Most call me Ana."};
+		Random random = new Random();
+		int index = random.nextInt(intro.length);
+		
+		return intro[index];
+	}
+	
+	public static String noProblem() {
+		String reqPhrases[] = {"You are welcome.", "No problem.", "You're welcome.", "Any time.", "No worries."};
 		Random random = new Random();
 		int index = random.nextInt(reqPhrases.length);
 		

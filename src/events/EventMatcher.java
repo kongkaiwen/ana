@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Properties;
 
+import relations.Entity;
 import tools.Helpers;
 
 import kb.Event;
@@ -19,8 +20,10 @@ import entities.AnaEntity;
 
 public class EventMatcher {
 
-	public static boolean check(Event event, ArrayList<String> tkns, ArrayList<AnaEntity> ent, ArrayList<String> pos, SemanticGraph dep) {
+	public static boolean check(Event event, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos, SemanticGraph dep) {
 
+		EventWhere.match(event, tkns, ent, pos);
+		
 		EventWhen.match(event, tkns, ent, pos);
 		
 		EventWho.match(event, tkns, ent, pos);

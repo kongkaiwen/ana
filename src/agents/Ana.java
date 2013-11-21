@@ -3,6 +3,7 @@ package agents;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 import kb.Callback;
@@ -42,12 +43,13 @@ public class Ana {
 	
 	public static void main(String[] args) throws Exception {
 		Ana ana = new Ana();
-		ana.initKB(1);
+		ana.initKB(4);
 		
 //		System.out.println("response: " + ana.ask("I need to buy a gift for my grandson's birthday party.", false));
 //		System.out.println("response: " + ana.ask("Nathan.", false));
 //		System.out.println("response: " + ana.ask("Saturday.", false));
 //		System.out.println("response: " + ana.ask("He is turning 5.", false));
+		
 //		System.out.println("response: " + ana.ask("I'm going to a concert on Saturday with Jana.", false));
 //		System.out.println("response: " + ana.ask("She is my sister.", false));
 //		System.out.println("response: " + ana.ask("It's at the Shaw Conference.", false));
@@ -66,7 +68,36 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("I am Kevin.", false));
 //		System.out.println("response: " + ana.ask("Well I'm 25 years old and I am a student at the University of Alberta.", false));
 		
-		System.out.println("response: " + ana.ask("I just went to a movie with Wendy.", false));
+//		System.out.println("response: " + ana.ask("Phil is coming over for dinner.", false));
+//		System.out.println("response: " + ana.ask("56.", false));
+//		System.out.println("response: " + ana.ask("He will come at 6pm.", false));
+		
+//		System.out.println("response: " + ana.ask("My name is Kevin.", false));
+//		System.out.println("response: " + ana.ask("I have a brother.", false));
+//		System.out.println("response: " + ana.ask("Nathan.", false));
+//		System.out.println("response: " + ana.ask("My mom's name is Ann.", false));
+//		System.out.println("response: " + ana.ask("My mother.", false));
+//		System.out.println("response: " + ana.ask("She is 60 years old.", false));
+		
+//		System.out.println("response: " + ana.ask("Hello.", false));
+//		System.out.println("response: " + ana.ask("I went shopping with Jana on Tuesday.", false));
+		
+//		System.out.println("response: " + ana.ask("Hello.", false));
+//		System.out.println("response: " + ana.ask("When is my nephew's birthday?", false));
+		
+//		System.out.println("response: " + ana.ask("Hello.", false));
+//		System.out.println("response: " + ana.ask("When is my nephew's birthday?", false));
+//		System.out.println("response: " + ana.ask("His party is this week.", false));
+//		System.out.println("response: " + ana.ask("Just myself.", false));
+		
+//		System.out.println("response: " + ana.ask("Hello", false));
+//		System.out.println("response: " + ana.ask("My father is here.", false));
+//		System.out.println("response: " + ana.ask("Phil.", false));
+//		System.out.println("response: " + ana.ask("He just came from Boston.", false));
+		
+//		System.out.println("response: " + ana.ask("I need to buy a gift for my nephew's birthday.", false));
+//		System.out.println("response: " + ana.ask("He is turning 5.", false));
+//		System.out.println("response: " + ana.ask("What does he like?", false));
 		
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
@@ -106,7 +137,6 @@ public class Ana {
 		
 		// is the utterance a statement, request, or question
 		double function = Helpers.sentenceFunction( pipeline, line );
-		//System.out.println(function);
 		
 		// pronoun resolution
   		ArrayList<ArrayList<String>> resolutions = Helpers.pronounResolution(pipeline, line, knowledge.getDialogue());
@@ -210,9 +240,9 @@ public class Ana {
   					}
   				} else {
   					// may have changed subject
-  					String umm = Helpers.ummPhrase();
-  	  				knowledge.addResponse(line, "", umm, "umm");
-  	  				return umm;
+//  					String umm = Helpers.ummPhrase();
+//  	  				knowledge.addResponse(line, "", umm, "umm");
+//  	  				return umm;
   				}
   			}
   		}
@@ -234,6 +264,13 @@ public class Ana {
 			
 			int pid = knowledge.addPerson();
 			boolean isGreeting = Helpers.isGreeting(tkns);
+			
+			// check if line contains an intro (i am kevin, my name is kevin, etc)
+			if ( (line.toLowerCase().contains("i am") || line.toLowerCase().contains("my name is")) && newperson ) {
+				knowledge.update(pid, "person", "name", newpersonname);
+				knowledge.setSpeaker(pid);
+				return "Nice to meet you!";
+			}
 			
 			if (!isGreeting) {
 				String r =  Helpers.genWhoIs();
@@ -281,12 +318,26 @@ public class Ana {
 					Question question = new Question(pipeline, line, relPerson.getId(), "person", "which", "Which <RELATION>?".replace("<RELATION>", title), relPerson.get("sex"), null );
 					potential.add(question);
 				} else {
-					// confirm
+					// confirm or assume
+					
 //					Question question = new Question(pipeline, line, relPerson.getId(), "person", "which", relPerson.get("name")+"?".replace("<RELATION>", title), relPerson.get("sex"), null );
 //					potential.add(question);
-					// ask about attribute
-					Question question = new Question(pipeline, line, relPerson.getId(), "person", relPerson.getEmptyAttr(), null, relPerson.get("sex"), relPerson.getCallback(relPerson.getEmptyAttr()));		
-					potential.add(question);
+					
+					if (function == 0.0) {
+						// ask about attribute
+						Question question = new Question(pipeline, line, relPerson.getId(), "person", relPerson.getEmptyAttr(), null, relPerson.get("sex"), relPerson.getCallback(relPerson.getEmptyAttr()));		
+						potential.add(question);
+					}
+
+					if (function == 1.0) {
+						String rsp = Helpers.askQuestion(knowledge, tkns, relPerson);
+						return rsp;
+					}
+					
+					if (function == 2.0) {
+						
+					}
+					
 				}
 			} else {
 				
@@ -294,32 +345,46 @@ public class Ana {
 				
 				// check if the title is linked with a name
 				boolean has_link = false;
+				String person_name = "";
 				for(Entity e: entitiesInText) {
 					if (e.getType().equals("PER")) {
 						if (apg.hasLink(title, e.getName())) {
 							has_link = true;
+							person_name = e.getName();
+						} else if ( (line.contains("name")) && (apg.hasLink(title, "name")) && (apg.hasLink("name", e.getName())) ) {
+							has_link = true;
+							person_name = e.getName();
 						}
 					}
 				}
 				
 				// if title is not linked to a person, add the person
 				if (!has_link) {
+					// My mother is Ann.
 					pid = knowledge.addPerson();
 					if (Helpers.isFemaleTitle(title))
 						knowledge.updatePerson(pid, "sex", "female");
 					
 					Person p = knowledge.getPerson(pid);
 					
-					// add the relation
-					knowledge.addRelation(title, focus.getId(), pid);
-					
-					// add the potential question
-					Question question = new Question(pipeline, line, pid, "person", p.getEmptyAttr(), null, p.get("sex"), p.getCallback(p.getEmptyAttr()) );
-					potential.add(question);
+					if (p != null) {
+						// add the relation
+						knowledge.addRelation(title, focus.getId(), pid);
+						
+						// add the potential question
+						Question question = new Question(pipeline, line, pid, "person", p.getEmptyAttr(), null, p.get("sex"), p.getCallback(p.getEmptyAttr()) );
+						potential.add(question);
+					}
 				}
 			}
 		}
 		
+		for(ArrayList<String> r: resolutions) {
+			for(String rr: r) {
+				System.out.print(rr +"::");
+			}
+			System.out.println();
+		}
   		// disambiguation entities ( add the entities from the KB that represent those found in text )
 		ArrayList<AnaEntity> entitiesInKB = knowledge.disambiguate( tkns, entitiesInText, resolutions, linenum );
 		
@@ -327,7 +392,12 @@ public class Ana {
 		ArrayList<Person> peopleInKB = new ArrayList<Person>();
 		for(AnaEntity ae: entitiesInKB) {
 			if (ae.getType().equals("PER")) {
-				peopleInKB.add(knowledge.getPerson(Integer.parseInt(ae.getId())));
+				Person newp = knowledge.getPerson(Integer.parseInt(ae.getId()));
+				if (newp == null) {
+					System.out.println("null added1");
+					System.out.println(ae.getName() + ":" + ae.getId()	);
+				}
+				peopleInKB.add(newp);
 			}
 		}
 		
@@ -341,6 +411,7 @@ public class Ana {
 		if ((peopleInKB.size() == 0 && line.toLowerCase().startsWith("i ")) || (peopleInKB.size() == 0 && (line.toLowerCase().contains("i am") || line.toLowerCase().contains("i'm"))) ) {
 			// add speaker
 			Person pp = knowledge.getSpeaker();
+			if (pp == null) System.out.println("null added2");
 			peopleInKB.add(pp);
 			
 			HashMap<String, String> attr = new HashMap<String, String>();
@@ -386,7 +457,7 @@ public class Ana {
 				e.update("tense", Helpers.getEventTense(tkns, pos));
 				
 				// extract event attributes
-				boolean updated = EventMatcher.check(e, tkns, entitiesInKB, pos, dependencies);
+				boolean updated = EventMatcher.check(e, tkns, entitiesInText, pos, dependencies);
 			}
 		}
 		
@@ -427,8 +498,8 @@ public class Ana {
 		}
 		
 		// is the input a thanks?
-		if ( Helpers.isGreeting(tkns) ) {
-			
+		if ( Helpers.isThanks(tkns) ) {
+			return Helpers.noProblem();
 		}
 		
 		// is the input a greeting?
@@ -484,12 +555,20 @@ public class Ana {
 			
 			// which attribute to ask about? get the first person?
 			if (askq) {
+				
+				System.out.println("peopleInKB: ");
+				for(Person p: peopleInKB) {
+					System.out.println(p.getId());
+				}
+						
 				// get first person in line
-				Person target = knowledge.getPerson(people.get(0));
+				Person target = knowledge.getPerson(peopleInKB.get(0).get("name"));
 
-				// add potential question
-				Question question = new Question(pipeline, line, target.getId(), "person", target.getEmptyAttr(), null, target.get("sex"), target.getCallback(target.getEmptyAttr()) );
-				potential.add(question);
+				if (target != null) {
+					// add potential question
+					Question question = new Question(pipeline, line, target.getId(), "person", target.getEmptyAttr(), null, target.get("sex"), target.getCallback(target.getEmptyAttr()) );
+					potential.add(question);
+				}
 			}
 		}
 		
@@ -512,22 +591,25 @@ public class Ana {
 			
 			return Helpers.reqPhrase();
 		}
-  		
-  		// if question -> attempt to answer
+		
+		
+		// if question -> attempt to answer
 		if ( function == 1.0 ) {
+			
+			System.out.println("question");
 			
 			/*
 			What should I cook?  
 			*/
 			if (line.toLowerCase().contains("what") && line.contains("cook")) {
-				return "How about chicken?";
+				return Helpers.foodSuggestion();
 			}
 			
 			/*
 			What is your name? 
 			*/
 			if (line.toLowerCase().contains("what") && line.contains("your") && line.contains("name")) {
-				return "I'm Ana!";
+				return Helpers.introduceAna();
 			}
 			
 			/*
@@ -546,6 +628,7 @@ public class Ana {
 			*/
 			
 			if (peopleInKB.size() > 0) { 
+				System.out.println("question AND at least one person");
 				// assume question is about person in KB
 				
 				if (line.toLowerCase().contains("what") && line.toLowerCase().contains("buy")) {

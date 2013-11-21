@@ -194,6 +194,8 @@ function popup( e ) {
 
 function toTable( json ) {
 
+	lookup = {"event": "events", "medcl": "medical issues"};
+
 	for (var obj in json) {
 
 		data = json[obj];
@@ -212,6 +214,10 @@ function toTable( json ) {
                     row += "<td>" + data[i][key] + "</td>";
             }
 	        table += row + "</tr>";
+	    }
+
+	    if (table === "<tr></tr>") {
+	    	table = "<tr><td colspan='6'>No "+lookup[obj]+" recorded.</td></tr>";
 	    }
 
 	    $("#"+obj).html(table);

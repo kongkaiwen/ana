@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import kb.Event;
 
+import relations.Entity;
 import tools.Helpers;
 
 import entities.AnaEntity;
@@ -15,7 +16,7 @@ public class EventWho {
 	I went to lunch with Sarah.
 	I need to take my girlfriend on a picnic soon.
 	*/
-	public static String match( Event event, ArrayList<String> tkns, ArrayList<AnaEntity> ent, ArrayList<String> pos ) {
+	public static String match( Event event, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos ) {
 		
 		boolean flag = false;
 		boolean has_wrd = false;
@@ -25,9 +26,9 @@ public class EventWho {
 		
 		String words[] = {"with", "together", "take"};
 		
-		AnaEntity per = null;
+		Entity per = null;
 		
-		for (AnaEntity ae: ent) {
+		for (Entity ae: ent) {
 			if (ae.getType().equals("PER") ) {
 				has_per = true;
 				per = ae;

@@ -51,6 +51,10 @@ public class AnaAgePattern {
 			if (prt.toLowerCase().equals("cd")) {
 				has_num = true;
 				cd = tkns.get(pos.indexOf(prt));
+				
+				if (cd.contains("am") || cd.contains("pm")) {
+					cd = null;
+				}
 			}
 		}
 		

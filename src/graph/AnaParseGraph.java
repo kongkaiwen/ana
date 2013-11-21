@@ -61,15 +61,18 @@ public class AnaParseGraph {
 			
 			//System.out.println(dep.getWord() + "(" + dep.getNer() + ")" + " " + link + " " + "(" + gov.getNer() + ")" +  gov.getWord());
 			
-			if (dep.getWord().equals(person) && gov.getWord().equals(node)) {
+			if (dep.getWord().toLowerCase().equals(person.toLowerCase()) && gov.getWord().toLowerCase().equals(node.toLowerCase())) {
+				//System.out.println("has link(" + node + ", " + person + "): true");
 				return true;
 			}
 			
-			if (dep.getWord().equals(node) && gov.getWord().equals(person)) {
+			if (dep.getWord().toLowerCase().equals(node.toLowerCase()) && gov.getWord().toLowerCase().equals(person.toLowerCase())) {
+				//System.out.println("has link(" + node + ", " + person + "): true");
 				return true;
 			}
 		}
 		
+		//System.out.println("has link(" + node + ", " + person + "): false");
 		return false;
 	}
 	
