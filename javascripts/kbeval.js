@@ -89,7 +89,9 @@ function init() {
 		button = document.getElementById("kb-dialogue-button");
 		button.style.top = "150px";
 		//button.style.left = (window.innerWidth/2) - (500/2) + (input.offsetWidth) + "px";
-		//button.addEventListener("click", model_a_function, false);
+		button.addEventListener("click", function(e) {
+			addText(e, $("#kb-dialogue-input").val(), "../server.jsp");
+		}, false);
 
 		initGraph();
 
@@ -108,15 +110,15 @@ function sendRating() {
 
 	missing_txt = $("#missing_txt").val();
 	incorrect_txt = $("#incorrect_txt").val();
+	conversation = $("#kb-dialogue-body").text();
 
 	// {"missing": {"boolean": true, "text": text}, "incorrect": {"boolean": true, "text": text}}
-		
+
 	$.ajax({
 		url: "../db.jsp",
-		data: "type=kbeval&missing="+checked1+"&incorrect="+checked2+"&missing_text="+missing_txt+"&incorrect_text="+incorrect_txt,
+		data: "type=kbeval&missing="+checked1+"&incorrect="+checked2+"&missing_text="+missing_txt+"&incorrect_text="+incorrect_txt+"&conv="+conversation,
 		success: function(data) {
-			//var json = JSON.parse(data);
-			alert(data);
+			alert("Success!");
 		}
 	});
 }

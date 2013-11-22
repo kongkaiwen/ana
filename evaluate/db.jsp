@@ -21,7 +21,9 @@ if ( type.equals("chat") ) {
 	String incorrect = request.getParameter("incorrect");
 	String incorrect_text = request.getParameter("incorrect_text");
 
-	db.insertKB( missing, missing_text, incorrect, incorrect_text );
+	String conv = request.getParameter("conv");
+
+	db.insertKB( missing, missing_text, incorrect, incorrect_text, conv );
 }
 
 db.close();

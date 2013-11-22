@@ -11,8 +11,8 @@ public class DataBase {
 	
 	public static void main(String args[]) throws ClassNotFoundException, SQLException {
 		DataBase db = new DataBase();
-		db.insertChat("a", "herrrrrro", "a");
-		//db.insertKB("yes", "herrrrrro", "no", "hhh");
+		//db.insertChat("a", "herrrrrro", "a");
+		db.insertKB("yes", "herrrrrro", "no", "hhh", "ffff");
 		db.close();
 	}
 	
@@ -29,10 +29,10 @@ public class DataBase {
 		stmt.executeUpdate("insert into chat (Model, Description, Correct) values ('"+model+"', '"+desc+"', '"+corr+"')");
 	}
 	
-	public void insertKB( String miss, String miss_text, String incorr, String incorr_text ) throws SQLException {
+	public void insertKB( String miss, String miss_text, String incorr, String incorr_text, String conv ) throws SQLException {
 		int miss_val = (miss.equals("yes")) ? 1 : 0;
 		int inco_val = (incorr.equals("yes")) ? 1 : 0;
-		stmt.executeUpdate("insert into kbeval (Missing, MissingTXT, Incorrect, IncorrectTXT) values ('"+miss_val+"', '"+miss_text+"', '"+inco_val+"', '"+incorr_text+"')");
+		stmt.executeUpdate("insert into kbeval (Missing, MissingTXT, Incorrect, IncorrectTXT, Conversation) values ('"+miss_val+"', '"+miss_text+"', '"+inco_val+"', '"+incorr_text+"', '"+conv+"')");
 	}
 	
 	public void close() throws SQLException {

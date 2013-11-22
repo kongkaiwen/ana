@@ -22,5 +22,6 @@ CREATE TABLE kbeval (
 	MissingTXT text,
 	Incorrect tinyint(1),
 	IncorrectTXT text,
+	Conversation text,
 	PRIMARY KEY (ID)
 );
