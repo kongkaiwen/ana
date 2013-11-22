@@ -2,19 +2,22 @@ function init() {
 
 	if (document.contains(document.getElementById("home-button"))) {
 		home = document.getElementById("home-button");
-		next = document.getElementById("next-button");
 		home.addEventListener("click", send, false);
-		next.addEventListener("click", send, false);
 	}
 
 	if (document.contains(document.getElementById("kb-dialogue"))) {
 
-		$("#loading").css("width", window.innerWidth);
-		$("#loading").css("height", window.innerHeight);
+		loffset = 400;
+		lw = window.innerWidth - loffset;
+		lh = window.innerHeight;
+		
+		$("#loading").css("width", lw);
+		$("#loading").css("height", lh);
 		$("#loading").css("display", "block");
+		$("#loading").css("left", loffset + "px");
 
-		$("#loading-gif").css("left", (window.innerWidth/2 - document.getElementById("loading-gif").offsetWidth/2)  + "px");
-		$("#loading-gif").css("top", (window.innerHeight/2 - document.getElementById("loading-gif").offsetHeight/2)  + "px");
+		$("#loading-gif").css("left", (lw/2 - document.getElementById("loading-gif").offsetWidth/2)  + "px");
+		$("#loading-gif").css("top", (lh/2 - document.getElementById("loading-gif").offsetHeight/2)  + "px");
 
 		$.ajax({
 			url: "../load.jsp",
@@ -127,25 +130,28 @@ function prettyText( txt, who, cls ) {
 }
 
 function addText( e, text, server ) {
-
+	
 	if (e == null || e.type == "click" || e.keyCode == 13) {
+
+		toggleLoading();
 
 		if (text != "silence")
 			$("#kb-dialogue-body").prepend(prettyText(text, "You", "even"));
 
-		$("#ana-img").attr("src", "../images/loading.gif");
+		$("#ana-img").attr("src", "../../images/loading.gif");
 
 		$.ajax({
 			url: server,
 			data: "a=" + text + "&scenario=1",
 			success: function(data) {
 				$("#kb-dialogue-body").prepend(prettyText(data, "Ana", "odd"));
+				loadKB();
+				$("#ana-img").attr("src", "");
+				toggleLoading();
 			}
 		});
 		
-		$("#ana-img").attr("src", "");
 		$("#kb-dialogue-input").val("");
-		loadKB();
 	}
 }
 
@@ -155,7 +161,7 @@ function cap(string) {
 
 function toTable( json ) {
 
-	lookup = {"event": "events", "medcl": "medical issues"};
+	lookup = {"event": "events", "medcl": "medical issues", "daily": "requests"};
 
 	for (var obj in json) {
 
@@ -183,6 +189,15 @@ function toTable( json ) {
 
 	    $("#"+obj).html(table);
 	}	
+}
+
+function toggleLoading() {
+
+	display = $("#loading").css("display");
+	if (display == "block")
+		$("#loading").css("display", "none");
+	else 
+		$("#loading").css("display", "block");
 }
 
 function loadKB() {

@@ -62,6 +62,9 @@ public class Helpers {
 	
 	public static String greetingPhrases[] = {"hello", "hey", "hi", "good morning", "whats up", "how are you"};
 	
+	// could be call doctor, reminder, scheduling, call family member, etc
+	public static String requestPhrases[] = {"call", "remind", "schedule", "arrange", "find", "open", "ask", "tell"};
+	
 	public static String keyWords[] = {"concert", "class", "party", "graduation", "game", "event", "potluck", "gathering",
 		"klatch", "breakfast", "lunch", "dinner", "supper", "barbeque", "gala", "function", "seminar", "yoga", "lecture",
 		"meeting", "date", "trip", "conference", "dance", "shopping", "function", "wedding", "funeral", "appointment",
@@ -1019,6 +1022,16 @@ public class Helpers {
 		int index = random.nextInt(ummPhrases.length);
 		
 		return ummPhrases[index];
+	}
+	
+	public static String getReqPhrase( String line ) {
+		
+		for(String s: requestPhrases) {
+			if (line.toLowerCase().contains(s))
+				return s;
+		}
+		
+		return null;
 	}
 	
 	public static String reqPhrase() {

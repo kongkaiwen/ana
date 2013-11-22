@@ -29,33 +29,14 @@ public class EventWhere {
 				name = e.getName();
 		}
 		
-		// if no org, extract the NNP
-		if (name.equals("")) {
-			for(String prt: pos) {
-				int index = pos.indexOf(prt);
-				if (prt.toLowerCase().equals("nnp")) {
-					if (index+1 < pos.size()) {
-						if (pos.get(index+1).toLowerCase().equals("nnp")) {
-							nnp = tkns.get(index) + " " + tkns.get(index+1);
-							break;
-						}
-						nnp = tkns.get(index);
-					}
-				}
-			}
-		}
-		
-		if (!nnp.equals(""))
-			event.update("where", nnp);
-		
 		if (!name.equals(""))
 			event.update("where", name);
 		
-		if (!nnp.equals(""))
-			found = true;
-		
 		if (!name.equals(""))
 			found = true;
+		
+		if (found)
+			System.out.println("EventWhere");
 		
 		return null;
 	}

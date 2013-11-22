@@ -1,12 +1,12 @@
 <%@ page import="evaluation.Evaluate" %>
 
 <%
-/*
+
 if ( request.getSession().getAttribute("eval") != null ) {
     Evaluate e = (Evaluate)session.getAttribute("eval");
     e.resetKB(1);
 }
-*/
+
 %>
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
                 <input id="load" type="button" value="Refresh"/>
                 <a id="close"><img src="../../images/close.png" /></a>
                 <div id="events-div"><p align="center" class="table-title">Events</p><table id="event"></table></div>
-                <div id="daily-div"><p align="center" class="table-title">Daily</p><table id="daily"></table></div>
+                <div id="daily-div"><p align="center" class="table-title">Requests</p><table id="daily"></table></div>
                 <div id="medical-div"><p align="center" class="table-title">Medical</p><table id="medcl"></table></div>
 		    </div></div>
 

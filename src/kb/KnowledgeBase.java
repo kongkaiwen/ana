@@ -14,6 +14,7 @@ import org.json.JSONObject;
 
 import relations.Entity;
 import tools.Helpers;
+import edu.stanford.nlp.util.StringUtils;
 import entities.AnaEntity;
 import entities.AnaEntityFactory;
 
@@ -94,6 +95,8 @@ public class KnowledgeBase {
 			setSpeaker(0);
 			addDialogue("I am Irene.");
 			addPerson("Jana");
+			updatePerson("Jana", "age", "25");
+			updatePerson("Jana", "likes", "pasta, basketball");
 			addPerson("Wendy");
 			addRelation("granddaughter", 0, 1);
 			addRelation("granddaughter", 0, 2);
@@ -106,6 +109,7 @@ public class KnowledgeBase {
 			addDialogue("I am Irene.");
 			addPerson("Phil");
 			updatePerson("Phil", "likes", "fish, pasta");
+			updatePerson("Phil", "dislikes", "pork, swimming");
 			addPerson("David");
 			addPerson("Al");
 			addRelation("son", 0, 1);
@@ -208,7 +212,10 @@ public class KnowledgeBase {
 		for (Medical m: medicals)
 			medcl.put(m.toTableJSON());
 		
-		daily.put(getDaily().toTableJSON());
+		for (Request r: requests)
+			daily.put(r.toTableJSON());
+		
+		//daily.put(getDaily().toTableJSON());
 		
 		obj.put("event", evnts);
 		obj.put("medcl", medcl);
@@ -247,6 +254,10 @@ public class KnowledgeBase {
 	
 	public void delBuffer() {
 		this.cBuffer = new CallbackBuffer();
+	}
+	
+	public void clnBuffer() {
+		this.qBuffer = new QuestionBuffer();
 	}
 	
 	public void update( int oid, String object, String attr, String value ) throws IOException {
@@ -320,6 +331,34 @@ public class KnowledgeBase {
 		for(Person p: this.people) {
 			if (p.getId() == id)
 				return p;
+		}
+		
+		return null;
+	}
+	
+	public int addRequest( String name ) throws IOException {
+		
+		Request request = new Request(num_requests);
+		num_requests++;
+		
+		request.update("name", name);
+		
+		// does this person already exist?
+		this.requests.add(request);
+		
+		return request.getId();
+	}
+	
+	public void updateRequest( int id, String attr, String value ) throws IOException {
+		Request r = getRequest(id);
+		r.update(attr,value);
+	}
+	
+	public Request getRequest( int id ) {
+		
+		for(Request r: this.requests) {
+			if (r.getId() == id)
+				return r;
 		}
 		
 		return null;
@@ -412,7 +451,10 @@ public class KnowledgeBase {
 	}
 	
 	public void addRelation( String rel, int n1, int n2 ) {
-
+		
+		if (n1 == n2) 
+			return;
+		
 		if (hasRelation(n1,n2,rel))
 			return;
 		
@@ -458,6 +500,10 @@ public class KnowledgeBase {
 //		}
 //		System.out.println("////");
 		return this.qBuffer.pop();
+	}
+	
+	public int getNumQuestions() {
+		return this.qBuffer.questions.size();
 	}
 	
 	public void addCallback( Callback callback ) {
@@ -618,6 +664,8 @@ public class KnowledgeBase {
 		// ref: He:2:0
 		// mentions: [ [Phil, my father, He], [my], [Kevin, his son, his] ]
 		String ref = name+":"+linenum+":"+offset;
+		String capref = StringUtils.capitalize(name+":"+linenum+":"+offset);
+		
 		//System.out.println("\nlooking for: "+ref);
 		//System.out.println(mentions+"\n");
 		
@@ -638,7 +686,7 @@ public class KnowledgeBase {
 		// my nephew 's:2:9::He:3:1::he:4:3::
 		for(ArrayList<String> resolutions: mentions) {
 			// check if the ref is in this anaphora set
-			if ( resolutions.contains(ref)) {
+			if ( resolutions.contains(ref) || resolutions.contains(capref)) {
 				// name is in this set, now check if there is an entity in this set (I, my, Kevin)
 			    for(String e3: resolutions) {
 			    	String perName = e3.split(":")[0];
@@ -736,7 +784,7 @@ public class KnowledgeBase {
 		return ana_entities;
 	}
 	
-	public void disambiguate( ArrayList<ArrayList<String>> entities, HashMap<String, String> relations ) {
+	public void disambiguate( ArrayList<String> tkns, ArrayList<String> pos, ArrayList<ArrayList<String>> entities, HashMap<String, String> relations ) {
 		
 		// relations: key(Phil:0:0;my:2:2), val(famy)
 		if ( relations != null ) {
@@ -755,9 +803,9 @@ public class KnowledgeBase {
 				
 				// replace1 & replace2 are: id#name
 				String replace1 = correctEntity(entity1, offset1, tmp1[2], entities);
-				//System.out.println(entity1 + " " + replace1);
+				//System.out.println("replace: " + entity1 + " " + replace1);
 				String replace2 = correctEntity(entity2, offset2, tmp1[2], entities);
-				//System.out.println(entity2 + " " + replace2);
+				//System.out.println("replace: " + entity2 + " " + replace2);
 				
 				// couldn't match the string to an entity in KB
 				if (replace1 == null || replace2 == null)
@@ -768,8 +816,14 @@ public class KnowledgeBase {
 				
 				// check if relation exists
 				boolean hasrelation = hasRelation(Integer.parseInt(r1id), Integer.parseInt(r2id));
-				if (!hasrelation)
-					addRelation(relation, Integer.parseInt(r1id), Integer.parseInt(r2id));
+				if (!hasrelation) {
+					// should check how many titles
+					String title = Helpers.getFamilyTitle(tkns, pos);
+					if (title == null) 
+						addRelation(relation, Integer.parseInt(r1id), Integer.parseInt(r2id));
+					else
+						addRelation(title, Integer.parseInt(r1id), Integer.parseInt(r2id));
+				}
 			}
 		}
 	}

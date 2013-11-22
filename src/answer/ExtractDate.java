@@ -16,7 +16,6 @@ public class ExtractDate implements Extract {
 		
 		// get person from userResponse
 		for(Entity e: ent) {
-			System.out.println(e.getType());
 			if (e.getType().equals("DATE"))
 				date = e.getName();
 			if (e.getType().equals("TIME"))

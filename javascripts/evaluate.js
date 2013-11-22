@@ -194,7 +194,7 @@ function popup( e ) {
 
 function toTable( json ) {
 
-	lookup = {"event": "events", "medcl": "medical issues"};
+	lookup = {"event": "events", "medcl": "medical issues", "daily": "requests"};
 
 	for (var obj in json) {
 
@@ -286,8 +286,6 @@ function toggleLoading() {
 		$("#loading").css("display", "none");
 	else 
 		$("#loading").css("display", "block");
-
-	
 }
 		
 		

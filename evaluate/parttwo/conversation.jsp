@@ -4,7 +4,7 @@
 
 if ( request.getSession().getAttribute("eval") != null ) {
     Evaluate e = (Evaluate)session.getAttribute("eval");
-    e.resetKB(1);
+    e.resetKB(3);
 }
 
 %>
@@ -31,7 +31,6 @@ if ( request.getSession().getAttribute("eval") != null ) {
 
                 <div id="buttons">
                     <input class="ana-button" id="home-button" type="button" value="Home" href="parttwo.html" />
-                    <input class="ana-button" id="next-button" type="button" value="Next" href="scenario2.jsp" />
                 </div>
 
                 <div id="kb-desc">
@@ -49,7 +48,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
             <div id="content">
                 <div id="cy"></div>
                 <div id="events-div"><p align="center" class="table-title">Events</p><table id="event"></table></div>
-                <div id="daily-div"><p align="center" class="table-title">Daily</p><table id="daily"></table></div>
+                <div id="daily-div"><p align="center" class="table-title">Requests</p><table id="daily"></table></div>
                 <div id="medical-div"><p align="center" class="table-title">Medical</p><table id="medcl"></table></div>
                 <!--<input id="load" type="button" value="Refresh"/>-->
                 <div id="evaluation">
@@ -71,6 +70,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
                     </form>
                 </div>
             </div>
+            <input id="scenario" type="hidden" value="3" />
         </div>
     </body>
 </html>
