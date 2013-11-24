@@ -465,7 +465,7 @@ public class Helpers {
 			if (e.toLowerCase().equals("vbd")) {
 				return "past";
 			} else if (e.toLowerCase().equals("vbg")) {
-				return "present";
+				return "future";
 			} else if (e.toLowerCase().equals("vb")) {
 				return "future";
 			}

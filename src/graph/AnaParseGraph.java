@@ -50,6 +50,7 @@ public class AnaParseGraph {
 		
 		// find the correct node
 		for(Integer k: edges.keySet()) {
+			
 			AnaEdge ae = edges.get(k);
 			
 			int di = ae.getDep();

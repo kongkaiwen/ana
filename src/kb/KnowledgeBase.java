@@ -144,6 +144,7 @@ public class KnowledgeBase {
 	public void resetKB( int scenario ) throws IOException {
 		this.num_events = 0;
 		this.num_dailies = 0;
+		this.num_requests = 0;
 		this.num_medicals = 0;
 		this.num_entities = 0;
 		this.num_relations = 0;
@@ -155,6 +156,7 @@ public class KnowledgeBase {
 		this.events = new ArrayList<Event>();
 		this.medicals = new ArrayList<Medical>();
 		this.responses = new ArrayList<Response>();
+		this.requests = new ArrayList<Request>();
 		
 		this.dailies = new HashMap<String, Daily>();
 		

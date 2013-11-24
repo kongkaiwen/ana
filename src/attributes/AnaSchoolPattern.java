@@ -11,7 +11,7 @@ import graph.AnaParseGraph;
 public class AnaSchoolPattern {
 	
 	private static String keyWords[] = {"school", "university", "institute", "college"};
-	private static String verbs[] = {"attend", "go to", "enrolled"};
+	private static String verbs[] = {"attend", "go to", "enrolled", "studies"};
 
 	/*
 	In order to match there must be a person and an organization.  There must also be a keyword.

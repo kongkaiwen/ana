@@ -43,7 +43,7 @@ public class Ana {
 	
 	public static void main(String[] args) throws Exception {
 		Ana ana = new Ana();
-		ana.initKB(1);
+		ana.initKB(2);
 		
 //		System.out.println("response: " + ana.ask("I need to buy a gift for my grandson's birthday party.", false));
 //		System.out.println("response: " + ana.ask("Nathan.", false));
@@ -103,10 +103,15 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("I am Kevin.", false));
 //		System.out.println("response: " + ana.ask("My nephew's name is Jacob.", false));
 		
-		System.out.println("response: " + ana.ask("I had lunch with my granddaughter.", false));
-		System.out.println("response: " + ana.ask("Jana.", false));
-		System.out.println("response: " + ana.ask("We ate at 11am yesterday.", false));
-		System.out.println("response: " + ana.ask("Olive Garden.", false));
+//		System.out.println("response: " + ana.ask("I had lunch with my granddaughter.", false));
+//		System.out.println("response: " + ana.ask("Jana.", false));
+//		System.out.println("response: " + ana.ask("We ate at 11am yesterday.", false));
+//		System.out.println("response: " + ana.ask("Olive Garden.", false));
+		
+		System.out.println("response: " + ana.ask("My son is coming over for dinner.", false));
+		System.out.println("response: " + ana.ask("Phil.", false));
+		System.out.println("response: " + ana.ask("He is 50.", false));
+		System.out.println("response: " + ana.ask("Tomorrow night.", false));
 		
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
@@ -231,7 +236,6 @@ public class Ana {
   					Question question = knowledge.getQuestion();
 
   					if (question != null) {
-
   						// found answer, and question in buffer
   						knowledge.addResponse(line, "", question.getQuestion(), "question");
   						knowledge.addCallback(question.getCallback());
@@ -318,37 +322,57 @@ public class Ana {
 			
 			if (hasRelation) {
 				
-				// what if you know one son, but don't know the other?
-				Person relPerson = knowledge.getPersonFromRelation(focus.getId(), title);
+				// check if the title is linked with a name
+				boolean has_link = false;
+				String person_name = "";
+				for(Entity e: entitiesInText) {
+					if (e.getType().equals("PER")) {
+						if (apg.hasLink(title, e.getName())) {
+							has_link = true;
+							person_name = e.getName();
+						} else if ( (line.contains("name")) && (apg.hasLink(title, "name")) && (apg.hasLink("name", e.getName())) ) {
+							has_link = true;
+							person_name = e.getName();
+						}
+					}
+				}
 				
-				// how many relations are there?
-				int amount = knowledge.howManyRelations(focus.getId(), title);
-				
-				if (amount > 1) {
-					// which person? 
-					Question question = new Question(pipeline, line, relPerson.getId(), "person", "which", "Which <RELATION>?".replace("<RELATION>", title), relPerson.get("sex"), null );
-					potential.add(question);
-				} else {
-					// confirm or assume
+				if (!has_link) {
+					// what if you know one son, but don't know the other?
+					Person relPerson = knowledge.getPersonFromRelation(focus.getId(), title);
 					
-//					Question question = new Question(pipeline, line, relPerson.getId(), "person", "which", relPerson.get("name")+"?".replace("<RELATION>", title), relPerson.get("sex"), null );
-//					potential.add(question);
+					// how many relations are there?
+					int amount = knowledge.howManyRelations(focus.getId(), title);
 					
-					if (function == 0.0) {
-						// ask about attribute
-						Question question = new Question(pipeline, line, relPerson.getId(), "person", relPerson.getEmptyAttr(), null, relPerson.get("sex"), relPerson.getCallback(relPerson.getEmptyAttr()));		
+					if (amount > 1) {
+						// which person? 
+						Question question = new Question(pipeline, line, relPerson.getId(), "person", "which", "Which <RELATION>?".replace("<RELATION>", title), relPerson.get("sex"), null );
 						potential.add(question);
-					}
-
-					if (function == 1.0) {
-						String rsp = Helpers.askQuestion(knowledge, tkns, relPerson);
-						return rsp;
-					}
-					
-					if (function == 2.0) {
+					} else {
+						// confirm or assume
+						
+	//					Question question = new Question(pipeline, line, relPerson.getId(), "person", "which", relPerson.get("name")+"?".replace("<RELATION>", title), relPerson.get("sex"), null );
+	//					potential.add(question);
+						
+						if (function == 0.0) {
+							// ask about attribute
+							String attr = relPerson.getEmptyAttr();
+							if (attr != null) {
+								Question question = new Question(pipeline, line, relPerson.getId(), "person", attr, null, relPerson.get("sex"), relPerson.getCallback(attr));		
+								potential.add(question);
+							}
+						}
+	
+						if (function == 1.0) {
+							String rsp = Helpers.askQuestion(knowledge, tkns, relPerson);
+							return rsp;
+						}
+						
+						if (function == 2.0) {
+							
+						}
 						
 					}
-					
 				}
 			} else {
 				
@@ -382,9 +406,14 @@ public class Ana {
 						// add the relation
 						knowledge.addRelation(title, focus.getId(), pid);
 						
-						// add the potential question
-						Question question = new Question(pipeline, line, pid, "person", p.getEmptyAttr(), null, p.get("sex"), p.getCallback(p.getEmptyAttr()) );
-						potential.add(question);
+						// get empty attr
+						String attr = p.getEmptyAttr();
+						
+						if (attr != null) {
+							// add the potential question
+							Question question = new Question(pipeline, line, pid, "person", attr, null, p.get("sex"), p.getCallback(attr) );
+							potential.add(question);
+						}
 					}
 				}
 			}
@@ -538,17 +567,21 @@ public class Ana {
 				if (askq) {
 					// add potential question
 					String emptyAttr1 = e.getEmptyAttr();
-					Question question = new Question(pipeline, line, e.getId(), "event", emptyAttr1, null, tense, e.getCallback(emptyAttr1) );
-					potential.add(question);
-					
-					e.update(e.getEmptyAttr(), "temp");
-					
-					// add another potential question
-					String emptyAttr2 = e.getEmptyAttr();
-					Question question2 = new Question(pipeline, line, e.getId(), "event", emptyAttr2, null, tense, e.getCallback(emptyAttr2) );
-					potential.add(question2);
-					
-					e.update(emptyAttr1, "");
+					if (emptyAttr1 != null) {
+						Question question = new Question(pipeline, line, e.getId(), "event", emptyAttr1, null, tense, e.getCallback(emptyAttr1) );
+						potential.add(question);
+						
+						e.update(e.getEmptyAttr(), "temp");
+						
+						// add another potential question
+						String emptyAttr2 = e.getEmptyAttr();
+						if (emptyAttr2 != null) {
+							Question question2 = new Question(pipeline, line, e.getId(), "event", emptyAttr2, null, tense, e.getCallback(emptyAttr2) );
+							potential.add(question2);
+						}
+						
+						e.update(emptyAttr1, "");
+					}
 				}
 			}
 		}
@@ -575,8 +608,11 @@ public class Ana {
 
 				if (target != null) {
 					// add potential question
-					Question question = new Question(pipeline, line, target.getId(), "person", target.getEmptyAttr(), null, target.get("sex"), target.getCallback(target.getEmptyAttr()) );
-					potential.add(question);
+					String attr = target.getEmptyAttr();
+					if (attr != null) {
+						Question question = new Question(pipeline, line, target.getId(), "person", attr, null, target.get("sex"), target.getCallback(attr) );
+						potential.add(question);
+					}
 				}
 			}
 		}
