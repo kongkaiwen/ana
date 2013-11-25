@@ -1,12 +1,12 @@
 <%@ page import="evaluation.Evaluate" %>
 
 <%
-/*
+
 if ( request.getSession().getAttribute("eval") != null ) {
     Evaluate e = (Evaluate)session.getAttribute("eval");
     e.resetKB(3);
 }
-*/
+
 %>
 
 <!DOCTYPE html>

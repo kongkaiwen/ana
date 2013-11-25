@@ -50,6 +50,30 @@ if ( request.getSession().getAttribute("eval") != null ) {
             <input type="button" id="model-b-button" />
 		    
 		    <p align="center" class="scenario"><b>Scenario:</b> Your name is Irene.  Your son Phil is coming over.  You need to cook for him but you don't know what to make. </p>
+
+            <div id="topics">
+                <h3>Available Topics</h3>
+                <ul>
+                    <li>Person Attributes</li>
+                        <ul><li>age</li><li>likes</li><li>dislikes</li><li>education</li><li>profession</li></ul>
+                    <li>Relations</li>
+                        <ul><li>brother</li><li>sister</li><li>friend</li><li>etc</li></ul>
+                    <li>Event Attributes</li>
+                        <ul><li>when</li><li>where</li><li>who</li></ul>
+                    <li>Medical Issues ( symptoms )</li>
+                        <ul><li>I'm not feeling well.</li></ul>
+                </ul>
+
+                <h3>Available Commands</h3>
+                <ul>
+                    <li>Ask about person in KB</li>
+                        <ul><li>What does Kevin like?</li></ul>
+                    <li>Request help</li>
+                        <ul><li>Call my doctor.</li></ul>
+                    <li>Add knowledge</li>
+                        <ul><li>Kevin likes cookies</li></ul>
+                </ul>
+            </div>
 			
 		    <div id="model-a">
 		    	<p class="title">Model A <img id="model-a-img" src="" style="width:15px;height:15px;" /></p>

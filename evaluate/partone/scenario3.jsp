@@ -51,6 +51,30 @@ if ( request.getSession().getAttribute("eval") != null ) {
 		    
 		    <p align="center" class="scenario"><b>Scenario:</b> Introduce yourself (your real name).  Talk about yourself. </p>
 			
+            <div id="topics">
+                <h3>Available Topics</h3>
+                <ul>
+                    <li>Person Attributes</li>
+                        <ul><li>age</li><li>likes</li><li>dislikes</li><li>education</li><li>profession</li></ul>
+                    <li>Relations</li>
+                        <ul><li>brother</li><li>sister</li><li>friend</li><li>etc</li></ul>
+                    <li>Event Attributes</li>
+                        <ul><li>when</li><li>where</li><li>who</li></ul>
+                    <li>Medical Issues ( symptoms )</li>
+                        <ul><li>I'm not feeling well.</li></ul>
+                </ul>
+
+                <h3>Available Commands</h3>
+                <ul>
+                    <li>Ask about person in KB</li>
+                        <ul><li>What does Kevin like?</li></ul>
+                    <li>Request help</li>
+                        <ul><li>Call my doctor.</li></ul>
+                    <li>Add knowledge</li>
+                        <ul><li>Kevin likes cookies</li></ul>
+                </ul>
+            </div>
+            
 		    <div id="model-a">
 		    	<p class="title">Model A <img id="model-a-img" src="" style="width:15px;height:15px;" /></p>
 		    	<div id="model-a-body"></div>
