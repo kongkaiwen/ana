@@ -31,6 +31,9 @@ public class Question {
 		if (line.contains("sister") || line.contains("mother") || line.contains("mom") || line.contains("grandmother") || line.contains("grandma") || line.contains("aunt") || line.contains("daughter") || line.contains("granddaughter") || line.contains("neice"))
 			this.question = Helpers.replacePronouns(Helpers.getTokens(pipeline, this.question));
 		
+		if (oid == 0)
+			this.question = Helpers.replacePronounsYou(Helpers.getTokens(pipeline, this.question));
+		
 		this.callback = new Callback(line, question, oid, obj, atr, new DateTime(), function);
 	}
 	

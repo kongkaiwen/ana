@@ -113,8 +113,8 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("He is 50.", false));
 //		System.out.println("response: " + ana.ask("Tomorrow night.", false));
 		
-		System.out.println("response: " + ana.ask("I am Kevin.", false));
-		System.out.println("response: " + ana.ask("I am a research assistant.", false));
+//		System.out.println("response: " + ana.ask("I am Kevin.", false));
+//		System.out.println("response: " + ana.ask("I am a research assistant.", false));
 		
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
@@ -551,8 +551,9 @@ public class Ana {
 			String replace = "";
 			if (knowledge.getSpeaker() != null)
 				replace = knowledge.getSpeaker().get("name");
-			response = Helpers.genGreeting() + " <NAME>.";
-			response = response.replace("<NAME>", replace);
+			//response = Helpers.genGreeting() + " <NAME>.";
+			//response = response.replace("<NAME>", replace);
+			response = Helpers.genGreeting();
 			knowledge.addResponse(line, knowledge.getSpeaker().get("name"), response, "greeting");
 			
 			return response;
@@ -590,7 +591,9 @@ public class Ana {
 		}
 		
 		// is there an person to ask about?
-		if ( peopleInKB.size() > 0 ) {
+		if ( peopleInKB.size() > 0 || (peopleInKB.size() == 0 && line.toLowerCase().startsWith("i"))  ) {
+			
+			peopleInKB.add(knowledge.getPerson(0));
 
 			boolean askq = true;
 			

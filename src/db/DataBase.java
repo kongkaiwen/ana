@@ -26,13 +26,26 @@ public class DataBase {
 	}
 	
 	public void insertChat( String model, String desc, String corr ) throws SQLException {
-		stmt.executeUpdate("insert into chat (Model, Description, Correct) values ('"+model+"', '"+desc+"', '"+corr+"')");
+		PreparedStatement pstmt = con.prepareStatement("insert into chat (Model, Description, Correct) values (?, ?, ?)");
+		pstmt.setString(1, model);
+		pstmt.setString(2, desc);
+		pstmt.setString(3, corr);
+		pstmt.executeUpdate();
+		//stmt.executeUpdate("insert into chat (Model, Description, Correct) values ('"+model+"', '"+desc+"', '"+corr+"')");
 	}
 	
 	public void insertKB( String miss, String miss_text, String incorr, String incorr_text, String conv ) throws SQLException {
 		int miss_val = (miss.equals("yes")) ? 1 : 0;
 		int inco_val = (incorr.equals("yes")) ? 1 : 0;
-		stmt.executeUpdate("insert into kbeval (Missing, MissingTXT, Incorrect, IncorrectTXT, Conversation) values ('"+miss_val+"', '"+miss_text+"', '"+inco_val+"', '"+incorr_text+"', '"+conv+"')");
+		
+		PreparedStatement pstmt = con.prepareStatement("insert into kbeval (Missing, MissingTXT, Incorrect, IncorrectTXT, Conversation) values (?, ?, ?, ?, ?)");
+		pstmt.setInt(1, miss_val);
+		pstmt.setString(2, miss_text);
+		pstmt.setInt(3, inco_val);
+		pstmt.setString(4, incorr_text);
+		pstmt.setString(5, conv);
+		pstmt.executeUpdate();
+		//stmt.executeUpdate("insert into kbeval (Missing, MissingTXT, Incorrect, IncorrectTXT, Conversation) values ('"+miss_val+"', '"+miss_text+"', '"+inco_val+"', '"+incorr_text+"', '"+conv+"')");
 	}
 	
 	public void close() throws SQLException {

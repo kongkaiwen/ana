@@ -922,6 +922,25 @@ public class Helpers {
 		return output;
 	}
 	
+	public static String replacePronounsYou( ArrayList<String> tkns ) {
+
+		String output = "";	
+		for(String tkn: tkns) {
+			if (tkn.equals("he")) {
+				output += "you ";
+			} else if (tkn.equals("his")) {
+				output += "your ";
+			} else if (tkn.equals("she")) {
+				output += "you ";
+			} else if (tkn.equals("her")) {
+				output += "your ";
+			} else {
+				output += tkn + " ";
+			}	
+		}
+		return output;
+	}
+	
 	public static int minuteDiff( Date d1, Date d2 ) {
 		DateTime sDate = new DateTime(d1); 
 		DateTime eDate = new DateTime(d2); //current date
