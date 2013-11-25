@@ -20,19 +20,24 @@ public class Question {
 		this.obj = obj;
 		this.atr = atr;
 
-		if (question == null)
-			this.question = Helpers.genQuestion(obj, atr, genderortense);
-		else 
+		if (question == null) {
+			if (oid == 0)
+				this.question = Helpers.genQuestion(obj, atr, genderortense, 2);
+			else
+				this.question = Helpers.genQuestion(obj, atr, genderortense, 3);
+		} else {
 			this.question = question;
+//			if (oid == 0)
+//				this.question = Helpers.genQuestion(obj, atr, genderortense, 2);
+//			else
+//				this.question = Helpers.genQuestion(obj, atr, genderortense, 3);
+		}
 		
 		if (genderortense != null && genderortense.equals("female")) 
 			this.question = Helpers.replacePronouns(Helpers.getTokens(pipeline, this.question));
 		
 		if (line.contains("sister") || line.contains("mother") || line.contains("mom") || line.contains("grandmother") || line.contains("grandma") || line.contains("aunt") || line.contains("daughter") || line.contains("granddaughter") || line.contains("neice"))
 			this.question = Helpers.replacePronouns(Helpers.getTokens(pipeline, this.question));
-		
-		if (oid == 0)
-			this.question = Helpers.replacePronounsYou(Helpers.getTokens(pipeline, this.question));
 		
 		this.callback = new Callback(line, question, oid, obj, atr, new DateTime(), function);
 	}

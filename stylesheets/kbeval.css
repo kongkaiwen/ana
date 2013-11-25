@@ -210,19 +210,15 @@ body {
 	position: absolute;
 	left:0;
 	bottom: 0;
-	width: 100%;
 	background-color: #ddd;
-}
-
-#evaluation td {
-	padding: 10px;
+    width: 100%;
 }
 
 #evaluation th {
 	border: none;
 }
 
-#evaluation input {
+#evaluation input[type="text"] {
 	width: 500px;
 }
 

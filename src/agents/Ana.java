@@ -32,6 +32,7 @@ import tools.Helpers;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import entities.AnaEntity;
+import entities.AnaEntityFactory;
 import entities.AnaPer;
 import events.EventMatcher;
 import graph.AnaParseGraph;
@@ -43,7 +44,7 @@ public class Ana {
 	
 	public static void main(String[] args) throws Exception {
 		Ana ana = new Ana();
-		ana.initKB(3);
+		ana.initKB(1);
 		
 //		System.out.println("response: " + ana.ask("I need to buy a gift for my grandson's birthday party.", false));
 //		System.out.println("response: " + ana.ask("Nathan.", false));
@@ -121,9 +122,8 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("I am 25.", false));
 //		System.out.println("response: " + ana.ask("My sister.", false));
 		
-		System.out.println("response: " + ana.ask("I am Kevin.", false));
-		System.out.println("response: " + ana.ask("I have a brother.", false));
-		System.out.println("response: " + ana.ask("Nathan.", false));
+		System.out.println("response: " + ana.ask("I just had lunch with my granddaughter.", false));
+		System.out.println("response: " + ana.ask("Jana.", false));	
 		
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
@@ -217,6 +217,10 @@ public class Ana {
   				
   				//  q2.ask, RBuffer.add(q2.callback), QBuffer.pop()
   				if (found) {
+  					
+//  					Model: When does it start ? 
+//  					You: We had lunch at 12.
+					
   					Question question = knowledge.getQuestion();
 
   					if (question != null) {
@@ -355,6 +359,8 @@ public class Ana {
 						// which person? 
 						Question question = new Question(pipeline, line, relPerson.getId(), "person", "which", "Which <RELATION>?".replace("<RELATION>", title), relPerson.get("sex"), null );
 						potential.add(question);
+						
+						knowledge.clnBuffer();
 					} else {
 						// confirm or assume
 						
@@ -435,8 +441,10 @@ public class Ana {
 		// people from the line in kb
 		ArrayList<Person> peopleInKB = new ArrayList<Person>();
 		for(AnaEntity ae: entitiesInKB) {
+			System.out.println("ae: " + ae.getName());
 			if (ae.getType().equals("PER")) {
 				Person newp = knowledge.getPerson(Integer.parseInt(ae.getId()));
+				System.out.println("add: " + newp.get("name"));
 				if (newp == null) {
 					System.out.println("null added1");
 					System.out.println(ae.getName() + ":" + ae.getId()	);
@@ -452,20 +460,35 @@ public class Ana {
 		knowledge.disambiguate(tkns, pos, resolutions, relations);
 		
 		// extract person attributes
-		if ((peopleInKB.size() == 0 && line.toLowerCase().startsWith("i ")) || (peopleInKB.size() == 0 && (line.toLowerCase().contains("i am") || line.toLowerCase().contains("i'm"))) ) {
+		if ((peopleInKB.size() == 0 && line.toLowerCase().startsWith("i ") && !hasTitle) || ( !hasTitle && peopleInKB.size() == 0 && (line.toLowerCase().contains("i am") || line.toLowerCase().contains("i'm"))) ) {
+			
+			ArrayList<Person> omfg1 = new ArrayList<Person>();
+			ArrayList<AnaEntity> omfg2 = new ArrayList<AnaEntity>();
+			
+			for(AnaEntity ae: entitiesInKB)
+				omfg2.add(ae);
+			
 			// add speaker
 			Person pp = knowledge.getSpeaker();
 			if (pp == null) System.out.println("null added2");
-			peopleInKB.add(pp);
+			omfg1.add(pp);
 			
 			HashMap<String, String> attr = new HashMap<String, String>();
 			attr.put("id", String.valueOf(pp.getId()));
 			attr.put("name", pp.get("name"));
 			entitiesInKB.add(new AnaPer(attr));
+			
+			ArrayList<String> matches = PersonMatcher.check(line, omfg1, omfg2, pos, tkns, dependencies);
+			for(String match: matches) {
+				addedPersonAttr = true;
+				// find the person in our db and assign them the school ( eid # attr # val )
+				String tokens[] = match.split("#");
+				knowledge.updatePerson(Integer.parseInt(tokens[0]), tokens[1], tokens[2]);
+			}
 		}
 		
 		// extract person attributes
-		if (peopleInKB.size() == 1) {
+		if (peopleInKB.size() > 0) {
 			ArrayList<String> matches = PersonMatcher.check(line, peopleInKB, entitiesInKB, pos, tkns, dependencies);
 			for(String match: matches) {
 				addedPersonAttr = true;
@@ -473,11 +496,6 @@ public class Ana {
 				String tokens[] = match.split("#");
 				knowledge.updatePerson(Integer.parseInt(tokens[0]), tokens[1], tokens[2]);
 			}
-			
-		    if (line.toLowerCase().startsWith("i ")) {
-		    	entitiesInKB.remove(entitiesInKB.size() - 1);
-		    	peopleInKB.remove(0);
-		    }
 		}
   		
   		// detect events ( extract single word events )
@@ -600,7 +618,9 @@ public class Ana {
 		// is there an person to ask about?
 		if ( peopleInKB.size() > 0 || (peopleInKB.size() == 0 && line.toLowerCase().startsWith("i") && !hasTitle)  ) {
 			
-			peopleInKB.add(knowledge.getPerson(0));
+			// I like to fish.
+			if (peopleInKB.size() == 0 && line.toLowerCase().startsWith("i") && !hasTitle)
+				peopleInKB.add(knowledge.getPerson(0));
 
 			boolean askq = true;
 			
@@ -618,6 +638,7 @@ public class Ana {
 						
 				// get first person in line
 				Person target = knowledge.getPerson(peopleInKB.get(0).get("name"));
+				//System.out.println("target: "+target.get("name") + " " + target.getId());
 
 				if (target != null) {
 					// add potential question

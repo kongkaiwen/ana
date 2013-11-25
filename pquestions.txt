@@ -1,20 +1,38 @@
-{"question": "When did he die?", "type": "date_of_death"}
-{"question": "When was he born?", "type": "date_of_birth"}
-{"question": "Which university did he graduate from?", "type": "education_institute"}
-{"question": "What is his profession?", "type": "profession_position"}
-{"question": "Where did he go to college?", "type": "education_institute"}
-{"question": "Where did he attend university?", "type": "education_institute"}
-{"question": "Does he go to university?", "type": "education_institute"}
-{"question": "How old is he?", "type": "age"}
-{"question": "What is his age?", "type": "age"}
-{"question": "What does he like to eat?", "type": "likes"}
-{"question": "What food does he like?", "type": "likes"}
-{"question": "Is it a girl or boy?", "type": "sex"}
-{"question": "What's his name?", "type": "name"}
-{"question": "What did he study?", "type": "education_degree"}
-{"question": "Where does he work?", "type": "profession_institute"}
-{"question": "Where does he live?", "type": "residence"}
-{"question": "What ethnicity is he?", "type": "ethnicity"}
-{"question": "Do you have a religion?", "type": "religion"}
-{"question": "How much does he weigh?", "type": "weight"}
-{"question": "How tall is he?", "type": "height"}
+{"question": "When were you born?", "type": "date_of_birth", "person": 2}
+{"question": "Which university did you graduate from?", "type": "education_institute", "person": 2}
+{"question": "What is your profession?", "type": "profession_position", "person": 2}
+{"question": "Where did you go to college?", "type": "education_institute", "person": 2}
+{"question": "Which university did you attend?", "type": "education_institute", "person": 2}
+{"question": "How old are you?", "type": "age", "person": 2}
+{"question": "What is your age?", "type": "age", "person": 2}
+{"question": "What do you like to eat?", "type": "likes", "person": 2}
+{"question": "What food do you like?", "type": "likes", "person": 2}
+{"question": "Is it a girl or boy?", "type": "sex", "person": 2}
+{"question": "What's your name?", "type": "name", "person": 2}
+{"question": "What degree do you have?", "type": "education_degree", "person": 2}
+{"question": "Where do you work?", "type": "profession_institute", "person": 2}
+{"question": "Where do you live?", "type": "residence", "person": 2}
+{"question": "What ethnicity are you?", "type": "ethnicity", "person": 2}
+{"question": "Do you have a religion?", "type": "religion", "person": 2}
+{"question": "How much do you weigh?", "type": "weight", "person": 2}
+{"question": "How tall are you?", "type": "height", "person": 2}
+{"question": "When did he die?", "type": "date_of_death", "person": 3}
+{"question": "When was he born?", "type": "date_of_birth", "person": 3}
+{"question": "Which university did he graduate from?", "type": "education_institute", "person": 3}
+{"question": "What is his profession?", "type": "profession_position", "person": 3}
+{"question": "Where did he go to college?", "type": "education_institute", "person": 3}
+{"question": "Where did he attend university?", "type": "education_institute", "person": 3}
+{"question": "Does he go to university?", "type": "education_institute", "person": 3}
+{"question": "How old is he?", "type": "age", "person": 3}
+{"question": "What is his age?", "type": "age", "person": 3}
+{"question": "What does he like to eat?", "type": "likes", "person": 3}
+{"question": "What food does he like?", "type": "likes", "person": 3}
+{"question": "Is it a girl or boy?", "type": "sex", "person": 3}
+{"question": "What's his name?", "type": "name", "person": 3}
+{"question": "What did he study?", "type": "education_degree", "person": 3}
+{"question": "Where does he work?", "type": "profession_institute", "person": 3}
+{"question": "Where does he live?", "type": "residence", "person": 3}
+{"question": "What ethnicity is he?", "type": "ethnicity", "person": 3}
+{"question": "Do you have a religion?", "type": "religion", "person": 3}
+{"question": "How much does he weigh?", "type": "weight", "person": 3}
+{"question": "How tall is he?", "type": "height", "person": 3}

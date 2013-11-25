@@ -40,10 +40,14 @@ function init() {
 
 		evaltable = document.getElementById("evaluation-table");
 		evaltable.style.height = evaluationheight + "px";
+		//evaltable.style.width = (window.innerWidth - 400 - 40) + "px";
 
 		content = document.getElementById("content");
 		content.style.width = (window.innerWidth - 400 - 40) + "px";
 		content.style.height = (window.innerHeight - 40) + "px";
+
+		//eval = document.getElementById("evaluation");
+		//eval.style.width = (window.innerWidth - 400 - 40) + "px";
 
 		dialogue = document.getElementById("kb-dialogue");
 		//dialogue.style.bottom = "175px";

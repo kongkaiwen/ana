@@ -734,6 +734,7 @@ public class Helpers {
 			
 			JSONObject question = new JSONObject(line);
 			String type = question.getString("type");
+			//int person = question.getInt("person");
 //			String text = question.getString("question");
 //			String tense = question.getString("tense");
 //			String event = question.getString("event");
@@ -778,7 +779,7 @@ public class Helpers {
 		return attributes;
 	}
 	
-	public static String genQuestion( String type, String attribute, String tense ) throws IOException, JSONException {
+	public static String genQuestion( String type, String attribute, String tense, int person ) throws IOException, JSONException {
 		// the input would be [person, age], [person, education_institute], or maybe [event, who]
 		
 		HashMap<String, ArrayList<JSONObject>> questions = loadQuestionsFromFile( type );
@@ -791,6 +792,14 @@ public class Helpers {
 			
 			if ( type.equals("event") && p.getString("tense").equals(tense))
 				filtered.add(p);
+			
+			if ( type.equals("person") && person == 2 && p.getInt("person") == 2 ) {
+				filtered.add(p);
+			}
+			
+			if ( type.equals("person") && person == 3 && p.getInt("person") == 3 ) {
+				filtered.add(p);
+			}
 		}
 		
 		Random rand = new Random();
