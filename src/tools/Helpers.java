@@ -54,7 +54,7 @@ import events.AnaEventModel;
 
 public class Helpers {
 	
-	public static String femaleRegex = "(daughter|mother|grandmother|neice|aunt|wife)";
+	public static String femaleRegex = "(daughter|mother|grandmother|neice|aunt|wife|sister)";
 	
 	public static String familyTitles[] = {"daughter", "son", "father", "dad", "mom", "mother", "grandfather", "grandmother", "niece", "nephew", "cousin", "uncle", "aunt", "wife", "husband", "grandson", "granddaughter", "friend", "brother", "sister", "grandma", "grandpa"};
 	
@@ -926,8 +926,15 @@ public class Helpers {
 
 		String output = "";	
 		for(String tkn: tkns) {
-			if (tkn.equals("he")) {
-				output += "you ";
+			int i = tkns.indexOf(tkn);
+			
+			if (tkn.equals("he")) {		
+				if ( i > 0 && tkns.get(i-1).equals("is") ) {
+					output += "you ";
+					output = output.replace("is ", "are ");
+				} else {
+					output += "you ";
+				}
 			} else if (tkn.equals("his")) {
 				output += "your ";
 			} else if (tkn.equals("she")) {

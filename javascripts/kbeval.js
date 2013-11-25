@@ -144,7 +144,7 @@ function addText( e, text, server ) {
 
 		$.ajax({
 			url: server,
-			data: "a=" + text + "&scenario=1",
+			data: "a=" + text + "&scenario=3",
 			success: function(data) {
 				$("#kb-dialogue-body").prepend(prettyText(data, "Ana", "odd"));
 				loadKB();
@@ -206,7 +206,7 @@ function loadKB() {
 
     $.ajax({
     	url: "../kb.jsp",
-    	data: "scenario=1",
+    	data: "scenario=3",
     	success: function(data) {
     		json = JSON.parse(data);	
 

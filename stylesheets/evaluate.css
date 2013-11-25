@@ -373,6 +373,10 @@ poopup
 #topics {
     position: absolute;
     background: #ddd;
-    padding: 15px;
+    padding: 10px;
     font-size: 10px;
+}
+
+ul {
+    padding-left: 15px;
 }

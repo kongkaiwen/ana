@@ -116,6 +116,15 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("I am Kevin.", false));
 //		System.out.println("response: " + ana.ask("I am a research assistant.", false));
 		
+//		System.out.println("response: " + ana.ask("I am Kevin.", false));
+//		System.out.println("response: " + ana.ask("I'm going to a game tomorrow.", false));
+//		System.out.println("response: " + ana.ask("I am 25.", false));
+//		System.out.println("response: " + ana.ask("My sister.", false));
+		
+		System.out.println("response: " + ana.ask("I am Kevin.", false));
+		System.out.println("response: " + ana.ask("I have a brother.", false));
+		System.out.println("response: " + ana.ask("Nathan.", false));
+		
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
 	}
@@ -175,22 +184,13 @@ public class Ana {
   				// can be either a name or yes/no
   				ArrayList<String> whichTkns = Helpers.getTokens(pipeline, buffer.getLine());
   				ArrayList<String> whichPOS = Helpers.getPOS(pipeline, buffer.getLine());
-  				String title = Helpers.getFamilyTitle(whichTkns, whichPOS);
   				
   				String modifi = "";
   				String person = "";
-  				String binary = "";
   				
   				for(Entity e: entitiesInText) {
   					if (e.getType().equals("PER"))
   						person = e.getName();
-  				}
-  				
-  				for(String tkn: tkns) {
-  					if (tkn.toLowerCase().matches("(yes|yea)"))
-  						binary = "yes";
-  					if (tkn.toLowerCase().matches("(no|nope)"))
-  						binary = "no";
   				}
   				
   				// they answered with a name
@@ -206,25 +206,6 @@ public class Ana {
   					return ask(modifi, false);
   				}
   				
-//  				// they answered yes or no
-//  				if (!binary.equals("")) {
-//  					
-//  					if (binary.equals("yes")) {
-//	  					Person correctPerson = knowledge.getPerson(buffer.getOID());
-//	  					modifi = Helpers.replaceFamilyTitle(correctPerson.get("name"), whichTkns, whichPOS);
-//	  					
-//	  					// delete buffer
-//	  	  				knowledge.delBuffer();
-//	  	  				
-//	  					return ask(modifi, false);
-//  					} else {
-//  						// which person? 
-//  						Question question = new Question(pipeline, line, buffer.getOID(), "person", "which", "Which <RELATION>?".replace("<RELATION>", title), null, null );
-//  						knowledge.addResponse(line, "", question.getQuestion(), "question");
-//  						knowledge.addCallback(question.getCallback());
-//  						return question.getQuestion();
-//  					}
-//  				}
   			} else {
   				boolean hasspeaker = (knowledge.getSpeaker() == null) ? false : true;
   				boolean askq = false;
@@ -252,9 +233,32 @@ public class Ana {
   	  		  				return umm;
   						}
   						
-  						String umm = Helpers.ummPhrase();
-  		  				knowledge.addResponse(line, "", umm, "umm");
-  		  				return umm;
+  						// check is unknown title is present
+  						
+  						// check for family titles ( nephew, daughter, etc )
+  						boolean hasTitle = Helpers.hasFamilyTitles(tkns, pos);
+  						
+  						// if contains family title, try and check if that relation exists
+  						if (hasTitle) {
+  							// get the speaker (assume the speaker)
+  							Person focus = knowledge.getSpeaker();
+  							
+  							// get the title
+  							String title = Helpers.getFamilyTitle(tkns, pos);
+  							
+  							// check if the speaker has the relation
+  							boolean hasRelation = knowledge.hasRelation(focus.getId(), title);
+  							
+  							if (hasRelation) {
+  								String umm = Helpers.ummPhrase();
+  		  		  				knowledge.addResponse(line, "", umm, "umm");
+  		  		  				return umm;
+  							}
+  						} else {
+  							String umm = Helpers.ummPhrase();
+  	  		  				knowledge.addResponse(line, "", umm, "umm");
+  	  		  				return umm;
+  						}
   					}
   				} else {
   					// may have changed subject
@@ -411,6 +415,9 @@ public class Ana {
 						
 						// get empty attr
 						String attr = p.getEmptyAttr();
+						
+						// clear question buffer
+						knowledge.clnBuffer();
 						
 						if (attr != null) {
 							// add the potential question
@@ -575,7 +582,7 @@ public class Ana {
 						Question question = new Question(pipeline, line, e.getId(), "event", emptyAttr1, null, tense, e.getCallback(emptyAttr1) );
 						potential.add(question);
 						
-						e.update(e.getEmptyAttr(), "temp");
+						e.update(emptyAttr1, "temp");
 						
 						// add another potential question
 						String emptyAttr2 = e.getEmptyAttr();
@@ -591,7 +598,7 @@ public class Ana {
 		}
 		
 		// is there an person to ask about?
-		if ( peopleInKB.size() > 0 || (peopleInKB.size() == 0 && line.toLowerCase().startsWith("i"))  ) {
+		if ( peopleInKB.size() > 0 || (peopleInKB.size() == 0 && line.toLowerCase().startsWith("i") && !hasTitle)  ) {
 			
 			peopleInKB.add(knowledge.getPerson(0));
 
@@ -614,10 +621,21 @@ public class Ana {
 
 				if (target != null) {
 					// add potential question
-					String attr = target.getEmptyAttr();
-					if (attr != null) {
-						Question question = new Question(pipeline, line, target.getId(), "person", attr, null, target.get("sex"), target.getCallback(attr) );
+					String attr1 = target.getEmptyAttr();
+					if (attr1 != null) {
+						Question question = new Question(pipeline, line, target.getId(), "person", attr1, null, target.get("sex"), target.getCallback(attr1) );
 						potential.add(question);
+						
+						target.update(attr1, "temp");
+						
+						// add another potential question
+						String attr2 = target.getEmptyAttr();
+						if (attr2 != null) {
+							Question question2 = new Question(pipeline, line, target.getId(), "person", attr2, null, target.get("sex"), target.getCallback(attr2) );
+							potential.add(question2);
+						}
+						
+						target.update(attr1, "");
 					}
 				}
 			}
@@ -633,8 +651,8 @@ public class Ana {
 		}
 		
 		// get default response
-		Bot bot = new Bot();
-		response = bot.ask(line);
+		//Bot bot = new Bot();
+		//response = bot.ask(line);
 		
   		// if request -> attempt to resolve request
 		if ( function == 2.0 ) {

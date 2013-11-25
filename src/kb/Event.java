@@ -13,6 +13,7 @@ import answer.ExtractDate;
 import answer.ExtractName;
 import answer.ExtractPlace;
 import answer.ExtractTime;
+import answer.ExtractWho;
 
 public class Event implements Entity {
 
@@ -39,6 +40,11 @@ public class Event implements Entity {
 	
 	public void update( String attr, String value ) {
 		if (attr.equals("who")) {
+			if (value.equals("")) {
+				attributes.put(attr, value);
+				return;
+			}
+			
 			if (attributes.get(attr).equals("")) {
 				attributes.put(attr, value);
 			} else {
@@ -85,7 +91,7 @@ public class Event implements Entity {
 		} else if ( attr.equals("where") ) {
 			return new ExtractPlace();
 		} else if ( attr.equals("who") ) {
-			return new ExtractName();
+			return new ExtractWho();
 		}
 		
 		return null;

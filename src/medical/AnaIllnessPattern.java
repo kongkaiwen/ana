@@ -11,8 +11,8 @@ public class AnaIllnessPattern {
 	I just took my pills. - prp rb vbd prp$ nns
 	Took my meds. - vbd prp$ nns
 	*/
-	private static String[] phrases = {"not feeling well", "feeling poorly", "feeling hot"};
-	private static String[] symptoms = {"uncomfortable", "headache", "cramped", "sweating", "irritated", "bloated", "pain", "agonizing", "sore", "dry"};
+	private static String[] phrases = {"not feeling well", "feeling poorly", "feeling hot", "sick", "feeling ill"};
+	private static String[] symptoms = {"uncomfortable", "headache", "cramped", "sweating", "irritated", "bloated", "pain", "agonizing", "sore", "dry", "sick"};
 	private static String[] patterns = {"prp vbp det nn", "vbd prp$ nns"};
 	
 	// {uncomfortable, headache, well, cramped, hot, sweating, irritated, bloated, pain, agonizing, sore, dry, ... } + self pronoun

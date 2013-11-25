@@ -1,23 +1,17 @@
-package events;
+package answer;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
-import kb.Event;
-
+import kb.KnowledgeBase;
 import relations.Entity;
 import tools.Helpers;
 
-import entities.AnaEntity;
+public class ExtractWho implements Extract {
+	
+	@Override
+	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos  ) throws IOException {
 
-public class EventWho {
-
-	/*
-	I went to lunch with my son.
-	I went to lunch with Sarah.
-	I need to take my girlfriend on a picnic soon.
-	*/
-	public static String match( Event event, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos ) {
-		
 		boolean flag = false;
 		boolean has_wrd = false;
 		boolean has_title = false; 
@@ -51,16 +45,19 @@ public class EventWho {
 			poss_nn = true;
 		}
 		
+		//System.out.println(has_wrd+":"+has_title+":"+has_per+":"+poss_nn);
+		
 		if ( (has_wrd && has_title) || (has_wrd && has_per) ) {
 			String name =  has_title ? Helpers.getFamilyTitle(tkns, pos) : per.getName();
-			event.update("who", name);
+			kb.getEvent(oid).update("who", name);
+			flag = true;
 		} else {
 			if (poss_nn && has_title) {
-				event.update("who", Helpers.getFamilyTitle(tkns, pos));
+				kb.getEvent(oid).update("who", Helpers.getFamilyTitle(tkns, pos));
+				flag = true;
 			}
 		}
 		
-		// id#age#12
-		return null;
+		return flag;
 	}
 }

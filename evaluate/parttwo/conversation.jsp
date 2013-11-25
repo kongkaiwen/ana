@@ -70,7 +70,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
                     </form>
                 </div>
             </div>
-            <input id="scenario" type="hidden" value="3" />
+            <input id="scenario" type="hidden" value="3" /> 
         </div>
     </body>
 </html>

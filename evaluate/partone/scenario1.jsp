@@ -61,6 +61,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
                     <li>Event Attributes</li>
                         <ul><li>when</li><li>where</li><li>who</li></ul>
                     <li>Medical Issues ( symptoms )</li>
+                        <ul><li>I'm not feeling well.</li></ul>
                 </ul>
 
                 <h3>Available Commands</h3>
@@ -68,6 +69,7 @@ if ( request.getSession().getAttribute("eval") != null ) {
                     <li>Ask about person in KB</li>
                         <ul><li>What does Kevin like?</li></ul>
                     <li>Request help</li>
+                        <ul><li>Call my doctor.</li></ul>
                     <li>Add knowledge</li>
                         <ul><li>Kevin likes cookies</li></ul>
                 </ul>

@@ -7,6 +7,7 @@ import kb.KnowledgeBase;
 import kb.Person;
 
 import relations.Entity;
+import tools.Helpers;
 
 public class ExtractName implements Extract {
 
