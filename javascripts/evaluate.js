@@ -35,7 +35,7 @@ function init() {
 		theight = window.innerHeight - document.getElementById("evaluation").offsetHeight;
 
 		topics = document.getElementById("topics");
-		topics.style.width = "250px";
+		topics.style.width = "200px";
 		topics.style.height =  theight + "px";
 		topics.style.top = "0";
 		topics.style.left = "0";
