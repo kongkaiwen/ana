@@ -369,3 +369,10 @@ poopup
 #loading-gif {
     position: absolute;
 }
+
+#topics {
+    position: absolute;
+    background: #ddd;
+    padding: 15px;
+    font-size: 11px;
+}

@@ -1,12 +1,12 @@
 <%@ page import="evaluation.Evaluate" %>
 
 <%
-
+/*
 if ( request.getSession().getAttribute("eval") != null ) {
     Evaluate e = (Evaluate)session.getAttribute("eval");
     e.resetKB(1);
 }
-
+*/
 %>
 
 <!DOCTYPE html>
@@ -50,6 +50,28 @@ if ( request.getSession().getAttribute("eval") != null ) {
             <input type="button" id="model-b-button" />
 		    
 		    <p align="center" class="scenario"><b>Scenario:</b> Your name is Irene. You have two granddaughters named Jana and Wendy. You just spent the day with Jana yesterday.   Discuss what you did with Jana.</p>
+
+            <div id="topics">
+                <h3>Available Topics</h3>
+                <ul>
+                    <li>Person Attributes</li>
+                        <ul><li>age</li><li>likes</li><li>dislikes</li><li>education</li><li>profession</li></ul>
+                    <li>Relations</li>
+                        <ul><li>brother</li><li>sister</li><li>friend</li><li>etc</li></ul>
+                    <li>Event Attributes</li>
+                        <ul><li>when</li><li>where</li><li>who</li></ul>
+                    <li>Medical Issues ( symptoms )</li>
+                </ul>
+
+                <h3>Available Commands</h3>
+                <ul>
+                    <li>Ask about person in KB</li>
+                        <ul><li>What does Kevin like?</li></ul>
+                    <li>Request help</li>
+                    <li>Add knowledge</li>
+                        <ul><li>Kevin likes cookies</li></ul>
+                </ul>
+            </div>
 			
 		    <div id="model-a">
 		    	<p class="title">Model A <img id="model-a-img" src="" style="width:15px;height:15px;" /></p>

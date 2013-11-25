@@ -31,6 +31,16 @@ function init() {
         //kb.style.left = (window.innerWidth/2 + next.offsetWidth) + "px";
 	} 
 
+	if (document.contains(document.getElementById("topics"))) {
+		theight = window.innerHeight - document.getElementById("evaluation").offsetHeight;
+
+		topics = document.getElementById("topics");
+		topics.style.width = "250px";
+		topics.style.height =  theight + "px";
+		topics.style.top = "0";
+		topics.style.left = "0";
+	}
+
 	if (document.contains(document.getElementById("model-a"))) {
 
 		// <div id="loading"><img id="loading-gif" src="../../images/big_loading.gif" /></div>

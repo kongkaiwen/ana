@@ -43,7 +43,7 @@ public class Ana {
 	
 	public static void main(String[] args) throws Exception {
 		Ana ana = new Ana();
-		ana.initKB(2);
+		ana.initKB(3);
 		
 //		System.out.println("response: " + ana.ask("I need to buy a gift for my grandson's birthday party.", false));
 //		System.out.println("response: " + ana.ask("Nathan.", false));
@@ -108,10 +108,13 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("We ate at 11am yesterday.", false));
 //		System.out.println("response: " + ana.ask("Olive Garden.", false));
 		
-		System.out.println("response: " + ana.ask("My son is coming over for dinner.", false));
-		System.out.println("response: " + ana.ask("Phil.", false));
-		System.out.println("response: " + ana.ask("He is 50.", false));
-		System.out.println("response: " + ana.ask("Tomorrow night.", false));
+//		System.out.println("response: " + ana.ask("My son is coming over for dinner.", false));
+//		System.out.println("response: " + ana.ask("Phil.", false));
+//		System.out.println("response: " + ana.ask("He is 50.", false));
+//		System.out.println("response: " + ana.ask("Tomorrow night.", false));
+		
+		System.out.println("response: " + ana.ask("I am Kevin.", false));
+		System.out.println("response: " + ana.ask("I am a research assistant.", false));
 		
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
@@ -281,7 +284,7 @@ public class Ana {
 			boolean isGreeting = Helpers.isGreeting(tkns);
 			
 			// check if line contains an intro (i am kevin, my name is kevin, etc)
-			if ( (line.toLowerCase().contains("i am") || line.toLowerCase().contains("my name is")) && newperson ) {
+			if ( (line.toLowerCase().contains("i am") || line.toLowerCase().contains("my name is") || line.toLowerCase().contains("i'm")) && newperson ) {
 				knowledge.update(pid, "person", "name", newpersonname);
 				knowledge.setSpeaker(pid);
 				return "Nice to meet you!";

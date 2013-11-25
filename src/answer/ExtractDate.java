@@ -22,8 +22,6 @@ public class ExtractDate implements Extract {
 				time = e.getName();
 		}
 		
-		System.out.println(time + ":" + date);
-		
 		if (!time.equals(""))
 			kb.update(oid, object, attr, time);
 		

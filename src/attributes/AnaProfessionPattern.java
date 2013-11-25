@@ -97,6 +97,18 @@ public class AnaProfessionPattern {
   				flag = true;
   		}
   		
+  		// I am a research assistant.
+  		if (apg.contain("NN-nsubj>-PRP")) {
+  			patt = "NN-nsubj>-PRP";
+  			ArrayList<String> tokens = apg.extract(patt);
+  			institute = tokens.get(0).split("#")[0];
+  			position = tokens.get(1).split("#")[0];
+  			
+  			output = institute;
+  			if (!institute.equals("student"))
+  				flag = true;
+  		}
+  		
   		if ( flag )
   			return output;
 		return null;
