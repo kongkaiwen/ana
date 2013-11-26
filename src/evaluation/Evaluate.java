@@ -9,7 +9,7 @@ import org.json.JSONObject;
 
 public class Evaluate {
 	
-	public static Ana ana;
+	public Ana ana;
 	
 	public Evaluate(int scenario) throws IOException {
 		ana = new Ana();

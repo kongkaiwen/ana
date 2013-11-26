@@ -39,8 +39,8 @@ import graph.AnaParseGraph;
 
 public class Ana {
 
-	public static KnowledgeBase knowledge;
-	public static StanfordCoreNLP pipeline;
+	public KnowledgeBase knowledge;
+	public StanfordCoreNLP pipeline;
 	
 	public static void main(String[] args) throws Exception {
 		Ana ana = new Ana();
