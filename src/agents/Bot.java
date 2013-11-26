@@ -13,11 +13,44 @@ public class Bot {
 
 	public static String ask( String line ) throws Exception {
 		ChatterBotFactory factory = new ChatterBotFactory();
-	    ChatterBot bot = factory.create(ChatterBotType.CLEVERBOT);
-	    ChatterBotSession botsession = bot.createSession();
-		//ChatterBot bot = factory.create(ChatterBotType.PANDORABOTS, "d689f7b8de347251");
-	    //ChatterBotSession botsession = bot.createSession();     
-	    String response = botsession.think(line).replace("Cleverbot", "Ana");
+		
+		String response = null;
+		ChatterBot bot = null;
+		ChatterBotSession botsession = null;
+		
+		if (bot == null || botsession == null) {
+			try {
+			    bot = factory.create(ChatterBotType.CLEVERBOT);
+			    botsession = bot.createSession();
+			    response = botsession.think(line).replace("Apollo", "Model").replace("Cleverbot", "Model").replace("Cleverbot", "Amy");
+			} catch(Exception e) {
+		    	e.printStackTrace();
+		    }
+		}
+		
+		if (bot == null || botsession == null || response == null) {
+			try {
+			    bot = factory.create(ChatterBotType.PANDORABOTS, "838c59c76e36816b");
+			    botsession = bot.createSession();
+			    response = botsession.think(line).replace("Apollo", "Model").replace("Cleverbot", "Model").replace("Cleverbot", "Amy");
+			} catch(Exception e) {
+		    	e.printStackTrace();
+		    }
+		}
+		
+		if (bot == null || botsession == null || response == null) {
+			try {
+				bot = factory.create(ChatterBotType.PANDORABOTS, "86289ef30e345c10");
+			    botsession = bot.createSession();
+			    response = botsession.think(line).replace("Apollo", "Model").replace("Cleverbot", "Model").replace("Cleverbot", "Amy");
+			} catch(Exception e) {
+		    	e.printStackTrace();
+		    }
+		}
+		
+		if (response == null)
+			response = "There is a problem...";
+		
 		return response;
 	}
 }
