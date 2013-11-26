@@ -27,10 +27,6 @@ public class Question {
 				this.question = Helpers.genQuestion(obj, atr, genderortense, 3);
 		} else {
 			this.question = question;
-//			if (oid == 0)
-//				this.question = Helpers.genQuestion(obj, atr, genderortense, 2);
-//			else
-//				this.question = Helpers.genQuestion(obj, atr, genderortense, 3);
 		}
 		
 		if (genderortense != null && genderortense.equals("female")) 

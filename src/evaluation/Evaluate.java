@@ -17,7 +17,6 @@ public class Evaluate {
 	}
 	
 	public String analyze(String line) throws Exception {
-		
 		if (line.equals("silence"))
 			return ana.ask(line, true); 
 		return ana.ask(line, false); 

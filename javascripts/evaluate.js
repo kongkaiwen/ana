@@ -123,6 +123,12 @@ function init() {
 		input.style.top = input_top + "px";
 		input.addEventListener("keypress", model_b_function, false);
 
+		input.addEventListener("keyup", function(e) {
+			if (e.type != "click" & e.keyCode != 13) {
+				$("#model-a-input").val($("#model-b-input").val());
+			}
+		}, false);
+
 		button = document.getElementById("model-b-button");
 		button.style.left = (window.innerWidth/2) + (gapsize/2)  + (465)+10 + "px";
 		button.style.top = input_top + "px";
