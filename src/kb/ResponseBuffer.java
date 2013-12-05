@@ -51,6 +51,6 @@ public class ResponseBuffer {
 	}
 	
 	public boolean executeCallback( String data, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos ) throws IOException {
-		return callback.execute( oid, object, attr, kb, tkns, ent, pos );
+		return callback.execute( oid, object, attr, kb, tkns, ent, pos, null );
 	}
 }

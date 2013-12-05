@@ -39,19 +39,19 @@ public class EventWho {
 			has_title = true;
 		}
 		
-		for (String tkn: tkns) {
-			for (String wrd: words) {
-				if (tkn.toLowerCase().equals(wrd)) {
-					has_wrd = true;
-				}
-			}
-		}
+//		for (String tkn: tkns) {
+//			for (String wrd: words) {
+//				if (tkn.toLowerCase().equals(wrd)) {
+//					has_wrd = true;
+//				}
+//			}
+//		}
 		
 		if (Helpers.join(pos, " ").toLowerCase().contains("prp$ nn")) {
 			poss_nn = true;
 		}
 		
-		if ( (has_wrd && has_title) || (has_wrd && has_per) ) {
+		if ( (has_wrd && has_title) || ( has_per) ) {
 			String name =  has_title ? Helpers.getFamilyTitle(tkns, pos) : per.getName();
 			event.update("who", name);
 		} else {

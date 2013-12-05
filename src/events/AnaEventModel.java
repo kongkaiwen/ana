@@ -51,7 +51,7 @@ public class AnaEventModel {
 	
 	public static String keyWords[] = {"concert", "class", "party", "graduation", "game", "event", "potluck", "gathering",
 		"klatch", "breakfast", "lunch", "dinner", "supper", "barbeque", "gala", "function", "seminar", "yoga", "lecture",
-		"meeting", "date", "trip", "conference", "dance", "shopping", "function", "wedding", "funeral", "appointment",
+		"meeting", "date", "trip", "conference", "dance", "shopping", "wedding", "funeral", "appointment",
 		"mall", "movie", "visited", "visiting", "bowling", "skiing", "skating", "mahjiang", "cards"};
 
 	public static void main(String args[]) throws IOException {

@@ -9,7 +9,7 @@ import relations.Entity;
 public class ExtractDate implements Extract {
 
 	@Override
-	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos )throws IOException {
+	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos, String val )throws IOException {
 		String date = "";
 		String time = "";
 		boolean found = false;

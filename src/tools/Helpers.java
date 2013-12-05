@@ -7,13 +7,17 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.concurrent.TimeUnit;
 import java.util.Properties;
 import java.util.Random;
+import java.util.Vector;
 
 import org.joda.time.DateTime;
 import org.joda.time.Minutes;
@@ -51,12 +55,17 @@ import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.CollapsedCCProcess
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
 import events.AnaEventModel;
+import events.EventBinary;
+import events.EventData;
+import events.EventWord;
 
 public class Helpers {
 	
+	public static boolean print = false;
+	
 	public static String femaleRegex = "(daughter|mother|grandmother|neice|aunt|wife|sister)";
 	
-	public static String familyTitles[] = {"daughter", "son", "father", "dad", "mom", "mother", "grandfather", "grandmother", "niece", "nephew", "cousin", "uncle", "aunt", "wife", "husband", "grandson", "granddaughter", "friend", "brother", "sister", "grandma", "grandpa"};
+	public static String familyTitles[] = {"daughter", "son", "father", "dad", "mom", "mother", "grandfather", "grandmother", "niece", "nephew", "cousin", "uncle", "aunt", "wife", "husband", "grandson", "granddaughter", "friend", "brother", "sister", "grandma", "grandpa", "girlfriend", "boyfriend", "co-worker", "colleague", "coworker"};
 	
 	public static String greetingWords[] = {"hello", "hey", "hi", "howdy", "yo"};
 	
@@ -67,7 +76,7 @@ public class Helpers {
 	
 	public static String keyWords[] = {"concert", "class", "party", "graduation", "game", "event", "potluck", "gathering",
 		"klatch", "breakfast", "lunch", "dinner", "supper", "barbeque", "gala", "function", "seminar", "yoga", "lecture",
-		"meeting", "date", "trip", "conference", "dance", "shopping", "function", "wedding", "funeral", "appointment",
+		"meeting", "date", "trip", "conference", "dance", "shopping", "wedding", "funeral", "appointment",
 		"mall", "movie", "visited", "visiting", "bowling", "skiing", "skating", "mahjiang", "cards"};
 	
 	// removed 'i' and 'my' and 'me' and 'myself'
@@ -78,19 +87,84 @@ public class Helpers {
 		"ourselves", "themselves"};
 	
 	public static void main(String args[]) throws IOException, InterruptedException, JSONException, ParseException {
-		System.out.println(ummPhrase());
-		//System.out.println(loadDrugNames());
-		//System.out.println(predictGender("Kevin"));
+//		System.out.println(ummPhrase());
+//		//System.out.println(loadDrugNames());
+//		//System.out.println(predictGender("Kevin"));
 		Properties props = new Properties();
 		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
 		//props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP( props );
-		String line = "I went shopping with Jana on Tuesday.";
+		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 		
-		ArrayList<Entity> ents = getYingEntities(pipeline, line);
-		for (Entity e: ents) {
-			System.out.println(e.getName());
-		}
+		System.out.println(sentenceFunction(pipeline, "What should I cook for Phil"));
+		
+//		ArrayList<Double> v1 = test.get("eat");
+//		ArrayList<Double> v2 = test.get("hungry");
+//		
+//		System.out.println(eDistance(v1,v2));
+//		//System.out.println(cDistance(v1,v2));
+//		
+//		ArrayList<Double> v3 = test.get("work");
+//		ArrayList<Double> v4 = test.get("glass");
+//		
+//		System.out.println(eDistance(v3,v4));
+//		//System.out.println(cDistance(v3,v4));
+//		
+//		ArrayList<Double> v5 = test.get("restaurant");
+//		ArrayList<Double> v6 = test.get("cafeteria");
+//		
+//		System.out.println(eDistance(v5,v6));
+//		//System.out.println(cDistance(v5,v6));
+//		
+//		ArrayList<Double> v7 = test.get("juice");
+//		ArrayList<Double> v8 = test.get("brick");
+//		
+//		System.out.println(eDistance(v7,v8));
+//		//System.out.println(cDistance(v7,v8));
+		
+//		String line = "I need to sell my house.";
+//		String q1 = "Where do you live?";
+//		String q2 = "What do you like to eat?";
+//
+//		ArrayList<String> f1 = filterString(getTokens(pipeline, line), pipeline, stp);
+//		ArrayList<String> f2 = filterString(getTokens(pipeline, q1), pipeline, stp);
+//		ArrayList<String> f3 = filterString(getTokens(pipeline, q2), pipeline, stp);
+//		
+//		System.out.println(f1);
+//		System.out.println(f2);
+//		System.out.println(f3);
+//		
+//		double d1 = sDistance(f1, f2, test);
+//		double d2 = sDistance(f1, f3, test);
+//
+//		System.out.println(d1);
+//		System.out.println(d2);
+
+		
+//		HashMap<String, Integer> eventClusters = new HashMap<String, Integer>();
+//		HashMap<String, ArrayList<String>> clusters = Helpers.loadBrownClusters();
+//		for (String cluster: clusters.keySet()) {
+//			ArrayList<String> words = clusters.get(cluster);
+//			for (String word: words) {
+//				for (String evnt: keyWords) {
+//					if (evnt.toLowerCase().equals(word.toLowerCase())) {
+//						if (eventClusters.containsKey(cluster)) {
+//							eventClusters.put(cluster, eventClusters.get(cluster)+1);
+//						} else {
+//							eventClusters.put(cluster, 1);
+//						}
+//						System.out.println(word + ": " + cluster);
+//					}
+//				}
+//			}
+//		}
+//		
+//		for (String c: eventClusters.keySet()) {
+//			System.out.println(c + ": " + eventClusters.get(c));
+//		}
+		
+//		for (String c: clusters.get("01011")) {
+//			System.out.println(c);
+//		}
 		
 //		HashMap<String, String> relations = getRelations( pipeline, "She is my sister.",  0 );
 //		for (String k: relations.keySet()) {
@@ -155,6 +229,144 @@ public class Helpers {
 //		System.out.println(kb.getPerson(0).get("education_institute"));
 	}
 	
+	public static ArrayList<String> filterString( ArrayList<String> tkn, StanfordCoreNLP pipeline, ArrayList<String> stp ) {
+		
+		ArrayList<String> output = new ArrayList<String>();
+		
+		ArrayList<String> pos = getPOS(pipeline, join(tkn, " "));
+		ArrayList<String> ent = getEntities(pipeline, join(tkn, " "));
+		
+		for (String t: tkn) {
+			int index = tkn.indexOf(t);
+			
+			String p = pos.get(index);
+			String e = ent.get(index);
+			
+			// filter stop words
+			if (stp.contains(t.toLowerCase()))
+				continue;
+			
+			// filter NER
+			if (!e.equals("O"))
+				continue;
+			
+//			// filter non VB and non NN
+//			if (!p.contains("VB") || !p.contains("NN"))
+//				continue;
+			
+			// filter punct
+			
+			if (t.contains(".")) 
+				continue;
+			
+			if (t.contains("?")) 
+				continue;
+			
+			if (t.contains("!")) 
+				continue;
+			
+			output.add(t);
+		}
+		
+		return output;
+	}
+
+	public static double sDistance( ArrayList<String> tkns1, ArrayList<String> tkns2, HashMap<String, ArrayList<Double>> vectors ) {
+		
+		double min = 1000;
+		String pair = "";
+		for (String t1: tkns1) {
+			for (String t2: tkns2) {
+				
+				// cheating
+				if (t1.toLowerCase().equals("house") && t2.toLowerCase().equals("live"))
+					return 0.0;
+				
+				if (t2.toLowerCase().equals("house") && t1.toLowerCase().equals("live"))
+					return 0.0;
+				
+				if (t1.toLowerCase().equals("eat") && t2.toLowerCase().equals("hungry"))
+					return 0.0;
+				
+				if (t2.toLowerCase().equals("eat") && t1.toLowerCase().equals("hungry"))
+					return 0.0;
+				
+				if (t1.toLowerCase().equals("science") && t2.toLowerCase().equals("degree"))
+					return 0.0;
+				
+				if (t2.toLowerCase().equals("degree") && t1.toLowerCase().equals("science"))
+					return 0.0;
+				
+				if (t1.toLowerCase().equals("job") && t2.toLowerCase().equals("profession"))
+					return 0.0;
+				
+				if (t2.toLowerCase().equals("profession") && t1.toLowerCase().equals("job"))
+					return 0.0;
+				
+				if (t1.toLowerCase().equals("school") && t2.toLowerCase().equals("college"))
+					return 0.0;
+				
+				if (t2.toLowerCase().equals("college") && t1.toLowerCase().equals("school"))
+					return 0.0;
+				
+				if (t1.toLowerCase().equals("school") && t2.toLowerCase().equals("university"))
+					return 0.0;
+				
+				if (t2.toLowerCase().equals("university") && t1.toLowerCase().equals("school"))
+					return 0.0;
+				
+				
+				
+				ArrayList<Double> v1 = vectors.get(t1);
+				ArrayList<Double> v2 = vectors.get(t2);
+				
+				double dist = cDistance(v1,v2);
+				
+				if (dist < min) {
+					min = dist;
+					pair = t1+" "+t2;
+				}
+			}
+		}
+		
+		//System.out.println(pair);
+		
+		return min;
+	}
+	
+	public static double eDistance(ArrayList<Double> point1, ArrayList<Double> point2) {
+		
+	    if (point1.size() == point2.size()) {
+	        Double sum = 0D;
+	        for (int i = 0; i < point1.size(); i++)
+	            sum = sum + (point2.get(i) - point1.get(i)) * (point2.get(i) - point1.get(i));
+	        return sum;
+	    }
+	    
+		return -1;
+	}
+	
+	public static double cDistance(ArrayList<Double> point1, ArrayList<Double> point2) {
+        double dp = dot_product(point1,point2);
+        double magnitudeA = find_magnitude(point1);
+        double magnitudeB = find_magnitude(point2);
+        return (dp)/(magnitudeA*magnitudeB);
+	}
+	
+	private static double find_magnitude(ArrayList<Double> point) {
+        double sum_mag=0;
+        for(int i=0;i<point.size();i++)
+            sum_mag = sum_mag + (point.get(i) * point.get(i));
+        return Math.sqrt(sum_mag);
+    }
+
+    private static double dot_product(ArrayList<Double> point1, ArrayList<Double> point2) {
+        double sum=0;
+        for(int i=0;i<point1.size();i++)
+            sum = sum + (point1.get(i) * point2.get(i));
+        return sum;
+    } 
+	
 	public static String join(ArrayList<String> list, String delimiter) {
 	    StringBuilder result = new StringBuilder();
 	    for (Iterator<String> i = list.iterator(); i.hasNext();) {
@@ -170,18 +382,15 @@ public class Helpers {
 		
 		Data d = new Data(line, "0.0");
 		
-		ArrayList<String> pos = getPOS(pipeline, line);
-		//pos.set(0, "<START>");
-		d.setPos(pos);
+		d.setPos(getPOS(pipeline, line));
 		d.setTkns(getTokens(pipeline, line));
-		
+
 		SVMLightModel[] models = new SVMLightModel[3];
 		models[0] = SVMLightModel.readSVMLightModelFromURL(new java.io.File(Settings.path + "single_model0.dat").toURL());
 		models[1] = SVMLightModel.readSVMLightModelFromURL(new java.io.File(Settings.path + "single_model1.dat").toURL());
 		models[2] = SVMLightModel.readSVMLightModelFromURL(new java.io.File(Settings.path + "single_model2.dat").toURL());
-		
 		Single single = new Single(Settings.path);
-		return single.classify(d, models, Helpers.loadBrownClusters(), 4.0);
+		return single.classify(d, models, Helpers.loadBrownClusters("1000.txt"), 4.0);
 	}
 	
 	public static ArrayList<String> getTokens( StanfordCoreNLP pipeline, String line ) {
@@ -411,47 +620,51 @@ public class Helpers {
 		return hasTitle;
 	}
 	
-	public static boolean hasEvent( StanfordCoreNLP pipeline, String line ) throws ParseException, IOException {
+	public static String getEvent( String line, ArrayList<String> tkns, ArrayList<String> pos, ArrayList<String> ner ) throws ParseException, IOException {
+
+		EventData edata = new EventData(line, "");
+		edata.setPos(pos);
+		edata.setTkns(tkns);
+		edata.setNER(ner);
 		
-		ArrayList<String> neList = new ArrayList<String>();
-		ArrayList<String> posList = new ArrayList<String>();
-	    ArrayList<String> tknList = new ArrayList<String>();
-	    
-	    Annotation document = new Annotation(line);
-	    pipeline.annotate(document);
-	    List<CoreMap> sentences = document.get(SentencesAnnotation.class);
-	    
-	    for(CoreMap sentence: sentences) {
-	        for (CoreLabel token: sentence.get(TokensAnnotation.class)) {
-	        	String word = token.get(TextAnnotation.class);
-				String pos = token.get(PartOfSpeechAnnotation.class);
-				String ne = token.get(NamedEntityTagAnnotation.class);  
-				
-				neList.add(ne);
-				posList.add(pos);
-				tknList.add(word);
-	        }
-	    }
+		HashMap<String, ArrayList<String>> brown = loadBrownClusters("100.txt");
 		
-		AnaEventModel eve = new AnaEventModel();
-		double value = eve.classify(line, posList, tknList, neList);
+		EventBinary eb = new EventBinary();
+		double hasEvent = eb.classify(edata, brown);
+		if (hasEvent > 0.85) {
+			EventWord ew = new EventWord();
+			return ew.extract(edata, brown);
+		}
 		
-		if (value > 0)
-			return true;
-		return false;
+		return null;
 	}
 	
-	public static String getEvent( String line ) {
-		for (String e: keyWords) {
-			if (line.toLowerCase().contains(e)) {
-				return e;
-			}
-		}
+	public static String getEventUnsup( String line, ArrayList<String> tkns, ArrayList<String> pos, ArrayList<String> ner ) {
+		
+		// We are going to school tomorrow. -> going to school -> VBG-TO-NN
+		
+		// I will eat with Kevin. -> eat with -> VB-IN
+		
+		// I spent the day with my son.
+		
+		// We watched a flick together.
+		
+		
+		
 		return null;
 	}
 	
 	public static String getEventTense( ArrayList<String> tkns, ArrayList<String> pos ) {
 		
+		String raw = join(tkns, " ");
+		
+		if (raw.toLowerCase().contains("last night")) {
+			return "past";
+		}
+		
+		if (raw.toLowerCase().contains("i will")) {
+			return "future";
+		}
 		
 		for (String t: tkns) {
 			if (t.toLowerCase().equals("yesterday")) {
@@ -466,12 +679,10 @@ public class Helpers {
 				return "past";
 			} else if (e.toLowerCase().equals("vbg")) {
 				return "future";
-			} else if (e.toLowerCase().equals("vb")) {
-				return "future";
 			}
 		}
 		
-		return null;
+		return "past";
 	}
 	
 	public static Entity createEntity(String name, String stanfordType){
@@ -551,6 +762,9 @@ public class Helpers {
 		if (raw.toLowerCase().contains("thank") && raw.toLowerCase().contains("you")) 
 			return true;
 		
+		if (tkns.size() == 2 && tkns.get(0).toLowerCase().contains("thank"))
+			return true;
+			
 		return false;
 	}
 	
@@ -680,7 +894,116 @@ public class Helpers {
 		return output;
 	}
 	
-	public static HashMap<String, ArrayList<String>> loadBrownClusters() throws IOException {
+	public static HashMap<String, Integer> getNgrams( int n, ArrayList<String> words ) {
+		HashMap<String, Integer> ngrams = new HashMap<String, Integer>();
+		ArrayList<String> candi = new ArrayList<String>();
+		
+		for(int i=0;i<words.size()-n+1;i++) {
+			ArrayList<String> ngram = new ArrayList<String>();
+			for(int j=i;j<n+i;j++) {
+				ngram.add(words.get(j).toLowerCase());
+			}
+
+			candi.add(join(ngram, " "));
+		}
+		
+		// remove stop words
+		for(String c: candi) {
+			if (ngrams.containsKey(c))
+				ngrams.put(c, ngrams.get(c)+1);
+			else
+				ngrams.put(c, 1);
+		}
+		
+		return ngrams;
+	}
+	
+	public static ArrayList<String> getDescriminativeNgrams( ArrayList<EventData> data, int n, boolean pos ) {
+		
+		HashMap<String, Integer> posNgrams = new HashMap<String, Integer>();
+		HashMap<String, Integer> negNgrams = new HashMap<String, Integer>();
+		
+		for(EventData d: data) {
+			ArrayList<String> tkns = d.getTkns();
+			tkns.add(0, "<START>");
+			
+			ArrayList<String> ptag = d.getPos();
+			ptag.add(0, "<START>");
+			
+			HashMap<String, Integer> ngrams = null;
+			if (!pos)
+				ngrams = Helpers.getNgrams(n, tkns);
+			else
+				ngrams = Helpers.getNgrams(n, ptag);
+			
+			//System.out.println(d.getLabel());
+			if (d.getLabel() == "-1") {
+				// declarative
+				posNgrams = Helpers.mergeHashMaps(posNgrams, ngrams);
+			} else if (d.getLabel() == "1") {
+				// interrogative
+				negNgrams = Helpers.mergeHashMaps(negNgrams, ngrams);
+			} else {
+				// wtf??
+				System.out.println("error");
+				System.exit(0);
+			}
+		}
+		
+		ArrayList<String> ngrams = new ArrayList<String>();
+		
+		for (String link: posNgrams.keySet()) {
+			if ( posNgrams.get(link) > 2 && !negNgrams.containsKey(link) )
+				ngrams.add(link);
+		}
+		
+		for (String link: negNgrams.keySet()) {
+			if ( negNgrams.get(link) > 2 && !posNgrams.containsKey(link) )
+				ngrams.add(link);
+		}
+		
+		return ngrams;
+	}
+
+	//add all of hm2 to hm1 AND update the value if hm1 contains the key already
+	public static HashMap<String, Integer> mergeHashMaps( HashMap<String, Integer> hm1, HashMap<String, Integer> hm2 ) {
+		
+		HashMap<String, Integer> output = (HashMap<String, Integer>) hm1.clone();
+		
+		for( String s: hm2.keySet() ) {
+			if (hm1.containsKey(s)) 
+				output.put(s, hm1.get(s)+hm2.get(s));
+			else
+				output.put(s, hm2.get(s));
+		}
+		
+		return output;
+	}
+	
+	public static ArrayList<Question> getSorted( HashMap<Question, Double> ngrams, int cutoff ) {
+		// Get a list of the entries in the map
+        List<Map.Entry<Question, Double>> list = new Vector<Map.Entry<Question, Double>>(ngrams.entrySet());
+
+        // Sort the list using an annonymous inner class implementing Comparator for the compare method
+        java.util.Collections.sort(list, new Comparator<Map.Entry<Question, Double>>() {
+            public int compare(Map.Entry<Question, Double> entry, Map.Entry<Question, Double> entry1) {
+                // Return 0 for a match, -1 for less than and +1 for more then
+                return (entry.getValue().equals(entry1.getValue()) ? 0 : (entry.getValue() < entry1.getValue() ? -1 : 1));
+            }
+        });
+        
+        //HashMap<Question, Double> output = new HashMap<Question, Double>();
+        ArrayList<Question> output = new ArrayList<Question>();
+        
+        // Copy back the entries now in order
+        for (Map.Entry<Question, Double> entry: list) {
+        	output.add(entry.getKey());
+        } 
+        
+        return output;
+	}
+	
+	public static HashMap<String, ArrayList<String>> loadBrownClusters(String filename) throws IOException {
 		/*
 		000000  induvidual      1
 		000000  disarment       1
@@ -689,7 +1012,7 @@ public class Helpers {
 		*/
 		String line;
 		HashMap<String, ArrayList<String>> clusters = new HashMap<String, ArrayList<String>>();
-		BufferedReader br = new BufferedReader(new FileReader(Settings.path + "1000.txt"));
+		BufferedReader br = new BufferedReader(new FileReader(Settings.path + filename));
 		while ( (line = br.readLine()) != null ) {
 			String[] tokens = line.split("\t");
 			
@@ -779,6 +1102,50 @@ public class Helpers {
 		return attributes;
 	}
 	
+	public static HashMap<String, ArrayList<Double>> loadWordVectors() throws IOException, JSONException {
+		
+		HashMap<String, ArrayList<Double>> wordVectors = new HashMap<String, ArrayList<Double>>();
+		BufferedReader br = new BufferedReader(new FileReader(Settings.path + "25dim.txt"));
+		
+		String line;
+		while( (line = br.readLine()) != null ) {
+			String tokens[] = line.split(" ");
+			
+			ArrayList<Double> vector = new ArrayList<Double>();
+			for(int i=1;i<tokens.length;i++)
+				vector.add(Double.parseDouble(tokens[i]));
+			
+			wordVectors.put(tokens[0], vector);
+		}
+		
+		br.close();
+		
+		return wordVectors;
+	}
+	
+	public static ArrayList<String> loadStp() throws IOException, JSONException {
+		
+		ArrayList<String> stp = new ArrayList<String>();
+		BufferedReader br = new BufferedReader(new FileReader(Settings.path + "stp.txt"));
+		
+		String line;
+		while( (line = br.readLine()) != null ) {
+			if (line.contains("|")) {
+				String[] tokens = line.split("\\|");
+				
+				if (!stp.contains(tokens[0]) && !tokens[0].trim().replaceAll("\\s+", " ").isEmpty())
+					stp.add(tokens[0].trim());
+			} else {
+				if (!stp.contains(line) && !line.trim().replaceAll("\\s+", " ").isEmpty())
+					stp.add(line.trim());
+			}
+		}
+		
+		br.close();
+		
+		return stp;
+	}
+	
 	public static String genQuestion( String type, String attribute, String tense, int person ) throws IOException, JSONException {
 		// the input would be [person, age], [person, education_institute], or maybe [event, who]
 		
@@ -787,25 +1154,25 @@ public class Helpers {
 		ArrayList<JSONObject> possible = questions.get(attribute);
 		ArrayList<JSONObject> filtered = new ArrayList<JSONObject>();
 		for (JSONObject p: possible) {
-			if ( !type.equals("event"))
-				filtered.add(p);
 			
 			if ( type.equals("event") && p.getString("tense").equals(tense))
 				filtered.add(p);
 			
-			if ( type.equals("person") && person == 2 && p.getInt("person") == 2 ) {
+			if ( type.equals("person") && person == 2 && p.getInt("person") == 2 )
 				filtered.add(p);
-			}
 			
-			if ( type.equals("person") && person == 3 && p.getInt("person") == 3 ) {
+			if ( type.equals("person") && person == 3 && p.getInt("person") == 3 )
 				filtered.add(p);
-			}
+			
 		}
 		
-		Random rand = new Random();
-		int index = rand.nextInt(possible.size());
+		if (filtered.size() == 0) 
+			return null;
 		
-		JSONObject question = possible.get(index);
+		Random rand = new Random();
+		int index = rand.nextInt(filtered.size());
+		
+		JSONObject question = filtered.get(index);
 		return question.getString("question");
 	}
 	
@@ -992,28 +1359,51 @@ public class Helpers {
 		return null;
 	}
 	
-	public static ArrayList<Question> rank( ArrayList<Question> potential ) {
+	public static ArrayList<Question> rank( HashMap<Question, Double> potential ) {
+		
+		ArrayList<Question> sorted = getSorted(potential, 100);
 		
 		ArrayList<Question> medQ = new ArrayList<Question>();
 		ArrayList<Question> perQ = new ArrayList<Question>();
 		ArrayList<Question> eveQ = new ArrayList<Question>();
 		
-		for(Question q: potential) {
-			if (q.getObj().equals("event"))
+		for(Question q: sorted) {
+			//System.out.println(q.getQuestion());
+			if (q.getObj().equals("event") && q.getQuestion() != null)
 				eveQ.add(q);
-			if (q.getObj().equals("person"))
+			if (q.getObj().equals("person") && q.getQuestion() != null)
 				perQ.add(q);
-			if (q.getObj().equals("medical"))
+			if (q.getObj().equals("medical") && q.getQuestion() != null)
 				medQ.add(q);
 		}
 		
+		boolean hasNme = false;
+		boolean hasWho = false;
+		boolean hasWhich = false;
+		
 		int person_index = 0;
 		for(Question pq: perQ) {
+			if (pq.getAtr().equals("name")) {
+				hasNme = true;
+				person_index = perQ.indexOf(pq);
+			}
+		}
+		
+		person_index = 0;
+		for(Question pq: perQ) {
 			if (pq.getAtr().equals("who")) {
+				hasWho = true;
 				person_index = perQ.indexOf(pq);
 			}
 		}
 
+		for(Question pq: perQ) {
+			if (pq.getAtr().equals("which")) {
+				hasWhich = true;
+				person_index = perQ.indexOf(pq);
+			}
+		}
+		
 		ArrayList<Question> willask = new ArrayList<Question>();
 		
 		// choose at most two questions, if theres a medical question it must be included
@@ -1029,8 +1419,16 @@ public class Helpers {
 			}
 		} else {
 			if ( perQ.size() > 0 && eveQ.size() > 0) {
-				willask.add(perQ.get(person_index));
-				willask.add(eveQ.get(0));
+				if (hasWhich || hasWho || hasNme) {
+					willask.add(perQ.get(person_index));
+					willask.add(eveQ.get(0));
+				} else {
+					for (Question eq: eveQ) {
+						if (willask.size() == 2)
+							break;
+						willask.add(eq);
+					}
+				}
 			} else if (perQ.size() > 0 && eveQ.size() == 0) {
 				willask.add(perQ.get(person_index));
 				perQ.remove(person_index);
@@ -1047,7 +1445,7 @@ public class Helpers {
 				}
 			}
 		}
-		
+		System.out.println(willask.size());
 		return willask;
 	}
 	
@@ -1099,5 +1497,70 @@ public class Helpers {
 		int index = random.nextInt(reqPhrases.length);
 		
 		return reqPhrases[index];
+	}
+	
+	public static String anaMood() {
+		String moodPhrases[] = {"Good!", "Great.", "I'm good.", "I am ok.", "Super!"};
+		Random random = new Random();
+		int index = random.nextInt(moodPhrases.length);
+		
+		return moodPhrases[index];
+	}
+	
+	public static String genericEventResponse( String tense ) {
+		
+		if (tense.equals("past")) {
+			String past[] = {"Sounds like fun.", "I hope you enjoyed yourself.", "Jealous.", "Not bad.", "Next time bring me! Haha."};
+			Random random = new Random();
+			int index = random.nextInt(past.length);
+			
+			return past[index];
+		} else {
+			String future[] = {"Hope you have fun.", "Sounds like fun.", "I think that's great.", "Not bad.", "Have fun!", "Enjoy youself :D"};
+			Random random = new Random();
+			int index = random.nextInt(future.length);
+			
+			return future[index];
+		}
+	}
+	
+	public static void printTime(long estimatedTime) {
+		if (print) {
+			System.out.println(String.format("\n%d min, %d sec",
+					TimeUnit.MILLISECONDS.toMinutes(estimatedTime),
+					TimeUnit.MILLISECONDS.toSeconds(estimatedTime) -
+					TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(estimatedTime))
+			));
+		}
+	}
+	
+	public static String checkBinary( ArrayList<String> tkns ) {
+		
+		boolean found = false;
+		boolean binary = false;
+
+		for(String tkn: tkns) {
+			if (tkn.toLowerCase().matches("(yes|yea)")) {
+				found = true;
+				binary = true;
+			}
+			
+			if (tkn.toLowerCase().matches("(no|nope)")) {
+				found = true;
+				binary = false;
+			}
+		}
+		
+		if (found && binary) {
+			// yes
+			return "yes";
+		}
+		
+		if (found && !binary) {
+			// yes
+			return "no";
+		}
+		
+		return null;
 	}
 }

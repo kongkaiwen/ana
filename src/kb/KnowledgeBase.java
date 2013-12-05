@@ -8,9 +8,12 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Random;
 
+import org.joda.time.DateTime;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import answer.Extract;
 
 import relations.Entity;
 import tools.Helpers;
@@ -22,6 +25,7 @@ public class KnowledgeBase {
 	
 	private Person speaker;
 	
+	private int num_frames;
 	private int num_events;
 	private int num_dailies;
 	private int num_medicals;
@@ -31,6 +35,7 @@ public class KnowledgeBase {
 	private int num_responses;
 	
 	private ArrayList<Event> events;
+	private ArrayList<Frame> frames;
 	private ArrayList<Person> people;
 	private ArrayList<Medical> medicals;
 	private ArrayList<Request> requests;
@@ -51,6 +56,7 @@ public class KnowledgeBase {
 	
 	public KnowledgeBase() {
 		
+		this.num_frames = 0;
 		this.num_events = 0;
 		this.num_dailies = 0;
 		this.num_medicals = 0;
@@ -59,6 +65,7 @@ public class KnowledgeBase {
 		this.num_relations = 0;
 		this.num_responses = 0;
 		
+		this.frames = new ArrayList<Frame>();
 		this.events = new ArrayList<Event>();
 		this.people = new ArrayList<Person>();
 		this.requests = new ArrayList<Request>();
@@ -881,5 +888,54 @@ public class KnowledgeBase {
 		}
 		
 		return null;
+	}
+
+	public ArrayList<Frame> getFrames() {
+		return this.frames;
+	}
+
+	public void removeFrame(int fid) {
+		
+		int index = -1;
+		for (Frame f: frames) {
+			int fidx = frames.indexOf(f);
+			if (f.getFID() == fid) {
+				index = fidx;
+			}
+		}
+		
+		if (index != -1) 
+			frames.remove(index);
+	}
+
+	public void decayFrames() {
+	
+		ArrayList<Integer> idxes = new ArrayList<Integer>();
+		for (Frame f: frames) {
+			int fidx = frames.indexOf(f);
+			f.updateDecay();
+			if (f.getDecay() >= 2) {
+				idxes.add(fidx);
+			}
+		}
+		
+		for (Integer i: idxes)
+			frames.remove(i);
+	}
+
+	public int addFrame( String line, String finalResponse, Question qone) {
+
+		Extract func = qone.getCallback().getFunction();
+		if (func == null) {
+			System.out.println("func null");
+			return -1;
+		}
+		Frame frame = new Frame(line, finalResponse, qone.getOID(), qone.getObj(), qone.getAtr(), new DateTime(), func, 0, num_frames);
+		num_frames++;
+		
+		// does this person already exist?
+		this.frames.add(frame);
+		
+		return frame.getFID();
 	}
 }

@@ -4,13 +4,13 @@
 {"question": "What time did it end?", "type": "end", "event": "generic", "tense": "past"}
 {"question": "When will you leave?", "type": "end", "event": "generic", "tense": "future"}
 {"question": "When did you leave?", "type": "end", "event": "generic", "tense": "past"}
-{"question": "Where was it?", "type": "where", "event": "generic", "tense": "future"}
-{"question": "Where is it?", "type": "where", "event": "generic", "tense": "past"}
-{"question": "Who will you go with?", "type": "who", "event": "generic", "tense": "future"}
-{"question": "Who are you going with?", "type": "who", "event": "generic", "tense": "past"}
+{"question": "Where is it?", "type": "where", "event": "generic", "tense": "future"}
+{"question": "Where was it?", "type": "where", "event": "generic", "tense": "past"}
+{"question": "Who are you going with?", "type": "who", "event": "generic", "tense": "future"}
+{"question": "Who did you go with?", "type": "who", "event": "generic", "tense": "past"}
 {"question": "When does it start?", "type": "start", "event": "generic", "tense": "future"}
 {"question": "When did it start?", "type": "start", "event": "generic", "tense": "past"}
-{"question": "Where did you go?", "type": "where", "event": "generic", "tense": "future"}
-{"question": "Where is it located?", "type": "where", "event": "generic", "tense": "past"}
+{"question": "Where is it located?", "type": "where", "event": "generic", "tense": "future"}
+{"question": "Where did you go?", "type": "where", "event": "generic", "tense": "past"}
 {"question": "Who will you go with?", "type": "who", "event": "generic", "tense": "future"}
 {"question": "Who accompanied you?", "type": "who", "event": "generic", "tense": "past"}

@@ -7,10 +7,12 @@
 {"question": "What is your age?", "type": "age", "person": 2}
 {"question": "What do you like to eat?", "type": "likes", "person": 2}
 {"question": "What food do you like?", "type": "likes", "person": 2}
+{"question": "What do you like to buy?", "type": "likes", "person": 3}
+{"question": "What type of clothes do you like?", "type": "likes", "person": 3}
 {"question": "Is it a girl or boy?", "type": "sex", "person": 2}
 {"question": "What's your name?", "type": "name", "person": 2}
 {"question": "What degree do you have?", "type": "education_degree", "person": 2}
-{"question": "Where do you work?", "type": "profession_institute", "person": 2}
+{"question": "What company do you work for?", "type": "profession_institute", "person": 2}
 {"question": "Where do you live?", "type": "residence", "person": 2}
 {"question": "What ethnicity are you?", "type": "ethnicity", "person": 2}
 {"question": "Do you have a religion?", "type": "religion", "person": 2}
@@ -22,17 +24,31 @@
 {"question": "What is his profession?", "type": "profession_position", "person": 3}
 {"question": "Where did he go to college?", "type": "education_institute", "person": 3}
 {"question": "Where did he attend university?", "type": "education_institute", "person": 3}
-{"question": "Does he go to university?", "type": "education_institute", "person": 3}
+{"question": "Where does he go to university?", "type": "education_institute", "person": 3}
 {"question": "How old is he?", "type": "age", "person": 3}
 {"question": "What is his age?", "type": "age", "person": 3}
 {"question": "What does he like to eat?", "type": "likes", "person": 3}
 {"question": "What food does he like?", "type": "likes", "person": 3}
+{"question": "What does he like to buy?", "type": "likes", "person": 3}
+{"question": "What clothes does he like?", "type": "likes", "person": 3}
 {"question": "Is it a girl or boy?", "type": "sex", "person": 3}
 {"question": "What's his name?", "type": "name", "person": 3}
 {"question": "What did he study?", "type": "education_degree", "person": 3}
-{"question": "Where does he work?", "type": "profession_institute", "person": 3}
+{"question": "What company does he work for?", "type": "profession_institute", "person": 3}
 {"question": "Where does he live?", "type": "residence", "person": 3}
 {"question": "What ethnicity is he?", "type": "ethnicity", "person": 3}
 {"question": "Do you have a religion?", "type": "religion", "person": 3}
 {"question": "How much does he weigh?", "type": "weight", "person": 3}
 {"question": "How tall is he?", "type": "height", "person": 3}
+{"question": "What degree do you have?", "type": "education_degree", "person": 2}
+{"question": "Which educational degree do you have?", "type": "education_degree", "person": 2}
+{"question": "What did he study in school?", "type": "education_degree", "person": 3}
+{"question": "What degree does he have?", "type": "education_degree", "person": 3}
+{"question": "What is your job title?", "type": "profession_position", "person": 2}
+{"question": "What is your work position?", "type": "profession_position", "person": 2}
+{"question": "What is his job title?", "type": "profession_position", "person": 3}
+{"question": "What is his work position?", "type": "profession_position", "person": 3}
+{"question": "What city do you live in?", "type": "residence", "person": 2}
+{"question": "Where is your residence located?", "type": "residence", "person": 2}
+{"question": "What city does he live in?", "type": "residence", "person": 3}
+{"question": "Where is his residence located?", "type": "residence", "person": 3}

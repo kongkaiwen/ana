@@ -13,7 +13,9 @@ if ( type.equals("chat") ) {
 	String desc = request.getParameter("text");
 	String correct = request.getParameter("correct");
 
-	db.insertChat( model, desc, correct );
+	String conv = request.getParameter("conv");
+	
+	db.insertChat( model, desc, correct, conv );
 } else {
 	
 	String missing = request.getParameter("missing");

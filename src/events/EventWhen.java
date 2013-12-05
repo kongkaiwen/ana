@@ -10,12 +10,14 @@ import entities.AnaEntity;
 
 public class EventWhen {
 
-	public static String match( Event event, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos ) {
+	public static String match( Event event, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos, String attr ) {
 		
 		boolean flag = false;
 		boolean has_dte = false;
 		boolean has_tme = false;
+		boolean has_num = false;
 		
+		String cd = null;
 		Entity dte = null;
 		Entity tme = null;
 		
@@ -34,12 +36,27 @@ public class EventWhen {
 			}
 		}
 		
+		for(String prt: pos) {
+			if (prt.toLowerCase().equals("cd")) {
+				has_num = true;
+				cd = tkns.get(pos.indexOf(prt));
+				
+//				if (cd.contains("am") || cd.contains("pm")) {
+//					cd = null;
+//				}
+			}
+		}
+		
+		if (has_num) {
+			event.update(attr, cd);
+		}
+		
 		if (has_tme) {
-			event.update("start", tme.getName());
+			event.update(attr, tme.getName());
 		}
 		
 		if (has_dte) {
-			event.update("start", dte.getName());
+			event.update(attr, dte.getName());
 		}
 		
 		return null;

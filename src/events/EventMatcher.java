@@ -24,7 +24,7 @@ public class EventMatcher {
 
 		EventWhere.match(event, tkns, ent, pos);
 		
-		EventWhen.match(event, tkns, ent, pos);
+		EventWhen.match(event, tkns, ent, pos, "start");
 		
 		EventWho.match(event, tkns, ent, pos);
 		

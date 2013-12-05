@@ -9,7 +9,7 @@ import relations.Entity;
 public class ExtractAge implements Extract {
 
 	@Override
-	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos ) throws IOException {
+	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos, String val ) throws IOException {
 
 		String num = "";
 		String time = "";

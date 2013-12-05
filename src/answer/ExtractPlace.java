@@ -10,8 +10,10 @@ import relations.Entity;
 
 public class ExtractPlace implements Extract {
 
+	public static String[] places = {"home", "house", "place"};
+	
 	@Override
-	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos  ) throws IOException {
+	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos, String val  ) throws IOException {
 
 		String nnp = "";
 		String name = "";
@@ -35,6 +37,16 @@ public class ExtractPlace implements Extract {
 						}
 						nnp = tkns.get(index);
 					}
+				}
+			}
+		}
+		
+		// check for places
+		if (name.equals("") && nnp.equals("")) {
+			for (String p: places) {
+				if (tkns.contains(p)) {
+					nnp = p;
+					break;
 				}
 			}
 		}

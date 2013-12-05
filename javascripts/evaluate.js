@@ -255,9 +255,11 @@ function sendRating() {
 	checked = $('input[name="Rating"]:checked').val();
 	correct = $("#correct").val();
 
+	conversation = $("#model-"+correct+"-body").text();
+
 	$.ajax({
 		url: "../db.jsp",
-		data: "text=" + $("#submit-text").val() + "&model=" +checked + "&type=chat&correct="+correct,
+		data: "text=" + $("#submit-text").val() + "&model=" +checked + "&type=chat&correct="+correct+"&conv="+conversation,
 		success: function(data) {
 			alert("Success!");
 		}

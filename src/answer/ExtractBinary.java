@@ -9,7 +9,7 @@ import relations.Entity;
 public class ExtractBinary implements Extract {
 
 	@Override
-	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos )throws IOException {
+	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos, String val )throws IOException {
 
 		boolean found = false;
 		boolean binary = false;
@@ -27,8 +27,20 @@ public class ExtractBinary implements Extract {
 			}
 		}
 
-		if (found)
-			kb.update(oid, object, attr, String.valueOf(binary));
+		System.out.println(found + ":" + binary);
+		if (found) {
+			System.out.println("val: "+val);
+			if (binary) {
+				System.out.println("yes");	
+				if (val == null)
+					kb.update(oid, object, attr, "");
+				else
+					kb.update(oid, object, attr, val);
+			} else {
+				System.out.println("no");
+				kb.update(oid, object, attr, "");
+			}
+		}
 		
 		// delete buffer
 		kb.delBuffer();

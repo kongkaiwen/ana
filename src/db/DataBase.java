@@ -25,11 +25,12 @@ public class DataBase {
 		stmt = con.createStatement();
 	}
 	
-	public void insertChat( String model, String desc, String corr ) throws SQLException {
-		PreparedStatement pstmt = con.prepareStatement("insert into chat (Model, Description, Correct) values (?, ?, ?)");
+	public void insertChat( String model, String desc, String corr, String conv ) throws SQLException {
+		PreparedStatement pstmt = con.prepareStatement("insert into chat (Model, Description, Correct, Conv) values (?, ?, ?, ?)");
 		pstmt.setString(1, model);
 		pstmt.setString(2, desc);
 		pstmt.setString(3, corr);
+		pstmt.setString(4, conv);
 		pstmt.executeUpdate();
 		//stmt.executeUpdate("insert into chat (Model, Description, Correct) values ('"+model+"', '"+desc+"', '"+corr+"')");
 	}

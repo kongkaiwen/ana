@@ -10,7 +10,7 @@ import tools.Helpers;
 public class ExtractWho implements Extract {
 	
 	@Override
-	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos  ) throws IOException {
+	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos, String val  ) throws IOException {
 
 		boolean flag = false;
 		boolean has_wrd = false;
