@@ -62,6 +62,11 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
+    <target name="EventWord">
+        <java classname="events.EventWord" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
     <target name="GenerateQuestion">
         <java classname="qgen.GenerateQuestion" failonerror="true" fork="yes">
             <classpath refid="ana.classpath"/>
@@ -109,6 +114,7 @@
     </target>
     <target name="Ana">
         <java classname="agents.Ana" failonerror="true" fork="yes">
+            <jvmarg line="-mx4096m"/>
             <classpath refid="ana.classpath"/>
         </java>
     </target>
@@ -119,6 +125,11 @@
     </target>
     <target name="KnowledgeBase">
         <java classname="kb.KnowledgeBase" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
+    <target name="EventBinary">
+        <java classname="events.EventBinary" failonerror="true" fork="yes">
             <classpath refid="ana.classpath"/>
         </java>
     </target>

@@ -1,0 +1,16 @@
+vbp rb
+nn cc
+pos nn
+vb vbg
+in prp$
+nnp cd
+in cd
+vbp dt
+vbg in
+to dt
+nn jj
+rp in
+in prp
+cd nn
+nn md
+nnp nnp
