@@ -88,12 +88,12 @@ public class Helpers {
 //		System.out.println(ummPhrase());
 //		//System.out.println(loadDrugNames());
 //		//System.out.println(predictGender("Kevin"));
-//		Properties props = new Properties();
-//		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
-//		//props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-//		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-//		
-//		System.out.println(sentenceFunction(pipeline, "What should I cook for Phil"));
+		Properties props = new Properties();
+		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
+		//props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+		
+		System.out.println(sentenceFunction(pipeline, "What should I cook for Phil?"));
 		
 //		ArrayList<Double> v1 = test.get("eat");
 //		ArrayList<Double> v2 = test.get("hungry");
@@ -230,35 +230,35 @@ public class Helpers {
 //		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
 //		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 		
-		String line;
-		BufferedReader br;
-		BufferedWriter bw;
-		
-		ArrayList<String> stp = Helpers.loadStp();
-		bw = new BufferedWriter(new FileWriter("shrt25dim.txt"));
-		br = new BufferedReader(new FileReader("25dim.txt"));
-		while( (line = br.readLine()) != null ) {
-			String tokens[] = line.split(" ");
-			
-			if (stp.contains(tokens[0].toLowerCase()))
-				continue;
-			if (tokens[0].equals(".") || tokens[0].equals("!") || tokens[0].equals("?"))
-				continue;
-			if (tokens[0].contains("*") || tokens[0].contains("-") || tokens[0].contains(".") || tokens[0].contains("/") || tokens[0].contains("+") || tokens[0].contains("=") || tokens[0].contains("`") || tokens[0].contains(",") || tokens[0].contains(")") || tokens[0].contains("("))
-				continue;
-			if (isInteger(tokens[0]))
-				continue;
-			if (isDouble(tokens[0]))
-				continue;
-
-			String out = tokens[0] + " ";
-			for(int i=1;i<tokens.length;i++)
-				out += tokens[i] + " ";
-			
-			bw.write(out + "\n");
-		}
-		br.close();
-		bw.close();
+//		String line;
+//		BufferedReader br;
+//		BufferedWriter bw;
+//		
+//		ArrayList<String> stp = Helpers.loadStp();
+//		bw = new BufferedWriter(new FileWriter("shrt25dim.txt"));
+//		br = new BufferedReader(new FileReader("25dim.txt"));
+//		while( (line = br.readLine()) != null ) {
+//			String tokens[] = line.split(" ");
+//			
+//			if (stp.contains(tokens[0].toLowerCase()))
+//				continue;
+//			if (tokens[0].equals(".") || tokens[0].equals("!") || tokens[0].equals("?"))
+//				continue;
+//			if (tokens[0].contains("*") || tokens[0].contains("-") || tokens[0].contains(".") || tokens[0].contains("/") || tokens[0].contains("+") || tokens[0].contains("=") || tokens[0].contains("`") || tokens[0].contains(",") || tokens[0].contains(")") || tokens[0].contains("("))
+//				continue;
+//			if (isInteger(tokens[0]))
+//				continue;
+//			if (isDouble(tokens[0]))
+//				continue;
+//
+//			String out = tokens[0] + " ";
+//			for(int i=1;i<tokens.length;i++)
+//				out += tokens[i] + " ";
+//			
+//			bw.write(out + "\n");
+//		}
+//		br.close();
+//		bw.close();
 		
 //		String line;
 //		BufferedReader br;

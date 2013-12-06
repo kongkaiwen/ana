@@ -54,7 +54,7 @@ public class Ana {
 		Ana ana = new Ana();
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
-		ana.initKB(1);
+		ana.initKB(2);
 		
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
@@ -167,7 +167,7 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("Jana.", false));
 //		System.out.println("response: " + ana.ask("Olive Garden.", false));
 		
-		System.out.println("response: " + ana.ask("I just went to dinner with Jana.", false));
+		System.out.println("response: " + ana.ask("What should I cook for Phil.", false));
 		//System.out.println("response: " + ana.ask("What time is it?", false));
 		//System.out.println("response: " + ana.ask("How is the weather?", false));
 
@@ -376,6 +376,7 @@ public class Ana {
 			Question question = new Question(pipeline, tkns, today.getId(), "daily", attr, ques, null, today.getCallback(attr), null, vectors, stp, pos, allEntities );
 			
 			knowledge.addResponse(line, knowledge.getSpeaker().get("name"), question.getQuestion(), "question");
+			knowledge.decayFrames();
 			return ques;
 		}
 		
@@ -389,6 +390,7 @@ public class Ana {
 			if ( (line.toLowerCase().contains("i am") || line.toLowerCase().contains("my name is") || line.toLowerCase().contains("i'm")) && newpersonname != null ) {
 				knowledge.update(pid, "person", "name", newpersonname);
 				knowledge.setSpeaker(pid);
+				knowledge.decayFrames();
 				return "Nice to meet you!";
 			}
 			
@@ -399,6 +401,7 @@ public class Ana {
 				
 				knowledge.addResponse(line, "", r, "question");
 				knowledge.addCallback(question.getCallback());
+				knowledge.decayFrames();
 				return r;
 			} else {
 				String r = Helpers.genGreeting() + "! " + Helpers.genWhoIs();
@@ -407,6 +410,7 @@ public class Ana {
 				
 				knowledge.addResponse(line, "", r, "question");
 				knowledge.addCallback(question.getCallback());
+				knowledge.decayFrames();
 				return r;
 			}
 		}
@@ -487,6 +491,7 @@ public class Ana {
 	
 						if (function == 1.0) {
 							String rsp = Helpers.askQuestion(knowledge, tkns, relPerson);
+							knowledge.decayFrames();
 							return rsp;
 						}
 						
@@ -646,7 +651,7 @@ public class Ana {
 		if (!symptoms.equals("")) {
 			Medical medical = knowledge.addMedical();
 			medical.update("issue", symptoms);
-
+			knowledge.decayFrames();
 			return "Would you like me to call your doctor?";
 		}
 		
@@ -655,6 +660,7 @@ public class Ana {
 		if (takenMeds) {
 			knowledge.addMedical( "took meds" );
 			knowledge.updateDaily( "tookmeds", "true" );
+			knowledge.decayFrames();
 			return "Noted";
 		}
 		
@@ -663,6 +669,7 @@ public class Ana {
 		if (forgotMeds) {
 			String tookMeds = knowledge.getDaily("tookmeds");
 			knowledge.addMedical( "forgot meds" );
+			knowledge.decayFrames();
 			if (Boolean.valueOf(tookMeds))
 				return "I have recorded that you have taken your medication today.";
 			else
@@ -671,6 +678,7 @@ public class Ana {
 		
 		// is the input a thanks?
 		if ( Helpers.isThanks(tkns) ) {
+			knowledge.decayFrames();
 			return Helpers.noProblem();
 		}
 		
@@ -678,12 +686,13 @@ public class Ana {
 		if ( Helpers.isGreeting(tkns) ) {
 			
 			if ( Helpers.isMorning() ) {
+				knowledge.decayFrames();
 				return "Good morning.";
 			}
 
 			response = Helpers.genGreeting() + ".";
 			knowledge.addResponse(line, knowledge.getSpeaker().get("name"), response, "greeting");
-			
+			knowledge.decayFrames();
 			return response;
 		}
 		
@@ -789,6 +798,7 @@ public class Ana {
 			else
 				knowledge.addRequest(phrase);
 			
+			knowledge.decayFrames();
 			return Helpers.reqPhrase();
 		}
 		
@@ -801,14 +811,16 @@ public class Ana {
 			/*
 			What should I cook?  
 			*/
-			if (line.toLowerCase().contains("what") && line.contains("cook")) {
+			if ( (line.toLowerCase().contains("what") && line.contains("cook")) || (line.toLowerCase().contains("suggestion") && line.contains("cook")) || (line.toLowerCase().contains("suggestion") && line.contains("eat")) ) {
+				knowledge.decayFrames();
 				return Helpers.foodSuggestion();
 			}
 			
 			/*
 			What is your name? 
 			*/
-			if (line.toLowerCase().contains("what") && line.contains("your") && line.contains("name")) {
+			if ((line.toLowerCase().contains("what") && line.contains("your") && line.contains("name")) || (line.toLowerCase().contains("who") && line.contains("are") && line.contains("you"))) {
+				knowledge.decayFrames();
 				return Helpers.introduceAna();
 			}
 			
@@ -816,6 +828,7 @@ public class Ana {
 			How are you?
 			*/
 			if (line.toLowerCase().contains("how") && line.contains("are") && line.contains("you")) {
+				knowledge.decayFrames();
 				return Helpers.anaMood();
 			}
 			
@@ -835,6 +848,7 @@ public class Ana {
 					String prettyAnswer = peopleInKB.get(0).formulateResponse("likes", answer);
 					
 					knowledge.addResponse(line, "", prettyAnswer, "answer");
+					knowledge.decayFrames();
 					return prettyAnswer;
 				}
 				
@@ -843,12 +857,14 @@ public class Ana {
 				
 				if (attr == null) {
 					knowledge.addResponse(line, "", "I'm not sure.", "answer");
+					knowledge.decayFrames();
 					return "I'm not sure.";
 				}
 				
 				String answer = knowledge.get(peopleInKB.get(0).getId(), "person", attr);
 				if (answer.equals("")) {
 					knowledge.addResponse(line, "", "I don't know, sorry.", "answer");
+					knowledge.decayFrames();
 					return "I don't know, sorry.";
 				}
 				
@@ -856,6 +872,7 @@ public class Ana {
 				
 				// add response
 				knowledge.addResponse(line, "", prettyAnswer, "answer");
+				knowledge.decayFrames();
 				return prettyAnswer;
 			}
 		}
@@ -883,6 +900,7 @@ public class Ana {
 				if (knowledge.getDialogue().size() < 4) {
 					String umm = "Tell me about yourself.";
 	  				knowledge.addResponse(line, "", umm, "umm");
+	  				knowledge.decayFrames();
 	  				return umm;
 				}
 			}
@@ -900,8 +918,10 @@ public class Ana {
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
 		// if no questions
-		if (willask.size() == 0)
+		if (willask.size() == 0) {
+			knowledge.decayFrames();
 			return Helpers.ummPhrase();
+		}
 		
 		// q1.ask, RBuffer.add(q1.callback), QBuffer.pop()
 		Question qone = willask.get(0);

@@ -105,7 +105,8 @@ public class EventBinary {
 		//Phil wants to travel.
 		//Well I'm 25 years old.
 		//I just went to dinner with Jana.
-		String linee = "I'm 25 years old.";
+		//In my home.
+		String linee = "In my home.";
 		EventData dd = new EventData(linee, "");
 		dd.setPos(Helpers.getPOS(pipeline, linee));
 		dd.setTkns(Helpers.getTokens(pipeline, linee));
