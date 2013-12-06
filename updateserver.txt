@@ -1,0 +1,8 @@
+updating server
+
+git pull
+copy jars
+copy large data files
+ant build
+restart tomcat
+

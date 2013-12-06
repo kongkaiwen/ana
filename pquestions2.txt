@@ -1,0 +1,54 @@
+{"person":2,"tkn":["When","were","you","born","?"],"question":"When were you born?","type":"date_of_birth","ent":["O","O","O","O","O"],"pos":["WRB","VBD","PRP","VBN","."]}
+{"person":2,"tkn":["Which","university","did","you","graduate","from","?"],"question":"Which university did you graduate from?","type":"education_institute","ent":["O","O","O","O","O","O","O"],"pos":["WDT","NN","VBD","PRP","VB","IN","."]}
+{"person":2,"tkn":["What","is","your","profession","?"],"question":"What is your profession?","type":"profession_position","ent":["O","O","O","O","O"],"pos":["WP","VBZ","PRP$","NN","."]}
+{"person":2,"tkn":["Where","did","you","go","to","college","?"],"question":"Where did you go to college?","type":"education_institute","ent":["O","O","O","O","O","O","O"],"pos":["WRB","VBD","PRP","VB","TO","NN","."]}
+{"person":2,"tkn":["Which","university","did","you","attend","?"],"question":"Which university did you attend?","type":"education_institute","ent":["O","O","O","O","O","O"],"pos":["WDT","NN","VBD","PRP","VB","."]}
+{"person":2,"tkn":["How","old","are","you","?"],"question":"How old are you?","type":"age","ent":["O","O","O","O","O"],"pos":["WRB","JJ","VBP","PRP","."]}
+{"person":2,"tkn":["What","is","your","age","?"],"question":"What is your age?","type":"age","ent":["O","O","O","O","O"],"pos":["WP","VBZ","PRP$","NN","."]}
+{"person":2,"tkn":["What","do","you","like","to","eat","?"],"question":"What do you like to eat?","type":"likes","ent":["O","O","O","O","O","O","O"],"pos":["WP","VBP","PRP","IN","TO","VB","."]}
+{"person":2,"tkn":["What","food","do","you","like","?"],"question":"What food do you like?","type":"likes","ent":["O","O","O","O","O","O"],"pos":["WDT","NN","VBP","PRP","VB","."]}
+{"person":3,"tkn":["What","do","you","like","to","buy","?"],"question":"What do you like to buy?","type":"likes","ent":["O","O","O","O","O","O","O"],"pos":["WP","VBP","PRP","IN","TO","VB","."]}
+{"person":3,"tkn":["What","type","of","clothes","do","you","like","?"],"question":"What type of clothes do you like?","type":"likes","ent":["O","O","O","O","O","O","O","O"],"pos":["WDT","NN","IN","NNS","VBP","PRP","VB","."]}
+{"person":2,"tkn":["Is","it","a","girl","or","boy","?"],"question":"Is it a girl or boy?","type":"sex","ent":["O","O","O","O","O","O","O"],"pos":["VBZ","PRP","DT","NN","CC","NN","."]}
+{"person":2,"tkn":["What","'s","your","name","?"],"question":"What's your name?","type":"name","ent":["O","O","O","O","O"],"pos":["WP","VBZ","PRP$","NN","."]}
+{"person":2,"tkn":["What","degree","do","you","have","?"],"question":"What degree do you have?","type":"education_degree","ent":["O","O","O","O","O","O"],"pos":["WDT","NN","VBP","PRP","VB","."]}
+{"person":2,"tkn":["What","company","do","you","work","for","?"],"question":"What company do you work for?","type":"profession_institute","ent":["O","O","O","O","O","O","O"],"pos":["WDT","NN","VBP","PRP","VB","IN","."]}
+{"person":2,"tkn":["Where","do","you","live","?"],"question":"Where do you live?","type":"residence","ent":["O","O","O","O","O"],"pos":["WRB","VBP","PRP","VB","."]}
+{"person":2,"tkn":["What","ethnicity","are","you","?"],"question":"What ethnicity are you?","type":"ethnicity","ent":["O","O","O","O","O"],"pos":["WDT","NN","VBP","PRP","."]}
+{"person":2,"tkn":["Do","you","have","a","religion","?"],"question":"Do you have a religion?","type":"religion","ent":["O","O","O","O","O","O"],"pos":["VB","PRP","VBP","DT","NN","."]}
+{"person":2,"tkn":["How","much","do","you","weigh","?"],"question":"How much do you weigh?","type":"weight","ent":["O","O","O","O","O","O"],"pos":["WRB","RB","VBP","PRP","VB","."]}
+{"person":2,"tkn":["How","tall","are","you","?"],"question":"How tall are you?","type":"height","ent":["O","O","O","O","O"],"pos":["WRB","JJ","VBP","PRP","."]}
+{"person":3,"tkn":["When","did","he","die","?"],"question":"When did he die?","type":"date_of_death","ent":["O","O","O","O","O"],"pos":["WRB","VBD","PRP","VB","."]}
+{"person":3,"tkn":["When","was","he","born","?"],"question":"When was he born?","type":"date_of_birth","ent":["O","O","O","O","O"],"pos":["WRB","VBD","PRP","VBN","."]}
+{"person":3,"tkn":["Which","university","did","he","graduate","from","?"],"question":"Which university did he graduate from?","type":"education_institute","ent":["O","O","O","O","O","O","O"],"pos":["WDT","NN","VBD","PRP","VB","IN","."]}
+{"person":3,"tkn":["What","is","his","profession","?"],"question":"What is his profession?","type":"profession_position","ent":["O","O","O","O","O"],"pos":["WP","VBZ","PRP$","NN","."]}
+{"person":3,"tkn":["Where","did","he","go","to","college","?"],"question":"Where did he go to college?","type":"education_institute","ent":["O","O","O","O","O","O","O"],"pos":["WRB","VBD","PRP","VB","TO","NN","."]}
+{"person":3,"tkn":["Where","did","he","attend","university","?"],"question":"Where did he attend university?","type":"education_institute","ent":["O","O","O","O","O","O"],"pos":["WRB","VBD","PRP","VB","NN","."]}
+{"person":3,"tkn":["Where","does","he","go","to","university","?"],"question":"Where does he go to university?","type":"education_institute","ent":["O","O","O","O","O","O","O"],"pos":["WRB","VBZ","PRP","VB","TO","NN","."]}
+{"person":3,"tkn":["How","old","is","he","?"],"question":"How old is he?","type":"age","ent":["O","O","O","O","O"],"pos":["WRB","JJ","VBZ","PRP","."]}
+{"person":3,"tkn":["What","is","his","age","?"],"question":"What is his age?","type":"age","ent":["O","O","O","O","O"],"pos":["WP","VBZ","PRP$","NN","."]}
+{"person":3,"tkn":["What","does","he","like","to","eat","?"],"question":"What does he like to eat?","type":"likes","ent":["O","O","O","O","O","O","O"],"pos":["WP","VBZ","PRP","VB","TO","VB","."]}
+{"person":3,"tkn":["What","food","does","he","like","?"],"question":"What food does he like?","type":"likes","ent":["O","O","O","O","O","O"],"pos":["WDT","NN","VBZ","PRP","VB","."]}
+{"person":3,"tkn":["What","does","he","like","to","buy","?"],"question":"What does he like to buy?","type":"likes","ent":["O","O","O","O","O","O","O"],"pos":["WP","VBZ","PRP","VB","TO","VB","."]}
+{"person":3,"tkn":["What","clothes","does","he","like","?"],"question":"What clothes does he like?","type":"likes","ent":["O","O","O","O","O","O"],"pos":["WDT","NNS","VBZ","PRP","VB","."]}
+{"person":3,"tkn":["Is","it","a","girl","or","boy","?"],"question":"Is it a girl or boy?","type":"sex","ent":["O","O","O","O","O","O","O"],"pos":["VBZ","PRP","DT","NN","CC","NN","."]}
+{"person":3,"tkn":["What","'s","his","name","?"],"question":"What's his name?","type":"name","ent":["O","O","O","O","O"],"pos":["WP","VBZ","PRP$","NN","."]}
+{"person":3,"tkn":["What","did","he","study","?"],"question":"What did he study?","type":"education_degree","ent":["O","O","O","O","O"],"pos":["WP","VBD","PRP","VB","."]}
+{"person":3,"tkn":["What","company","does","he","work","for","?"],"question":"What company does he work for?","type":"profession_institute","ent":["O","O","O","O","O","O","O"],"pos":["WDT","NN","VBZ","PRP","VB","IN","."]}
+{"person":3,"tkn":["Where","does","he","live","?"],"question":"Where does he live?","type":"residence","ent":["O","O","O","O","O"],"pos":["WRB","VBZ","PRP","VB","."]}
+{"person":3,"tkn":["What","ethnicity","is","he","?"],"question":"What ethnicity is he?","type":"ethnicity","ent":["O","O","O","O","O"],"pos":["WDT","NN","VBZ","PRP","."]}
+{"person":3,"tkn":["Do","you","have","a","religion","?"],"question":"Do you have a religion?","type":"religion","ent":["O","O","O","O","O","O"],"pos":["VB","PRP","VBP","DT","NN","."]}
+{"person":3,"tkn":["How","much","does","he","weigh","?"],"question":"How much does he weigh?","type":"weight","ent":["O","O","O","O","O","O"],"pos":["WRB","RB","VBZ","PRP","VB","."]}
+{"person":3,"tkn":["How","tall","is","he","?"],"question":"How tall is he?","type":"height","ent":["O","O","O","O","O"],"pos":["WRB","JJ","VBZ","PRP","."]}
+{"person":2,"tkn":["What","degree","do","you","have","?"],"question":"What degree do you have?","type":"education_degree","ent":["O","O","O","O","O","O"],"pos":["WDT","NN","VBP","PRP","VB","."]}
+{"person":2,"tkn":["Which","educational","degree","do","you","have","?"],"question":"Which educational degree do you have?","type":"education_degree","ent":["O","O","O","O","O","O","O"],"pos":["WDT","JJ","NN","VBP","PRP","VB","."]}
+{"person":3,"tkn":["What","did","he","study","in","school","?"],"question":"What did he study in school?","type":"education_degree","ent":["O","O","O","O","O","O","O"],"pos":["WP","VBD","PRP","VB","IN","NN","."]}
+{"person":3,"tkn":["What","degree","does","he","have","?"],"question":"What degree does he have?","type":"education_degree","ent":["O","O","O","O","O","O"],"pos":["WDT","NN","VBZ","PRP","VB","."]}
+{"person":2,"tkn":["What","is","your","job","title","?"],"question":"What is your job title?","type":"profession_position","ent":["O","O","O","O","O","O"],"pos":["WP","VBZ","PRP$","NN","NN","."]}
+{"person":2,"tkn":["What","is","your","work","position","?"],"question":"What is your work position?","type":"profession_position","ent":["O","O","O","O","O","O"],"pos":["WP","VBZ","PRP$","NN","NN","."]}
+{"person":3,"tkn":["What","is","his","job","title","?"],"question":"What is his job title?","type":"profession_position","ent":["O","O","O","O","O","O"],"pos":["WP","VBZ","PRP$","NN","NN","."]}
+{"person":3,"tkn":["What","is","his","work","position","?"],"question":"What is his work position?","type":"profession_position","ent":["O","O","O","O","O","O"],"pos":["WP","VBZ","PRP$","NN","NN","."]}
+{"person":2,"tkn":["What","city","do","you","live","in","?"],"question":"What city do you live in?","type":"residence","ent":["O","O","O","O","O","O","O"],"pos":["WDT","NN","VBP","PRP","VB","IN","."]}
+{"person":2,"tkn":["Where","is","your","residence","located","?"],"question":"Where is your residence located?","type":"residence","ent":["O","O","O","O","O","O"],"pos":["WRB","VBZ","PRP$","NN","JJ","."]}
+{"person":3,"tkn":["What","city","does","he","live","in","?"],"question":"What city does he live in?","type":"residence","ent":["O","O","O","O","O","O","O"],"pos":["WDT","NN","VBZ","PRP","VB","IN","."]}
+{"person":3,"tkn":["Where","is","his","residence","located","?"],"question":"Where is his residence located?","type":"residence","ent":["O","O","O","O","O","O"],"pos":["WRB","VBZ","PRP$","NN","JJ","."]}

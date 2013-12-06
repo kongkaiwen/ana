@@ -46,9 +46,14 @@ public class Ana {
 	public static long startTime;
 	
 	public static void main(String[] args) throws Exception {
-		Ana ana = new Ana();
-		ana.initKB(1);
 		startTime = System.currentTimeMillis();
+		
+		Ana ana = new Ana();
+		Helpers.printTime(System.currentTimeMillis() - startTime);
+		
+		ana.initKB(1);
+		
+		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
 //		System.out.println("response: " + ana.ask("I need to buy a gift for my nephew's birthday party.", false));
 //		System.out.println("response: " + ana.ask("Nathan.", false));
@@ -159,7 +164,9 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("Jana.", false));
 //		System.out.println("response: " + ana.ask("Olive Garden.", false));
 		
-		System.out.println("response: " + ana.ask("I went for lunch with my granddaughter Jana.", false));
+		System.out.println("response: " + ana.ask("Wendy likes school.", false));
+		//System.out.println("response: " + ana.ask("What time is it?", false));
+		//System.out.println("response: " + ana.ask("How is the weather?", false));
 
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
@@ -213,7 +220,6 @@ public class Ana {
 		ArrayList<Entity> entitiesInText = Helpers.getYingEntities( pipeline, line );
 		
 		// new person?
-  		boolean newperson = knowledge.newEntity(tkns, entitiesInText);
   		String newpersonname = knowledge.getnewPerson(tkns, entitiesInText);
   		
   		Helpers.printTime(System.currentTimeMillis() - startTime);
@@ -330,7 +336,7 @@ public class Ana {
   								Person pr = knowledge.getPerson(f.getOID());
   								umm = pr.frameResponse(f.getAtr(), pr.get(f.getAtr()));
   								
-  								Question question = new Question(pipeline, line, pr.getId(), "person", f.getAtr(), umm, null, new ExtractBinary(), pr.get(f.getAtr()) );
+  								Question question = new Question(pipeline, tkns, pr.getId(), "person", f.getAtr(), umm, null, new ExtractBinary(), pr.get(f.getAtr()), vectors, stp, pos, allEntities );
   								//knowledge.addQuestion(question);
   								
   								knowledge.addResponse(line, "", umm, "question");
@@ -363,7 +369,7 @@ public class Ana {
 			String attr = today.getEmptyAttr();
 			String ques = Helpers.genSilenceQuestion(attr);
 			
-			Question question = new Question(pipeline, line, today.getId(), "daily", attr, ques, null, today.getCallback(attr), null );
+			Question question = new Question(pipeline, tkns, today.getId(), "daily", attr, ques, null, today.getCallback(attr), null, vectors, stp, pos, allEntities );
 			
 			knowledge.addResponse(line, knowledge.getSpeaker().get("name"), question.getQuestion(), "question");
 			return ques;
@@ -376,7 +382,7 @@ public class Ana {
 			boolean isGreeting = Helpers.isGreeting(tkns);
 			
 			// check if line contains an intro (i am kevin, my name is kevin, etc)
-			if ( (line.toLowerCase().contains("i am") || line.toLowerCase().contains("my name is") || line.toLowerCase().contains("i'm")) && newperson ) {
+			if ( (line.toLowerCase().contains("i am") || line.toLowerCase().contains("my name is") || line.toLowerCase().contains("i'm")) && newpersonname != null ) {
 				knowledge.update(pid, "person", "name", newpersonname);
 				knowledge.setSpeaker(pid);
 				return "Nice to meet you!";
@@ -384,7 +390,7 @@ public class Ana {
 			
 			if (!isGreeting) {
 				String r =  Helpers.genWhoIs();
-				Question question = new Question(pipeline, line, pid, "person", "name", r, null, new ExtractName(), null );
+				Question question = new Question(pipeline, tkns, pid, "person", "name", r, null, new ExtractName(), null, vectors, stp, pos, allEntities );
 				//knowledge.addQuestion(question);
 				
 				knowledge.addResponse(line, "", r, "question");
@@ -392,7 +398,7 @@ public class Ana {
 				return r;
 			} else {
 				String r = Helpers.genGreeting() + "! " + Helpers.genWhoIs();
-				Question question = new Question(pipeline, line, pid, "person", "name", r, null, new ExtractName(), null );
+				Question question = new Question(pipeline, tkns, pid, "person", "name", r, null, new ExtractName(), null, vectors, stp, pos, allEntities );
 				//knowledge.addQuestion(question);
 				
 				knowledge.addResponse(line, "", r, "question");
@@ -456,7 +462,7 @@ public class Ana {
 					
 					if (amount > 1) {
 						// which person? 
-						Question question = new Question(pipeline, line, relPerson.getId(), "person", "which", "Which <RELATION>?".replace("<RELATION>", title), relPerson.get("sex"), null, null );
+						Question question = new Question(pipeline, tkns, relPerson.getId(), "person", "which", "Which <RELATION>?".replace("<RELATION>", title), relPerson.get("sex"), null, null, vectors, stp, pos, allEntities );
 						potential.put(question, -3.14);
 						
 						knowledge.clnBuffer();
@@ -470,10 +476,8 @@ public class Ana {
 							// ask about attribute
 							String attr = relPerson.getEmptyAttr();
 							if (attr != null) {
-								Question question = new Question(pipeline, line, relPerson.getId(), "person", attr, null, relPerson.get("sex"), relPerson.getCallback(attr), null);		
-								ArrayList<String> filteredTkns1 = Helpers.filterString(tkns, pipeline, stp);
-								ArrayList<String> filteredTkns2 = Helpers.filterString(Helpers.getTokens(pipeline, question.getQuestion()), pipeline, stp);
-								potential.put(question, Helpers.sDistance(filteredTkns1, filteredTkns2, vectors));
+								Question question = new Question(pipeline, tkns, relPerson.getId(), "person", attr, null, relPerson.get("sex"), relPerson.getCallback(attr), null, vectors, stp, pos, allEntities);		
+								potential.put(question, question.genDistance());
 							}
 						}
 	
@@ -530,7 +534,7 @@ public class Ana {
 						
 						if (attr != null) {
 							// add the potential question
-							Question question = new Question(pipeline, line, pid, "person", attr, null, p.get("sex"), p.getCallback(attr), null );
+							Question question = new Question(pipeline, tkns, pid, "person", attr, null, p.get("sex"), p.getCallback(attr), null, vectors, stp, pos, allEntities );
 							potential.put(question, -3.14);
 						}
 					}
@@ -629,7 +633,7 @@ public class Ana {
 		boolean hasSymptom = AnaIllnessPattern.match(line, pos);
 		if (hasSymptom) {
 			Medical medical = knowledge.addMedical();
-			Question question = new Question(pipeline, line, medical.getId(), "medical", "issue", "What are your symptoms?", null, medical.getCallback("issue"), null );
+			Question question = new Question(pipeline, tkns, medical.getId(), "medical", "issue", "What are your symptoms?", null, medical.getCallback("issue"), null, vectors, stp, pos, allEntities );
 			potential.put(question, -3.14);
 		}
 		
@@ -692,7 +696,7 @@ public class Ana {
 				// add potential question
 				String emptyAttr1 = e.getEmptyAttr();
 				if (emptyAttr1 != null) {
-					Question question = new Question(pipeline, line, e.getId(), "event", emptyAttr1, null, tense, e.getCallback(emptyAttr1), null );
+					Question question = new Question(pipeline, tkns, e.getId(), "event", emptyAttr1, null, tense, e.getCallback(emptyAttr1), null, vectors, stp, pos, allEntities );
 					potential.put(question, -3.15);
 					
 					e.update(emptyAttr1, "temp");
@@ -700,7 +704,7 @@ public class Ana {
 					// add another potential question
 					String emptyAttr2 = e.getEmptyAttr();
 					if (emptyAttr2 != null) {
-						Question question2 = new Question(pipeline, line, e.getId(), "event", emptyAttr2, null, tense, e.getCallback(emptyAttr2), null );
+						Question question2 = new Question(pipeline, tkns, e.getId(), "event", emptyAttr2, null, tense, e.getCallback(emptyAttr2), null, vectors, stp, pos, allEntities );
 						potential.put(question2, -3.14);
 					}
 					
@@ -741,10 +745,8 @@ public class Ana {
 						
 						curr_attr = target.getEmptyAttr();
 								
-						Question question = new Question(pipeline, line, target.getId(), "person", curr_attr, null, target.get("sex"), target.getCallback(curr_attr), null );
-						ArrayList<String> filteredTkns1 = Helpers.filterString(tkns, pipeline, stp);
-						ArrayList<String> filteredTkns2 = Helpers.filterString(Helpers.getTokens(pipeline, question.getQuestion()), pipeline, stp);
-						potential.put(question, Helpers.sDistance(filteredTkns1, filteredTkns2, vectors));
+						Question question = new Question(pipeline, tkns, target.getId(), "person", curr_attr, null, target.get("sex"), target.getCallback(curr_attr), null, vectors, stp, pos, allEntities );
+						potential.put(question, question.genDistance());
 						
 						target.update(curr_attr, "temp");
 					}
@@ -761,10 +763,10 @@ public class Ana {
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
 		// is there a new person?
-		if ( newperson ) {
+		if ( newpersonname != null ) {
 			if ( !(Helpers.join(pos, " ").contains("PRP$ NN") && hasTitle) ) {
 				Person cand = knowledge.getPerson(newpersonname);
-				Question question = new Question(pipeline, line, cand.getId(), "person", "who", "Who is <NAME>?".replace("<NAME>", newpersonname), cand.get("sex"), new ExtractRelation(), null );
+				Question question = new Question(pipeline, tkns, cand.getId(), "person", "who", "Who is <NAME>?".replace("<NAME>", newpersonname), cand.get("sex"), new ExtractRelation(), null, vectors, stp, pos, allEntities );
 				potential.put(question, -3.14);
 			}
 		}
@@ -879,13 +881,11 @@ public class Ana {
 	  				knowledge.addResponse(line, "", umm, "umm");
 	  				return umm;
 				}
-			
 			}
 		}
 		
-//		for(Question q: potential.keySet()) {
+//		for(Question q: potential.keySet())
 //			System.out.println(q.getQuestion() + ": " + potential.get(q));
-//		}
 //		System.out.println("---");
 		
 		// rank questions

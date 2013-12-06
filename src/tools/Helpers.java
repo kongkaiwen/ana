@@ -1,8 +1,10 @@
 package tools;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -13,7 +15,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 import java.util.Properties;
 import java.util.Random;
@@ -25,8 +26,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import attributes.PersonMatcher;
-
 import config.Settings;
 
 import jnisvmlight.SVMLightModel;
@@ -37,7 +36,7 @@ import kb.Question;
 import relations.RelationExtract;
 import relations.Entity;
 
-import methods.Single;
+import function.Single;
 
 import edu.stanford.nlp.dcoref.CorefChain;
 import edu.stanford.nlp.dcoref.CorefChain.CorefMention;
@@ -54,14 +53,13 @@ import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.CollapsedCCProcessedDependenciesAnnotation;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
-import events.AnaEventModel;
 import events.EventBinary;
 import events.EventData;
 import events.EventWord;
 
 public class Helpers {
 	
-	public static boolean print = false;
+	public static boolean print = true;
 	
 	public static String femaleRegex = "(daughter|mother|grandmother|neice|aunt|wife|sister)";
 	
@@ -90,12 +88,12 @@ public class Helpers {
 //		System.out.println(ummPhrase());
 //		//System.out.println(loadDrugNames());
 //		//System.out.println(predictGender("Kevin"));
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
-		//props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-		
-		System.out.println(sentenceFunction(pipeline, "What should I cook for Phil"));
+//		Properties props = new Properties();
+//		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
+//		//props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+//		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+//		
+//		System.out.println(sentenceFunction(pipeline, "What should I cook for Phil"));
 		
 //		ArrayList<Double> v1 = test.get("eat");
 //		ArrayList<Double> v2 = test.get("hungry");
@@ -227,20 +225,95 @@ public class Helpers {
 //		ed.execute(0, "person", "education_institute", kb, tkn, ent, pos);
 //		
 //		System.out.println(kb.getPerson(0).get("education_institute"));
+		
+//		String line;
+//		BufferedReader br;
+//		BufferedWriter bw;
+//		
+//		bw = new BufferedWriter(new FileWriter("pquestions2.txt"));
+//		br = new BufferedReader(new FileReader("pquestions.txt"));
+//		while( (line = br.readLine()) != null ) {
+//			JSONObject q = new JSONObject(line);
+//			
+//			String question = q.getString("question");
+//			
+//			ArrayList<String> tkn = getTokens(pipeline, question);
+//			ArrayList<String> pos = getPOS(pipeline, question);
+//			ArrayList<String> ent = getEntities(pipeline, question);
+//			
+//			JSONArray jtkn = new JSONArray();
+//			JSONArray jpos = new JSONArray();
+//			JSONArray jent = new JSONArray();
+//			
+//			for (String t: tkn)
+//				jtkn.put(t);
+//			for (String p: pos)
+//				jpos.put(p);
+//			for (String e: ent)
+//				jent.put(e);
+//			
+//			q.put("tkn", jtkn);
+//			q.put("pos", jpos);
+//			q.put("ent", jent);
+//			
+//			bw.write(q.toString() + "\n");
+//		}
+//		
+//		bw.close();
+//		br.close();
+		
+		mergeGender();
 	}
 	
-	public static ArrayList<String> filterString( ArrayList<String> tkn, StanfordCoreNLP pipeline, ArrayList<String> stp ) {
+	public static void mergeGender() throws IOException {
+		
+		String s;
+		HashMap<String, String> names = new HashMap<String, String>();
+		HashMap<String, String> count = new HashMap<String, String>();
+		File[] files = new File(Settings.path + "data/names").listFiles();
+		for (File file : files) {
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			while ( (s = br.readLine()) != null ) {
+				String tokens[] = s.split(",");
+				
+				// Mary,F,7065
+				if (names.containsKey(tokens[0])) {
+					if ( Integer.parseInt(tokens[2]) > Integer.parseInt(count.get(tokens[0]))) {
+						names.put(tokens[0], tokens[1]);
+						count.put(tokens[0], tokens[2]);
+					}
+				} else {
+					names.put(tokens[0], tokens[1]);
+					count.put(tokens[0], tokens[2]);
+				}
+			}
+			br.close();
+	    }
+		
+		BufferedWriter bw = new BufferedWriter(new FileWriter("data/shortnames.txt"));
+		for(String n: names.keySet())
+			bw.write(n + "," + names.get(n) + "\n");
+		bw.close();
+	}
+	
+	public static ArrayList<String> filterString( ArrayList<String> tkn, ArrayList<String> pos, ArrayList<String> ent, ArrayList<String> stp ) {
 		
 		ArrayList<String> output = new ArrayList<String>();
-		
-		ArrayList<String> pos = getPOS(pipeline, join(tkn, " "));
-		ArrayList<String> ent = getEntities(pipeline, join(tkn, " "));
 		
 		for (String t: tkn) {
 			int index = tkn.indexOf(t);
 			
-			String p = pos.get(index);
-			String e = ent.get(index);
+			String p = null;
+			String e = null;
+			//try {
+				p = pos.get(index);
+				e = ent.get(index);
+//			} catch (Exception ee) {
+//				System.out.println(tkn);
+//				System.out.println(p);
+//				System.out.println(tkn);
+//				System.exit(0);
+//			}
 			
 			// filter stop words
 			if (stp.contains(t.toLowerCase()))
@@ -291,31 +364,35 @@ public class Helpers {
 				if (t2.toLowerCase().equals("eat") && t1.toLowerCase().equals("hungry"))
 					return 0.0;
 				
+				if (t1.toLowerCase().equals("food") && t2.toLowerCase().equals("hungry"))
+					return 0.0;
+				
+				if (t2.toLowerCase().equals("food") && t1.toLowerCase().equals("hungry"))
+					return 0.0;
+				
 				if (t1.toLowerCase().equals("science") && t2.toLowerCase().equals("degree"))
 					return 0.0;
 				
-				if (t2.toLowerCase().equals("degree") && t1.toLowerCase().equals("science"))
+				if (t2.toLowerCase().equals("science") && t1.toLowerCase().equals("degree"))
 					return 0.0;
 				
 				if (t1.toLowerCase().equals("job") && t2.toLowerCase().equals("profession"))
 					return 0.0;
 				
-				if (t2.toLowerCase().equals("profession") && t1.toLowerCase().equals("job"))
+				if (t2.toLowerCase().equals("job") && t1.toLowerCase().equals("profession"))
 					return 0.0;
 				
 				if (t1.toLowerCase().equals("school") && t2.toLowerCase().equals("college"))
 					return 0.0;
 				
-				if (t2.toLowerCase().equals("college") && t1.toLowerCase().equals("school"))
+				if (t2.toLowerCase().equals("school") && t1.toLowerCase().equals("college"))
 					return 0.0;
 				
 				if (t1.toLowerCase().equals("school") && t2.toLowerCase().equals("university"))
 					return 0.0;
 				
-				if (t2.toLowerCase().equals("university") && t1.toLowerCase().equals("school"))
+				if (t2.toLowerCase().equals("school") && t1.toLowerCase().equals("university"))
 					return 0.0;
-				
-				
 				
 				ArrayList<Double> v1 = vectors.get(t1);
 				ArrayList<Double> v2 = vectors.get(t2);
@@ -390,6 +467,7 @@ public class Helpers {
 		models[1] = SVMLightModel.readSVMLightModelFromURL(new java.io.File(Settings.path + "single_model1.dat").toURL());
 		models[2] = SVMLightModel.readSVMLightModelFromURL(new java.io.File(Settings.path + "single_model2.dat").toURL());
 		Single single = new Single(Settings.path);
+		
 		return single.classify(d, models, Helpers.loadBrownClusters("1000.txt"), 4.0);
 	}
 	
@@ -1039,7 +1117,7 @@ public class Helpers {
 		
 		String filename = null;
 		if (filetype.equals("person")) 
-			filename = Settings.path + "pquestions.txt";
+			filename = Settings.path + "pquestions2.txt";
 		else if (filetype.equals("event")) 
 			filename = Settings.path + "equestions.txt";
 		else if (filetype.equals("medication")) 
@@ -1057,10 +1135,6 @@ public class Helpers {
 			
 			JSONObject question = new JSONObject(line);
 			String type = question.getString("type");
-			//int person = question.getInt("person");
-//			String text = question.getString("question");
-//			String tense = question.getString("tense");
-//			String event = question.getString("event");
 			
 			ArrayList<JSONObject> qs = ( questions.containsKey(type) ) ? questions.get(type) : new ArrayList<JSONObject>();
 			qs.add(question);
@@ -1146,7 +1220,7 @@ public class Helpers {
 		return stp;
 	}
 	
-	public static String genQuestion( String type, String attribute, String tense, int person ) throws IOException, JSONException {
+	public static Text genQuestion( ArrayList<String> tkns, ArrayList<String> pos, ArrayList<String> ent, String type, String attribute, String tense, int person, StanfordCoreNLP pipeline, HashMap<String, ArrayList<Double>> vectors, ArrayList<String> stp ) throws IOException, JSONException {
 		// the input would be [person, age], [person, education_institute], or maybe [event, who]
 		
 		HashMap<String, ArrayList<JSONObject>> questions = loadQuestionsFromFile( type );
@@ -1163,17 +1237,36 @@ public class Helpers {
 			
 			if ( type.equals("person") && person == 3 && p.getInt("person") == 3 )
 				filtered.add(p);
-			
 		}
 		
 		if (filtered.size() == 0) 
 			return null;
 		
-		Random rand = new Random();
-		int index = rand.nextInt(filtered.size());
+		int min_index = -1;
+		double min = 10000;
+		for (JSONObject f: filtered) {
+			
+			ArrayList<String> qtkn = convert(f.getJSONArray("tkn"));
+			ArrayList<String> qpos = convert(f.getJSONArray("pos"));
+			ArrayList<String> qent = convert(f.getJSONArray("ent"));
+			
+			ArrayList<String> filteredTkns1 = Helpers.filterString(tkns, pos, ent, stp);
+			ArrayList<String> filteredTkns2 = Helpers.filterString(qtkn, qpos, qent, stp);
+			double dist =  Helpers.sDistance(filteredTkns1, filteredTkns2, vectors);
+			
+			if (dist < min) {
+				min = dist;
+				min_index = filtered.indexOf(f);
+			}
+		}
 		
-		JSONObject question = filtered.get(index);
-		return question.getString("question");
+		JSONObject question = filtered.get(min_index);
+		
+		Text output = new Text(question.getString("question"));
+		output.setTkn(convert(question.getJSONArray("tkn")));
+		output.setPos(convert(question.getJSONArray("pos")));
+		output.setEnt(convert(question.getJSONArray("ent")));
+		return output;
 	}
 	
 	public static String askQuestion( KnowledgeBase kb, ArrayList<String> tkns, Person person ) throws IOException, JSONException {
@@ -1256,28 +1349,15 @@ public class Helpers {
 		
 		String s;
 		HashMap<String, String> names = new HashMap<String, String>();
-		HashMap<String, String> count = new HashMap<String, String>();
-		File[] files = new File(Settings.path + "data/names").listFiles();
-		for (File file : files) {
-			BufferedReader br = new BufferedReader(new FileReader(file));
-			while ( (s = br.readLine()) != null ) {
-				String tokens[] = s.split(",");
-				if (names.containsKey(tokens[0])) {
-					if ( Integer.parseInt(tokens[2]) > Integer.parseInt(count.get(tokens[0]))) {
-						names.put(tokens[0], tokens[1]);
-						count.put(tokens[0], tokens[2]);
-					}
-				} else {
-					names.put(tokens[0], tokens[1]);
-					count.put(tokens[0], tokens[2]);
-				}
-			}
-			br.close();
-	    }
-		
-		if ( names.keySet().contains(name) ) {
-			return names.get(name).equals("F") ? "female" : "male";
+		BufferedReader br = new BufferedReader(new FileReader("data/shortnames.txt"));
+		while ( (s = br.readLine()) != null ) {
+			String tokens[] = s.split(",");
+			names.put(tokens[0], tokens[1]);
 		}
+		br.close();
+		
+		if (names.containsKey(name)) 
+			return names.get(name).equals("F") ? "female" : "male";
         return "male";
 	}
 	
@@ -1445,7 +1525,7 @@ public class Helpers {
 				}
 			}
 		}
-		System.out.println(willask.size());
+
 		return willask;
 	}
 	
@@ -1562,5 +1642,14 @@ public class Helpers {
 		}
 		
 		return null;
+	}
+	
+	public static ArrayList<String> convert( JSONArray json ) throws JSONException {	
+		ArrayList<String> output = new ArrayList<String>();
+		
+		for (int i=0;i<json.length();i++)
+			output.add(json.getString(i));
+		
+		return output;
 	}
 }
