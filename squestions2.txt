@@ -1,0 +1,7 @@
+{"tkn":["When","did","you","wake","up","this","morning","?"],"question":"When did you wake up this morning?","type":"woken","ent":["O","O","O","O","O","TIME","TIME","O"],"pos":["WRB","VBD","PRP","VBP","RP","DT","NN","."]}
+{"tkn":["How","are","you","feeling","today","?"],"question":"How are you feeling today?","type":"condition","ent":["O","O","O","O","DATE","O"],"pos":["WRB","VBP","PRP","VBG","NN","."]}
+{"tkn":["Do","you","need","to","take","a","nap","?"],"question":"Do you need to take a nap?","type":"slept","ent":["O","O","O","O","O","O","O","O"],"pos":["VBP","PRP","VB","TO","VB","DT","NN","."]}
+{"tkn":["Have","you","taken","your","medication","today","?"],"question":"Have you taken your medication today?","type":"tookmeds","ent":["O","O","O","O","O","DATE","O"],"pos":["VBP","PRP","VBN","PRP$","NN","NN","."]}
+{"tkn":["Have","to","eaten","breakfast","today","?"],"question":"Have to eaten breakfast today?","type":"atebreakfast","ent":["O","O","O","O","DATE","O"],"pos":["VBP","TO","VBN","NN","NN","."]}
+{"tkn":["Have","to","eaten","lunch","today","?"],"question":"Have to eaten lunch today?","type":"atelunch","ent":["O","O","O","O","DATE","O"],"pos":["VBP","TO","VBN","NN","NN","."]}
+{"tkn":["Have","to","eaten","dinner","today","?"],"question":"Have to eaten dinner today?","type":"atedinner","ent":["O","O","O","O","DATE","O"],"pos":["VBP","TO","VBN","NN","NN","."]}

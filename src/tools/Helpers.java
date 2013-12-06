@@ -226,43 +226,47 @@ public class Helpers {
 //		
 //		System.out.println(kb.getPerson(0).get("education_institute"));
 		
-//		String line;
-//		BufferedReader br;
-//		BufferedWriter bw;
-//		
-//		bw = new BufferedWriter(new FileWriter("pquestions2.txt"));
-//		br = new BufferedReader(new FileReader("pquestions.txt"));
-//		while( (line = br.readLine()) != null ) {
-//			JSONObject q = new JSONObject(line);
-//			
-//			String question = q.getString("question");
-//			
-//			ArrayList<String> tkn = getTokens(pipeline, question);
-//			ArrayList<String> pos = getPOS(pipeline, question);
-//			ArrayList<String> ent = getEntities(pipeline, question);
-//			
-//			JSONArray jtkn = new JSONArray();
-//			JSONArray jpos = new JSONArray();
-//			JSONArray jent = new JSONArray();
-//			
-//			for (String t: tkn)
-//				jtkn.put(t);
-//			for (String p: pos)
-//				jpos.put(p);
-//			for (String e: ent)
-//				jent.put(e);
-//			
-//			q.put("tkn", jtkn);
-//			q.put("pos", jpos);
-//			q.put("ent", jent);
-//			
-//			bw.write(q.toString() + "\n");
-//		}
-//		
-//		bw.close();
-//		br.close();
+		Properties props = new Properties();
+		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
+		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 		
-		mergeGender();
+		String line;
+		BufferedReader br;
+		BufferedWriter bw;
+		
+		bw = new BufferedWriter(new FileWriter("squestions2.txt"));
+		br = new BufferedReader(new FileReader("squestions.txt"));
+		while( (line = br.readLine()) != null ) {
+			JSONObject q = new JSONObject(line);
+			
+			String question = q.getString("question");
+			
+			ArrayList<String> tkn = getTokens(pipeline, question);
+			ArrayList<String> pos = getPOS(pipeline, question);
+			ArrayList<String> ent = getEntities(pipeline, question);
+			
+			JSONArray jtkn = new JSONArray();
+			JSONArray jpos = new JSONArray();
+			JSONArray jent = new JSONArray();
+			
+			for (String t: tkn)
+				jtkn.put(t);
+			for (String p: pos)
+				jpos.put(p);
+			for (String e: ent)
+				jent.put(e);
+			
+			q.put("tkn", jtkn);
+			q.put("pos", jpos);
+			q.put("ent", jent);
+			
+			bw.write(q.toString() + "\n");
+		}
+		
+		bw.close();
+		br.close();
+		
+		//mergeGender();
 	}
 	
 	public static void mergeGender() throws IOException {

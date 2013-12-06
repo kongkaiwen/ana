@@ -1,0 +1,16 @@
+{"tkn":["When","is","it","?"],"event":"generic","tense":"future","question":"When is it?","type":"start","ent":["O","O","O","O"],"pos":["WRB","VBZ","PRP","."]}
+{"tkn":["When","was","it","?"],"event":"generic","tense":"past","question":"When was it?","type":"start","ent":["O","O","O","O"],"pos":["WRB","VBD","PRP","."]}
+{"tkn":["What","time","does","it","end","?"],"event":"generic","tense":"future","question":"What time does it end?","type":"end","ent":["O","O","O","O","O","O"],"pos":["WDT","NN","VBZ","PRP","VB","."]}
+{"tkn":["What","time","did","it","end","?"],"event":"generic","tense":"past","question":"What time did it end?","type":"end","ent":["O","O","O","O","O","O"],"pos":["WDT","NN","VBD","PRP","VB","."]}
+{"tkn":["When","will","you","leave","?"],"event":"generic","tense":"future","question":"When will you leave?","type":"end","ent":["O","O","O","O","O"],"pos":["WRB","MD","PRP","VB","."]}
+{"tkn":["When","did","you","leave","?"],"event":"generic","tense":"past","question":"When did you leave?","type":"end","ent":["O","O","O","O","O"],"pos":["WRB","VBD","PRP","VB","."]}
+{"tkn":["Where","is","it","?"],"event":"generic","tense":"future","question":"Where is it?","type":"where","ent":["O","O","O","O"],"pos":["WRB","VBZ","PRP","."]}
+{"tkn":["Where","was","it","?"],"event":"generic","tense":"past","question":"Where was it?","type":"where","ent":["O","O","O","O"],"pos":["WRB","VBD","PRP","."]}
+{"tkn":["Who","are","you","going","with","?"],"event":"generic","tense":"future","question":"Who are you going with?","type":"who","ent":["O","O","O","O","O","O"],"pos":["WP","VBP","PRP","VBG","IN","."]}
+{"tkn":["Who","did","you","go","with","?"],"event":"generic","tense":"past","question":"Who did you go with?","type":"who","ent":["O","O","O","O","O","O"],"pos":["WP","VBD","PRP","VB","IN","."]}
+{"tkn":["When","does","it","start","?"],"event":"generic","tense":"future","question":"When does it start?","type":"start","ent":["O","O","O","O","O"],"pos":["WRB","VBZ","PRP","VB","."]}
+{"tkn":["When","did","it","start","?"],"event":"generic","tense":"past","question":"When did it start?","type":"start","ent":["O","O","O","O","O"],"pos":["WRB","VBD","PRP","VB","."]}
+{"tkn":["Where","is","it","located","?"],"event":"generic","tense":"future","question":"Where is it located?","type":"where","ent":["O","O","O","O","O"],"pos":["WRB","VBZ","PRP","JJ","."]}
+{"tkn":["Where","did","you","go","?"],"event":"generic","tense":"past","question":"Where did you go?","type":"where","ent":["O","O","O","O","O"],"pos":["WRB","VBD","PRP","VB","."]}
+{"tkn":["Who","will","you","go","with","?"],"event":"generic","tense":"future","question":"Who will you go with?","type":"who","ent":["O","O","O","O","O","O"],"pos":["WP","MD","PRP","VB","IN","."]}
+{"tkn":["Who","accompanied","you","?"],"event":"generic","tense":"past","question":"Who accompanied you?","type":"who","ent":["O","O","O","O"],"pos":["WP","VBN","PRP","."]}
