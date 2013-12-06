@@ -234,8 +234,8 @@ public class Helpers {
 		BufferedReader br;
 		BufferedWriter bw;
 		
-		bw = new BufferedWriter(new FileWriter("squestions2.txt"));
-		br = new BufferedReader(new FileReader("squestions.txt"));
+		bw = new BufferedWriter(new FileWriter("mquestions2.txt"));
+		br = new BufferedReader(new FileReader("mquestions.txt"));
 		while( (line = br.readLine()) != null ) {
 			JSONObject q = new JSONObject(line);
 			
@@ -1123,11 +1123,11 @@ public class Helpers {
 		if (filetype.equals("person")) 
 			filename = Settings.path + "pquestions2.txt";
 		else if (filetype.equals("event")) 
-			filename = Settings.path + "equestions.txt";
+			filename = Settings.path + "equestions2.txt";
 		else if (filetype.equals("medication")) 
-			filename = Settings.path + "mquestions.txt";
+			filename = Settings.path + "mquestions2.txt";
 		else if (filetype.equals("silence")) 
-			filename = Settings.path + "squestions.txt";
+			filename = Settings.path + "squestions2.txt";
 			
 		//HashMap<String, ArrayList<String>> questions = new HashMap<String, ArrayList<String>>();
 		HashMap<String, ArrayList<JSONObject>> questions = new HashMap<String, ArrayList<JSONObject>>();

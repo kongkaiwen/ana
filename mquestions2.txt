@@ -1,0 +1,2 @@
+{"tkn":["When","was","the","last","time","you","took","your","medication","?"],"question":"When was the last time you took your medication?","type":"medication","ent":["O","O","O","O","O","O","O","O","O","O"],"pos":["WRB","VBD","DT","JJ","NN","PRP","VBD","PRP$","NN","."]}
+{"tkn":["Have","you","taken","your","meds","?"],"question":"Have you taken your meds?","type":"medication","ent":["O","O","O","O","O","O"],"pos":["VBP","PRP","VBN","PRP$","NNS","."]}
