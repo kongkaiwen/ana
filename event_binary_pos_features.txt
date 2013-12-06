@@ -8,9 +8,9 @@ in cd
 vbp dt
 vbg in
 to dt
+vbd to
 nn jj
 rp in
-in prp
 cd nn
 nn md
 nnp nnp

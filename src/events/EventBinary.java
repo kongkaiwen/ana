@@ -89,13 +89,13 @@ public class EventBinary {
 			double val = eb.classify(d, clusters);
 			System.out.println(d.getMention() + ": " + " (" + val + " // " + d.getLabel() + ")");
 			
-			if ( val > 0.8 && Double.parseDouble(d.getLabel()) == 1 ) {
+			if ( val > 0.7 && Double.parseDouble(d.getLabel()) == 1 ) {
 				right++;
-			} else if ( val < 0.8 && Double.parseDouble(d.getLabel()) == 1 ) {
+			} else if ( val < 0.7 && Double.parseDouble(d.getLabel()) == 1 ) {
 				wrong++;
 			}
 			
-			if ( val > 0.8 ) 
+			if ( val > 0.7 ) 
 				total++;
 		}
 		
@@ -103,7 +103,9 @@ public class EventBinary {
 		//Phil is thinking about buying a house.
 		//Phil lives by the beach.
 		//Phil wants to travel.
-		String linee = "Well I'm 25 years old.";
+		//Well I'm 25 years old.
+		//I just went to dinner with Jana.
+		String linee = "I'm 25 years old.";
 		EventData dd = new EventData(linee, "");
 		dd.setPos(Helpers.getPOS(pipeline, linee));
 		dd.setTkns(Helpers.getTokens(pipeline, linee));

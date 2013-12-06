@@ -4,4 +4,5 @@
 *.class
 src/config/Settings.java
 25dim.txt
+shrt25dim.txt
 50dim.txt

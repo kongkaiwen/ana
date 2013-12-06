@@ -167,7 +167,7 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("Jana.", false));
 //		System.out.println("response: " + ana.ask("Olive Garden.", false));
 		
-		System.out.println("response: " + ana.ask("I just went to lunch with Jana.", false));
+		System.out.println("response: " + ana.ask("I just went to dinner with Jana.", false));
 		//System.out.println("response: " + ana.ask("What time is it?", false));
 		//System.out.println("response: " + ana.ask("How is the weather?", false));
 

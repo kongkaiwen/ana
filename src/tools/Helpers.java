@@ -763,7 +763,7 @@ public class Helpers {
 		
 		EventBinary eb = new EventBinary();
 		double hasEvent = eb.classify(edata, brown);
-		if (hasEvent > 0.85) {
+		if (hasEvent > 0.8) {
 			EventWord ew = new EventWord();
 			return ew.extract(edata, brown);
 		}
