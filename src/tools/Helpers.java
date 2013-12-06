@@ -1349,7 +1349,7 @@ public class Helpers {
 		
 		String s;
 		HashMap<String, String> names = new HashMap<String, String>();
-		BufferedReader br = new BufferedReader(new FileReader("data/shortnames.txt"));
+		BufferedReader br = new BufferedReader(new FileReader(Settings.path + "data/shortnames.txt"));
 		while ( (s = br.readLine()) != null ) {
 			String tokens[] = s.split(",");
 			names.put(tokens[0], tokens[1]);
