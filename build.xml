@@ -21,7 +21,6 @@
         <pathelement location="WEB-INF/lib/json.jar"/>
         <pathelement location="WEB-INF/lib/chatter-bot-api.jar"/>
         <pathelement location="WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar"/>
-        <pathelement location="WEB-INF/lib/function.jar"/>
         <pathelement location="WEB-INF/lib/lucene-core-4.5.1.jar"/>
         <pathelement location="WEB-INF/lib/stanford-corenlp-3.3.0-models.jar"/>
         <pathelement location="WEB-INF/lib/stanford-corenlp-3.3.0.jar"/>
@@ -114,7 +113,7 @@
     </target>
     <target name="Ana">
         <java classname="agents.Ana" failonerror="true" fork="yes">
-            <jvmarg line="-mx4096m"/>
+            <jvmarg line="-mx2048m"/>
             <classpath refid="ana.classpath"/>
         </java>
     </target>
