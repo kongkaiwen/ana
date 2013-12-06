@@ -226,47 +226,97 @@ public class Helpers {
 //		
 //		System.out.println(kb.getPerson(0).get("education_institute"));
 		
-		Properties props = new Properties();
-		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
-		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+//		Properties props = new Properties();
+//		props.put("annotators", "tokenize, ssplit, pos, lemma, ner");
+//		StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 		
 		String line;
 		BufferedReader br;
 		BufferedWriter bw;
 		
-		bw = new BufferedWriter(new FileWriter("mquestions2.txt"));
-		br = new BufferedReader(new FileReader("mquestions.txt"));
+		ArrayList<String> stp = Helpers.loadStp();
+		bw = new BufferedWriter(new FileWriter("shrt25dim.txt"));
+		br = new BufferedReader(new FileReader("25dim.txt"));
 		while( (line = br.readLine()) != null ) {
-			JSONObject q = new JSONObject(line);
+			String tokens[] = line.split(" ");
 			
-			String question = q.getString("question");
+			if (stp.contains(tokens[0].toLowerCase()))
+				continue;
+			if (tokens[0].equals(".") || tokens[0].equals("!") || tokens[0].equals("?"))
+				continue;
+			if (tokens[0].contains("*") || tokens[0].contains("-") || tokens[0].contains(".") || tokens[0].contains("/") || tokens[0].contains("+") || tokens[0].contains("=") || tokens[0].contains("`") || tokens[0].contains(",") || tokens[0].contains(")") || tokens[0].contains("("))
+				continue;
+			if (isInteger(tokens[0]))
+				continue;
+			if (isDouble(tokens[0]))
+				continue;
+
+			String out = tokens[0] + " ";
+			for(int i=1;i<tokens.length;i++)
+				out += tokens[i] + " ";
 			
-			ArrayList<String> tkn = getTokens(pipeline, question);
-			ArrayList<String> pos = getPOS(pipeline, question);
-			ArrayList<String> ent = getEntities(pipeline, question);
-			
-			JSONArray jtkn = new JSONArray();
-			JSONArray jpos = new JSONArray();
-			JSONArray jent = new JSONArray();
-			
-			for (String t: tkn)
-				jtkn.put(t);
-			for (String p: pos)
-				jpos.put(p);
-			for (String e: ent)
-				jent.put(e);
-			
-			q.put("tkn", jtkn);
-			q.put("pos", jpos);
-			q.put("ent", jent);
-			
-			bw.write(q.toString() + "\n");
+			bw.write(out + "\n");
 		}
-		
-		bw.close();
 		br.close();
+		bw.close();
+		
+//		String line;
+//		BufferedReader br;
+//		BufferedWriter bw;
+//		
+//		bw = new BufferedWriter(new FileWriter("mquestions2.txt"));
+//		br = new BufferedReader(new FileReader("mquestions.txt"));
+//		while( (line = br.readLine()) != null ) {
+//			JSONObject q = new JSONObject(line);
+//			
+//			String question = q.getString("question");
+//			
+//			ArrayList<String> tkn = getTokens(pipeline, question);
+//			ArrayList<String> pos = getPOS(pipeline, question);
+//			ArrayList<String> ent = getEntities(pipeline, question);
+//			
+//			JSONArray jtkn = new JSONArray();
+//			JSONArray jpos = new JSONArray();
+//			JSONArray jent = new JSONArray();
+//			
+//			for (String t: tkn)
+//				jtkn.put(t);
+//			for (String p: pos)
+//				jpos.put(p);
+//			for (String e: ent)
+//				jent.put(e);
+//			
+//			q.put("tkn", jtkn);
+//			q.put("pos", jpos);
+//			q.put("ent", jent);
+//			
+//			bw.write(q.toString() + "\n");
+//		}
+//		
+//		bw.close();
+//		br.close();
 		
 		//mergeGender();
+	}
+	
+	public static boolean isInteger(String s) {
+	    try { 
+	        Integer.parseInt(s); 
+	    } catch(NumberFormatException e) { 
+	        return false; 
+	    }
+	    // only got here if we didn't return false
+	    return true;
+	}
+	
+	public static boolean isDouble(String s) {
+	    try { 
+	        Double.parseDouble(s); 
+	    } catch(NumberFormatException e) { 
+	        return false; 
+	    }
+	    // only got here if we didn't return false
+	    return true;
 	}
 	
 	public static void mergeGender() throws IOException {
@@ -1183,7 +1233,7 @@ public class Helpers {
 	public static HashMap<String, ArrayList<Double>> loadWordVectors() throws IOException, JSONException {
 		
 		HashMap<String, ArrayList<Double>> wordVectors = new HashMap<String, ArrayList<Double>>();
-		BufferedReader br = new BufferedReader(new FileReader(Settings.path + "25dim.txt"));
+		BufferedReader br = new BufferedReader(new FileReader(Settings.path + "shrt25dim.txt"));
 		
 		String line;
 		while( (line = br.readLine()) != null ) {

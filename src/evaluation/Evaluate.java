@@ -11,7 +11,7 @@ public class Evaluate {
 	
 	public Ana ana;
 	
-	public Evaluate(int scenario) throws IOException {
+	public Evaluate(int scenario) throws IOException, JSONException {
 		ana = new Ana();
 		ana.knowledge.initKB(scenario);
 	}

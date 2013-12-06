@@ -43,6 +43,9 @@ public class Ana {
 
 	public KnowledgeBase knowledge;
 	public StanfordCoreNLP pipeline;
+	
+	private ArrayList<String> stp, drugs;
+	private HashMap<String, ArrayList<Double>> vectors;
 	public static long startTime;
 	
 	public static void main(String[] args) throws Exception {
@@ -164,7 +167,7 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("Jana.", false));
 //		System.out.println("response: " + ana.ask("Olive Garden.", false));
 		
-		System.out.println("response: " + ana.ask("Wendy likes school.", false));
+		System.out.println("response: " + ana.ask("I just went to lunch with Jana.", false));
 		//System.out.println("response: " + ana.ask("What time is it?", false));
 		//System.out.println("response: " + ana.ask("How is the weather?", false));
 
@@ -172,11 +175,15 @@ public class Ana {
 		System.out.println(ana.knowledge.toTableJSON());
 	}
 	
-	public Ana () {
+	public Ana () throws IOException, JSONException {
 		Properties props = new Properties();
 	    props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
 	    pipeline = new StanfordCoreNLP(props);
 		knowledge = new KnowledgeBase();
+		
+		stp = Helpers.loadStp();
+		drugs = Helpers.loadDrugNames();
+		vectors = Helpers.loadWordVectors();
 	}
 	
 	public void initKB( int scenario ) throws IOException {
@@ -196,12 +203,9 @@ public class Ana {
 		int linenum = knowledge.getDialogue().size();
 		ArrayList<String> pos = Helpers.getPOS(pipeline, line);
 		ArrayList<String> tkns = Helpers.getTokens(pipeline, line);
-		ArrayList<String> drugs = Helpers.loadDrugNames();
-		HashMap<Question, Double> potential = new HashMap<Question, Double>();
-		HashMap<String, ArrayList<Double>> vectors = Helpers.loadWordVectors();
 		SemanticGraph dependencies = Helpers.getDependencies(pipeline, line);
-		ArrayList<String> stp = Helpers.loadStp();
-		
+		HashMap<Question, Double> potential = new HashMap<Question, Double>();
+
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
 		// variables
