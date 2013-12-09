@@ -13,6 +13,8 @@ CREATE TABLE chat (
 	Model varchar(255) NOT NULL,
 	Description varchar(255),
 	Correct varchar(255),
+    Conv text,
+    BotConv text,
 	PRIMARY KEY (ID)
 );
 

@@ -254,12 +254,14 @@ function sendRating() {
 
 	checked = $('input[name="Rating"]:checked').val();
 	correct = $("#correct").val();
+	incorrect = (correct === "a") ? "b" : "a";
 
 	conversation = $("#model-"+correct+"-body").text();
+	botconv = $("#model-"+incorrect+"-body").text();
 
 	$.ajax({
 		url: "../db.jsp",
-		data: "text=" + $("#submit-text").val() + "&model=" +checked + "&type=chat&correct="+correct+"&conv="+conversation,
+		data: "text=" + $("#submit-text").val()+"&model="+checked+"&type=chat&correct="+correct+"&conv="+conversation+"&botconv="+botconv,
 		success: function(data) {
 			alert("Success!");
 		}
