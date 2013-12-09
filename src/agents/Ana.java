@@ -54,7 +54,7 @@ public class Ana {
 		Ana ana = new Ana();
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
-		ana.initKB(2);
+		ana.initKB(5);
 		
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
@@ -167,9 +167,22 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("Jana.", false));
 //		System.out.println("response: " + ana.ask("Olive Garden.", false));
 		
-		System.out.println("response: " + ana.ask("What should I cook for Phil.", false));
+//		System.out.println("response: " + ana.ask("Hello.", false));
+//		System.out.println("response: " + ana.ask("I'm Kevin.", false));
+//		System.out.println("response: " + ana.ask("I'm hungry.", false));
+//		System.out.println("response: " + ana.ask("Pizza.", false));
 		//System.out.println("response: " + ana.ask("What time is it?", false));
 		//System.out.println("response: " + ana.ask("How is the weather?", false));
+		
+//		System.out.println("response: " + ana.ask("Hello.", false));
+//		System.out.println("response: " + ana.ask("I'm Kevin.", false));
+//		System.out.println("response: " + ana.ask("I went shopping today.", false));
+//		System.out.println("response: " + ana.ask("My sister.", false));
+//		System.out.println("response: " + ana.ask("Jana.", false));
+		
+		// I can't remember when my nephew's birthday is.
+		
+		System.out.println("response: " + ana.ask("This is my father Joe.", false));
 
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
@@ -226,6 +239,9 @@ public class Ana {
 		// new person?
   		String newpersonname = knowledge.getnewPerson(tkns, entitiesInText);
   		
+  		// load parse graph
+		AnaParseGraph apg = new AnaParseGraph( dependencies );
+  		
   		Helpers.printTime(System.currentTimeMillis() - startTime);
 
 		// check the buffers
@@ -249,10 +265,10 @@ public class Ana {
   				
   				// they answered with a name
   				if (!person.equals("")) {
-  					Person correctPerson = knowledge.getPerson(buffer.getOID());
+  					Person correctPerson = knowledge.getPerson(person);
   					modifi = Helpers.replaceFamilyTitle(correctPerson.get("name"), whichTkns, whichPOS);
   					
-  					// delete buffer
+  					// delete buffers
   	  				knowledge.delBuffer();
   	  				knowledge.clnBuffer();
   	  				
@@ -267,61 +283,100 @@ public class Ana {
   				Callback cbCopy = new Callback(buffer);
   				boolean found = buffer.executeCallback(response, knowledge, tkns, entitiesInText, pos);
   				
-  				// delete buffer
+  				// delete callback buffer
   				knowledge.delBuffer();
   				
   				//  q2.ask, RBuffer.add(q2.callback), QBuffer.pop()
   				if (found) {
 					
+					// if contains family title, try and check if that relation exists
+					if (Helpers.hasFamilyTitles(tkns, pos)) {
+						
+						// get the speaker (assume the speaker)
+						Person focus = knowledge.getSpeaker();
+						
+						// get the title
+						String title = Helpers.getFamilyTitle(tkns, pos);
+						
+						// check if the speaker has the relation
+						boolean hasRelation = knowledge.hasRelation(focus.getId(), title);
+						
+						if (!hasRelation) {
+							
+							if (!Helpers.titleLinkWithName(line, title, allEntities, entitiesInText, allEntities, apg)) {
+								
+								// My sister. No sister link. In the middle of question asking.
+									
+								int pid = knowledge.addPerson();
+								if (Helpers.isFemaleTitle(title))
+									knowledge.updatePerson(pid, "sex", "female");
+								
+								Person p = knowledge.getPerson(pid);
+								
+								if (p != null) {
+									// add the relation
+									knowledge.addRelation(title, focus.getId(), pid);
+									
+									// get empty attr
+									String attr = p.getEmptyAttr();
+									
+									if (attr != null) {
+										// add the potential question
+										Question qq = new Question(pipeline, tkns, pid, "person", attr, null, p.get("sex"), p.getCallback(attr), null, vectors, stp, pos, allEntities );
+										//potential.put(qq, -3.14);
+										knowledge.addCallback(qq.getCallback());
+										knowledge.decayFrames();
+										return qq.getQuestion();
+									}
+								}
+							} else {
+								// My sister Jana.  Doesn't have sister relation. In the middle of question asking.
+								
+								String personname = Helpers.getPersonEntity(pipeline, line);
+								int pid = knowledge.addPerson(personname);
+								if (Helpers.isFemaleTitle(title))
+									knowledge.updatePerson(pid, "sex", "female");
+								
+								Person p = knowledge.getPerson(pid);
+								
+								if (p != null) {
+									// add the relation
+									knowledge.addRelation(title, focus.getId(), pid);
+								}
+							}
+						}
+					}
+					
   					Question question = knowledge.getQuestion();
 
   					if (question != null) {
-  						// found answer, and question in buffer
-  						knowledge.addResponse(line, "", question.getQuestion(), "question");
+  						// question in buffer
   						knowledge.addCallback(question.getCallback());
-  						return question.getQuestion();
+  						knowledge.decayFrames();
+						return question.getQuestion();
   					} else {
   						// no question in buffer
   						boolean hasspeakernow = (knowledge.getSpeaker() == null) ? false : true;
   						if (!hasspeaker && hasspeakernow) {
   							String umm = "Nice to meet you!";
   	  		  				knowledge.addResponse(line, "", "Nice to meet you!", "umm");
-  	  		  				return umm;
-  						}
-  						
-  						// check is unknown title is present
-  						
-  						// check for family titles ( nephew, daughter, etc )
-  						boolean hasTitle = Helpers.hasFamilyTitles(tkns, pos);
-  						
-  						// if contains family title, try and check if that relation exists
-  						if (hasTitle) {
-  							// get the speaker (assume the speaker)
-  							Person focus = knowledge.getSpeaker();
-  							
-  							// get the title
-  							String title = Helpers.getFamilyTitle(tkns, pos);
-  							
-  							// check if the speaker has the relation
-  							boolean hasRelation = knowledge.hasRelation(focus.getId(), title);
-  							
-  							if (hasRelation) {
-  								String umm = Helpers.ummPhrase();
-  		  		  				knowledge.addResponse(line, "", umm, "umm");
-  		  		  				return umm;
-  							}
+  	  		  				knowledge.decayFrames();
+  	  		  				return umm;							
   						} else {
+  							
+  							// event specific responses
   							if (cbCopy.getObj().equals("event")) {
   								Event cbEvent = knowledge.getEvent(cbCopy.getOID());
   								String ger = Helpers.genericEventResponse(cbEvent.get("tense"));
   	  	  		  				knowledge.addResponse(line, "", ger, "ger");
+  	  	  		  				knowledge.decayFrames();
   	  	  		  				return ger;
   							} else {
   								String umm = Helpers.ummPhrase();
   	  	  		  				knowledge.addResponse(line, "", umm, "umm");
+  	  	  		  				knowledge.decayFrames();
   	  	  		  				return umm;
   							}
-  							
   						}
   					}
   				} else {
@@ -340,11 +395,11 @@ public class Ana {
   								Person pr = knowledge.getPerson(f.getOID());
   								umm = pr.frameResponse(f.getAtr(), pr.get(f.getAtr()));
   								
-  								Question question = new Question(pipeline, tkns, pr.getId(), "person", f.getAtr(), umm, null, new ExtractBinary(), pr.get(f.getAtr()), vectors, stp, pos, allEntities );
+  								Question qq2 = new Question(pipeline, tkns, pr.getId(), "person", f.getAtr(), umm, null, new ExtractBinary(), pr.get(f.getAtr()), vectors, stp, pos, allEntities );
   								//knowledge.addQuestion(question);
   								
   								knowledge.addResponse(line, "", umm, "question");
-  								knowledge.addCallback(question.getCallback());
+  								knowledge.addCallback(qq2.getCallback());
   							} else {
   								umm = Helpers.ummPhrase();
   	  	  		  				knowledge.addResponse(line, "", umm, "umm");
@@ -359,7 +414,7 @@ public class Ana {
   		}
   		Helpers.printTime(System.currentTimeMillis() - startTime);
   		
-  		// check for yes/no
+  		// check for yes/no ?
 //  		String binary = Helpers.checkBinary(tkns);
 //  		if (binary != null && binary.equals("yes")) {
 //  			return "I learn something new everyday!";
@@ -430,38 +485,9 @@ public class Ana {
 			// check if the speaker has the relation
 			boolean hasRelation = knowledge.hasRelation(focus.getId(), title);
 			
-			// load parse graph
-			AnaParseGraph apg = new AnaParseGraph( dependencies );
-			
 			if (hasRelation) {
 
-				// check if the title is linked with a name
-				boolean has_link = false;
-				String person_name = "";
-				for(Entity e: entitiesInText) {
-					if (e.getType().equals("PER")) {
-						if (apg.hasLink(title, e.getName())) {
-							has_link = true;
-							person_name = e.getName();
-						} else if ( (line.contains("name")) && (apg.hasLink(title, "name")) && (apg.hasLink("name", e.getName())) ) {
-							has_link = true;
-							person_name = e.getName();
-						}
-					}
-				}
-				
-				// check if title is beside name
-				int tindx = tkns.indexOf(title);
-				for(String e: allEntities) {
-					int eindx = allEntities.indexOf(e);
-					if (e.equals("PERSON")) {
-						if (tindx == eindx-1) {
-							has_link = true;
-						}
-					}
-				}
-				
-				if (!has_link) {
+				if (!Helpers.titleLinkWithName(line, title, allEntities, entitiesInText, allEntities, apg)) {
 					// what if you know one son, but don't know the other?
 					Person relPerson = knowledge.getPersonFromRelation(focus.getId(), title);
 					
@@ -500,8 +526,6 @@ public class Ana {
 						}
 						
 					}
-				} else {
-					// my granddaughter Jana
 				}
 			} else {
 				
@@ -518,6 +542,17 @@ public class Ana {
 						} else if ( (line.contains("name")) && (apg.hasLink(title, "name")) && (apg.hasLink("name", e.getName())) ) {
 							has_link = true;
 							person_name = e.getName();
+						}
+					}
+				}
+				
+				// check if title is beside name
+				int tindx = tkns.indexOf(title);
+				for(String e: allEntities) {
+					int eindx = allEntities.indexOf(e);
+					if (e.equals("PERSON")) {
+						if (tindx == eindx-1) {
+							has_link = true;
 						}
 					}
 				}
@@ -569,6 +604,9 @@ public class Ana {
 		
   		// extract relations
 		HashMap<String, String> relations = Helpers.getRelations( pipeline, line, linenum );
+//		for(String r: relations.keySet()) {
+//			System.out.println(r + ": "+ relations.get(r));
+//		}
 		
 		// disambiguate relations
 		knowledge.disambiguate(tkns, pos, resolutions, relations);
@@ -727,6 +765,15 @@ public class Ana {
 		}
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
+		// check for specific phrases
+		if ( eventName == null ) {
+			// I had a great day with Jana yesterday.
+			// I spent the day with Jana yesterday.
+			
+			if ( (line.toLowerCase().contains("had") && line.contains("day") && line.toLowerCase().contains("with")) || (line.toLowerCase().contains("spent") && line.contains("day") && line.toLowerCase().contains("with")) || (line.toLowerCase().contains("time") && line.contains("had") && line.toLowerCase().contains("with")) )
+				return "What did you do?";
+		}
+		
 		// is there an person to ask about?
 		if ( peopleInKB.size() > 0 || (peopleInKB.size() == 0 && line.toLowerCase().startsWith("i") && !hasTitle)  ) {
 			
@@ -883,6 +930,13 @@ public class Ana {
 		if ( function == 0.0 ) {
 			//response = getFact();
 			
+			//  I can't remember when my nephew's birthday is.
+			if (line.toLowerCase().contains("can't") && line.toLowerCase().contains("remember") && line.toLowerCase().contains("birthday")) {
+				knowledge.addResponse(line, "", "I'm sorry to hear that.", "answer");
+				knowledge.decayFrames();
+				return "I'm sorry to hear that.";
+			}
+						
 			// if no people mentioned, no relations, no events, then...
 			
 			if (eventName == null && relations.size() == 0 && peopleInKB.size() == 0 && !addedPersonAttr) {
@@ -897,7 +951,16 @@ public class Ana {
 				
 				// We went out together
 				
-				if (knowledge.getDialogue().size() < 4) {
+				// I watched a movie yesterday.
+				if (line.toLowerCase().contains("watch") && line.toLowerCase().contains("movie")) {
+					String umm = "Which one?.";
+	  				knowledge.addResponse(line, "", umm, "umm");
+	  				knowledge.decayFrames();
+	  				return umm;
+				}
+				
+				// Introduction
+				if (knowledge.getDialogue().size() < 4 && !hasTitle) {
 					String umm = "Tell me about yourself.";
 	  				knowledge.addResponse(line, "", umm, "umm");
 	  				knowledge.decayFrames();

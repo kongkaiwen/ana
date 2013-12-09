@@ -40,10 +40,10 @@ public class ExtractLikes implements Extract {
 		
 		String ans = "";
 		// start from last POS, return first nn
-		for (int i=pos.size()-1;i>0;i--) {
+		for (int i=pos.size()-1;i>=0;i--) {
 			String tag = pos.get(i);
 			if (tag.toLowerCase().contains("nn")) {
-				ans = tag;
+				ans = tkns.get(i);
 				flag = true;
 				break;
 			}

@@ -45,7 +45,7 @@ public class KnowledgeBase {
 	private ArrayList<String> dialogue;
 	private HashMap<String, Daily> dailies;
 	
-	private QuestionBuffer qBuffer;
+	public QuestionBuffer qBuffer;
 	private CallbackBuffer cBuffer;
 	
 	public static void main(String args[]) throws JSONException, IOException {
@@ -135,7 +135,8 @@ public class KnowledgeBase {
 			setSpeaker(0);
 			addDialogue("I am Irene.");
 			addPerson("Jacob");
-			updatePerson(1, "date_of_birth", "November 11, 2009");
+			updatePerson(1, "age", "5");
+			updatePerson(1, "date_of_birth", "November 11, 2008");
 			updatePerson(1, "likes", "lego");
 			addRelation("nephew", 0, 1);
 		}
@@ -694,6 +695,7 @@ public class KnowledgeBase {
 		
 		// my nephew 's:2:9::He:3:1::he:4:3::
 		for(ArrayList<String> resolutions: mentions) {
+			//System.out.println(resolutions + ":" + ref + ":" + capref);
 			// check if the ref is in this anaphora set
 			if ( resolutions.contains(ref) || resolutions.contains(capref)) {
 				// name is in this set, now check if there is an entity in this set (I, my, Kevin)

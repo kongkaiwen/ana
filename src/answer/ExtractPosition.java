@@ -24,6 +24,11 @@ public class ExtractPosition implements Extract {
 				name = d;
 		}
 		
+		if (line.toLowerCase().contains("not") || line.toLowerCase().contains("doesn 't") || line.toLowerCase().contains("none")) {
+			kb.update(oid, object, attr, "N/A");
+			return true;
+		}
+		
 		// if no degree, extract the NNP
 		if (name.equals("")) {
 			for(String prt: pos) {

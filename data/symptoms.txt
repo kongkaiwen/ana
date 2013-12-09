@@ -18,3 +18,8 @@ dry mouth
 short of breath
 ear pain
 nose bleed
+cough
+eyes hurt
+upset stomach
+headache
+blurry vision

@@ -30,7 +30,6 @@ if ( request.getSession().getAttribute("eval") != null ) {
 
             <div align="center">
 			<input class="ana-button" id="home-button" type="button" value="Home" href="partone.html" />
-			<input class="ana-button" id="next-button" type="button" value="Next" href="" />
             <input class="ana-button" id="kb-button" type="button" value="KB" />
             </div>
 

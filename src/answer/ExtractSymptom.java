@@ -18,7 +18,7 @@ public class ExtractSymptom implements Extract {
 		
 		String raw = Helpers.join(tkns, " ");
 		for (String sym: symptoms) {
-			if (raw.contains(sym)) {
+			if (raw.toLowerCase().contains(sym)) {
 				found = true;
 				problems.add(sym);
 			}

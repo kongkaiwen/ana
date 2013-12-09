@@ -16,19 +16,15 @@ function init() {
 	// 	}
 	// }, 1000);
 
-    if (document.contains(document.getElementById("close"))) {
-        
+    if (document.contains(document.getElementById("next-button"))) {
+    	next = document.getElementById("next-button");
+        next.addEventListener("click", send, false);
     }
 
 	if (document.contains(document.getElementById("home-button"))) {
 		home = document.getElementById("home-button");
-		next = document.getElementById("next-button");
         kb = document.getElementById("kb-button");
         kb.addEventListener("click", popup, false);
-		
-		//home.style.left = (window.innerWidth/2 - home.offsetWidth) + "px";
-		//next.style.left = (window.innerWidth/2) + "px";
-        //kb.style.left = (window.innerWidth/2 + next.offsetWidth) + "px";
 	} 
 
 	if (document.contains(document.getElementById("topics"))) {
@@ -64,7 +60,7 @@ function init() {
 		input_gap = 60;
 		
 		home.addEventListener("click", send, false);
-		next.addEventListener("click", send, false);
+		
 
 		modelA = document.getElementById("model-a");
 		modelB = document.getElementById("model-b");

@@ -7,6 +7,7 @@ import kb.KnowledgeBase;
 import kb.Person;
 
 import relations.Entity;
+import tools.Helpers;
 
 public class ExtractPlace implements Extract {
 
@@ -18,11 +19,17 @@ public class ExtractPlace implements Extract {
 		String nnp = "";
 		String name = "";
 		boolean found = false;
+		String line = Helpers.join(tkns, " ");
 		
 		// get organization from userResponse
 		for(Entity e: ent) {
 			if (e.getType().equals("ORG"))
 				name = e.getName();
+		}
+		
+		if (line.toLowerCase().contains("not") || line.toLowerCase().contains("doesn 't") || line.toLowerCase().contains("none")) {
+			kb.update(oid, object, attr, "N/A");
+			return true;
 		}
 		
 		// if no org, extract the NNP

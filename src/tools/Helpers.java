@@ -37,6 +37,7 @@ import relations.RelationExtract;
 import relations.Entity;
 
 import function.Single;
+import graph.AnaParseGraph;
 
 import edu.stanford.nlp.dcoref.CorefChain;
 import edu.stanford.nlp.dcoref.CorefChain.CorefMention;
@@ -59,7 +60,7 @@ import events.EventWord;
 
 public class Helpers {
 	
-	public static boolean print = true;
+	public static boolean print = false;
 	
 	public static String femaleRegex = "(daughter|mother|grandmother|neice|aunt|wife|sister)";
 	
@@ -451,7 +452,7 @@ public class Helpers {
 				ArrayList<Double> v1 = vectors.get(t1);
 				ArrayList<Double> v2 = vectors.get(t2);
 				
-				double dist = cDistance(v1,v2);
+				double dist = eDistance(v1,v2);
 				
 				if (dist < min) {
 					min = dist;
@@ -1705,5 +1706,33 @@ public class Helpers {
 			output.add(json.getString(i));
 		
 		return output;
+	}
+	
+	public static boolean titleLinkWithName( String line, String title, ArrayList<String> tkns, ArrayList<Entity> entitiesInText, ArrayList<String> allEntities, AnaParseGraph apg ) {
+		
+		// check if the title is linked with a name
+		boolean has_link = false;
+		for(Entity e: entitiesInText) {
+			if (e.getType().equals("PER")) {
+				if (apg.hasLink(title, e.getName())) {
+					has_link = true;
+				} else if ( (line.contains("name")) && (apg.hasLink(title, "name")) && (apg.hasLink("name", e.getName())) ) {
+					has_link = true;
+				}
+			}
+		}
+		
+		// check if title is beside name
+		int tindx = tkns.indexOf(title);
+		for(String e: allEntities) {
+			int eindx = allEntities.indexOf(e);
+			if (e.equals("PERSON")) {
+				if (tindx == eindx-1) {
+					has_link = true;
+				}
+			}
+		}
+		
+		return has_link;
 	}
 }

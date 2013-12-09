@@ -23,4 +23,8 @@ public class QuestionBuffer {
 	public Question pop() {
 		return questions.poll();
 	}
+	
+	public int size() {
+		return questions.size();
+	}
 }
