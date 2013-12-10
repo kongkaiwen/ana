@@ -53,7 +53,7 @@ public class ExtractDegree implements Extract {
 			found = true;
 		
 		if (!name.equals(""))
-			kb.update(oid, object, attr, nnp);
+			kb.update(oid, object, attr, name);
 		
 		if (!name.equals(""))
 			found = true;

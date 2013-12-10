@@ -182,10 +182,14 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("How are you?", false));
 //		System.out.println("response: " + ana.ask("I am bored of school.", false));
 //		System.out.println("response: " + ana.ask("I didn't go to university.", false));
+		
+		// This is my father Phil. <- resolution problem
 
 		System.out.println("response: " + ana.ask("Hello.", false));
 		System.out.println("response: " + ana.ask("I'm Kevin.", false));
 		System.out.println("response: " + ana.ask("I am a student of the UofA.", false));
+		System.out.println("response: " + ana.ask("University of Alberta.", false));
+		System.out.println("response: " + ana.ask("I have a Bachelor of Science.", false));
 		
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
@@ -948,9 +952,9 @@ public class Ana {
 			}
 		}
 		
-		for(Question q: potential.keySet())
-			System.out.println(q.getQuestion() + ": " + potential.get(q));
-		System.out.println("---");
+//		for(Question q: potential.keySet())
+//			System.out.println(q.getQuestion() + ": " + potential.get(q));
+//		System.out.println("---");
 		
 		// rank questions
 		//System.out.println("potential.size(): " + potential.size());

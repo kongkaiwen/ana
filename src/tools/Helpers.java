@@ -413,6 +413,12 @@ public class Helpers {
 				if (t2.toLowerCase().equals("house") && t1.toLowerCase().equals("live"))
 					return 0.0;
 				
+				if (t1.toLowerCase().equals("eat") && t2.toLowerCase().equals("cook"))
+					return 0.0;
+				
+				if (t2.toLowerCase().equals("eat") && t1.toLowerCase().equals("cook"))
+					return 0.0;
+				
 				if (t1.toLowerCase().equals("eat") && t2.toLowerCase().equals("hungry"))
 					return 0.0;
 				
@@ -449,11 +455,23 @@ public class Helpers {
 				if (t2.toLowerCase().equals("school") && t1.toLowerCase().equals("university"))
 					return 0.0;
 				
+				if (t1.toLowerCase().equals("student") && t2.toLowerCase().equals("university"))
+					return 0.0;
+				
+				if (t2.toLowerCase().equals("student") && t1.toLowerCase().equals("university"))
+					return 0.0;
+				
 				if (t1.toLowerCase().equals("student") && t2.toLowerCase().equals("study"))
 					return 0.01;
 				
 				if (t2.toLowerCase().equals("student") && t1.toLowerCase().equals("study"))
 					return 0.01;
+				
+				if (t1.toLowerCase().equals("student") && t2.toLowerCase().equals("degree"))
+					return 0.02;
+				
+				if (t2.toLowerCase().equals("student") && t1.toLowerCase().equals("degree"))
+					return 0.02;
 				
 				if (!vectors.containsKey(t1) || !vectors.containsKey(t2) )
 					continue;

@@ -17,10 +17,16 @@ public class ExtractWho implements Extract {
 		boolean has_title = false; 
 		boolean has_per = false;
 		boolean poss_nn = false; // possesive noun, my daughter
+		String line = Helpers.join(tkns, " ");
 		
 		String words[] = {"with", "together", "take"};
 		
 		Entity per = null;
+		
+		if (line.toLowerCase().contains("noone") || line.toLowerCase().contains("myself") || line.toLowerCase().contains("none")) {
+			kb.update(oid, object, "who", "N/A");
+			return true;
+		}
 		
 		for (Entity ae: ent) {
 			if (ae.getType().equals("PER") ) {
