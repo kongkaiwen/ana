@@ -1,36 +1,33 @@
 package attributes;
 
+import edu.stanford.nlp.semgraph.SemanticGraph;
+import entities.AnaEntity;
+import graph.AnaParseGraph;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import edu.stanford.nlp.ling.IndexedWord;
-import edu.stanford.nlp.trees.GrammaticalRelation;
-import edu.stanford.nlp.semgraph.*;
-import entities.AnaEntity;
-import graph.AnaEdge;
-import graph.AnaNode;
-import graph.AnaParseGraph;
+import tools.Helpers;
 
-public class AnaDislikesPattern {
+import kb.KnowledgeBase;
+import kb.Person;
+
+public class DislikesPattern {
 	
-	private static String keyWords[] = {"hates", "dislikes", "loathes", "enjoys"};
-
-	/*
-	In order to match there must be a person and an organization.  There must also be a keyword.
-	*/
-	public static String match( String line, ArrayList<AnaEntity> ent, ArrayList<String> pos, 
-			SemanticGraph dep, HashMap<String, Integer> ei ) {
+	private static String keyWords[] = {"hates", "dislikes", "loathes"};
+	
+	public static boolean match( ArrayList<String> tkns, ArrayList<String> pos, ArrayList<String> entities, ArrayList<Person> people, SemanticGraph dep, KnowledgeBase kb, boolean add ) throws IOException {
 		boolean flag = false;
 		boolean has_per = false;
 		boolean has_key = false;
 
-		AnaEntity per = null;
+		Person per = null;
+		String line = Helpers.join(tkns, " ").toLowerCase();
 		
-		for (AnaEntity ae: ent) {
-			if (ae.getType().equals("PER") ) {
-				has_per = true;
-				per = ae;
-			}
+		if (people.size() > 0) {
+			per = people.get(0);
+			has_per = true;
 		}
 		
 		for (String s: keyWords) {
@@ -40,22 +37,23 @@ public class AnaDislikesPattern {
 		}
 		
 		// check dependency links for matches
-		String match = checkDependencies(line, dep, ei);
+		String match = checkDependencies(line, dep);
 		
-		if (match != null) {
-			return per.getId() + "#dislikes#" + match; 
+		if (match != null && has_key) {
+			kb.update(per.getId(), "person", "dislikes", match);
+			flag = true;
 		}
 		
-		return null;
+		return flag;
 	}
-	
-  	/*
+
+	/*
   	Kevin likes pizza. NNP-nsubj-VBZ-dobj-NN
   	Kevin likes to play games. NNP-nsubj-VBZ-xcomp-VB-dobj-NNS	
   	Kevin likes to eat pizza. 	NNP-nsubj-VBZ-xcomp-VB-dobj-NN
   	His favorite type of pizza is pepperoni. 
   	*/
-  	private static String checkDependencies( String line, SemanticGraph dependencies, HashMap<String, Integer> entityIndex ) {
+  	private static String checkDependencies( String line, SemanticGraph dependencies ) {
   		
   		String verb = "";
   		String patt = "";

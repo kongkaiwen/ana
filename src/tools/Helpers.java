@@ -449,6 +449,15 @@ public class Helpers {
 				if (t2.toLowerCase().equals("school") && t1.toLowerCase().equals("university"))
 					return 0.0;
 				
+				if (t1.toLowerCase().equals("student") && t2.toLowerCase().equals("study"))
+					return 0.01;
+				
+				if (t2.toLowerCase().equals("student") && t1.toLowerCase().equals("study"))
+					return 0.01;
+				
+				if (!vectors.containsKey(t1) || !vectors.containsKey(t2) )
+					continue;
+				
 				ArrayList<Double> v1 = vectors.get(t1);
 				ArrayList<Double> v2 = vectors.get(t2);
 				

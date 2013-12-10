@@ -122,6 +122,11 @@
             <classpath refid="ana.classpath"/>
         </java>
     </target>
+    <target name="AttributeMatcher">
+        <java classname="attributes.AttributeMatcher" failonerror="true" fork="yes">
+            <classpath refid="ana.classpath"/>
+        </java>
+    </target>
     <target name="KnowledgeBase">
         <java classname="kb.KnowledgeBase" failonerror="true" fork="yes">
             <classpath refid="ana.classpath"/>

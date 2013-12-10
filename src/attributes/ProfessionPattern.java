@@ -1,50 +1,42 @@
 package attributes;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import tools.Helpers;
 
-import edu.stanford.nlp.ling.IndexedWord;
-import edu.stanford.nlp.trees.GrammaticalRelation;
-import edu.stanford.nlp.semgraph.*;
-
+import kb.KnowledgeBase;
+import kb.Person;
+import edu.stanford.nlp.semgraph.SemanticGraph;
 import entities.AnaEntity;
 import graph.AnaParseGraph;
 
-public class AnaProfessionPattern {
+public class ProfessionPattern {
 	
 	private static String keyWords[] = {"works", "work", "profession", "job", "occupation", "employed"};
 
-	/*
-	In order to match there must be a person and an organization.  There must also be a keyword.
-	*/
-	public static String match( String line, ArrayList<String> tkns, ArrayList<AnaEntity> ent, ArrayList<String> pos, 
-			SemanticGraph dep, HashMap<String, Integer> ei ) {
+	public static boolean match(ArrayList<String> tkns, ArrayList<String> pos, ArrayList<String> entities, ArrayList<Person> people, SemanticGraph dep, KnowledgeBase kb, boolean add) throws IOException {
+
 		boolean flag = false;
 		boolean has_per = false;
 		boolean has_org = false;
 		boolean has_key = false;
 		
-		AnaEntity org = null;
-		AnaEntity per = null;
+		String org = null;
+		Person per = null;
+		String line = Helpers.join(tkns, " ").toLowerCase();
 		
-		for (AnaEntity ae: ent) {
-
-			if (ae.getType().equals("PER") ) {
-				has_per = true;
-				per = ae;
-			}
-			
-			if (ae.getType().equals("ORG") ) {
-				has_org = true;
-				org = ae;
-			}
+		if (people.size() > 0) {
+			per = people.get(0);
+			has_per = true;
 		}
 		
-		// jane works at safeway
-		if (has_per && Helpers.join(pos, " ").equals("nn vbz in nn .")) {
-			return per.getId() + "#profession#" + tkns.get(3);
+		for (String ent: entities) {
+			if (ent.equals("ORGANIZATION") ) {
+				has_org = true;
+				org = tkns.get(entities.indexOf(ent));;
+			}
 		}
 		
 		for (String s: keyWords) {
@@ -53,29 +45,34 @@ public class AnaProfessionPattern {
 			}
 		}
 		
-		// check dependency links for matches
-		String match = checkDependencies(line, dep, ei);
-		
 		// any simple matches?
 		flag = has_per && has_org && has_key;
 		
 		if (flag) {
-			return per.getId() + "#profession#" + org.getName();
+			kb.update(per.getId(), "person", "profession_institute", org);
 		}
+		
+		// check dependency links for matches
+		String match = checkDependencies(line, dep);
 		
 		if (match != null) {
-			return per.getId() + "#profession#" + match; 
+			kb.update(per.getId(), "person", "profession_institute", match);
+			flag = true;
 		}
 		
-		// jane works at olive garden
+		// jane works at safeway
+		if (has_per && Helpers.join(pos, " ").toLowerCase().equals("nn vbz in nn .")) {
+			kb.update(per.getId(), "person", "profession_institute", tkns.get(3));
+			flag = true;
+		}
 		
-		return null;
+		return flag;
 	}
 	
-  	/*
+	/*
   	Kevin is a software developer at Google. NNP-nsubj-NN-PREP-NNP ( PER, TITLE, ORG )
   	*/
-	private static String checkDependencies( String line, SemanticGraph dependencies, HashMap<String, Integer> entityIndex ) {
+	private static String checkDependencies( String line, SemanticGraph dependencies ) {
   		
   		String patt = "";
   		String output = "";

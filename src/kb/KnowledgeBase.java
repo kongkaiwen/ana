@@ -839,6 +839,10 @@ public class KnowledgeBase {
 		}
 	}
 	
+	public ArrayList<Person> getPeople() {
+		return people;
+	}
+	
 	public String getFact() throws IOException {
 		ArrayList<String> facts = Helpers.loadFacts();
 		Random rand = new Random();

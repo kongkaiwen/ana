@@ -10,7 +10,7 @@ import tools.Helpers;
 public class ExtractDegree implements Extract {
 	
 	public static String keyWords[] = {"degree", "specialize", "study"};
-	public static String degrees[] = {"computing science", "physics", "math", "chemistry", "engineering", "medicine"};
+	public static String degrees[] = {"computing science", "physics", "math", "chemistry", "engineering", "medicine", "pharmacy", "science", "biology", "education", "physical education"};
 	
 	@Override
 	public boolean execute( int oid, String object, String attr, KnowledgeBase kb, ArrayList<String> tkns, ArrayList<Entity> ent, ArrayList<String> pos, String val  ) throws IOException {
@@ -21,7 +21,7 @@ public class ExtractDegree implements Extract {
 		String line = Helpers.join(tkns, " ");
 		
 		for (String d: degrees) {
-			if (line.contains(d))
+			if (line.toLowerCase().contains(d.toLowerCase()))
 				name = d;
 		}
 		

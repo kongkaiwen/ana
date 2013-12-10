@@ -44,6 +44,7 @@ public class Person implements Entity {
 		attributes.put("languages", "");
 		attributes.put("born_in", "");
 		attributes.put("likes", "");
+		attributes.put("dislikes", "");
 	}
 	
 	public String get( String attr ) {
@@ -51,7 +52,7 @@ public class Person implements Entity {
 	}
 	
 	public void update( String attr, String value ) throws IOException {
-		if (attr.equals("likes")) {
+		if (attr.equals("likes") || attr.equals("dislikes")) {
 			if (attributes.get(attr).equals("")) {
 				attributes.put(attr, value);
 			} else {

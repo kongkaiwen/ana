@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import kb.Callback;
 import kb.Frame;
@@ -19,15 +18,13 @@ import medical.AnaForgotPattern;
 import medical.AnaIllnessPattern;
 import medical.AnaSymptomPattern;
 
-import org.joda.time.DateTime;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import answer.Extract;
 import answer.ExtractBinary;
 import answer.ExtractName;
 import answer.ExtractRelation;
-import attributes.PersonMatcher;
+import attributes.AttributeMatcher;
 
 import relations.Entity;
 import tools.Helpers;
@@ -35,7 +32,6 @@ import tools.Helpers;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import entities.AnaEntity;
-import entities.AnaPer;
 import events.EventMatcher;
 import graph.AnaParseGraph;
 
@@ -54,7 +50,7 @@ public class Ana {
 		Ana ana = new Ana();
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
-		ana.initKB(5);
+		ana.initKB(3);
 		
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
@@ -180,10 +176,17 @@ public class Ana {
 //		System.out.println("response: " + ana.ask("My sister.", false));
 //		System.out.println("response: " + ana.ask("Jana.", false));
 		
-		// I can't remember when my nephew's birthday is.
+		// I can't remember when my nephew's birthday is.	
 		
-		System.out.println("response: " + ana.ask("This is my father Joe.", false));
+//		System.out.println("response: " + ana.ask("Hello.", false));
+//		System.out.println("response: " + ana.ask("How are you?", false));
+//		System.out.println("response: " + ana.ask("I am bored of school.", false));
+//		System.out.println("response: " + ana.ask("I didn't go to university.", false));
 
+		System.out.println("response: " + ana.ask("Hello.", false));
+		System.out.println("response: " + ana.ask("I'm Kevin.", false));
+		System.out.println("response: " + ana.ask("I am a student of the UofA.", false));
+		
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());
 	}
@@ -381,6 +384,14 @@ public class Ana {
   					}
   				} else {
   					// may have changed subject
+  					
+  					if (cbCopy.getAtr().equals("medical")) {
+  						// didn't find medical callback
+  						String umm = "I'm sorry, I didn't get that.";
+	  		  			knowledge.addResponse(line, "", umm, "umm");
+  						knowledge.decayFrames();
+	  		  			return umm;
+  					}
 
   					// check all frames
   					
@@ -413,14 +424,6 @@ public class Ana {
   			}
   		}
   		Helpers.printTime(System.currentTimeMillis() - startTime);
-  		
-  		// check for yes/no ?
-//  		String binary = Helpers.checkBinary(tkns);
-//  		if (binary != null && binary.equals("yes")) {
-//  			return "I learn something new everyday!";
-//  		} else if (binary != null && binary.equals("no")) {
-//  			return "Well then I'm not sure...";
-//  		}
   		
   		// if there is silence for a period of time, ask the user a "daily" question
 		if (silence) {
@@ -502,9 +505,6 @@ public class Ana {
 						knowledge.clnBuffer();
 					} else {
 						// confirm or assume
-						
-	//					Question question = new Question(pipeline, line, relPerson.getId(), "person", "which", relPerson.get("name")+"?".replace("<RELATION>", title), relPerson.get("sex"), null );
-	//					potential.add(question);
 						
 						if (function == 0.0) {
 							// ask about attribute
@@ -593,10 +593,8 @@ public class Ana {
 		// people from the line in kb
 		ArrayList<Person> peopleInKB = new ArrayList<Person>();
 		for(AnaEntity ae: entitiesInKB) {
-			//System.out.println("ae: " + ae.getName());
 			if (ae.getType().equals("PER")) {
 				Person newp = knowledge.getPerson(Integer.parseInt(ae.getId()));
-				//System.out.println("add: " + newp.get("name"));
 				peopleInKB.add(newp);
 			}
 		}
@@ -604,53 +602,30 @@ public class Ana {
 		
   		// extract relations
 		HashMap<String, String> relations = Helpers.getRelations( pipeline, line, linenum );
-//		for(String r: relations.keySet()) {
-//			System.out.println(r + ": "+ relations.get(r));
-//		}
 		
 		// disambiguate relations
 		knowledge.disambiguate(tkns, pos, resolutions, relations);
 		
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
-		// extract person attributes
+		// extract person attributes for speaker
 		if ((peopleInKB.size() == 0 && line.toLowerCase().startsWith("i ") && !hasTitle) || ( !hasTitle && peopleInKB.size() == 0 && (line.toLowerCase().contains("i am") || line.toLowerCase().contains("i'm"))) ) {
 			
-			ArrayList<Person> omfg1 = new ArrayList<Person>();
-			ArrayList<AnaEntity> omfg2 = new ArrayList<AnaEntity>();
-			
-			for(AnaEntity ae: entitiesInKB)
-				omfg2.add(ae);
+			// new person list
+			ArrayList<Person> attrPeople = new ArrayList<Person>();
 			
 			// add speaker
 			Person pp = knowledge.getSpeaker();
-			if (pp == null) System.out.println("null added2");
-			omfg1.add(pp);
-			
-			HashMap<String, String> attr = new HashMap<String, String>();
-			attr.put("id", String.valueOf(pp.getId()));
-			attr.put("name", pp.get("name"));
-			entitiesInKB.add(new AnaPer(attr));
-			
-			ArrayList<String> matches = PersonMatcher.check(line, omfg1, omfg2, pos, tkns, dependencies);
-			for(String match: matches) {
-				addedPersonAttr = true;
-				// find the person in our db and assign them the school ( eid # attr # val )
-				String tokens[] = match.split("#");
-				knowledge.updatePerson(Integer.parseInt(tokens[0]), tokens[1], tokens[2]);
+			if (pp != null) { 
+				attrPeople.add(pp);
+				addedPersonAttr = AttributeMatcher.check(tkns, pos, allEntities, attrPeople, dependencies, knowledge, true);
 			}
 		}
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
-		// extract person attributes
+		// extract person attributes for everyone else
 		if (peopleInKB.size() > 0) {
-			ArrayList<String> matches = PersonMatcher.check(line, peopleInKB, entitiesInKB, pos, tkns, dependencies);
-			for(String match: matches) {
-				addedPersonAttr = true;
-				// find the person in our db and assign them the school ( eid # attr # val )
-				String tokens[] = match.split("#");
-				knowledge.updatePerson(Integer.parseInt(tokens[0]), tokens[1], tokens[2]);
-			}
+			addedPersonAttr = AttributeMatcher.check(tkns, pos, allEntities, peopleInKB, dependencies, knowledge, true);
 		}
 		Helpers.printTime(System.currentTimeMillis() - startTime);
   		
@@ -936,6 +911,12 @@ public class Ana {
 				knowledge.decayFrames();
 				return "I'm sorry to hear that.";
 			}
+			
+			// Now I have to cook for him
+			if ( (line.toLowerCase().contains("what") && line.contains("cook")) || (line.toLowerCase().contains("suggestion") && line.contains("cook")) || (line.toLowerCase().contains("suggestion") && line.contains("eat")) ) {
+				knowledge.decayFrames();
+				return Helpers.foodSuggestion();
+			}
 						
 			// if no people mentioned, no relations, no events, then...
 			
@@ -944,8 +925,6 @@ public class Ana {
 				// try to move the conversation
 				
 				// Tell me about yourself;
-				
-				// Now I have to cook for him
 				
 				// what to cook for him
 				
@@ -969,9 +948,9 @@ public class Ana {
 			}
 		}
 		
-//		for(Question q: potential.keySet())
-//			System.out.println(q.getQuestion() + ": " + potential.get(q));
-//		System.out.println("---");
+		for(Question q: potential.keySet())
+			System.out.println(q.getQuestion() + ": " + potential.get(q));
+		System.out.println("---");
 		
 		// rank questions
 		//System.out.println("potential.size(): " + potential.size());

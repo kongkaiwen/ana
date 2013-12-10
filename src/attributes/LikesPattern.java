@@ -1,31 +1,39 @@
 package attributes;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import tools.Helpers;
+
+import kb.KnowledgeBase;
+import kb.Person;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import entities.AnaEntity;
 import graph.AnaParseGraph;
 
-public class AnaLikesPattern {
+public class LikesPattern {
 	
-	private static String keyWords[] = {"likes", "favorite", "loves", "enjoys"};
+	private static String keyWords[] = {"likes", "favorite", "loves", "enjoys", "like"};
 
-	/*
-	In order to match there must be a person and a likes.  There must also be a keyword.
-	*/
-	public static String match( String line, ArrayList<AnaEntity> ent, ArrayList<String> pos, 
-			SemanticGraph dep, HashMap<String, Integer> ei ) {
+	public static boolean match(ArrayList<String> tkns, ArrayList<String> pos, ArrayList<String> entities, ArrayList<Person> people, SemanticGraph dep, KnowledgeBase kb, boolean add) throws IOException {
+		
 		boolean flag = false;
 		boolean has_per = false;
 		boolean has_key = false;
+		boolean has_prp = false;
 
-		AnaEntity per = null;
+		Person per = null;
+		String line = Helpers.join(tkns, " ").toLowerCase();
 		
-		for (AnaEntity ae: ent) {
-			if (ae.getType().equals("PER") ) {
-				has_per = true;
-				per = ae;
+		if (people.size() > 0) {
+			per = people.get(0);
+			has_per = true;
+		}
+		
+		for (String p: pos) {
+			if (p.equalsIgnoreCase("prp")) {
+				has_prp = true;
 			}
 		}
 		
@@ -36,22 +44,25 @@ public class AnaLikesPattern {
 		}
 		
 		// check dependency links for matches
-		String match = checkDependencies(line, dep, ei);
+		String match = checkDependencies(line, dep);
 		
-		if (has_per && match != null) {
-			return per.getId() + "#likes#" + match; 
+		if ( (has_per && has_key && match != null) || (has_prp && has_key && match != null) ) {
+			if (has_per) {
+				kb.update(per.getId(), "person", "likes", match);
+				flag = true;
+			}
 		}
 		
-		return null;
+		return flag;
 	}
 	
-  	/*
+	/*
   	Kevin likes pizza. NNP-nsubj-VBZ-dobj-NN
   	Kevin likes to play games. NNP-nsubj-VBZ-xcomp-VB-dobj-NNS	
   	Kevin likes to eat pizza. 	NNP-nsubj-VBZ-xcomp-VB-dobj-NN
   	His favorite type of pizza is pepperoni. 
   	*/
-	private static String checkDependencies( String line, SemanticGraph dependencies, HashMap<String, Integer> entityIndex ) {
+	private static String checkDependencies( String line, SemanticGraph dependencies ) {
   		
 		String verb = "";
   		String patt = "";
@@ -59,6 +70,21 @@ public class AnaLikesPattern {
   		boolean flag = false;
   		
   		AnaParseGraph apg = new AnaParseGraph( dependencies );
+  		
+  		// I like cooking.
+  		if (apg.contain("VBP-dobj>-NN")) {
+  			patt = "VBP-dobj>-NN";
+  			ArrayList<String> tokens = apg.extract(patt);
+  			
+  			verb = tokens.get(0).split("#")[0];
+  			output = tokens.get(1).split("#")[0];
+  			
+  			for(String s : keyWords){
+  		        if(s.compareToIgnoreCase(verb) == 0) {
+  		        	flag = true;
+  		        }
+  		    }	
+  		}
   		
   		// Kevin likes pizza.
   		if (apg.contain("VBZ-dobj>-NN")) {

@@ -1,41 +1,42 @@
 package attributes;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import tools.Helpers;
+
+import kb.KnowledgeBase;
+import kb.Person;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import entities.AnaEntity;
 import graph.AnaParseGraph;
 
+public class SchoolPattern {
 
-public class AnaSchoolPattern {
-	
 	private static String keyWords[] = {"school", "university", "institute", "college"};
 	private static String verbs[] = {"attend", "go to", "enrolled", "studies"};
+	
+	public static boolean match(ArrayList<String> tkns, ArrayList<String> pos, ArrayList<String> entities, ArrayList<Person> people, SemanticGraph dep, KnowledgeBase kb, boolean add) throws IOException {
 
-	/*
-	In order to match there must be a person and an organization.  There must also be a keyword.
-	*/
-	public static String match( String line, ArrayList<AnaEntity> entities, ArrayList<String> pos, 
-			SemanticGraph dep, HashMap<String, Integer> ei  ) {
 		boolean flag = false;
 		boolean has_per = false;
 		boolean has_org = false;
 		boolean has_key = false;
 		
-		AnaEntity org = null;
-		AnaEntity per = null;
+		String org = null;
+		Person per = null;
+		String line = Helpers.join(tkns, " ").toLowerCase();
 		
-		for (AnaEntity ae: entities) {
-
-			if (ae.getType().equals("PER") ) {
-				has_per = true;
-				per = ae;
-			}
-			
-			if (ae.getType().equals("ORG") ) {
+		if (people.size() > 0) {
+			per = people.get(0);
+			has_per = true;
+		}
+		
+		for (String ent: entities) {
+			if (ent.equals("ORGANIZATION") ) {
 				has_org = true;
-				org = ae;
+				org = tkns.get(entities.indexOf(ent));;
 			}
 		}
 		
@@ -50,28 +51,29 @@ public class AnaSchoolPattern {
 				has_key = true;
 			}
 		}
-		
-		// check dependency links for matches
-		String match = checkDependencies(line, dep, ei);
-		
+
 		// any simple matches?
 		flag = has_per && has_org && has_key;
 		
 		if (flag) {
-			return per.getId() + "#education#" + org.getName();
+			kb.update(per.getId(), "person", "education_institute", org);
 		}
+		
+		// check dependency links for matches
+		String match = checkDependencies(line, dep);
 		
 		if (match != null) {
-			return per.getId() + "#education#" + match; 
+			kb.update(per.getId(), "person", "education_institute", match);
+			flag = true;
 		}
 		
-		return null;
+		return flag;
 	}
 	
 	/*
   	Kevin is a student at the University of Alberta. NNP-nsubj-NN-PREP-NNP ( PER, TITLE, ORG )
   	*/
-	private static String checkDependencies( String line, SemanticGraph dependencies, HashMap<String, Integer> entityIndex ) {
+	private static String checkDependencies( String line, SemanticGraph dependencies ) {
   		
   		String patt = "";
   		String output = "";
