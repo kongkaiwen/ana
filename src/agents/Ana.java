@@ -50,7 +50,7 @@ public class Ana {
 		Ana ana = new Ana();
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
-		ana.initKB(3);
+		ana.initKB(1);
 		
 		Helpers.printTime(System.currentTimeMillis() - startTime);
 		
@@ -185,11 +185,14 @@ public class Ana {
 		
 		// This is my father Phil. <- resolution problem
 
-		System.out.println("response: " + ana.ask("Hello.", false));
-		System.out.println("response: " + ana.ask("I'm Kevin.", false));
-		System.out.println("response: " + ana.ask("I am a student of the UofA.", false));
-		System.out.println("response: " + ana.ask("University of Alberta.", false));
-		System.out.println("response: " + ana.ask("I have a Bachelor of Science.", false));
+//		System.out.println("response: " + ana.ask("Hello.", false));
+//		System.out.println("response: " + ana.ask("I'm Kevin.", false));
+//		System.out.println("response: " + ana.ask("I am a student of the UofA.", false));
+//		System.out.println("response: " + ana.ask("University of Alberta.", false));
+//		System.out.println("response: " + ana.ask("I have a Bachelor of Science.", false));
+		
+		System.out.println("response: " + ana.ask("Jana needs a new house.", false));
+		System.out.println("response: " + ana.ask("Jana lives in Vancouver.", false));
 		
 		System.out.println(ana.knowledge.toJSON());
 		System.out.println(ana.knowledge.toTableJSON());

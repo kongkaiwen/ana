@@ -25,9 +25,11 @@ public class ExtractPlace implements Extract {
 		for(Entity e: ent) {
 			if (e.getType().equals("ORG"))
 				name = e.getName();
+			if (e.getType().equals("LOC"))
+				name = e.getName();
 		}
 		
-		if (line.toLowerCase().contains("not") || line.toLowerCase().contains("does n't") || line.toLowerCase().contains("none") || line.toLowerCase().contains("did n't")) {
+		if (line.toLowerCase().contains("not") || line.toLowerCase().contains("does n't") || line.toLowerCase().contains("none") || line.toLowerCase().contains("did n't") || line.toLowerCase().contains("do n't")) {
 			kb.update(oid, object, attr, "N/A");
 			return true;
 		}
